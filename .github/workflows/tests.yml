@@ -1,0 +1,20 @@
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+# Nothing here touches the network or a browser: the sync layer's reasoning is
+# all pure functions, and the Apps Script runs against an in-memory spreadsheet.
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: node tests/test_betsync.mjs
+      - run: node tests/test_server.mjs
