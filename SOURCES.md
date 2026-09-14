@@ -3,12 +3,13 @@
 Reviewed 2026-09-14. An accessible webpage is not a permission grant or a guarantee of a stable, current odds feed.
 
 - Existing MLB/NFL/NCAAF pipelines already consume public ESPN data without user API keys. Keep provenance and timestamps, reject missing/unverified prices, cache conservatively and respect failures/rate limits. No in-play latency guarantee.
-- NFL Props uses keyless ESPN player statistics and current rosters. The currently supported sportsbook price providers use optional configured GitHub secrets. The Today dashboard adds no keys, tokens, third-party paid services or sportsbook integrations. A reliable authorized no-key replacement for the complete prop-price feed has not been verified.
+- NFL Props uses keyless ESPN player statistics and current rosters. Key-based sportsbook requests are disabled at the user's explicit request. Existing GitHub secret values are not read by the build. The Today dashboard adds no keys, tokens, third-party paid services or sportsbook integrations. A reliable authorized no-key replacement for the complete prop-price feed has not been verified.
 - Apify's listed Sports Data Scraper explicitly uses an Apify token in its integration examples; using a wrapper does not remove authentication or possible cost: https://apify.com/sian.agency/sports-data-scraper
 - SportSRC's documented V1 routes cover schedules, streams, results and standings. No suitable structured sportsbook prop-price endpoint was documented: https://sportsrc.org/
 - Football-Data provides soccer data. It is not a replacement for the current MLB/NFL/NCAAF and NFL player-prop feeds: https://football-data.co.uk/data.php
 - VegasInsider's terms restrict redistribution/public display without permission. No scraper or redistribution integration was added: https://www.vegasinsider.com/terms-of-use/
-- Oddschecker, Covers, Flashscore and OddsPortal are not integrated merely because a proposed list calls them scrapeable. A suitable allowed endpoint, exact markets/books, timestamp semantics and live response contract must be verified before adding one. No bot-block bypasses, hidden credentials, residential proxies or paid scraper services.
+- Flashscore expressly restricts automated requests and scraping without consent: https://www.flashscore.com/terms-of-use/
+- Oddschecker, Covers and OddsPortal are not integrated merely because a proposed list calls them scrapeable. A suitable allowed endpoint, exact markets/books, timestamp semantics and live response contract must be verified before adding one. No bot-block bypasses, hidden credentials, residential proxies or paid scraper services.
 - Octoparse and WebHarvy are tools, not independently licensed sportsbook odds feeds.
 
 ## Safe implementation boundaries
@@ -21,7 +22,7 @@ Cross-board exposure is grouped only when sport, Toronto event date and team nam
 
 ## Still requiring separate work
 
-- Complete no-key NFL prop-price coverage remains unverified; existing optional providers are retained to avoid silently removing working prices.
+- Complete no-key NFL prop-price coverage remains unverified; keyed providers are disabled, so Props remains projection-only until a usable keyless source is verified.
 - New availability sources require verified access and current dated reports. Missing NCAAF reports remain explicitly flagged.
 - Closing spread/total values require backward-compatible end-to-end ledger schema and deployed Apps Script support before full line-aware CLV can be claimed.
-- New model inputs and joint parlay probability estimates require forward validation and suitable data. Do not invent coefficients or raise stakes because a small initial sample looks good.
+- Same-game parlay estimates now explicitly suppress an uncalibrated all-win probability. New model inputs and calibrated joint parlay probability estimates still require forward validation and suitable data. Do not invent coefficients or raise stakes because a small initial sample looks good.

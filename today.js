@@ -39,7 +39,7 @@
   function renderHealth(){
     $("#health").innerHTML=Object.keys(sources).map(key=>{
       const b=S.feeds[key]||{error:true},h=C.health(key,b),meta=b.meta||b.slate||{};
-      const auth=key==="props"?"Player statistics: no key. Current price providers: optional configured keys.":key==="ladder"?"Market-based screening; see the Ladder board for its source.":"Existing public data feeds; no personal API key required.";
+      const auth=key==="props"?(meta.odds_mode==="keyless"?"Keyless mode. Player statistics available; no verified prop-price source connected.":"Player statistics: no key. This published snapshot predates the keyless-only switch."):key==="ladder"?"Market-based screening; see the Ladder board for its source.":"Existing public data feeds; no personal API key required.";
       return '<article class="card"><span class="tag '+h.status+'">'+esc(h.status)+'</span><h3>'+esc(h.label)+'</h3><p>Published '+esc(h.stamp?time(h.stamp)+" ET":"time unavailable")+'<br><small>Data age: '+esc(elapsed(h.stamp))+'</small></p><p class="note">'+esc(auth)+'</p>'+(key==="ladder"?'<p class="note">This timestamp covers screening history, not the current Ladder quote.</p>':"")+h.warnings.map(w=>'<p class="warning">'+esc(w)+'</p>').join("")+link(key)+'</article>';
     }).join("");
   }

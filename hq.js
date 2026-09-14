@@ -257,7 +257,7 @@
            b.win_rate == null ? "" : pct(b.win_rate, 0) + " win rate") +
       tile("At risk", money(b.exposure), b.pending + " open") +
       tile("Available", money(b.available), "to stake") +
-      (clv.n ? tile("CLV", pct(clv.avg, 2), "on " + clv.n + " graded", sgn(clv.avg)) : "") +
+      (clv.n ? tile("ML price change", pct(clv.avg, 2), clv.n + " entries · probability points, not full CLV", sgn(clv.avg)) : "") +
       '</div>';
   }
 
@@ -266,13 +266,14 @@
       esc(value) + '</b>' + (note ? '<i>' + esc(note) + '</i>' : '') + '</div>';
   }
 
-  /* Closing-line value: did the price move your way after you took it? It is
-     the one measure that says whether a bet was good independently of whether
-     it won, which is why it earns a tile of its own. */
+  /* Price-only movement is not full closing-line value. Without a closing
+     spread/total, comparing different lines is invalid. Restrict this small
+     price metric to moneylines and do not infer profitability from it. */
   function clvSummary(rows) {
     var vals = [];
     rows.forEach(function (r) {
-      if (r.closing_price == null || r.price == null) return;
+      if (!/^(ML|MONEYLINE)$/i.test(String(r.market || "")) || r.line != null) return;
+      if (r.closing_price == null || r.price == null || Math.abs(Number(r.price)) < 100 || Math.abs(Number(r.closing_price)) < 100) return;
       var took = BS.decimalOdds(r.price), closed = BS.decimalOdds(r.closing_price);
       if (took <= 1 || closed <= 1) return;
       vals.push((1 / closed) - (1 / took));      // implied probability gained
