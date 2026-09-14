@@ -1,4 +1,25 @@
-# Ledger HQ
+# KEVBOTBETS — one page for every board
+
+Open **https://chillychilly14.github.io/bet-ledger-hq/** and use the navigation
+for Ledger, MLB, NFL, NCAAF, Props and Ladder. The selected board opens inside
+the workspace, without a new browser tab. On phones the navigation stays at
+the bottom; on desktop it sits on the left.
+
+Each board is loaded on its first visit and retained while switching, so its
+filters, simulator inputs and scroll position stay intact. Links such as
+`#mlb`, `#nfl` and `#props` open a particular board, and browser Back/Forward
+works between selections. Reload board affects only the selected board.
+
+The five sports repositories and their scheduled data workflows are unchanged.
+The original Ledger HQ remains at `ledger.html` and uses the same browser
+storage and shared Google Sheet. See [SETUP-SYNC.md](SETUP-SYNC.md) to enable
+cross-device syncing. No token or Google Sheet credentials belong in this repo.
+
+GitHub Pages should serve `main` from `/ (root)`. Add the hub to your phone's
+home screen for one KEVBOTBETS shortcut. An internet connection is required to
+load boards; this hub does not promise offline caching.
+
+## Ledger HQ
 
 Every bet from every board, in one place — and the shared ledger the five boards
 sync through.

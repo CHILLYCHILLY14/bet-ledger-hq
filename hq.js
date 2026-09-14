@@ -620,6 +620,15 @@
   document.addEventListener("visibilitychange", function () {
     if (document.visibilityState === "visible" && BS.loadConfig() && S.loaded) pull();
   });
+  // An embedded page remains visible to the browser even when its hub panel
+  // is hidden. Refresh on returning to Ledger without disturbing an edit.
+  window.addEventListener("message", function (event) {
+    if (event.source !== window.parent || event.origin !== window.location.origin ||
+        !event.data || event.data.type !== "kevbotbets:activate") return;
+    var editing = document.activeElement &&
+      /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName);
+    if (!editing && !S.busy && BS.loadConfig()) pull();
+  });
   setInterval(function () {
     if (document.visibilityState === "visible" && BS.loadConfig()) pull();
   }, 5 * 60 * 1000);
