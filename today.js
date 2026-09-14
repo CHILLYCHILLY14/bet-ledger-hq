@@ -54,10 +54,10 @@
         body='<div class="table-scroll"><table><thead><tr><th>Market</th><th>Graded</th><th>Avg. error</th><th>Bias</th></tr></thead><tbody>'+selected.map(x=>'<tr><td>'+esc(x.market)+'</td><td>'+x.n+'</td><td>'+num(x.mae)+'</td><td>'+num(x.bias)+'</td></tr>').join("")+'</tbody></table></div><p class="note">Each market has its own units; errors are not comparable across markets. Several forecasts can belong to one player/game.</p>';
         if(!selected.length)body=empty("No graded player forecasts yet.");
       }else{
-        body='<div class="metrics">'+metric("Winner / screened-option record",a.wins==null?"—":a.wins+"–"+Math.max(0,a.n-a.wins))+metric("Decided sample",a.n)+metric("Win rate",pct(a.winRate));
+        body='<div class="metrics">'+metric("Winner / screened-option record",a.wins==null?"—":a.wins+"–"+(key==="ladder"?(a.losses??"—"):Math.max(0,a.n-a.wins))+(key==="ladder"?"–"+a.pushes:""))+metric(key==="ladder"?"Settled sample":"Decided sample",a.n)+metric("Win rate",pct(a.winRate));
         if(key==="mlb")body+=metric("Matched games",a.marketN)+metric("Model / market winners",a.modelCorrect+" / "+a.marketCorrect)+metric("Probability error: model / market",num(a.modelBrier,3)+" / "+num(a.marketBrier,3));
         if(a.ats)body+=metric("Spread direction",pct(a.ats.accuracy)+" · n="+(a.ats.n||0))+metric("Total direction",pct(a.totals.accuracy)+" · n="+(a.totals.n||0))+metric("Margin error: model / market",num(a.margin.model_mae)+" / "+num(a.margin.market_mae)+" · n="+(a.margin.n||0))+metric("Total error: model / market",num(a.total.model_mae)+" / "+num(a.total.market_mae)+" · n="+(a.total.n||0));
-        if(key==="ladder")body+=metric("Hypothetical one-unit ROI",pct(a.roi));
+        if(key==="ladder")body+=metric("Voids",a.voids)+metric("Hypothetical one-unit ROI",pct(a.roi));
         body+='</div><p class="note">Lower prediction error is better. A high winner rate alone does not prove value at the offered odds.</p>';
       }
       return '<article class="card"><h3>'+esc(a.label)+'</h3><p><small>'+esc(a.scope)+'</small></p>'+body+a.notes.map(x=>'<p class="note">'+esc(x)+'</p>').join("")+link(key,"Full board accuracy")+'</article>';

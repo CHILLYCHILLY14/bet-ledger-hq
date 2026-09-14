@@ -42,4 +42,11 @@ test("different dates never combine",()=>assert.notEqual(C.eventKey(bets[0]),C.e
 test("drawdown counts settlements only",()=>assert.equal(C.drawdown([{status:"Loss",pnl:-10},{status:"Pending",pnl:-100},{status:"Win",pnl:4}],100).max,10));
 test("NFL accuracy ignores legacy performance",()=>assert.equal(C.accuracy("nfl",{accuracy:{scope:{season:2026,season_type_label:"regular season"},games:{winner:{n:15,correct:11,accuracy:11/15}}},performance:{overall:{wins:95}}}).n,15));
 test("props accuracy never invents betting ROI",()=>assert.equal(C.accuracy("props",{accuracy:{props:{Yards:{graded:3,mae:10}}}}).roi,undefined));
+test("future or malformed supplied quote times are excluded",()=>{
+  for(const stamp of ["2026-09-14T17:00Z","not-a-date"])assert.equal(C.plays("nfl",{...bundle,board:[{...base,odds_observed_at:stamp}]},now).length,0);
+});
+test("Ladder pushes and voids are not counted as losses",()=>{
+  const a=C.accuracy("ladder",{accuracy:{overall:{settled:8,wins:4,losses:2,pushes:1,voids:1}}});
+  assert.equal(a.losses,2);assert.equal(a.pushes,1);assert.equal(a.voids,1);
+});
 console.log(count+" Today checks passed.");

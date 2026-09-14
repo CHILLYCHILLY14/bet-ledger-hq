@@ -9,7 +9,8 @@ Reviewed 2026-09-14. An accessible webpage is not a permission grant or a guaran
 - Football-Data provides soccer data. It is not a replacement for the current MLB/NFL/NCAAF and NFL player-prop feeds: https://football-data.co.uk/data.php
 - VegasInsider's terms restrict redistribution/public display without permission. No scraper or redistribution integration was added: https://www.vegasinsider.com/terms-of-use/
 - Flashscore expressly restricts automated requests and scraping without consent: https://www.flashscore.com/terms-of-use/
-- Oddschecker, Covers and OddsPortal are not integrated merely because a proposed list calls them scrapeable. A suitable allowed endpoint, exact markets/books, timestamp semantics and live response contract must be verified before adding one. No bot-block bypasses, hidden credentials, residential proxies or paid scraper services.
+- Covers restricts redistribution and public display without prior permission: https://www.covers.com/terms
+- Oddschecker and OddsPortal are not integrated merely because a proposed list calls them scrapeable. A suitable allowed endpoint, exact markets/books, timestamp semantics and live response contract must be verified before adding one. No bot-block bypasses, hidden credentials, residential proxies or paid scraper services.
 - Octoparse and WebHarvy are tools, not independently licensed sportsbook odds feeds.
 
 ## Safe implementation boundaries

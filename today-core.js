@@ -56,7 +56,7 @@
       const quote=r.updated_at||r.odds_observed_at||game?.odds?.fetched_at;
       const age=freshness(quote,key==="props"?Math.min(6,number(meta.max_odds_age_hours)||6):key==="ncaaf"?3:6,now);
       const publishedAge=freshness(published,key==="ncaaf"?4:6,now);
-      if(age.status==="stale"||publishedAge.status!=="recent"||bundle.error)return;
+      if((quote&&age.status==="unknown")||age.status==="stale"||publishedAge.status!=="recent"||bundle.error)return;
       const review=[];
       if(age.status==="unknown")review.push("Quote time not supplied; confirm the current price.");
       if(key==="mlb"&&!game?.lineups_confirmed)review.push("Projected batting orders; lineups not confirmed.");
@@ -93,7 +93,7 @@
     if(key==="props")return {key,label:"NFL player projections",scope:[a.scope?.season,a.scope?.season_type_label].filter(Boolean).join(" "),
       markets:Object.entries(a.props||{}).map(([market,v])=>({market,n:v.graded||0,mae:v.mae??null,bias:v.bias??null})),notes:["Player-stat error is not a wager win rate.","Only frozen pregame projections are graded."]};
     if(key==="ladder")return {key,label:"Ladder screened options",scope:"Published screened-option history",
-      n:a.overall?.settled||0,wins:a.overall?.wins??null,winRate:a.overall?.win_rate??null,roi:a.overall?.roi??null,
+      n:a.overall?.settled||0,wins:a.overall?.wins??null,losses:a.overall?.losses??null,pushes:a.overall?.pushes??0,voids:a.overall?.voids??0,winRate:a.overall?.win_rate??null,roi:a.overall?.roi??null,
       notes:["Market-derived screening, not an independent prediction model.","One-unit hypothetical result; not your actual ladder return."]};
     const g=a.games||{};
     return {key,label:LABELS[key]+" game predictions",scope:[a.scope?.season,a.scope?.season_type_label].filter(Boolean).join(" "),

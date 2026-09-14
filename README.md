@@ -10,7 +10,7 @@ filters, simulator inputs and scroll position stay intact. Links such as
 `#mlb`, `#nfl` and `#props` open a particular board, and browser Back/Forward
 works between selections. Reload board affects only the selected board.
 
-The five sports repositories and their scheduled data workflows are unchanged.
+The five sports repositories retain their own scheduled data workflows.
 The original Ledger HQ remains at `ledger.html` and uses the same browser
 storage and shared Google Sheet. See [SETUP-SYNC.md](SETUP-SYNC.md) to enable
 cross-device syncing. No token or Google Sheet credentials belong in this repo.
@@ -41,9 +41,9 @@ those copies agree with each other:
 
 And the page itself:
 
-- **`index.html` + `hq.js`** — the cross-sport dashboard. Combined bankroll and
+- **`ledger.html` + `hq.js`** — the cross-sport dashboard. Combined bankroll and
   its curve, ROI by board, tier and market, open bets you can settle from your
-  phone, closing-line value, and a CSV export.
+  phone, moneyline price-change comparison, and a CSV export. Spread/total closing-line value needs additional schema support.
 
 **Setup: [SETUP-SYNC.md](SETUP-SYNC.md)** — written for someone who has never
 opened Apps Script. About ten minutes, once.
