@@ -10,14 +10,14 @@
 </head><body>
 <a class="skip" href="#workspace">Skip to the selected board</a>
 <div class="shell">
-<a class="brand" href="#ledger" aria-label="KEVBOTBETS shared ledger"><span class="brand-mark" aria-hidden="true">K</span><span class="wordmark">KEVBOTBETS<small>YOUR BETTING WORKSPACE</small></span></a>
+<a class="brand" href="#today" aria-label="KEVBOTBETS Today"><span class="brand-mark" aria-hidden="true">K</span><span class="wordmark">KEVBOTBETS<small>YOUR BETTING WORKSPACE</small></span></a>
 <header class="topbar">
-<div class="page-heading"><h1 id="board-title">Shared ledger</h1><p id="board-description">Your bets, bankroll and results across every board.</p></div>
+<div class="page-heading"><h1 id="board-title">Today</h1><p id="board-description">Your daily board, data health and shared exposure.</p></div>
 <div class="tools">
 <button class="tool" id="reload-board" type="button" aria-label="Reload selected board" title="Reload selected board"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 7v5h-5M4 17v-5h5M6.2 6.2A8 8 0 0 1 20 12M4 12a8 8 0 0 0 13.8 5.8"/></svg><span>Reload board</span></button>
 <button class="tool" id="help" type="button" aria-label="Hub help and sync setup" title="Hub help"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 0 1 5 .5c0 2-2.5 2-2.5 4M12 17h.01"/></svg><span>Help</span></button>
 </div></header>
-<aside class="sidebar"><p class="nav-label">Your boards</p><nav class="boards" aria-label="Betting boards"><a class="board-link" href="#ledger" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="3"/><path d="M8 8h8M8 12h3M8 16h3M15 12h1M15 16h1"/></svg><span>Ledger</span></a>
+<aside class="sidebar"><p class="nav-label">Your boards</p><nav class="boards" aria-label="Betting boards"><a class="board-link" href="#today" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 11 9-8 9 8M5 10v11h5v-7h4v7h5V10"/></svg><span>Today</span></a><a class="board-link" href="#ledger"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="3"/><path d="M8 8h8M8 12h3M8 16h3M15 12h1M15 16h1"/></svg><span>Ledger</span></a>
 <a class="board-link" href="#mlb"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M6 5c5 4 5 10 0 14M18 5c-5 4-5 10 0 14M7 7l3-1M8 11h3M7 16l3 1M14 6l3 1M13 11h3M14 17l3-1"/></svg><span>MLB</span></a>
 <a class="board-link" href="#nfl"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 15C3 6 9 3 18 3c2 0 3 1 3 3 0 9-3 15-12 15-4 0-6-2-6-6ZM8 16l8-8M9 10l5 5M12 7l5 5M6 13l5 5"/></svg><span>NFL</span></a>
 <a class="board-link" href="#ncaaf"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 9 9-5 9 5-9 5-9-5ZM6 11v6c4 3 8 3 12 0v-6M21 9v8"/></svg><span>NCAAF</span></a>
@@ -27,7 +27,7 @@
 <p class="sr-only" id="announcement" role="status" aria-live="polite"></p>
 <dialog id="help-dialog" aria-labelledby="help-title">
 <h2 id="help-title">Your boards, together.</h2>
-<p>Use the navigation to switch between Ledger, MLB, NFL, NCAAF, Props and Ladder. Each board keeps its own filters, simulator and ledger controls.</p>
+<p>Use the navigation to switch between Today, Ledger, MLB, NFL, NCAAF, Props and Ladder. Each board keeps its own filters, simulator and ledger controls.</p>
 <p><strong>One bookmark:</strong> save this page. On iPhone, use Safari’s Share menu → Add to Home Screen for one KEVBOTBETS icon.</p>
 <p><strong>Shared ledger:</strong> complete the <a href="https://github.com/CHILLYCHILLY14/bet-ledger-hq/blob/main/SETUP-SYNC.md" target="_blank" rel="noopener">Google Sheet setup</a>, then connect in the Ledger tab. Sync settings are shared by these boards in the same browser. Connect each device to keep them in step.</p>
 <p>Boards continue to receive their scheduled updates. Use Reload board if you need to reload the current view.</p><button class="tool" id="close-help" type="button">Got it</button>
