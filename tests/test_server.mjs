@@ -330,6 +330,23 @@ test("syncing twice with nothing new sends nothing and changes nothing", async (
   assert.equal(phone.entries().length, 1);
 });
 
+test("a bankroll saved right after setup still takes, whatever the clocks say", async () => {
+  const srv = server();
+  const phone = device(srv, "iPhone");
+
+  /* This one failed about one run in eight before it was fixed. The sheet had
+     just stamped its default bankroll; the client sent its own timestamp with
+     the new figure; the two landed in the same millisecond, the server read that
+     as "you are working from an older revision", and the number the person typed
+     was dropped without a word. A device whose clock sits a few seconds behind
+     Google's would have lost every save, not one in eight. */
+  await phone.BS.setStartingBankroll(400);
+
+  const after = srv.post({ token: srv.token, action: "pull", since: "" });
+  assert.equal(after.settings.starting_bankroll, 400);
+  assert.equal(phone.BS.state().bankroll.starting, 400);
+});
+
 test("the shared bankroll is one number on every device", async () => {
   const srv = server();
   const phone = device(srv, "iPhone");

@@ -329,6 +329,11 @@ function writeSetting_(ss, key, value) {
   sh.getRange(sh.getLastRow() + 1, 1, 1, 3).setValues([[key, value, now]]);
 }
 
+/* A setting only loses to the sheet's copy when the caller says, with a
+ * <key>_updated_at, that it is working from an older revision. No client sends
+ * one: a browser clock a few seconds behind Google's would make every save the
+ * person typed look stale and be dropped in silence. Saving a bankroll is an
+ * explicit instruction, so it wins and the sheet records when it landed. */
 function applySettings_(ss, incoming) {
   var current = readSettings_(ss);
   for (var key in incoming) {

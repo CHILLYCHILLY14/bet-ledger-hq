@@ -556,10 +556,9 @@
       if (!isFinite(v) || v < 0) { S.error = "Enter a number."; return render(); }
       var cfg = BS.loadConfig();
       S.busy = true;
-      return BS.pushRows(cfg, [], {
-        starting_bankroll: v,
-        starting_bankroll_updated_at: new Date().toISOString()
-      }).then(function (res) {
+      /* No client timestamp: the sheet stamps it. See setStartingBankroll in
+         betsync.js for why sending one loses edits on a slow clock. */
+      return BS.pushRows(cfg, [], { starting_bankroll: v }).then(function (res) {
         S.settings = res.settings || S.settings;
         S.busy = false; render();
       }).catch(function (err) { S.busy = false; S.error = BS.friendlyError(err); render(); });
