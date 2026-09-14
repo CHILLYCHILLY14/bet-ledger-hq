@@ -1,0 +1,10 @@
+{
+  "name": "kevbotbets-hub",
+  "private": true,
+  "scripts": {
+    "test:browser": "node tests/test_today_browser.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.55.0"
+  }
+}

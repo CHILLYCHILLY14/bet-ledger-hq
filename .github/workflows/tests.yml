@@ -6,8 +6,8 @@ on:
   pull_request:
   workflow_dispatch:
 
-# Nothing here touches the network or a browser: the sync layer's reasoning is
-# all pure functions, and the Apps Script runs against an in-memory spreadsheet.
+# Sync/server tests use an in-memory sheet. Browser checks use local fixtures;
+# no test contacts a live spreadsheet or writes actual wagers.
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -18,4 +18,14 @@ jobs:
           node-version: "20"
       - run: node tests/test_betsync.mjs
       - run: node tests/test_server.mjs
-      - run: node --check hub.js && node --check hq.js
+      - run: node --check hub.js && node --check hq.js && node --check today.js && node --check today-core.js
+
+      - run: node tests/test_today.mjs
+      - run: npm install --ignore-scripts
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:browser
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: today-browser-checks
+          path: test-results/

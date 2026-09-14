@@ -1,7 +1,7 @@
 # KEVBOTBETS — one page for every board
 
 Open **https://chillychilly14.github.io/bet-ledger-hq/** and use the navigation
-for Ledger, MLB, NFL, NCAAF, Props and Ladder. The selected board opens inside
+for Today, Ledger, MLB, NFL, NCAAF, Props and Ladder. The selected board opens inside
 the workspace, without a new browser tab. On phones the navigation stays at
 the bottom; on desktop it sits on the left.
 
@@ -87,3 +87,13 @@ The web app URL and the token live in each browser's own storage and are never
 committed here. "Anyone with the link" is how a Google Apps Script web app is
 published; the token is what actually grants access. `resetToken` in the Apps
 Script editor issues a new one if you ever need to.
+
+## Today: daily review
+
+The default route is now `#today`. It reads published board files without changing the sports models or automatically adding bets. Filter by Toronto date and sport; stale snapshots and zero-stake held rows are excluded. Missing quote times are explicitly marked for verification. The sheet is read through the existing configured sync client, never through a public credential file.
+
+Accuracy uses each board's frozen prediction feed, never the legacy NFL mixed-season export. Exposure groups recognizable same-game positions across boards; unrecognized bets still count toward total exposure. It is a warning system, not a joint probability estimate or automatic stake limit. Parlay exposure and inconsistent names can require manual review.
+
+`node tests/test_today.mjs` checks adapters, stale prices, season scope, and cross-board grouping. `npm install && npx playwright install chromium && npm run test:browser` checks the dashboard at 320px, 393px and desktop width with deterministic public-feed fixtures and an unconfigured ledger. No live bets or sheet records are written by these tests.
+
+See [SOURCES.md](SOURCES.md) for the no-key provider review and remaining constraints.

@@ -3,6 +3,7 @@
 (() => {
   "use strict";
   const configs = {
+    today:{title:"Today",description:"Your daily board, data health and shared exposure.",url:"today.html"},
     ledger:{title:"Shared ledger",description:"Your bets, bankroll and results across every board.",url:"ledger.html"},
     mlb:{title:"MLB Edge",description:"Baseball matchups, best bets and your game simulator.",url:"../mlb-edge/"},
     nfl:{title:"NFL Edge Lab",description:"NFL matchups, predictions and your season record.",url:"../nfl-edge-lab/"},
@@ -20,12 +21,12 @@
     record.frame.contentWindow.postMessage({type:"kevbotbets:activate"},target.origin);
     // The boards already expose this operation. Reuse it on tab selection,
     // just as their normal focus/online handlers do; never copy credentials.
-    if(key!=="ledger")try{
+    if(key!=="ledger"&&key!=="today")try{
       const sync=record.frame.contentWindow.BetSync;
       if(sync?.loadConfig())sync.sync().catch(()=>{});
     }catch(_){/* Normal board timers remain available on a different origin. */}
   }
-  function requested(){const key=location.hash.slice(1).toLowerCase();return Object.prototype.hasOwnProperty.call(configs,key)?key:"ledger";}
+  function requested(){const key=location.hash.slice(1).toLowerCase();return Object.prototype.hasOwnProperty.call(configs,key)?key:"today";}
   function create(key){
     const config=configs[key], panel=document.createElement("section"), frame=document.createElement("iframe");
     panel.className="board-panel";panel.setAttribute("aria-label",config.title);panel.hidden=true;
@@ -57,7 +58,9 @@
     workspace.append(panel);record.reload();return record;
   }
   function select(){
-    const key=requested(),changed=key!==active;active=key;
+    const key=requested(),changed=key!==active;
+    if(changed&&active==="today")frames.get("today")?.frame.contentWindow.postMessage({type:"kevbotbets:deactivate"},location.origin);
+    active=key;
     if(!frames.has(key))frames.set(key,create(key));
     frames.forEach((r,k)=>{r.panel.hidden=k!==key;});
     links.forEach(link=>{if(link.hash==="#"+key)link.setAttribute("aria-current","page");else link.removeAttribute("aria-current");});
