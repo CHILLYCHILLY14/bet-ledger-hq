@@ -106,20 +106,23 @@ settled since, so it only needs setting in one place.
 
 ---
 
-## Part 3 — Ledger HQ (optional, 3 minutes)
+## Part 3 — Your one-page KEVBOTBETS hub
 
-The cross-sport view. It is a new repository because it belongs to no single
-sport.
+The hub is already published at
+**https://chillychilly14.github.io/bet-ledger-hq/**. Bookmark this one address.
 
-1. On GitHub: **New repository**, name it `bet-ledger-hq`, **Public**, create.
-2. Upload `index.html`, `hq.js` and `betsync.js` from this zip.
-3. **Settings → Pages →** Source: *Deploy from a branch*, Branch: `main`,
-   folder `/ (root)`. Save.
-4. A minute later it is live at
-   `https://chillychilly14.github.io/bet-ledger-hq/`. Open it, paste the same
-   URL and token, connect.
+1. Open **Ledger**, paste the same web app URL and token, and connect.
+2. Use **MLB, NFL, NCAAF, Props** or **Ladder** in the navigation. Each board
+   opens inside the page, keeping its own controls and automatic data updates.
+3. Switch back to **Ledger** for the cross-sport view. The boards share the
+   connection settings within the same browser on this GitHub Pages domain;
+   connect separately on each device.
+4. On iPhone: Safari **Share → Add to Home Screen** creates one KEVBOTBETS icon.
 
-Add it to your phone's home screen and it behaves like an app.
+There is no need to create another repository or upload these files again.
+For a fresh installation, copy the complete repository, including `hub.js`,
+`hub.css`, `ledger.html` and the icons. GitHub Pages serves `main` from
+`/ (root)`. The original standalone ledger remains available at `ledger.html`.
 
 ---
 
