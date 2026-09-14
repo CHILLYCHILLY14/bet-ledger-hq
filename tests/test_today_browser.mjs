@@ -28,12 +28,18 @@ try{
       if(u.includes("accuracy.json"))data={generated_at:stamp,scope:{season:2026,season_type_label:"regular season"},games:{winner:{n:15,correct:11,accuracy:11/15}}};
       return route.fulfill({contentType:"application/json",body:JSON.stringify(data)});
     });
+    await page.route("https://site.api.espn.com/**",route=>route.fulfill({contentType:"application/json",body:JSON.stringify({events:[],articles:[{headline:"League news test"}]})}));
     await page.goto(origin+"/bet-ledger-hq/");
     const frame=page.frameLocator("#frame-today");
     await frame.locator("#refresh-status").filter({hasText:"Published files checked"}).waitFor();
     await frame.locator("#date").fill(chosen);
     await frame.locator("#date").dispatchEvent("change");
     await frame.getByRole("heading",{name:"DEN ML",exact:true}).first().waitFor();
+    await frame.getByRole("button",{name:/Make daily ticket/i}).click();
+    await frame.getByRole("heading",{name:"KEVBOT BETS Daily Top 10"}).waitFor();
+    assert.ok((await frame.locator("#ticket-preview").getAttribute("src")).startsWith("blob:"));
+    if(width===393)await page.screenshot({path:"test-results/ticket-preview-393.png",fullPage:true});
+    await frame.getByRole("button",{name:"Close image preview"}).click();
     await frame.getByRole("button",{name:"Accuracy",exact:true}).click();
     await frame.getByRole("heading",{name:"Predictions, not your bet record"}).waitFor({state:"visible"});
     await frame.getByRole("button",{name:"Exposure",exact:true}).click();

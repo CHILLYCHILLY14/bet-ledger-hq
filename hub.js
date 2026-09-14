@@ -13,7 +13,7 @@
   };
   const links=[...document.querySelectorAll(".board-link")];
   const workspace=document.querySelector("#workspace"), frames=new Map();
-  let active="";
+  let active="",ticketPending=false;
   function activate(key){
     const record=frames.get(key);
     if(!record)return;
@@ -25,6 +25,11 @@
       const sync=record.frame.contentWindow.BetSync;
       if(sync?.loadConfig())sync.sync().catch(()=>{});
     }catch(_){/* Normal board timers remain available on a different origin. */}
+    if(key==="today"&&ticketPending)try{
+      if(typeof record.frame.contentWindow.makeKevbotTicket==="function"){
+        ticketPending=false;record.frame.contentWindow.makeKevbotTicket();
+      }
+    }catch(_){}
   }
   function requested(){const key=location.hash.slice(1).toLowerCase();return Object.prototype.hasOwnProperty.call(configs,key)?key:"today";}
   function create(key){
@@ -74,6 +79,10 @@
   }
   window.addEventListener("hashchange",select);
   document.querySelector("#reload-board").addEventListener("click",()=>frames.get(active).reload());
+  document.querySelector("#top-ten-ticket").addEventListener("click",()=>{
+    ticketPending=true;
+    if(requested()!=="today")location.hash="today";else activate("today");
+  });
   const help=document.querySelector("#help-dialog");
   document.querySelector("#help").addEventListener("click",()=>help.showModal());
   document.querySelector("#close-help").addEventListener("click",()=>help.close());

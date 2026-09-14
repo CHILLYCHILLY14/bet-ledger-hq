@@ -22,6 +22,10 @@ test("stale quote is excluded despite fresh generation",()=>assert.equal(C.plays
 test("NCAAF does not require a server bankroll stake",()=>assert.equal(C.plays("ncaaf",{...bundle,board:[{...base,stake:undefined,odds_verified:true}]},now).length,1));
 test("MLB zero-stake tier label is not a play",()=>assert.equal(C.plays("mlb",{meta:{generated_at:stamp},slate:{games:[{start,status:"Scheduled",bets:[{...base,stake:0}]}]}},now).length,0));
 test("duplicate plays deduplicate",()=>assert.equal(C.plays("nfl",{...bundle,board:[base,base]},now).length,1));
+test("daily ticket ranks tier before edge and caps at ten",()=>{
+  const rows=Array.from({length:12},(_,i)=>({tier:i===11?"BEST BET":"GOOD",score:i,probability:.5,when:i,key:"nfl"}));
+  const top=C.topPlays(rows,10);assert.equal(top.length,10);assert.equal(top[0].tier,"BEST BET");assert.equal(top[1].score,10);
+});
 test("incomplete availability is visible",()=>assert.ok(C.health("ncaaf",{meta:{generated_at:stamp}},now).warnings.some(x=>/Availability/.test(x))));
 test("provider quota is visible without leaking errors",()=>{
   const h=C.health("props",{meta:{generated_at:stamp,source_by_sport:{NFL:{errors:["OUT_OF_USAGE_CREDITS secret test"]}}}},now);

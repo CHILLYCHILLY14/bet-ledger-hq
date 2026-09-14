@@ -80,6 +80,13 @@
     const order={"BEST BET":0,GOOD:1,LEAN:2};
     return rows.slice().sort((a,b)=>mode==="tier"?(order[a.tier]-order[b.tier]||a.when-b.when||a.key.localeCompare(b.key)):a.when-b.when||order[a.tier]-order[b.tier]||a.key.localeCompare(b.key));
   }
+  function topPlays(rows,limit=10){
+    const order={"BEST BET":0,GOOD:1,LEAN:2};
+    return rows.slice().sort((a,b)=>(order[a.tier]??9)-(order[b.tier]??9)||
+      (number(b.score)??-Infinity)-(number(a.score)??-Infinity)||
+      (number(b.probability)??-Infinity)-(number(a.probability)??-Infinity)||
+      a.when-b.when||a.key.localeCompare(b.key)).slice(0,Math.max(0,limit));
+  }
   function rate(correct,n){return number(n)>0&&number(correct)!=null?correct/n:null;}
   function accuracy(key,bundle){
     const a=bundle.accuracy||{};
@@ -130,5 +137,5 @@
     }
     return {max,current:peak-equity,note:"Reconstructed from settlement/update order; edits can change the historical curve."};
   }
-  return {number,instant,day,american,tier,freshness,health,plays,sortPlays,accuracy,eventKey,exposure,drawdown,LABELS};
+  return {number,instant,day,american,tier,freshness,health,plays,sortPlays,topPlays,accuracy,eventKey,exposure,drawdown,LABELS};
 });

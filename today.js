@@ -17,6 +17,51 @@
   const odds=v=>v==null?"—":(v>0?"+":"")+v;
   const time=v=>C.instant(v)==null?"Unknown":new Intl.DateTimeFormat("en-CA",{timeZone:"America/Toronto",month:"short",day:"numeric",hour:"numeric",minute:"2-digit"}).format(new Date(v));
   function elapsed(v){const n=C.instant(v);if(n==null)return "not available";const m=Math.max(0,Math.floor((Date.now()-n)/60000));return m<1?"just now":m<60?m+"m ago":num(m/60)+"h ago";}
+  const tickerLeagues={NBA:"basketball/nba",WNBA:"basketball/wnba",MLB:"baseball/mlb",NCAAF:"football/college-football",NCAAB:"basketball/mens-college-basketball",NHL:"hockey/nhl",NFL:"football/nfl"};
+  let ticketBlob=null,ticketUrl="";
+  function scoreText(event){
+    const c=event.competitions?.[0],teams=c?.competitors||[],away=teams.find(x=>x.homeAway==="away"),home=teams.find(x=>x.homeAway==="home");
+    if(!away||!home)return "";
+    const name=x=>x.team?.abbreviation||x.team?.shortDisplayName||"TBD",state=c.status?.type?.state||event.status?.type?.state;
+    if(state==="pre")return name(away)+" @ "+name(home)+" · "+time(event.date)+" ET";
+    return name(away)+" "+(away.score??0)+" · "+name(home)+" "+(home.score??0)+" · "+(c.status?.type?.shortDetail||event.status?.type?.shortDetail||"");
+  }
+  async function refreshTicker(){
+    const button=$("#ticker-refresh");button.disabled=true;
+    const batches=await Promise.all(Object.entries(tickerLeagues).map(async([label,path])=>{
+      const base="https://site.api.espn.com/apis/site/v2/sports/"+path;
+      const [score,news]=await Promise.allSettled([get(base+"/scoreboard"),get(base+"/news?limit=2")]);
+      const items=[];
+      if(score.status==="fulfilled")for(const e of (score.value.events||[]).slice(0,3)){const value=scoreText(e);if(value)items.push({label,value,news:false});}
+      if(news.status==="fulfilled"){const h=(news.value.articles||news.value.headlines||[])[0];if(h?.headline)items.push({label,value:h.headline,news:true});}
+      return items;
+    }));
+    const items=batches.flat();
+    $("#ticker-track").innerHTML=(items.length?items:[{label:"LIVE WIRE",value:"Scores and news feed temporarily unavailable.",news:true}]).map(x=>'<span class="ticker-item"><b class="ticker-league">'+esc(x.label)+'</b><span class="'+(x.news?"ticker-news":"")+'">'+esc(x.value)+'</span></span>').join("");
+    button.disabled=false;
+  }
+  const ticketRows=()=>C.topPlays(Object.entries(S.feeds).flatMap(([k,b])=>C.plays(k,b)).filter(r=>r.day===$("#date").value),10);
+  function loadImage(src){return new Promise((resolve,reject)=>{const img=new Image();img.onload=()=>resolve(img);img.onerror=reject;img.src=src;});}
+  function rounded(ctx,x,y,w,h,r){ctx.beginPath();ctx.moveTo(x+r,y);ctx.arcTo(x+w,y,x+w,y+h,r);ctx.arcTo(x+w,y+h,x,y+h,r);ctx.arcTo(x,y+h,x,y,r);ctx.arcTo(x,y,x+w,y,r);ctx.closePath();}
+  function fit(ctx,text,max){let s=String(text||"");while(s.length&&ctx.measureText(s).width>max)s=s.slice(0,-1);return s===String(text||"")?s:s.replace(/[ .,;:-]+$/g,"")+"…";}
+  async function buildTicket(){
+    const rows=ticketRows(),canvas=document.createElement("canvas"),ctx=canvas.getContext("2d"),W=1080,H=1350;canvas.width=W;canvas.height=H;
+    const bg=ctx.createLinearGradient(0,0,W,H);bg.addColorStop(0,"#071019");bg.addColorStop(.55,"#111d29");bg.addColorStop(1,"#071019");ctx.fillStyle=bg;ctx.fillRect(0,0,W,H);
+    ctx.strokeStyle="#263849";ctx.lineWidth=2;for(let x=-400;x<W+400;x+=90){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x+500,H);ctx.stroke();}
+    ctx.fillStyle="#d71920";ctx.fillRect(0,0,W,18);ctx.fillStyle="#7be7bd";ctx.fillRect(0,H-18,W,18);
+    try{const logo=await loadImage("kevbot-logo.jpg");rounded(ctx,58,54,148,148,24);ctx.save();ctx.clip();ctx.drawImage(logo,58,54,148,148);ctx.restore();ctx.strokeStyle="#ffffff44";ctx.lineWidth=3;rounded(ctx,58,54,148,148,24);ctx.stroke();}catch(_){}
+    ctx.fillStyle="#fff";ctx.font="900 62px Inter, Arial, sans-serif";ctx.fillText("KEVBOT BETS",236,112);ctx.fillStyle="#7be7bd";ctx.font="800 24px Inter, Arial, sans-serif";ctx.letterSpacing="3px";ctx.fillText("DAILY TOP 10 TICKET",239,153);ctx.letterSpacing="0px";
+    const date=new Date($("#date").value+"T12:00:00");ctx.fillStyle="#a7b6c8";ctx.font="600 24px Inter, Arial, sans-serif";ctx.fillText(new Intl.DateTimeFormat("en-CA",{timeZone:"America/Toronto",weekday:"long",month:"long",day:"numeric",year:"numeric"}).format(date),239,190);
+    ctx.fillStyle="#d71920";rounded(ctx,58,225,W-116,56,14);ctx.fill();ctx.fillStyle="#fff";ctx.font="800 22px Inter, Arial, sans-serif";ctx.fillText("#",79,261);ctx.fillText("PLAY",135,261);ctx.fillText("SPORT",730,261);ctx.fillText("ODDS",888,261);
+    const rowH=91,startY=296;
+    if(!rows.length){ctx.fillStyle="#fff";ctx.font="700 34px Inter, Arial, sans-serif";ctx.fillText("No verified qualified plays for this date.",80,390);ctx.fillStyle="#a7b6c8";ctx.font="24px Inter, Arial, sans-serif";ctx.fillText("No forced bets. Check again after the boards refresh.",80,432);}
+    rows.forEach((r,i)=>{const y=startY+i*rowH;ctx.fillStyle=i%2?"#101c28":"#0c1722";rounded(ctx,58,y,W-116,rowH-8,12);ctx.fill();ctx.fillStyle="#7be7bd";ctx.font="900 30px Inter, Arial, sans-serif";ctx.fillText(String(i+1).padStart(2,"0"),77,y+49);ctx.fillStyle="#fff";ctx.font="800 25px Inter, Arial, sans-serif";ctx.fillText(fit(ctx,r.pick,530),135,y+35);ctx.fillStyle="#91a3b8";ctx.font="18px Inter, Arial, sans-serif";ctx.fillText(fit(ctx,r.event,530),135,y+64);ctx.fillStyle="#fff";ctx.font="800 21px Inter, Arial, sans-serif";ctx.fillText(r.source,730,y+38);ctx.fillStyle=r.tier==="BEST BET"?"#ffd166":"#7be7bd";ctx.font="700 16px Inter, Arial, sans-serif";ctx.fillText(r.tier,730,y+64);ctx.fillStyle="#fff";ctx.font="900 25px ui-monospace, monospace";ctx.fillText(odds(r.price),888,y+49);});
+    ctx.fillStyle="#91a3b8";ctx.font="18px Inter, Arial, sans-serif";ctx.fillText("Model-qualified plays only · Confirm the live price before betting · 19+ · Bet responsibly",58,H-58);
+    ticketBlob=await new Promise(resolve=>canvas.toBlob(resolve,"image/png"));if(ticketUrl)URL.revokeObjectURL(ticketUrl);ticketUrl=URL.createObjectURL(ticketBlob);$("#ticket-preview").src=ticketUrl;$("#ticket-note").textContent=rows.length===10?"Your 10-play image is ready.":"Image created with "+rows.length+" verified play"+(rows.length===1?"":"s")+" available for this date.";$("#ticket-share").hidden=!(navigator.canShare&&navigator.canShare({files:[new File([ticketBlob],"kevbot-bets-top-10.png",{type:"image/png"})]}));$("#ticket-dialog").showModal();
+  }
+  function downloadTicket(){if(!ticketBlob)return;const a=document.createElement("a");a.href=ticketUrl;a.download="kevbot-bets-top-10-"+$("#date").value+".png";a.click();}
+  async function shareTicket(){if(!ticketBlob)return;const file=new File([ticketBlob],"kevbot-bets-top-10-"+$("#date").value+".png",{type:"image/png"});try{await navigator.share({title:"KEVBOT BETS Daily Top 10",files:[file]});}catch(_){}
+  }
   const link=(key,label)=>'<a class="cta" href="./#'+key+'" target="_top">'+esc(label||("Open "+C.LABELS[key]))+' →</a>';
   const empty=text=>'<div class="empty">'+esc(text)+'</div>';
   function chosen(){return Object.entries(S.feeds).flatMap(([k,b])=>C.plays(k,b)).filter(r=>r.day===$("#date").value&&($("#sport").value==="all"||r.key===$("#sport").value));}
@@ -105,6 +150,12 @@
     ["plays","accuracy","risk"].forEach(key=>$("#view-"+key).hidden=key!==button.dataset.view);
   }));
   $("#refresh").addEventListener("click",refresh);
+  $("#ticker-refresh").addEventListener("click",refreshTicker);
+  $("#make-top-ten").addEventListener("click",buildTicket);
+  $("#ticket-close").addEventListener("click",()=>$("#ticket-dialog").close());
+  $("#ticket-download").addEventListener("click",downloadTicket);
+  $("#ticket-share").addEventListener("click",shareTicket);
+  window.makeKevbotTicket=buildTicket;
   window.addEventListener("message",e=>{
     if(e.source!==window.parent||e.origin!==window.location.origin)return;
     if(e.data?.type==="kevbotbets:deactivate")S.active=false;
@@ -114,5 +165,6 @@
   window.addEventListener("online",()=>{if(S.active)refresh();});
   setInterval(()=>{if(document.visibilityState==="visible"&&S.active)render();},60000);
   setInterval(()=>{if(document.visibilityState==="visible"&&S.active)refresh();},300000);
-  refresh();
+  setInterval(()=>{if(document.visibilityState==="visible"&&S.active)refreshTicker();},180000);
+  refresh();refreshTicker();
 })();
