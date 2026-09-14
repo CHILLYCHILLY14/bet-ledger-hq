@@ -277,6 +277,56 @@ test("a phone that was offline cannot un-settle a bet the sheet has graded", asy
   assert.equal(laptop.entries()[0].status, "Win");
 });
 
+test("a bet added while a sync is in flight is not erased by its answer", async () => {
+  const srv = server();
+  const phone = device(srv, "iPhone");
+
+  /* This is how the first attempt at importing a season of MLB bets vanished.
+     The page had a sync in flight that had already read an empty ledger; the
+     bets were written while it was still out; its answer came back knowing
+     nothing about them and wrote its emptiness over the top. The bets existed
+     nowhere afterwards - not on the device, not on the sheet. */
+  let injected = false;
+  const realFetch = phone.ctx.window.fetch;
+  phone.ctx.window.fetch = async (u, opts) => {
+    const res = await realFetch(u, opts);
+    if (!injected) {           // a bet lands mid-flight, exactly once
+      injected = true;
+      phone.put([entry({ id: "mlb-edge:new", selection: "Added mid-sync" })]);
+    }
+    return res;
+  };
+
+  await phone.sync();
+  assert.equal(phone.entries().length, 1, "the bet must survive the answer");
+  assert.equal(phone.entries()[0].selection, "Added mid-sync");
+
+  phone.ctx.window.fetch = realFetch;
+  await phone.sync();
+  const onSheet = srv.post({ token: srv.token, action: "pull", since: "" });
+  assert.equal(onSheet.rows.length, 1, "and must reach the sheet on the next sync");
+  assert.equal(onSheet.rows[0].id, "mlb-edge:new");
+});
+
+test("a mid-sync bet is not double-counted once it has been sent", async () => {
+  const srv = server();
+  const phone = device(srv, "iPhone");
+  let injected = false;
+  const realFetch = phone.ctx.window.fetch;
+  phone.ctx.window.fetch = async (u, opts) => {
+    const res = await realFetch(u, opts);
+    if (!injected) { injected = true; phone.put([entry({ id: "mlb-edge:new" })]); }
+    return res;
+  };
+  await phone.sync();
+  phone.ctx.window.fetch = realFetch;
+  await phone.sync();
+  await phone.sync();
+  await phone.sync();
+  assert.equal(phone.entries().length, 1);
+  assert.equal(srv.sheet().getLastRow(), 2, "one header row, one bet");
+});
+
 test("a bet removed on one device is removed on the other", async () => {
   const srv = server();
   const phone = device(srv, "iPhone");
