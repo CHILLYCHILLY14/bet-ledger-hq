@@ -1,41 +1,41 @@
 {
-  "checked_at": "2026-09-15T22:20:22.300Z",
+  "checked_at": "2026-09-15T22:44:22.972Z",
   "feeds": {
     "ladder": {
       "status": "recent",
       "failed_fields": [],
       "published_at": "2026-09-15T22:13:37.642415+00:00",
-      "last_good_at": "2026-09-15T22:20:22.300Z",
-      "warnings": []
-    },
-    "mlb": {
-      "status": "recent",
-      "failed_fields": [],
-      "published_at": "2026-09-15T22:05:33+00:00",
-      "last_good_at": "2026-09-15T22:20:22.300Z",
+      "last_good_at": "2026-09-15T22:44:22.972Z",
       "warnings": []
     },
     "wnba": {
       "status": "review",
       "failed_fields": [],
       "published_at": "2026-09-15T21:37:16+00:00",
-      "last_good_at": "2026-09-15T22:20:22.300Z",
+      "last_good_at": "2026-09-15T22:44:22.972Z",
       "warnings": [
         "Some games have no usable prices; those games cannot qualify."
       ]
+    },
+    "mlb": {
+      "status": "recent",
+      "failed_fields": [],
+      "published_at": "2026-09-15T22:05:33+00:00",
+      "last_good_at": "2026-09-15T22:44:22.972Z",
+      "warnings": []
     },
     "nfl": {
       "status": "recent",
       "failed_fields": [],
       "published_at": "2026-09-15T20:29:02+00:00",
-      "last_good_at": "2026-09-15T22:20:22.300Z",
+      "last_good_at": "2026-09-15T22:44:22.972Z",
       "warnings": []
     },
     "props": {
       "status": "review",
       "failed_fields": [],
       "published_at": "2026-09-15T20:10:44.940041+00:00",
-      "last_good_at": "2026-09-15T22:20:22.300Z",
+      "last_good_at": "2026-09-15T22:44:22.972Z",
       "warnings": [
         "One or more source requests failed.",
         "No verified prop prices; projections are not wagers."
@@ -44,8 +44,8 @@
     "ncaaf": {
       "status": "review",
       "failed_fields": [],
-      "published_at": "2026-09-15T20:28:28+00:00",
-      "last_good_at": "2026-09-15T22:20:22.300Z",
+      "published_at": "2026-09-15T22:28:24+00:00",
+      "last_good_at": "2026-09-15T22:44:22.972Z",
       "warnings": [
         "Availability reports missing or incomplete; verify team news.",
         "No multi-book comparison in this refresh."

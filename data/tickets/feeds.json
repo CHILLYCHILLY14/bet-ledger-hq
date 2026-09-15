@@ -1,5 +1,37 @@
 {
   "wnba": {
+    "meta": {
+      "league": "WNBA",
+      "season": 2026,
+      "generated_at": "2026-09-15T21:37:16+00:00",
+      "built_for": "2026-09-15",
+      "source": "ESPN schedule, box-score/team efficiency, predictor, injuries and DraftKings prices",
+      "source_status": "live",
+      "live_data": true,
+      "key_required": false,
+      "errors": [],
+      "odds_health": {
+        "status": "partial",
+        "upcoming_games": 23,
+        "priced_games": 8,
+        "provider": "ESPN public feed / DraftKings"
+      },
+      "calibration": {
+        "n": 119,
+        "method": "walk-forward regular-season residuals",
+        "margin_bias": -0.488,
+        "spread_mae": 8.623,
+        "spread_rmse": 11.447,
+        "spread_sigma": 12,
+        "total_bias": 1.006,
+        "total_mae": 14.295,
+        "total_rmse": 17.67,
+        "total_sigma": 17.641
+      }
+    },
+    "accuracy": {
+      "generated_at": "2026-09-15T21:37:16.868124+00:00"
+    },
     "board": [
       {
         "tier": "AVOID",
@@ -895,45 +927,13 @@
         "odds_fetched_at": "2026-09-15T21:37:14+00:00"
       }
     ],
-    "meta": {
-      "league": "WNBA",
-      "season": 2026,
-      "generated_at": "2026-09-15T21:37:16+00:00",
-      "built_for": "2026-09-15",
-      "source": "ESPN schedule, box-score/team efficiency, predictor, injuries and DraftKings prices",
-      "source_status": "live",
-      "live_data": true,
-      "key_required": false,
-      "errors": [],
-      "odds_health": {
-        "status": "partial",
-        "upcoming_games": 23,
-        "priced_games": 8,
-        "provider": "ESPN public feed / DraftKings"
-      },
-      "calibration": {
-        "n": 119,
-        "method": "walk-forward regular-season residuals",
-        "margin_bias": -0.488,
-        "spread_mae": 8.623,
-        "spread_rmse": 11.447,
-        "spread_sigma": 12,
-        "total_bias": 1.006,
-        "total_mae": 14.295,
-        "total_rmse": 17.67,
-        "total_sigma": 17.641
-      }
-    },
-    "accuracy": {
-      "generated_at": "2026-09-15T21:37:16.868124+00:00"
-    },
-    "lastGoodAt": "2026-09-15T22:20:22.300Z"
+    "lastGoodAt": "2026-09-15T22:44:22.972Z"
   },
   "ladder": {
     "accuracy": {
       "generated_at": "2026-09-15T22:13:37.642415+00:00"
     },
-    "lastGoodAt": "2026-09-15T22:20:22.300Z"
+    "lastGoodAt": "2026-09-15T22:44:22.972Z"
   },
   "props": {
     "board": [],
@@ -1049,7 +1049,7 @@
     "accuracy": {
       "generated_at": "2026-09-15T20:10:46.016717+00:00"
     },
-    "lastGoodAt": "2026-09-15T22:20:22.300Z"
+    "lastGoodAt": "2026-09-15T22:44:22.972Z"
   },
   "nfl": {
     "meta": {
@@ -1731,6 +1731,9 @@
       "horizon_days": 24,
       "weather_forecast_days": 16,
       "bet_within_days": 8
+    },
+    "accuracy": {
+      "generated_at": "2026-09-15T20:29:02.538275+00:00"
     },
     "board": [
       {
@@ -6734,14 +6737,11 @@
         "model_prob": 0.3985
       }
     ],
-    "accuracy": {
-      "generated_at": "2026-09-15T20:29:02.538275+00:00"
-    },
-    "lastGoodAt": "2026-09-15T22:20:22.300Z"
+    "lastGoodAt": "2026-09-15T22:44:22.972Z"
   },
   "ncaaf": {
     "meta": {
-      "generated_at": "2026-09-15T20:28:28+00:00",
+      "generated_at": "2026-09-15T22:28:24+00:00",
       "season": 2026,
       "home_field_advantage": 5,
       "home_scoring_bump": 4.5,
@@ -6866,14 +6866,14 @@
       "odds_health": {
         "healthy": true,
         "games_checked": 79,
-        "games_with_verified_prices": 73,
+        "games_with_verified_prices": 74,
         "markets": {
           "ML": 54,
-          "ATS": 73,
-          "TOTAL": 72
+          "ATS": 74,
+          "TOTAL": 73
         },
-        "price_observations": 398,
-        "unique_prices": 73,
+        "price_observations": 402,
+        "unique_prices": 76,
         "flat_price_warning": false,
         "message": "Only complete two-sided sportsbook prices are actionable."
       },
@@ -6886,14 +6886,14 @@
         "status": "single-book",
         "note": "Only one sportsbook source is available; confidence and stake are reduced",
         "max_quote_age_hours": 3,
-        "checked_at": "2026-09-15T20:28:25.728677+00:00"
+        "checked_at": "2026-09-15T22:28:19.549716+00:00"
       },
       "context_health": {
         "availability": {
           "status": "unavailable",
           "rejected_reports": 3,
           "current_reports": 0,
-          "checked_at": "2026-09-15T20:28:25.464962+00:00",
+          "checked_at": "2026-09-15T22:28:16.364425+00:00",
           "max_report_age_hours": 72
         },
         "weather_available": 73,
@@ -6931,16 +6931,16 @@
       },
       "model_health": {
         "status": "healthy",
-        "sample_games": 73,
-        "margin_slope": 0.8565,
-        "correlation": 0.9928,
-        "typical_disagreement": 2.95,
+        "sample_games": 74,
+        "margin_slope": 0.8556,
+        "correlation": 0.9929,
+        "typical_disagreement": 2.98,
         "projection_sd": {
-          "model": 16.49,
-          "market": 19.11
+          "model": 16.57,
+          "market": 19.23
         },
-        "raw_rating_scale_fit": 1.5523,
-        "total_scale_fit": 1.1011,
+        "raw_rating_scale_fit": 1.5704,
+        "total_scale_fit": 1.1068,
         "anchor_disagreement_kept": 0.5,
         "rating_range": 41.4,
         "max_displayed_edge": 0.0949,
@@ -6971,6 +6971,12 @@
             "matchup": "CONN @ USM"
           },
           {
+            "market": 23.5,
+            "model": 18.97,
+            "qualified": true,
+            "matchup": "AKR @ MINN"
+          },
+          {
             "market": -17.5,
             "model": -14.23,
             "qualified": true,
@@ -6999,12 +7005,6 @@
             "model": 48.67,
             "qualified": true,
             "matchup": "KENT @ OSU"
-          },
-          {
-            "market": 24.5,
-            "model": 19.77,
-            "qualified": true,
-            "matchup": "AKR @ MINN"
           },
           {
             "market": 56.5,
@@ -7079,6 +7079,12 @@
             "matchup": "DSU @ USF"
           },
           {
+            "market": 42.5,
+            "model": 36.52,
+            "qualified": false,
+            "matchup": "ETAM @ TLSA"
+          },
+          {
             "market": 33.5,
             "model": 27.55,
             "qualified": false,
@@ -7095,6 +7101,12 @@
             "model": 20.52,
             "qualified": false,
             "matchup": "UND @ NEB"
+          },
+          {
+            "market": 10.5,
+            "model": 10.83,
+            "qualified": false,
+            "matchup": "WVU @ UVA"
           },
           {
             "market": -6.5,
@@ -7127,16 +7139,10 @@
             "matchup": "USC @ RUTG"
           },
           {
-            "market": 5.5,
-            "model": 7.85,
+            "market": 6,
+            "model": 8.14,
             "qualified": false,
             "matchup": "OHIO @ USA"
-          },
-          {
-            "market": 14.5,
-            "model": 11.48,
-            "qualified": false,
-            "matchup": "BALL @ LIB"
           },
           {
             "market": 35.5,
@@ -7151,16 +7157,16 @@
             "matchup": "CLT @ APP"
           },
           {
+            "market": 14.5,
+            "model": 11.48,
+            "qualified": false,
+            "matchup": "BALL @ LIB"
+          },
+          {
             "market": -3.5,
             "model": -0.94,
             "qualified": false,
             "matchup": "NEV @ MTSU"
-          },
-          {
-            "market": 10,
-            "model": 10.58,
-            "qualified": false,
-            "matchup": "WVU @ UVA"
           },
           {
             "market": 44.5,
@@ -7173,12 +7179,6 @@
             "model": 19.49,
             "qualified": false,
             "matchup": "UNM @ OU"
-          },
-          {
-            "market": 14,
-            "model": 14.26,
-            "qualified": false,
-            "matchup": "PUR @ UCLA"
           },
           {
             "market": 18.5,
@@ -7203,6 +7203,12 @@
             "model": 31.3,
             "qualified": false,
             "matchup": "NIU @ ARIZ"
+          },
+          {
+            "market": 14,
+            "model": 14.26,
+            "qualified": false,
+            "matchup": "PUR @ UCLA"
           },
           {
             "market": 3,
@@ -7235,22 +7241,16 @@
             "matchup": "FSU @ ALA"
           },
           {
-            "market": -2.5,
-            "model": 0.21,
+            "market": -9.5,
+            "model": -8.37,
             "qualified": false,
-            "matchup": "FLA @ AUB"
+            "matchup": "WMU @ RICE"
           },
           {
             "market": -3,
             "model": -2.17,
             "qualified": false,
             "matchup": "LSU @ MISS"
-          },
-          {
-            "market": -9.5,
-            "model": -8.37,
-            "qualified": false,
-            "matchup": "WMU @ RICE"
           },
           {
             "market": 3.5,
@@ -7275,6 +7275,12 @@
             "model": 33.66,
             "qualified": false,
             "matchup": "KENN @ TENN"
+          },
+          {
+            "market": -2.5,
+            "model": 0.21,
+            "qualified": false,
+            "matchup": "FLA @ AUB"
           },
           {
             "market": 30.5,
@@ -7331,16 +7337,16 @@
             "matchup": "WYO @ CMU"
           },
           {
-            "market": -5.5,
-            "model": -5.35,
-            "qualified": false,
-            "matchup": "ASU @ KU"
-          },
-          {
             "market": 3,
             "model": 4.01,
             "qualified": false,
             "matchup": "ECU @ ODU"
+          },
+          {
+            "market": -5.5,
+            "model": -5.35,
+            "qualified": false,
+            "matchup": "ASU @ KU"
           },
           {
             "market": 23.5,
@@ -7389,23 +7395,23 @@
       "slate_debias": {
         "margin": {
           "enabled": true,
-          "n": 73,
-          "intercept": 3.1701,
-          "slope": 0.4185,
-          "residual_sd": 9.358,
+          "n": 74,
+          "intercept": 3.1945,
+          "slope": 0.4025,
+          "residual_sd": 9.487,
           "applied": false
         },
         "total": {
           "enabled": true,
-          "n": 72,
-          "intercept": 23.1989,
-          "slope": 0.5701,
-          "residual_sd": 3.819,
+          "n": 73,
+          "intercept": 23.3817,
+          "slope": 0.5664,
+          "residual_sd": 3.797,
           "applied": false
         }
       },
       "board_diagnosis": {
-        "priced_lines": 398,
+        "priced_lines": 402,
         "qualified": 10,
         "headline": "10 play(s) cleared the bar",
         "reasons": {
@@ -7421,14 +7427,15 @@
           "ME isn't a full FBS participant this season — model doesn't rate them reliably": 4,
           "UTM isn't a full FBS participant this season — model doesn't rate them reliably": 6,
           "DSU isn't a full FBS participant this season — model doesn't rate them reliably": 4,
+          "ETAM isn't a full FBS participant this season — model doesn't rate them reliably": 4,
           "STO isn't a full FBS participant this season — model doesn't rate them reliably": 4,
           "UNI isn't a full FBS participant this season — model doesn't rate them reliably": 4,
           "UND isn't a full FBS participant this season — model doesn't rate them reliably": 6,
           "correlated with a stronger play on the same game": 6,
           "outside the top 10 plays for this week": 18,
           "SDAK isn't a full FBS participant this season — model doesn't rate them reliably": 4,
-          "edge below the tier threshold": 260,
-          "price outside the hard safety range": 36
+          "edge below the tier threshold": 259,
+          "price outside the hard safety range": 37
         },
         "window": {
           "confidence": 0.5,
@@ -7497,7 +7504,7 @@
       }
     },
     "accuracy": {
-      "generated_at": "2026-09-15T20:28:28.666258+00:00"
+      "generated_at": "2026-09-15T22:28:24.100530+00:00"
     },
     "board": [
       {
@@ -7516,7 +7523,7 @@
         "edge_real": 0.08377782163772536,
         "edge": 0.09058454880566766,
         "model_prob": 0.47145498322110313,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "LEAN",
@@ -7528,13 +7535,13 @@
         "side": "over",
         "pick": "Over 49.5",
         "line": 49.5,
-        "price": -110,
+        "price": -108,
         "book": "DraftKings",
-        "action_edge": 0.06293985585511098,
-        "edge_real": 0.08193985585511097,
-        "edge": 0.09056058088942079,
-        "model_prob": 0.5886553744935127,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "action_edge": 0.06433531962927938,
+        "edge_real": 0.08333531962927937,
+        "edge": 0.0910697320307146,
+        "model_prob": 0.5864904974585283,
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "LEAN",
@@ -7552,7 +7559,7 @@
         "edge_real": 0.07996501350174681,
         "edge": 0.08955208486518094,
         "model_prob": 0.5582873951759149,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "LEAN",
@@ -7570,7 +7577,25 @@
         "edge_real": 0.07900124679099811,
         "edge": 0.08877816388305809,
         "model_prob": 0.4840700888346483,
-        "odds_observed_at": "2026-09-15T20:28:24.753996+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
+      },
+      {
+        "tier": "LEAN",
+        "odds_verified": true,
+        "game_date": "2026-09-19T16:00Z",
+        "game_id": "401858451",
+        "matchup": "AKR @ MINN",
+        "market": "ATS",
+        "side": "away",
+        "pick": "AKR +23.5",
+        "line": -23.5,
+        "price": -110,
+        "book": "DraftKings",
+        "action_edge": 0.05884325919864545,
+        "edge_real": 0.07784325919864545,
+        "edge": 0.08899606917843213,
+        "model_prob": 0.5812843750610986,
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "LEAN",
@@ -7588,7 +7613,7 @@
         "edge_real": 0.07750317530558098,
         "edge": 0.0887877884350676,
         "model_prob": 0.5678701276798547,
-        "odds_observed_at": "2026-09-15T20:28:24.754502+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "LEAN",
@@ -7606,7 +7631,7 @@
         "edge_real": 0.07576748100507277,
         "edge": 0.08816403781087602,
         "model_prob": 0.573088378256959,
-        "odds_observed_at": "2026-09-15T20:28:24.755108+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "LEAN",
@@ -7624,7 +7649,7 @@
         "edge_real": 0.07546423510624882,
         "edge": 0.08797177724213998,
         "model_prob": 0.5648990958682056,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130003+00:00"
       },
       {
         "tier": "LEAN",
@@ -7642,7 +7667,7 @@
         "edge_real": 0.0746344449053533,
         "edge": 0.08749516257628827,
         "model_prob": 0.5557942320517755,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "LEAN",
@@ -7660,25 +7685,7 @@
         "edge_real": 0.07437896632780833,
         "edge": 0.0876056310471461,
         "model_prob": 0.5711677524980127,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
-      },
-      {
-        "tier": "LEAN",
-        "odds_verified": true,
-        "game_date": "2026-09-19T16:00Z",
-        "game_id": "401858451",
-        "matchup": "AKR @ MINN",
-        "market": "ATS",
-        "side": "away",
-        "pick": "AKR +24.5",
-        "line": -24.5,
-        "price": -118,
-        "book": "DraftKings",
-        "action_edge": 0.05413734994754945,
-        "edge_real": 0.07313734994754945,
-        "edge": 0.08686965625546715,
-        "model_prob": 0.5937349009727027,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -7696,7 +7703,7 @@
         "edge_real": 0.09233969728994644,
         "edge": 0.09418387998919174,
         "model_prob": 0.6157035952638846,
-        "odds_observed_at": "2026-09-15T20:28:24.753951+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.129755+00:00"
       },
       {
         "tier": "PASS",
@@ -7714,7 +7721,7 @@
         "edge_real": 0.08967631935687252,
         "edge": 0.09331391147710348,
         "model_prob": 0.6172974504117763,
-        "odds_observed_at": "2026-09-15T20:28:24.630010+00:00"
+        "odds_observed_at": "2026-09-15T22:28:14.923757+00:00"
       },
       {
         "tier": "PASS",
@@ -7732,7 +7739,7 @@
         "edge_real": 0.08887521972435579,
         "edge": 0.09304115147827734,
         "model_prob": 0.6136706844084281,
-        "odds_observed_at": "2026-09-15T20:28:24.753951+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.129755+00:00"
       },
       {
         "tier": "PASS",
@@ -7750,7 +7757,7 @@
         "edge_real": 0.08692568125913694,
         "edge": 0.09233498749516376,
         "model_prob": 0.6140241607591901,
-        "odds_observed_at": "2026-09-15T20:28:24.754292+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130037+00:00"
       },
       {
         "tier": "PASS",
@@ -7768,7 +7775,7 @@
         "edge_real": 0.08684640843569937,
         "edge": 0.0923357141609354,
         "model_prob": 0.606212381091905,
-        "odds_observed_at": "2026-09-15T20:28:24.753583+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.129470+00:00"
       },
       {
         "tier": "PASS",
@@ -7786,7 +7793,7 @@
         "edge_real": 0.0867819362765666,
         "edge": 0.09228378348673606,
         "model_prob": 0.58753004899639,
-        "odds_observed_at": "2026-09-15T20:28:24.753228+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.129167+00:00"
       },
       {
         "tier": "PASS",
@@ -7804,7 +7811,7 @@
         "edge_real": 0.08597934328698026,
         "edge": 0.092028216772746,
         "model_prob": 0.6035564426947713,
-        "odds_observed_at": "2026-09-15T20:28:24.755197+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130762+00:00"
       },
       {
         "tier": "PASS",
@@ -7822,7 +7829,7 @@
         "edge_real": 0.08492630975233362,
         "edge": 0.09165016951660486,
         "model_prob": 0.5903261635786278,
-        "odds_observed_at": "2026-09-15T20:28:24.752249+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.128277+00:00"
       },
       {
         "tier": "PASS",
@@ -7840,7 +7847,7 @@
         "edge_real": 0.08474527073523777,
         "edge": 0.09158467765180164,
         "model_prob": 0.5898620321931238,
-        "odds_observed_at": "2026-09-15T20:28:24.754371+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130106+00:00"
       },
       {
         "tier": "PASS",
@@ -7858,7 +7865,7 @@
         "edge_real": 0.08473843181773297,
         "edge": 0.0915822008059739,
         "model_prob": 0.5898446511110751,
-        "odds_observed_at": "2026-09-15T20:28:24.752570+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.128604+00:00"
       },
       {
         "tier": "PASS",
@@ -7876,7 +7883,7 @@
         "edge_real": 0.08375360294660972,
         "edge": 0.09123100395068602,
         "model_prob": 0.5926292558519887,
-        "odds_observed_at": "2026-09-15T20:28:24.752531+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.128546+00:00"
       },
       {
         "tier": "PASS",
@@ -7894,7 +7901,7 @@
         "edge_real": 0.08351742923348521,
         "edge": 0.091144497951924,
         "model_prob": 0.5920792727687303,
-        "odds_observed_at": "2026-09-15T20:28:24.754037+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.129825+00:00"
       },
       {
         "tier": "PASS",
@@ -7912,7 +7919,25 @@
         "edge_real": 0.08375878589196095,
         "edge": 0.09123289967957775,
         "model_prob": 0.5926414463882352,
-        "odds_observed_at": "2026-09-15T20:28:24.754120+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.129895+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-20T00:00Z",
+        "game_id": "401862775",
+        "matchup": "ETAM @ TLSA",
+        "market": "ATS",
+        "side": "away",
+        "pick": "ETAM +42.5",
+        "line": -42.5,
+        "price": -110,
+        "book": "DraftKings",
+        "action_edge": 0.06365377229982493,
+        "edge_real": 0.08355377229982493,
+        "edge": 0.09115782531295977,
+        "model_prob": 0.5921632122689373,
+        "odds_observed_at": "2026-09-15T22:28:15.130512+00:00"
       },
       {
         "tier": "PASS",
@@ -7930,7 +7955,7 @@
         "edge_real": 0.08329102472014038,
         "edge": 0.09105341577193911,
         "model_prob": 0.5966353173852951,
-        "odds_observed_at": "2026-09-15T20:28:24.753270+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.129205+00:00"
       },
       {
         "tier": "PASS",
@@ -7948,7 +7973,7 @@
         "edge_real": 0.08180413706310938,
         "edge": 0.0905008920026372,
         "model_prob": 0.59342519081898,
-        "odds_observed_at": "2026-09-15T20:28:24.753357+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.129276+00:00"
       },
       {
         "tier": "PASS",
@@ -7966,7 +7991,7 @@
         "edge_real": 0.0816278979491823,
         "edge": 0.09043478644204328,
         "model_prob": 0.5828840718477393,
-        "odds_observed_at": "2026-09-15T20:28:24.754331+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130070+00:00"
       },
       {
         "tier": "PASS",
@@ -7984,7 +8009,7 @@
         "edge_real": 0.07662945617332492,
         "edge": 0.08927926093139903,
         "model_prob": 0.5698472144473201,
-        "odds_observed_at": "2026-09-15T20:28:24.753996+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -8002,7 +8027,7 @@
         "edge_real": 0.07490254334076779,
         "edge": 0.0878171064829219,
         "model_prob": 0.5718781766915966,
-        "odds_observed_at": "2026-09-15T20:28:24.630010+00:00"
+        "odds_observed_at": "2026-09-15T22:28:14.923757+00:00"
       },
       {
         "tier": "PASS",
@@ -8020,7 +8045,25 @@
         "edge_real": 0.07350637885142243,
         "edge": 0.08725073180076498,
         "model_prob": 0.5700181985084909,
-        "odds_observed_at": "2026-09-15T20:28:24.753228+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.129167+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-19T23:30Z",
+        "game_id": "401856802",
+        "matchup": "WVU @ UVA",
+        "market": "TOTAL",
+        "side": "under",
+        "pick": "Under 53.5",
+        "line": 53.5,
+        "price": -102,
+        "book": "DraftKings",
+        "action_edge": 0.054314882898040005,
+        "edge_real": 0.07331488289804,
+        "edge": 0.08694430764938876,
+        "model_prob": 0.5541011096478834,
+        "odds_observed_at": "2026-09-15T22:28:15.130285+00:00"
       },
       {
         "tier": "PASS",
@@ -8038,7 +8081,7 @@
         "edge_real": 0.07314511189980752,
         "edge": 0.08702319443684016,
         "model_prob": 0.5867241863942805,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -8056,7 +8099,7 @@
         "edge_real": 0.07243271469577174,
         "edge": 0.08578105419759141,
         "model_prob": 0.3590799385159142,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130800+00:00"
       },
       {
         "tier": "PASS",
@@ -8074,7 +8117,7 @@
         "edge_real": 0.0732767324372596,
         "edge": 0.0871718114974331,
         "model_prob": 0.574746454365784,
-        "odds_observed_at": "2026-09-15T20:28:24.754979+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130579+00:00"
       },
       {
         "tier": "PASS",
@@ -8092,7 +8135,7 @@
         "edge_real": 0.07101089468981438,
         "edge": 0.08613100449880118,
         "model_prob": 0.5592589634366438,
-        "odds_observed_at": "2026-09-15T20:28:24.755022+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -8110,7 +8153,7 @@
         "edge_real": 0.06885153001197314,
         "edge": 0.08520944162822708,
         "model_prob": 0.5568434660527565,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -8128,7 +8171,7 @@
         "edge_real": 0.0688459137422093,
         "edge": 0.0853030455438885,
         "model_prob": 0.5743480174283797,
-        "odds_observed_at": "2026-09-15T20:28:24.753583+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.129470+00:00"
       },
       {
         "tier": "PASS",
@@ -8146,7 +8189,7 @@
         "edge_real": 0.06805134824943095,
         "edge": 0.08486309798231641,
         "model_prob": 0.5806196303221097,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -8164,7 +8207,7 @@
         "edge_real": 0.06876479735512314,
         "edge": 0.08526836323245024,
         "model_prob": 0.5643976844137751,
-        "odds_observed_at": "2026-09-15T20:28:24.754120+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.129895+00:00"
       },
       {
         "tier": "PASS",
@@ -8182,7 +8225,7 @@
         "edge_real": 0.06718462357651253,
         "edge": 0.08429206979937998,
         "model_prob": 0.5472398223830792,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130800+00:00"
       },
       {
         "tier": "PASS",
@@ -8200,7 +8243,7 @@
         "edge_real": 0.06710317787717605,
         "edge": 0.0844492887631659,
         "model_prob": 0.5795928924755323,
-        "odds_observed_at": "2026-09-15T20:28:24.754331+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130070+00:00"
       },
       {
         "tier": "PASS",
@@ -8218,7 +8261,7 @@
         "edge_real": 0.06565932528564375,
         "edge": 0.08381200409399961,
         "model_prob": 0.553562453264397,
-        "odds_observed_at": "2026-09-15T20:28:24.754502+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -8228,33 +8271,15 @@
         "matchup": "OHIO @ USA",
         "market": "TOTAL",
         "side": "over",
-        "pick": "Over 51.5",
-        "line": 51.5,
-        "price": -112,
+        "pick": "Over 50.5",
+        "line": 50.5,
+        "price": -118,
         "book": "DraftKings",
-        "action_edge": 0.04629915830110652,
-        "edge_real": 0.06529915830110652,
-        "edge": 0.08376129376641876,
-        "model_prob": 0.5706075913794514,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
-      },
-      {
-        "tier": "PASS",
-        "odds_verified": true,
-        "game_date": "2026-09-19T20:00Z",
-        "game_id": "401866422",
-        "matchup": "BALL @ LIB",
-        "market": "ATS",
-        "side": "away",
-        "pick": "BALL +14.5",
-        "line": -14.5,
-        "price": -115,
-        "book": "DraftKings",
-        "action_edge": 0.04452622777891008,
-        "edge_real": 0.06352622777891008,
-        "edge": 0.08285458409146428,
-        "model_prob": 0.5759608439695865,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "action_edge": 0.04624870454242477,
+        "edge_real": 0.06524870454242478,
+        "edge": 0.08342231175542134,
+        "model_prob": 0.5845779979496286,
+        "odds_observed_at": "2026-09-15T22:28:15.129967+00:00"
       },
       {
         "tier": "PASS",
@@ -8272,7 +8297,7 @@
         "edge_real": 0.0633730476883087,
         "edge": 0.08290212313937714,
         "model_prob": 0.5687274534344313,
-        "odds_observed_at": "2026-09-15T20:28:24.754292+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130037+00:00"
       },
       {
         "tier": "PASS",
@@ -8290,7 +8315,7 @@
         "edge_real": 0.06228058707970343,
         "edge": 0.08228662394418958,
         "model_prob": 0.5747742704863105,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -8308,7 +8333,25 @@
         "edge_real": 0.061010474604625616,
         "edge": 0.08182686876552553,
         "model_prob": 0.5568146968470158,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-19T20:00Z",
+        "game_id": "401866422",
+        "matchup": "BALL @ LIB",
+        "market": "ATS",
+        "side": "away",
+        "pick": "BALL +14.5",
+        "line": -14.5,
+        "price": -115,
+        "book": "DraftKings",
+        "action_edge": 0.04152236338509257,
+        "edge_real": 0.06052236338509257,
+        "edge": 0.08441782192927859,
+        "model_prob": 0.5731587886379182,
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -8326,25 +8369,7 @@
         "edge_real": 0.05997127441702654,
         "edge": 0.07994911801869502,
         "model_prob": 0.42825435503414144,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
-      },
-      {
-        "tier": "PASS",
-        "odds_verified": true,
-        "game_date": "2026-09-19T23:30Z",
-        "game_id": "401856802",
-        "matchup": "WVU @ UVA",
-        "market": "TOTAL",
-        "side": "under",
-        "pick": "Under 53.5",
-        "line": 53.5,
-        "price": -112,
-        "book": "DraftKings",
-        "action_edge": 0.04020096579308189,
-        "edge_real": 0.05920096579308189,
-        "edge": 0.08098715945489245,
-        "model_prob": 0.5649480495410029,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.129931+00:00"
       },
       {
         "tier": "PASS",
@@ -8362,7 +8387,7 @@
         "edge_real": 0.058611005333497695,
         "edge": 0.08071031917770602,
         "model_prob": 0.5547500280530555,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -8380,25 +8405,7 @@
         "edge_real": 0.05843357854063407,
         "edge": 0.08062676431564081,
         "model_prob": 0.5642906174588838,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
-      },
-      {
-        "tier": "PASS",
-        "odds_verified": true,
-        "game_date": "2026-09-20T03:00Z",
-        "game_id": "401858458",
-        "matchup": "PUR @ UCLA",
-        "market": "TOTAL",
-        "side": "over",
-        "pick": "Over 52.5",
-        "line": 52.5,
-        "price": -112,
-        "book": "DraftKings",
-        "action_edge": 0.03795053729965153,
-        "edge_real": 0.056950537299651535,
-        "edge": 0.07992295927587813,
-        "model_prob": 0.5630492181592981,
-        "odds_observed_at": "2026-09-15T20:28:24.755154+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130248+00:00"
       },
       {
         "tier": "PASS",
@@ -8416,7 +8423,7 @@
         "edge_real": 0.05782129020632981,
         "edge": 0.08036360434726307,
         "model_prob": 0.558979569100083,
-        "odds_observed_at": "2026-09-15T20:28:24.752570+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.128604+00:00"
       },
       {
         "tier": "PASS",
@@ -8434,7 +8441,7 @@
         "edge_real": 0.055564654691855446,
         "edge": 0.0792564674066742,
         "model_prob": 0.5522731507285653,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.129719+00:00"
       },
       {
         "tier": "PASS",
@@ -8452,7 +8459,7 @@
         "edge_real": 0.05646291516029523,
         "edge": 0.07968942859889921,
         "model_prob": 0.5529881371357966,
-        "odds_observed_at": "2026-09-15T20:28:24.754371+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130106+00:00"
       },
       {
         "tier": "PASS",
@@ -8470,7 +8477,7 @@
         "edge_real": 0.05547135983368054,
         "edge": 0.0792392717544375,
         "model_prob": 0.5570690694598833,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -8488,7 +8495,7 @@
         "edge_real": 0.05466938145104843,
         "edge": 0.07867050168213861,
         "model_prob": 0.5682003415712704,
-        "odds_observed_at": "2026-09-15T20:28:24.753270+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.129205+00:00"
       },
       {
         "tier": "PASS",
@@ -8506,7 +8513,7 @@
         "edge_real": 0.05260256255165852,
         "edge": 0.0776440519627106,
         "model_prob": 0.5425443112738507,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -8524,7 +8531,7 @@
         "edge_real": 0.051447422998794505,
         "edge": 0.07722530691899625,
         "model_prob": 0.5491400898886225,
-        "odds_observed_at": "2026-09-15T20:28:24.754979+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130579+00:00"
       },
       {
         "tier": "PASS",
@@ -8542,7 +8549,7 @@
         "edge_real": 0.05018024897436445,
         "edge": 0.07641602305234774,
         "model_prob": 0.5407899715983808,
-        "odds_observed_at": "2026-09-15T20:28:24.754860+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -8560,7 +8567,7 @@
         "edge_real": 0.04970873568432802,
         "edge": 0.07617379432878645,
         "model_prob": 0.5643966894507458,
-        "odds_observed_at": "2026-09-15T20:28:24.755197+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130762+00:00"
       },
       {
         "tier": "PASS",
@@ -8578,7 +8585,25 @@
         "edge_real": 0.047830057310748283,
         "edge": 0.07537587749036267,
         "model_prob": 0.5561038713015465,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130652+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-20T03:00Z",
+        "game_id": "401858458",
+        "matchup": "PUR @ UCLA",
+        "market": "TOTAL",
+        "side": "over",
+        "pick": "Over 53.5",
+        "line": 53.5,
+        "price": -110,
+        "book": "DraftKings",
+        "action_edge": 0.02873004125109776,
+        "edge_real": 0.04773004125109776,
+        "edge": 0.07535759847915136,
+        "model_prob": 0.5513049679236897,
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -8596,7 +8621,7 @@
         "edge_real": 0.047618606518097774,
         "edge": 0.07526584659191539,
         "model_prob": 0.5464085318399807,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.129931+00:00"
       },
       {
         "tier": "PASS",
@@ -8614,7 +8639,7 @@
         "edge_real": 0.04404211719559213,
         "edge": 0.07147281123039058,
         "model_prob": 0.4677140302063032,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -8632,7 +8657,7 @@
         "edge_real": 0.04304297934836616,
         "edge": 0.07283138326614393,
         "model_prob": 0.5433306270269227,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130652+00:00"
       },
       {
         "tier": "PASS",
@@ -8650,7 +8675,7 @@
         "edge_real": 0.04233792717421827,
         "edge": 0.07347603087239368,
         "model_prob": 0.5607617700390456,
-        "odds_observed_at": "2026-09-15T20:28:24.754667+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -8668,7 +8693,7 @@
         "edge_real": 0.04189951768864045,
         "edge": 0.07019697423575909,
         "model_prob": 0.32153397135410766,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -8686,7 +8711,7 @@
         "edge_real": 0.04158652950810545,
         "edge": 0.0720345758382771,
         "model_prob": 0.551862845802279,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -8704,7 +8729,7 @@
         "edge_real": 0.03988503955355207,
         "edge": 0.06809287394012864,
         "model_prob": 0.4738693540882245,
-        "odds_observed_at": "2026-09-15T20:28:24.754667+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -8722,7 +8747,25 @@
         "edge_real": 0.03861605391502449,
         "edge": 0.06787508617490405,
         "model_prob": 0.13879764431083594,
-        "odds_observed_at": "2026-09-15T20:28:24.754502+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-19T16:00Z",
+        "game_id": "401858451",
+        "matchup": "AKR @ MINN",
+        "market": "TOTAL",
+        "side": "over",
+        "pick": "Over 48.5",
+        "line": 48.5,
+        "price": -115,
+        "book": "DraftKings",
+        "action_edge": 0.019487397942450593,
+        "edge_real": 0.038487397942450596,
+        "edge": 0.07008830761058585,
+        "model_prob": 0.5567221205467808,
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -8740,43 +8783,25 @@
         "edge_real": 0.038487397942450596,
         "edge": 0.07008830761058585,
         "model_prob": 0.5567221205467808,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
         "odds_verified": true,
-        "game_date": "2026-09-19T23:00Z",
-        "game_id": "401856687",
-        "matchup": "FLA @ AUB",
+        "game_date": "2026-09-19T20:00Z",
+        "game_id": "401866422",
+        "matchup": "BALL @ LIB",
         "market": "ML",
-        "side": "home",
-        "pick": "AUB ML",
+        "side": "away",
+        "pick": "BALL ML",
         "line": null,
-        "price": 120,
+        "price": 455,
         "book": "DraftKings",
-        "action_edge": 0.01607332400148502,
-        "edge_real": 0.03507332400148502,
-        "edge": 0.06507489030627389,
-        "model_prob": 0.47127790330297226,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
-      },
-      {
-        "tier": "PASS",
-        "odds_verified": true,
-        "game_date": "2026-09-19T23:30Z",
-        "game_id": "401856688",
-        "matchup": "LSU @ MISS",
-        "market": "TOTAL",
-        "side": "under",
-        "pick": "Under 59.5",
-        "line": 59.5,
-        "price": -112,
-        "book": "DraftKings",
-        "action_edge": 0.01592798001601871,
-        "edge_real": 0.03492798001601871,
-        "edge": 0.06825100506527554,
-        "model_prob": 0.5476605668250438,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "action_edge": 0.019072184331310874,
+        "edge_real": 0.03807218433131088,
+        "edge": 0.06745164156904017,
+        "model_prob": 0.1874473176980067,
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -8794,7 +8819,7 @@
         "edge_real": 0.034574631228768915,
         "edge": 0.06854233307398758,
         "model_prob": 0.5621277529065758,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -8812,43 +8837,25 @@
         "edge_real": 0.0338525982080849,
         "edge": 0.06738490600611219,
         "model_prob": 0.5303297140251251,
-        "odds_observed_at": "2026-09-15T20:28:24.754079+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
         "odds_verified": true,
-        "game_date": "2026-09-19T16:00Z",
-        "game_id": "401858451",
-        "matchup": "AKR @ MINN",
+        "game_date": "2026-09-19T23:30Z",
+        "game_id": "401856688",
+        "matchup": "LSU @ MISS",
         "market": "TOTAL",
-        "side": "over",
-        "pick": "Over 49.5",
-        "line": 49.5,
-        "price": -110,
-        "book": "DraftKings",
-        "action_edge": 0.013587290621778979,
-        "edge_real": 0.03258729062177898,
-        "edge": 0.06690904844916812,
-        "model_prob": 0.5416001967749455,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
-      },
-      {
-        "tier": "PASS",
-        "odds_verified": true,
-        "game_date": "2026-09-19T23:00Z",
-        "game_id": "401856687",
-        "matchup": "FLA @ AUB",
-        "market": "ATS",
-        "side": "home",
-        "pick": "AUB +2.5",
-        "line": 2.5,
+        "side": "under",
+        "pick": "Under 58.5",
+        "line": 58.5,
         "price": -105,
         "book": "DraftKings",
-        "action_edge": 0.013284058929957982,
-        "edge_real": 0.03228405892995798,
-        "edge": 0.06644328556819042,
-        "model_prob": 0.5294155146436451,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "action_edge": 0.014818090246673571,
+        "edge_real": 0.03381809024667357,
+        "edge": 0.06736433812738947,
+        "model_prob": 0.5303094714200227,
+        "odds_observed_at": "2026-09-15T22:28:15.130175+00:00"
       },
       {
         "tier": "PASS",
@@ -8866,7 +8873,7 @@
         "edge_real": 0.03169864587725305,
         "edge": 0.06632938237690318,
         "model_prob": 0.5457149664623275,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -8884,7 +8891,7 @@
         "edge_real": 0.026849134095390227,
         "edge": 0.06333145198949232,
         "model_prob": 0.5335617155014263,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -8902,7 +8909,25 @@
         "edge_real": 0.026454699305568926,
         "edge": 0.06313108008622635,
         "model_prob": 0.5380425854695003,
-        "odds_observed_at": "2026-09-15T20:28:24.754933+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-20T00:00Z",
+        "game_id": "401862775",
+        "matchup": "ETAM @ TLSA",
+        "market": "TOTAL",
+        "side": "under",
+        "pick": "Under 56.5",
+        "line": 56.5,
+        "price": -108,
+        "book": "DraftKings",
+        "action_edge": 0.006949124379670135,
+        "edge_real": 0.026849124379670134,
+        "edge": 0.06333144584417799,
+        "model_prob": 0.5335617100187983,
+        "odds_observed_at": "2026-09-15T22:28:15.130512+00:00"
       },
       {
         "tier": "PASS",
@@ -8920,25 +8945,25 @@
         "edge_real": 0.025675914011871852,
         "edge": 0.06232074596657058,
         "model_prob": 0.5489672184294876,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
         "odds_verified": true,
-        "game_date": "2026-09-19T20:00Z",
-        "game_id": "401866422",
-        "matchup": "BALL @ LIB",
-        "market": "ML",
-        "side": "away",
-        "pick": "BALL ML",
-        "line": null,
-        "price": 440,
+        "game_date": "2026-09-19T23:30Z",
+        "game_id": "401858232",
+        "matchup": "VT @ MD",
+        "market": "TOTAL",
+        "side": "over",
+        "pick": "Over 54.5",
+        "line": 54.5,
+        "price": -105,
         "book": "DraftKings",
-        "action_edge": 0.005573732007366477,
-        "edge_real": 0.024573732007366476,
-        "edge": 0.0586913571962755,
-        "model_prob": 0.18984165299572897,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "action_edge": 0.0043485798738861145,
+        "edge_real": 0.023348579873886114,
+        "edge": 0.06080652188018037,
+        "model_prob": 0.5244040685050406,
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -8956,7 +8981,7 @@
         "edge_real": 0.02216082187297685,
         "edge": 0.06077138860719719,
         "model_prob": 0.5476030937571865,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -8974,7 +8999,25 @@
         "edge_real": 0.021641589950012936,
         "edge": 0.05995436113875604,
         "model_prob": 0.5306684185658008,
-        "odds_observed_at": "2026-09-15T20:28:24.754710+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-19T23:00Z",
+        "game_id": "401856687",
+        "matchup": "FLA @ AUB",
+        "market": "ATS",
+        "side": "home",
+        "pick": "AUB +2.5",
+        "line": 2.5,
+        "price": -110,
+        "book": "DraftKings",
+        "action_edge": 0.001706531459278935,
+        "edge_real": 0.020706531459278935,
+        "edge": 0.05938368564682563,
+        "model_prob": 0.5348326327368196,
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -8992,7 +9035,7 @@
         "edge_real": 0.020244132503691812,
         "edge": 0.059019027286803936,
         "model_prob": 0.5391633459814388,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130442+00:00"
       },
       {
         "tier": "PASS",
@@ -9010,7 +9053,7 @@
         "edge_real": 0.01905491363095192,
         "edge": 0.05737989543736585,
         "model_prob": 0.5517402869044659,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -9028,25 +9071,7 @@
         "edge_real": 0.018780812121601896,
         "edge": 0.05773520926558411,
         "model_prob": 0.5450632969128333,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
-      },
-      {
-        "tier": "PASS",
-        "odds_verified": true,
-        "game_date": "2026-09-19T23:30Z",
-        "game_id": "401858232",
-        "matchup": "VT @ MD",
-        "market": "TOTAL",
-        "side": "over",
-        "pick": "Over 53.5",
-        "line": 53.5,
-        "price": -115,
-        "book": "DraftKings",
-        "action_edge": -0.00021921214311082168,
-        "edge_real": 0.018780787856889178,
-        "edge": 0.057735192590843365,
-        "model_prob": 0.5450632834061606,
-        "odds_observed_at": "2026-09-15T20:28:24.754667+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -9064,7 +9089,7 @@
         "edge_real": 0.018749839862805234,
         "edge": 0.05806000421799573,
         "model_prob": 0.5337614602483963,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130322+00:00"
       },
       {
         "tier": "PASS",
@@ -9082,7 +9107,7 @@
         "edge_real": 0.01798984614553695,
         "edge": 0.053616297467942366,
         "model_prob": 0.5849289375993685,
-        "odds_observed_at": "2026-09-15T20:28:24.755022+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -9100,7 +9125,7 @@
         "edge_real": 0.017099636537816848,
         "edge": 0.05692396375313568,
         "model_prob": 0.5328651322681512,
-        "odds_observed_at": "2026-09-15T20:28:24.754417+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -9118,7 +9143,7 @@
         "edge_real": 0.016755282021131173,
         "edge": 0.053318890908352505,
         "model_prob": 0.2574512236055069,
-        "odds_observed_at": "2026-09-15T20:28:24.754079+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -9136,7 +9161,25 @@
         "edge_real": 0.015111510839064238,
         "edge": 0.05553080363912057,
         "model_prob": 0.531792871234635,
-        "odds_observed_at": "2026-09-15T20:28:24.754710+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-19T16:00Z",
+        "game_id": "401858451",
+        "matchup": "AKR @ MINN",
+        "market": "ML",
+        "side": "away",
+        "pick": "AKR ML",
+        "line": null,
+        "price": 1200,
+        "book": "DraftKings",
+        "action_edge": -0.00482105822996925,
+        "edge_real": 0.01417894177003075,
+        "edge": 0.04716329841264745,
+        "model_prob": 0.07802197353086182,
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -9154,7 +9197,25 @@
         "edge_real": 0.011421296947081175,
         "edge": 0.05287181576033682,
         "model_prob": 0.529821184300963,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-19T23:00Z",
+        "game_id": "401856687",
+        "matchup": "FLA @ AUB",
+        "market": "ML",
+        "side": "home",
+        "pick": "AUB ML",
+        "line": null,
+        "price": 110,
+        "book": "DraftKings",
+        "action_edge": -0.00758585670099215,
+        "edge_real": 0.01141414329900785,
+        "edge": 0.048370797692545875,
+        "model_prob": 0.4816521656653062,
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -9172,7 +9233,7 @@
         "edge_real": 0.012187339544690319,
         "edge": 0.05305671071109941,
         "model_prob": 0.5184720047239304,
-        "odds_observed_at": "2026-09-15T20:28:24.752249+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.128277+00:00"
       },
       {
         "tier": "PASS",
@@ -9190,7 +9251,7 @@
         "edge_real": 0.010660491138469662,
         "edge": 0.0522506103526124,
         "model_prob": 0.5339576644904078,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -9208,7 +9269,7 @@
         "edge_real": 0.00977953415232055,
         "edge": 0.04738922720965095,
         "model_prob": 0.7635181296789988,
-        "odds_observed_at": "2026-09-15T20:28:24.754933+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -9226,7 +9287,7 @@
         "edge_real": 0.00849904943950611,
         "edge": 0.049690083359875674,
         "model_prob": 0.509253599200437,
-        "odds_observed_at": "2026-09-15T20:28:24.754417+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -9244,7 +9305,7 @@
         "edge_real": 0.007690151761272765,
         "edge": 0.05008285937686838,
         "model_prob": 0.5278465318176124,
-        "odds_observed_at": "2026-09-15T20:28:24.754860+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -9262,7 +9323,7 @@
         "edge_real": 0.007411431286300525,
         "edge": 0.046165392521067224,
         "model_prob": 0.6906257293467593,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -9280,7 +9341,7 @@
         "edge_real": 0.005163909362643991,
         "edge": 0.04578644476097481,
         "model_prob": 0.4102730629766367,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -9298,7 +9359,7 @@
         "edge_real": 0.003929702881750122,
         "edge": 0.04716482543850867,
         "model_prob": 0.5258691148547187,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -9316,7 +9377,25 @@
         "edge_real": 0.00392946997437167,
         "edge": 0.04716464126667803,
         "model_prob": 0.5258689926465191,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-20T03:00Z",
+        "game_id": "401858458",
+        "matchup": "PUR @ UCLA",
+        "market": "ATS",
+        "side": "away",
+        "pick": "PUR +14",
+        "line": -14,
+        "price": -105,
+        "book": "DraftKings",
+        "action_edge": -0.015389158594171115,
+        "edge_real": 0.0036108414058288836,
+        "edge": 0.0466328117009965,
+        "model_prob": 0.5141302262667657,
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -9334,7 +9413,7 @@
         "edge_real": 0.003299200952030932,
         "edge": 0.04499858479427568,
         "model_prob": 0.547254833597312,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -9352,25 +9431,25 @@
         "edge_real": 0.0030954919971097035,
         "edge": 0.04643646059663419,
         "model_prob": 0.529937820189708,
-        "odds_observed_at": "2026-09-15T20:28:24.755022+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
         "odds_verified": true,
-        "game_date": "2026-09-19T23:30Z",
-        "game_id": "401856802",
-        "matchup": "WVU @ UVA",
+        "game_date": "2026-09-19T22:00Z",
+        "game_id": "401862710",
+        "matchup": "ECU @ ODU",
         "market": "ATS",
-        "side": "away",
-        "pick": "WVU +10",
-        "line": -10,
-        "price": -102,
+        "side": "home",
+        "pick": "ODU -3",
+        "line": -3,
+        "price": 100,
         "book": "DraftKings",
-        "action_edge": -0.018007247631177524,
-        "edge_real": 0.0009927523688224743,
-        "edge": 0.04375822245520065,
-        "model_prob": 0.5054734546247023,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "action_edge": -0.018939622173270096,
+        "edge_real": 0.00006037782672990467,
+        "edge": 0.04233046682256972,
+        "model_prob": 0.5000321500718101,
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -9388,7 +9467,25 @@
         "edge_real": -0.0014954289827673946,
         "edge": 0.04164525419269112,
         "model_prob": 0.540474884416454,
-        "odds_observed_at": "2026-09-15T20:28:24.755108+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-19T23:00Z",
+        "game_id": "401866423",
+        "matchup": "OHIO @ USA",
+        "market": "ML",
+        "side": "home",
+        "pick": "USA ML",
+        "line": null,
+        "price": -230,
+        "book": "DraftKings",
+        "action_edge": -0.02088053333368809,
+        "edge_real": -0.0018805333336880893,
+        "edge": 0.037656055410957734,
+        "model_prob": 0.6956588509877151,
+        "odds_observed_at": "2026-09-15T22:28:15.129967+00:00"
       },
       {
         "tier": "PASS",
@@ -9398,15 +9495,15 @@
         "matchup": "OHIO @ USA",
         "market": "ATS",
         "side": "home",
-        "pick": "USA -5.5",
-        "line": -5.5,
-        "price": -110,
+        "pick": "USA -6",
+        "line": -6,
+        "price": -108,
         "book": "DraftKings",
-        "action_edge": -0.02151825075907334,
-        "edge_real": -0.002518250759073343,
-        "edge": 0.04189537347162757,
-        "model_prob": 0.5224901309885496,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "action_edge": -0.021440888794902434,
+        "edge_real": -0.0024408887949024355,
+        "edge": 0.041830386054972996,
+        "model_prob": 0.5179256487025836,
+        "odds_observed_at": "2026-09-15T22:28:15.129967+00:00"
       },
       {
         "tier": "PASS",
@@ -9424,7 +9521,7 @@
         "edge_real": -0.002808088343755608,
         "edge": 0.03754783455860066,
         "model_prob": 0.7872561263650574,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -9442,7 +9539,7 @@
         "edge_real": -0.0030277558921188324,
         "edge": 0.04102693463576353,
         "model_prob": 0.533263674913654,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -9460,25 +9557,7 @@
         "edge_real": -0.0031191297642834243,
         "edge": 0.041316573240639205,
         "model_prob": 0.5266534521436927,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
-      },
-      {
-        "tier": "PASS",
-        "odds_verified": true,
-        "game_date": "2026-09-20T03:00Z",
-        "game_id": "401858458",
-        "matchup": "PUR @ UCLA",
-        "market": "ATS",
-        "side": "away",
-        "pick": "PUR +14",
-        "line": -14,
-        "price": -108,
-        "book": "DraftKings",
-        "action_edge": -0.02240232225688466,
-        "edge_real": -0.00340232225688466,
-        "edge": 0.0409425290876924,
-        "model_prob": 0.5173824673249557,
-        "odds_observed_at": "2026-09-15T20:28:24.755154+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -9496,7 +9575,7 @@
         "edge_real": -0.003576049218867555,
         "edge": 0.040558116622302284,
         "model_prob": 0.5329700462046554,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -9514,7 +9593,7 @@
         "edge_real": -0.0038435767082505845,
         "edge": 0.036713702435739425,
         "model_prob": 0.885470510255634,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -9532,25 +9611,7 @@
         "edge_real": -0.00398112859076113,
         "edge": 0.04021006291735204,
         "model_prob": 0.5327530321914585,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
-      },
-      {
-        "tier": "PASS",
-        "odds_verified": true,
-        "game_date": "2026-09-19T23:00Z",
-        "game_id": "401866423",
-        "matchup": "OHIO @ USA",
-        "market": "ML",
-        "side": "home",
-        "pick": "USA ML",
-        "line": null,
-        "price": -225,
-        "book": "DraftKings",
-        "action_edge": -0.023179061562510338,
-        "edge_real": -0.004179061562510338,
-        "edge": 0.03679662003088495,
-        "model_prob": 0.6894126274336188,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -9568,7 +9629,7 @@
         "edge_real": -0.004252111649296101,
         "edge": 0.040347540409574806,
         "model_prob": 0.5260539862537245,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -9586,25 +9647,7 @@
         "edge_real": -0.004558027610949074,
         "edge": 0.02576767738667386,
         "model_prob": 0.04327993347881297,
-        "odds_observed_at": "2026-09-15T20:28:24.755108+00:00"
-      },
-      {
-        "tier": "PASS",
-        "odds_verified": true,
-        "game_date": "2026-09-19T16:00Z",
-        "game_id": "401858451",
-        "matchup": "AKR @ MINN",
-        "market": "ML",
-        "side": "away",
-        "pick": "AKR ML",
-        "line": null,
-        "price": 1300,
-        "book": "DraftKings",
-        "action_edge": -0.025145554343653724,
-        "edge_real": -0.006145554343653727,
-        "edge": 0.029551633616458246,
-        "model_prob": 0.07098898938744092,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -9622,7 +9665,7 @@
         "edge_real": -0.006270571864971675,
         "edge": 0.03493537092349253,
         "model_prob": 0.5930266292870535,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -9640,7 +9683,25 @@
         "edge_real": -0.006422173812686732,
         "edge": 0.03845950149041859,
         "model_prob": 0.5158910853070164,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-19T23:30Z",
+        "game_id": "401856802",
+        "matchup": "WVU @ UVA",
+        "market": "ATS",
+        "side": "away",
+        "pick": "WVU +10.5",
+        "line": -10.5,
+        "price": -110,
+        "book": "DraftKings",
+        "action_edge": -0.025844660068837885,
+        "edge_real": -0.006844660068837882,
+        "edge": 0.038158932550085026,
+        "model_prob": 0.5202180024437147,
+        "odds_observed_at": "2026-09-15T22:28:15.130285+00:00"
       },
       {
         "tier": "PASS",
@@ -9658,7 +9719,7 @@
         "edge_real": -0.00712226702144514,
         "edge": 0.037461462159348466,
         "model_prob": 0.5085402736473663,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -9676,7 +9737,7 @@
         "edge_real": -0.0072308755163031655,
         "edge": 0.03665415908721622,
         "model_prob": 0.5012921852293042,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -9694,7 +9755,7 @@
         "edge_real": -0.007232235826071354,
         "edge": 0.036652940685054515,
         "model_prob": 0.5012914943368342,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -9712,7 +9773,7 @@
         "edge_real": -0.007406276712023826,
         "edge": 0.03766146778053593,
         "model_prob": 0.519922157067115,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -9730,7 +9791,7 @@
         "edge_real": -0.007621088917811864,
         "edge": 0.031536621241953486,
         "model_prob": 0.6192938903443077,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -9748,25 +9809,7 @@
         "edge_real": -0.008402588480669576,
         "edge": 0.03493125749507478,
         "model_prob": 0.5408593072674657,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
-      },
-      {
-        "tier": "PASS",
-        "odds_verified": true,
-        "game_date": "2026-09-19T19:30Z",
-        "game_id": "401856797",
-        "matchup": "M-OH @ CIN",
-        "market": "ML",
-        "side": "home",
-        "pick": "CIN ML",
-        "line": null,
-        "price": -650,
-        "book": "DraftKings",
-        "action_edge": -0.028103821771174493,
-        "edge_real": -0.009103821771174494,
-        "edge": 0.0313680311607537,
-        "model_prob": 0.858752401742723,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -9784,7 +9827,7 @@
         "edge_real": -0.010957716284689271,
         "edge": 0.03325188251438495,
         "model_prob": 0.49939265495336305,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -9802,7 +9845,7 @@
         "edge_real": -0.011495652651606845,
         "edge": 0.00682980478144286,
         "model_prob": 0.9874602799145856,
-        "odds_observed_at": "2026-09-15T20:28:24.754710+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -9820,7 +9863,25 @@
         "edge_real": -0.01163217911325025,
         "edge": 0.03335565265429375,
         "model_prob": 0.5062071309155893,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130322+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-19T23:30Z",
+        "game_id": "401856688",
+        "matchup": "LSU @ MISS",
+        "market": "ATS",
+        "side": "home",
+        "pick": "MISS +3",
+        "line": 3,
+        "price": -110,
+        "book": "DraftKings",
+        "action_edge": -0.030903292568079818,
+        "edge_real": -0.011903292568079819,
+        "edge": 0.03285706407729928,
+        "model_prob": 0.5171350503286116,
+        "odds_observed_at": "2026-09-15T22:28:15.130175+00:00"
       },
       {
         "tier": "PASS",
@@ -9838,7 +9899,43 @@
         "edge_real": -0.01338511757973046,
         "edge": 0.004879035790417531,
         "model_prob": 0.985539700202716,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130652+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-19T19:30Z",
+        "game_id": "401856797",
+        "matchup": "M-OH @ CIN",
+        "market": "ML",
+        "side": "home",
+        "pick": "CIN ML",
+        "line": null,
+        "price": -700,
+        "book": "DraftKings",
+        "action_edge": -0.03270096404023297,
+        "edge_real": -0.01370096404023297,
+        "edge": 0.026567583240785723,
+        "model_prob": 0.8629274859178072,
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-19T23:30Z",
+        "game_id": "401858453",
+        "matchup": "MSU @ ND",
+        "market": "ML",
+        "side": "home",
+        "pick": "ND ML",
+        "line": null,
+        "price": -4500,
+        "book": "DraftKings",
+        "action_edge": -0.03390850114147146,
+        "edge_real": -0.014908501141471462,
+        "edge": 0.01805319279546589,
+        "model_prob": 0.9635549394983873,
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -9856,7 +9953,7 @@
         "edge_real": -0.014967349443573542,
         "edge": 0.030669711361809293,
         "model_prob": 0.5159036306712842,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -9874,7 +9971,7 @@
         "edge_real": -0.015258665704341793,
         "edge": 0.029910619194378492,
         "model_prob": 0.504311440628111,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -9892,43 +9989,7 @@
         "edge_real": -0.01538724846175427,
         "edge": 0.03018828487923412,
         "model_prob": 0.5201005459619767,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
-      },
-      {
-        "tier": "PASS",
-        "odds_verified": true,
-        "game_date": "2026-09-19T23:30Z",
-        "game_id": "401858453",
-        "matchup": "MSU @ ND",
-        "market": "ML",
-        "side": "home",
-        "pick": "ND ML",
-        "line": null,
-        "price": -5000,
-        "book": "DraftKings",
-        "action_edge": -0.03460866367202714,
-        "edge_real": -0.015608663672027142,
-        "edge": 0.0165806250693906,
-        "model_prob": 0.9649495729023665,
-        "odds_observed_at": "2026-09-15T20:28:24.754417+00:00"
-      },
-      {
-        "tier": "PASS",
-        "odds_verified": true,
-        "game_date": "2026-09-19T23:30Z",
-        "game_id": "401856688",
-        "matchup": "LSU @ MISS",
-        "market": "ATS",
-        "side": "home",
-        "pick": "MISS +3",
-        "line": 3,
-        "price": -112,
-        "book": "DraftKings",
-        "action_edge": -0.034852087926632185,
-        "edge_real": -0.01585208792663218,
-        "edge": 0.028753612525463587,
-        "model_prob": 0.519299927363596,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -9946,7 +10007,7 @@
         "edge_real": -0.015891169528008932,
         "edge": 0.019985896429137444,
         "model_prob": 0.944599750930645,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -9964,43 +10025,25 @@
         "edge_real": -0.01661708504757226,
         "edge": 0.019243535053590756,
         "model_prob": 0.943881852452517,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
         "odds_verified": true,
-        "game_date": "2026-09-19T23:30Z",
-        "game_id": "401856688",
-        "matchup": "LSU @ MISS",
+        "game_date": "2026-09-17T23:30Z",
+        "game_id": "401858225",
+        "matchup": "SYR @ PITT",
         "market": "ML",
         "side": "home",
-        "pick": "MISS ML",
+        "pick": "PITT ML",
         "line": null,
-        "price": 130,
+        "price": -410,
         "book": "DraftKings",
-        "action_edge": -0.03585800004165274,
-        "edge_real": -0.01685800004165274,
-        "edge": 0.024308695320491704,
-        "model_prob": 0.42737462174024815,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
-      },
-      {
-        "tier": "PASS",
-        "odds_verified": true,
-        "game_date": "2026-09-19T19:30Z",
-        "game_id": "401856685",
-        "matchup": "FSU @ ALA",
-        "market": "ATS",
-        "side": "away",
-        "pick": "FSU +19.5",
-        "line": -19.5,
-        "price": -105,
-        "book": "DraftKings",
-        "action_edge": -0.03596896901024192,
-        "edge_real": -0.01696896901024192,
-        "edge": 0.028239475362053186,
-        "model_prob": 0.5034094536159418,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "action_edge": -0.03594383133603919,
+        "edge_real": -0.01694383133603919,
+        "edge": 0.02366181647485185,
+        "model_prob": 0.7901527985790169,
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -10018,7 +10061,7 @@
         "edge_real": -0.017174685255674324,
         "edge": 0.013141593360473179,
         "model_prob": 0.9705031577197132,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130442+00:00"
       },
       {
         "tier": "PASS",
@@ -10036,7 +10079,7 @@
         "edge_real": -0.0176365827709945,
         "edge": 0.0275788494473603,
         "model_prob": 0.5253395258089184,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130248+00:00"
       },
       {
         "tier": "PASS",
@@ -10054,7 +10097,7 @@
         "edge_real": -0.01763696683543775,
         "edge": 0.027578468047116826,
         "model_prob": 0.5253393130460093,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130442+00:00"
       },
       {
         "tier": "PASS",
@@ -10072,7 +10115,7 @@
         "edge_real": -0.01792533198615388,
         "edge": 0.003843117539286063,
         "model_prob": 0.9798974776836394,
-        "odds_observed_at": "2026-09-15T20:28:24.754037+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.129825+00:00"
       },
       {
         "tier": "PASS",
@@ -10090,7 +10133,7 @@
         "edge_real": -0.01794262540911216,
         "edge": 0.027682725341470493,
         "model_prob": 0.5098011958463587,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -10108,7 +10151,7 @@
         "edge_real": -0.01794272605210246,
         "edge": 0.027682625297897966,
         "model_prob": 0.5098011416563568,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.129931+00:00"
       },
       {
         "tier": "PASS",
@@ -10126,7 +10169,7 @@
         "edge_real": -0.018623713372442282,
         "edge": 0.02700319917693052,
         "model_prob": 0.5094339498907943,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -10144,25 +10187,7 @@
         "edge_real": -0.018671833104633852,
         "edge": 0.022515687898025438,
         "model_prob": 0.6725656502115458,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
-      },
-      {
-        "tier": "PASS",
-        "odds_verified": true,
-        "game_date": "2026-09-19T22:00Z",
-        "game_id": "401862710",
-        "matchup": "ECU @ ODU",
-        "market": "ATS",
-        "side": "home",
-        "pick": "ODU -3",
-        "line": -3,
-        "price": -108,
-        "book": "DraftKings",
-        "action_edge": -0.03772921468819828,
-        "edge_real": -0.01872921468819828,
-        "edge": 0.025705059316431852,
-        "model_prob": 0.508736838254217,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -10180,7 +10205,7 @@
         "edge_real": -0.01902691039422789,
         "edge": 0.02659856331070473,
         "model_prob": 0.5181121976108114,
-        "odds_observed_at": "2026-09-15T20:28:24.754933+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -10198,7 +10223,7 @@
         "edge_real": -0.019213599589561682,
         "edge": 0.025999495599907493,
         "model_prob": 0.5244630109673469,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -10216,25 +10241,7 @@
         "edge_real": -0.020256102534767804,
         "edge": 0.011175900368095276,
         "model_prob": 0.9645884473260631,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
-      },
-      {
-        "tier": "PASS",
-        "odds_verified": true,
-        "game_date": "2026-09-17T23:30Z",
-        "game_id": "401858225",
-        "matchup": "SYR @ PITT",
-        "market": "ML",
-        "side": "home",
-        "pick": "PITT ML",
-        "line": null,
-        "price": -425,
-        "book": "DraftKings",
-        "action_edge": -0.039319548625362716,
-        "edge_real": -0.020319548625362713,
-        "edge": 0.020259457050799477,
-        "model_prob": 0.7928166885153692,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -10252,7 +10259,7 @@
         "edge_real": -0.02044789942969835,
         "edge": 0.02018510189645818,
         "model_prob": 0.9116943330717024,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -10270,7 +10277,7 @@
         "edge_real": -0.020738796646743492,
         "edge": 0.01066010468258838,
         "model_prob": 0.9640898542192322,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -10288,25 +10295,7 @@
         "edge_real": -0.021132016903632103,
         "edge": 0.019729961399881354,
         "model_prob": 0.8895533760751964,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
-      },
-      {
-        "tier": "PASS",
-        "odds_verified": true,
-        "game_date": "2026-09-19T23:30Z",
-        "game_id": "401856796",
-        "matchup": "COLO @ NU",
-        "market": "ML",
-        "side": "away",
-        "pick": "COLO ML",
-        "line": null,
-        "price": 150,
-        "book": "DraftKings",
-        "action_edge": -0.04066185605724538,
-        "edge_real": -0.021661856057245375,
-        "edge": 0.019578264948659517,
-        "model_prob": 0.39118022324805657,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -10324,7 +10313,7 @@
         "edge_real": -0.02261221804058952,
         "edge": 0.022921433828979886,
         "model_prob": 0.5161222136152513,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130800+00:00"
       },
       {
         "tier": "PASS",
@@ -10342,7 +10331,7 @@
         "edge_real": -0.02296243743080869,
         "edge": 0.02135482211298137,
         "model_prob": 0.5286042851477302,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -10360,7 +10349,7 @@
         "edge_real": -0.02297260837183704,
         "edge": 0.022543792410822938,
         "model_prob": 0.5159201895803408,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -10378,25 +10367,7 @@
         "edge_real": -0.02298058155070708,
         "edge": 0.01818015167351327,
         "model_prob": 0.3906218989753345,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
-      },
-      {
-        "tier": "PASS",
-        "odds_verified": true,
-        "game_date": "2026-09-19T23:00Z",
-        "game_id": "401856687",
-        "matchup": "FLA @ AUB",
-        "market": "TOTAL",
-        "side": "under",
-        "pick": "Under 53.5",
-        "line": 53.5,
-        "price": -108,
-        "book": "DraftKings",
-        "action_edge": -0.0422970680658193,
-        "edge_real": -0.023297068065819302,
-        "edge": 0.018014324986623923,
-        "model_prob": 0.5068825793417272,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130003+00:00"
       },
       {
         "tier": "PASS",
@@ -10414,7 +10385,7 @@
         "edge_real": -0.023382507379056016,
         "edge": 0.01782518649262238,
         "model_prob": 0.48246229433849785,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130003+00:00"
       },
       {
         "tier": "PASS",
@@ -10432,7 +10403,7 @@
         "edge_real": -0.023538335283662924,
         "edge": 0.0219479664500708,
         "model_prob": 0.5067492014052637,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -10450,7 +10421,7 @@
         "edge_real": -0.024064620367383216,
         "edge": 0.02018514430237256,
         "model_prob": 0.5279687476746671,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -10468,7 +10439,25 @@
         "edge_real": -0.024996749939384413,
         "edge": 0.011640029940317115,
         "model_prob": 0.9231168865850762,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-19T23:00Z",
+        "game_id": "401856687",
+        "matchup": "FLA @ AUB",
+        "market": "TOTAL",
+        "side": "under",
+        "pick": "Under 53.5",
+        "line": 53.5,
+        "price": -108,
+        "book": "DraftKings",
+        "action_edge": -0.04421871607535803,
+        "edge_real": -0.02521871607535803,
+        "edge": 0.020156162806566173,
+        "model_prob": 0.5058151562136787,
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -10486,7 +10475,7 @@
         "edge_real": -0.025446968978177425,
         "edge": 0.019064515516959882,
         "model_prob": 0.5140768372957574,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -10504,7 +10493,7 @@
         "edge_real": -0.02575385336868975,
         "edge": 0.019659055056864754,
         "model_prob": 0.5099735569883738,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -10522,7 +10511,7 @@
         "edge_real": -0.025756719449471426,
         "edge": 0.01965595305878676,
         "model_prob": 0.5099719366106934,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -10540,7 +10529,43 @@
         "edge_real": -0.025759649914627914,
         "edge": 0.013142838618495245,
         "model_prob": 0.11453877942096091,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.129719+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-20T03:00Z",
+        "game_id": "401858458",
+        "matchup": "PUR @ UCLA",
+        "market": "ML",
+        "side": "home",
+        "pick": "UCLA ML",
+        "line": null,
+        "price": -625,
+        "book": "DraftKings",
+        "action_edge": -0.04509887209260078,
+        "edge_real": -0.026098872092600776,
+        "edge": 0.014222802880892761,
+        "model_prob": 0.8389768082266715,
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-19T22:00Z",
+        "game_id": "401862710",
+        "matchup": "ECU @ ODU",
+        "market": "TOTAL",
+        "side": "over",
+        "pick": "Over 48.5",
+        "line": 48.5,
+        "price": -112,
+        "book": "DraftKings",
+        "action_edge": -0.045132597599852387,
+        "edge_real": -0.026132597599852387,
+        "edge": 0.01916764214566563,
+        "model_prob": 0.5141310418864833,
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -10558,7 +10583,7 @@
         "edge_real": -0.02544399611734429,
         "edge": 0.009305339983556205,
         "model_prob": 0.06492799996369691,
-        "odds_observed_at": "2026-09-15T20:28:24.754331+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130070+00:00"
       },
       {
         "tier": "PASS",
@@ -10576,7 +10601,43 @@
         "edge_real": -0.027003402579223807,
         "edge": 0.016997997967347935,
         "model_prob": 0.5262539722061206,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-19T19:30Z",
+        "game_id": "401856685",
+        "matchup": "FSU @ ALA",
+        "market": "ATS",
+        "side": "away",
+        "pick": "FSU +19.5",
+        "line": -19.5,
+        "price": -110,
+        "book": "DraftKings",
+        "action_edge": -0.04676967527435303,
+        "edge_real": -0.027769675274353027,
+        "edge": 0.01745272334198255,
+        "model_prob": 0.5088265717091162,
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-19T23:30Z",
+        "game_id": "401856802",
+        "matchup": "WVU @ UVA",
+        "market": "ML",
+        "side": "home",
+        "pick": "UVA ML",
+        "line": null,
+        "price": -395,
+        "book": "DraftKings",
+        "action_edge": -0.04685944302554871,
+        "edge_real": -0.027859443025548707,
+        "edge": 0.011915057526111598,
+        "model_prob": 0.775076180169191,
+        "odds_observed_at": "2026-09-15T22:28:15.130285+00:00"
       },
       {
         "tier": "PASS",
@@ -10594,25 +10655,7 @@
         "edge_real": -0.02812569057534291,
         "edge": 0.016549759081494878,
         "model_prob": 0.519375535322607,
-        "odds_observed_at": "2026-09-15T20:28:24.754079+00:00"
-      },
-      {
-        "tier": "PASS",
-        "odds_verified": true,
-        "game_date": "2026-09-20T03:00Z",
-        "game_id": "401858458",
-        "matchup": "PUR @ UCLA",
-        "market": "ML",
-        "side": "home",
-        "pick": "UCLA ML",
-        "line": null,
-        "price": -650,
-        "book": "DraftKings",
-        "action_edge": -0.04744014793084993,
-        "edge_real": -0.028440147930849927,
-        "edge": 0.011475047439062082,
-        "model_prob": 0.8412398760635098,
-        "odds_observed_at": "2026-09-15T20:28:24.755154+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -10630,7 +10673,25 @@
         "edge_real": -0.028749114833631427,
         "edge": 0.016281338023717208,
         "model_prob": 0.5038208553899708,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-19T23:30Z",
+        "game_id": "401856688",
+        "matchup": "LSU @ MISS",
+        "market": "ML",
+        "side": "home",
+        "pick": "MISS ML",
+        "line": null,
+        "price": 124,
+        "book": "DraftKings",
+        "action_edge": -0.04843559766002157,
+        "edge_real": -0.029435597660021566,
+        "edge": 0.011396818371947778,
+        "model_prob": 0.4328411244833196,
+        "odds_observed_at": "2026-09-15T22:28:15.130175+00:00"
       },
       {
         "tier": "PASS",
@@ -10648,25 +10709,7 @@
         "edge_real": -0.02957940478169053,
         "edge": 0.015347693462792805,
         "model_prob": 0.5121384675200749,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
-      },
-      {
-        "tier": "PASS",
-        "odds_verified": true,
-        "game_date": "2026-09-19T20:00Z",
-        "game_id": "401866422",
-        "matchup": "BALL @ LIB",
-        "market": "TOTAL",
-        "side": "under",
-        "pick": "Under 49.5",
-        "line": 49.5,
-        "price": -102,
-        "book": "DraftKings",
-        "action_edge": -0.04889942896975736,
-        "edge_real": -0.029899428969757356,
-        "edge": 0.013756714648270734,
-        "model_prob": 0.48932235932669776,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.129719+00:00"
       },
       {
         "tier": "PASS",
@@ -10684,7 +10727,7 @@
         "edge_real": -0.030233352950552954,
         "edge": -0.0011633941259734815,
         "model_prob": 0.956720066521187,
-        "odds_observed_at": "2026-09-15T20:28:24.755108+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -10702,7 +10745,7 @@
         "edge_real": -0.029484467796907568,
         "edge": 0.01502623608699571,
         "model_prob": 0.4965783178095319,
-        "odds_observed_at": "2026-09-15T20:28:24.753357+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.129276+00:00"
       },
       {
         "tier": "PASS",
@@ -10720,25 +10763,25 @@
         "edge_real": -0.030869303118430294,
         "edge": 0.0050165580077111615,
         "model_prob": 0.08799725043469042,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
         "odds_verified": true,
         "game_date": "2026-09-19T23:30Z",
-        "game_id": "401856802",
-        "matchup": "WVU @ UVA",
+        "game_id": "401856796",
+        "matchup": "COLO @ NU",
         "market": "ML",
-        "side": "home",
-        "pick": "UVA ML",
+        "side": "away",
+        "pick": "COLO ML",
         "line": null,
-        "price": -395,
+        "price": 145,
         "book": "DraftKings",
-        "action_edge": -0.04992703129631568,
-        "edge_real": -0.030927031296315678,
-        "edge": 0.008421071460400989,
-        "model_prob": 0.772368793965486,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "action_edge": -0.05054337377944119,
+        "edge_real": -0.031543373779441185,
+        "edge": 0.010241243768260692,
+        "model_prob": 0.3947812841011187,
+        "odds_observed_at": "2026-09-15T22:28:15.130322+00:00"
       },
       {
         "tier": "PASS",
@@ -10756,7 +10799,7 @@
         "edge_real": -0.03219538826618981,
         "edge": 0.01234852001143983,
         "model_prob": 0.5018258658281286,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -10774,7 +10817,7 @@
         "edge_real": -0.03265629459942728,
         "edge": 0.0010834494602135435,
         "model_prob": 0.936686312456492,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -10792,7 +10835,7 @@
         "edge_real": -0.03287434283527543,
         "edge": 0.0022897623846461885,
         "model_prob": 0.9218143499946021,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130248+00:00"
       },
       {
         "tier": "PASS",
@@ -10810,7 +10853,7 @@
         "edge_real": -0.03291908509441242,
         "edge": 0.013323423801519364,
         "model_prob": 0.34487836896631674,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -10828,7 +10871,7 @@
         "edge_real": -0.03412841533772731,
         "edge": 0.004913739564930947,
         "model_prob": 0.8977761222129248,
-        "odds_observed_at": "2026-09-15T20:28:24.754860+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -10846,7 +10889,7 @@
         "edge_real": -0.03411540025087314,
         "edge": -0.0006417901973159461,
         "model_prob": 0.9350720000363031,
-        "odds_observed_at": "2026-09-15T20:28:24.754331+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130070+00:00"
       },
       {
         "tier": "PASS",
@@ -10864,25 +10907,7 @@
         "edge_real": -0.03512153260255472,
         "edge": 0.008969454478870254,
         "model_prob": 0.5044981249656787,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
-      },
-      {
-        "tier": "PASS",
-        "odds_verified": true,
-        "game_date": "2026-09-18T23:30Z",
-        "game_id": "401858226",
-        "matchup": "MIA @ WAKE",
-        "market": "ML",
-        "side": "away",
-        "pick": "MIA ML",
-        "line": null,
-        "price": -1350,
-        "book": "DraftKings",
-        "action_edge": -0.05434724339633516,
-        "edge_real": -0.03534724339633516,
-        "edge": 0.0034503273538875777,
-        "model_prob": 0.896466170929556,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -10900,7 +10925,7 @@
         "edge_real": -0.03552071343524869,
         "edge": -0.00048183094072438173,
         "model_prob": 0.9120027495653096,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -10918,7 +10943,7 @@
         "edge_real": -0.03553087219679085,
         "edge": 0.003228298038758323,
         "model_prob": 0.8962675683796016,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -10936,25 +10961,7 @@
         "edge_real": -0.03554885299677357,
         "edge": 0.008371765476539537,
         "model_prob": 0.49983067307557794,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
-      },
-      {
-        "tier": "PASS",
-        "odds_verified": true,
-        "game_date": "2026-09-19T16:00Z",
-        "game_id": "401858451",
-        "matchup": "AKR @ MINN",
-        "market": "ML",
-        "side": "home",
-        "pick": "MINN ML",
-        "line": null,
-        "price": -2800,
-        "book": "DraftKings",
-        "action_edge": -0.05493247781619443,
-        "edge_real": -0.03593247781619443,
-        "edge": -0.002260707124364504,
-        "model_prob": 0.9290110106125591,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -10972,7 +10979,7 @@
         "edge_real": -0.03594247928528873,
         "edge": 0.007977487035877374,
         "model_prob": 0.5039981590035112,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -10990,7 +10997,25 @@
         "edge_real": -0.03595448314349975,
         "edge": 0.007962913254605344,
         "model_prob": 0.5039908204591925,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-18T23:30Z",
+        "game_id": "401858226",
+        "matchup": "MIA @ WAKE",
+        "market": "ML",
+        "side": "away",
+        "pick": "MIA ML",
+        "line": null,
+        "price": -1450,
+        "book": "DraftKings",
+        "action_edge": -0.055762072053857914,
+        "edge_real": -0.03676207205385791,
+        "edge": 0.00038488283673309396,
+        "model_prob": 0.8992040319793594,
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -11008,7 +11033,25 @@
         "edge_real": -0.03729752812996221,
         "edge": 0.005802792761424568,
         "model_prob": 0.4920078294865012,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-19T16:00Z",
+        "game_id": "401858451",
+        "matchup": "AKR @ MINN",
+        "market": "ML",
+        "side": "home",
+        "pick": "MINN ML",
+        "line": null,
+        "price": -2400,
+        "book": "DraftKings",
+        "action_edge": -0.05646059586159851,
+        "edge_real": -0.03746059586159851,
+        "edge": -0.004142899798409238,
+        "model_prob": 0.9219780264691382,
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -11026,7 +11069,7 @@
         "edge_real": -0.03842220526370823,
         "edge": -0.001685701806775178,
         "model_prob": 0.8854612205790391,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.129719+00:00"
       },
       {
         "tier": "PASS",
@@ -11044,7 +11087,7 @@
         "edge_real": -0.03868158921028869,
         "edge": 0.00003652574094411303,
         "model_prob": 0.6164608720331983,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -11062,7 +11105,7 @@
         "edge_real": -0.03875773462766233,
         "edge": -0.00005870207908144589,
         "model_prob": 0.3835391279668017,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -11080,7 +11123,7 @@
         "edge_real": -0.038802104605320416,
         "edge": 0.004365554018834502,
         "model_prob": 0.49783564624627197,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -11098,25 +11141,7 @@
         "edge_real": -0.03903894353222656,
         "edge": 0.004068003706842341,
         "model_prob": 0.5063826247390775,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
-      },
-      {
-        "tier": "PASS",
-        "odds_verified": true,
-        "game_date": "2026-09-19T22:00Z",
-        "game_id": "401862710",
-        "matchup": "ECU @ ODU",
-        "market": "TOTAL",
-        "side": "over",
-        "pick": "Over 49.5",
-        "line": 49.5,
-        "price": -110,
-        "book": "DraftKings",
-        "action_edge": -0.05816749508868819,
-        "edge_real": -0.039167495088688185,
-        "edge": 0.003988809127849315,
-        "model_prob": 0.5019955778151671,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -11134,7 +11159,25 @@
         "edge_real": -0.039167601359564284,
         "edge": 0.003988675232841023,
         "model_prob": 0.5019955107494336,
-        "odds_observed_at": "2026-09-15T20:28:24.754037+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.129825+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-18T23:30Z",
+        "game_id": "401858226",
+        "matchup": "MIA @ WAKE",
+        "market": "ML",
+        "side": "home",
+        "pick": "WAKE ML",
+        "line": null,
+        "price": 850,
+        "book": "DraftKings",
+        "action_edge": -0.05882383660602023,
+        "edge_real": -0.03982383660602023,
+        "edge": -0.003419032396771324,
+        "model_prob": 0.10079596802064064,
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -11152,7 +11195,7 @@
         "edge_real": -0.04014458121985771,
         "edge": 0.013264208815830554,
         "model_prob": 0.5013757573349843,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -11170,7 +11213,7 @@
         "edge_real": -0.04195124282517147,
         "edge": 0.0003416825393920817,
         "model_prob": 0.49583960852865294,
-        "odds_observed_at": "2026-09-15T20:28:24.753996+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -11188,7 +11231,43 @@
         "edge_real": -0.041951248063953464,
         "edge": 0.00034167572231343546,
         "model_prob": 0.49583960514958614,
-        "odds_observed_at": "2026-09-15T20:28:24.752531+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.128546+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-19T20:00Z",
+        "game_id": "401866422",
+        "matchup": "BALL @ LIB",
+        "market": "TOTAL",
+        "side": "under",
+        "pick": "Under 49.5",
+        "line": 49.5,
+        "price": -108,
+        "book": "DraftKings",
+        "action_edge": -0.060951341085306456,
+        "edge_real": -0.04195134108530645,
+        "edge": 0.00034155467618992387,
+        "model_prob": 0.4958395451498485,
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-19T20:00Z",
+        "game_id": "401866422",
+        "matchup": "BALL @ LIB",
+        "market": "TOTAL",
+        "side": "over",
+        "pick": "Over 49.5",
+        "line": 49.5,
+        "price": -112,
+        "book": "DraftKings",
+        "action_edge": -0.061470217043733136,
+        "edge_real": -0.04247021704373313,
+        "edge": -0.00033569011904358964,
+        "model_prob": 0.5041604548501515,
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -11206,7 +11285,7 @@
         "edge_real": -0.04247030791654609,
         "edge": -0.0003358090868175894,
         "model_prob": 0.5041603948504139,
-        "odds_observed_at": "2026-09-15T20:28:24.752531+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.128546+00:00"
       },
       {
         "tier": "PASS",
@@ -11224,7 +11303,25 @@
         "edge_real": -0.042470313034320695,
         "edge": -0.0003358157868477777,
         "model_prob": 0.5041603914713471,
-        "odds_observed_at": "2026-09-15T20:28:24.753996+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-19T23:30Z",
+        "game_id": "401856796",
+        "matchup": "COLO @ NU",
+        "market": "ML",
+        "side": "home",
+        "pick": "NU ML",
+        "line": null,
+        "price": -175,
+        "book": "DraftKings",
+        "action_edge": -0.06402721616685898,
+        "edge_real": -0.04502721616685899,
+        "edge": -0.006583781724102073,
+        "model_prob": 0.6052187158988813,
+        "odds_observed_at": "2026-09-15T22:28:15.130322+00:00"
       },
       {
         "tier": "PASS",
@@ -11242,25 +11339,7 @@
         "edge_real": -0.04527658547959734,
         "edge": -0.003988675232841023,
         "model_prob": 0.4980044892505664,
-        "odds_observed_at": "2026-09-15T20:28:24.754037+00:00"
-      },
-      {
-        "tier": "PASS",
-        "odds_verified": true,
-        "game_date": "2026-09-19T22:00Z",
-        "game_id": "401862710",
-        "matchup": "ECU @ ODU",
-        "market": "TOTAL",
-        "side": "under",
-        "pick": "Under 49.5",
-        "line": 49.5,
-        "price": -110,
-        "book": "DraftKings",
-        "action_edge": -0.06427668443190551,
-        "edge_real": -0.045276684431905516,
-        "edge": -0.003988809127849315,
-        "model_prob": 0.4980044221848329,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.129825+00:00"
       },
       {
         "tier": "PASS",
@@ -11278,7 +11357,7 @@
         "edge_real": -0.045327069391520806,
         "edge": -0.004138983756436327,
         "model_prob": 0.49361737526092253,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -11296,7 +11375,25 @@
         "edge_real": -0.045439068459126764,
         "edge": -0.004290698886957191,
         "model_prob": 0.502164353753728,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-19T23:30Z",
+        "game_id": "401856688",
+        "matchup": "LSU @ MISS",
+        "market": "ML",
+        "side": "away",
+        "pick": "LSU ML",
+        "line": null,
+        "price": -148,
+        "book": "DraftKings",
+        "action_edge": -0.06455547462402697,
+        "edge_real": -0.045555474624026975,
+        "edge": -0.008543722528374698,
+        "model_prob": 0.5671588755166804,
+        "odds_observed_at": "2026-09-15T22:28:15.130175+00:00"
       },
       {
         "tier": "PASS",
@@ -11314,7 +11411,7 @@
         "edge_real": -0.04605423933201365,
         "edge": -0.005557225303968417,
         "model_prob": 0.5079921705134989,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -11332,7 +11429,7 @@
         "edge_real": -0.04606890999837048,
         "edge": -0.015616946301060806,
         "model_prob": 0.06331368754350798,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -11350,7 +11447,7 @@
         "edge_real": -0.047420775365245145,
         "edge": -0.011398132365736021,
         "model_prob": 0.6093781010246655,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130003+00:00"
       },
       {
         "tier": "PASS",
@@ -11368,25 +11465,7 @@
         "edge_real": -0.0478690322825589,
         "edge": -0.012416529763484507,
         "model_prob": 0.861202355689164,
-        "odds_observed_at": "2026-09-15T20:28:24.754502+00:00"
-      },
-      {
-        "tier": "PASS",
-        "odds_verified": true,
-        "game_date": "2026-09-19T23:30Z",
-        "game_id": "401856796",
-        "matchup": "COLO @ NU",
-        "market": "ML",
-        "side": "home",
-        "pick": "NU ML",
-        "line": null,
-        "price": -180,
-        "book": "DraftKings",
-        "action_edge": -0.06706989704330807,
-        "edge_real": -0.04806989704330807,
-        "edge": -0.012289773273792317,
-        "model_prob": 0.6088197767519434,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -11404,7 +11483,7 @@
         "edge_real": -0.048163849044431,
         "edge": -0.007962913254605344,
         "model_prob": 0.4960091795408075,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -11422,7 +11501,7 @@
         "edge_real": -0.048174257143339796,
         "edge": -0.007977487035877374,
         "model_prob": 0.4960018409964888,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -11440,7 +11519,7 @@
         "edge_real": -0.048295624082380126,
         "edge": -0.008228745855620582,
         "model_prob": 0.5001693269244221,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -11458,7 +11537,7 @@
         "edge_real": -0.048637583442727235,
         "edge": -0.006906590569717126,
         "model_prob": 0.6551216310336833,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -11476,7 +11555,7 @@
         "edge_real": -0.048879677271650296,
         "edge": -0.008969454478870254,
         "model_prob": 0.4955018750343213,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -11494,43 +11573,7 @@
         "edge_real": -0.04935594948916662,
         "edge": -0.016093296278418427,
         "model_prob": 0.5175377056615021,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
-      },
-      {
-        "tier": "PASS",
-        "odds_verified": true,
-        "game_date": "2026-09-19T20:00Z",
-        "game_id": "401866422",
-        "matchup": "BALL @ LIB",
-        "market": "ML",
-        "side": "home",
-        "pick": "LIB ML",
-        "line": null,
-        "price": -600,
-        "book": "DraftKings",
-        "action_edge": -0.0684459380891664,
-        "edge_real": -0.0494459380891664,
-        "edge": -0.014688681701070499,
-        "model_prob": 0.810158347004271,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
-      },
-      {
-        "tier": "PASS",
-        "odds_verified": true,
-        "game_date": "2026-09-19T20:00Z",
-        "game_id": "401866422",
-        "matchup": "BALL @ LIB",
-        "market": "TOTAL",
-        "side": "over",
-        "pick": "Over 49.5",
-        "line": 49.5,
-        "price": -118,
-        "book": "DraftKings",
-        "action_edge": -0.06969489234456952,
-        "edge_real": -0.050694892344569524,
-        "edge": -0.012844990619587092,
-        "model_prob": 0.5106776406733022,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130003+00:00"
       },
       {
         "tier": "PASS",
@@ -11548,43 +11591,25 @@
         "edge_real": -0.05103929679386695,
         "edge": -0.012138827431738379,
         "model_prob": 0.4981741341718714,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
         "odds_verified": true,
-        "game_date": "2026-09-19T23:30Z",
-        "game_id": "401856688",
-        "matchup": "LSU @ MISS",
+        "game_date": "2026-09-19T20:00Z",
+        "game_id": "401866422",
+        "matchup": "BALL @ LIB",
         "market": "ML",
-        "side": "away",
-        "pick": "LSU ML",
+        "side": "home",
+        "pick": "LIB ML",
         "line": null,
-        "price": -155,
+        "price": -625,
         "book": "DraftKings",
-        "action_edge": -0.07068425597579682,
-        "edge_real": -0.05168425597579682,
-        "edge": -0.017578007679063836,
-        "model_prob": 0.5726253782597519,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
-      },
-      {
-        "tier": "PASS",
-        "odds_verified": true,
-        "game_date": "2026-09-19T23:00Z",
-        "game_id": "401856687",
-        "matchup": "FLA @ AUB",
-        "market": "TOTAL",
-        "side": "over",
-        "pick": "Over 53.5",
-        "line": 53.5,
-        "price": -110,
-        "book": "DraftKings",
-        "action_edge": -0.07114374019966514,
-        "edge_real": -0.052143740199665146,
-        "edge": -0.0178606106830186,
-        "model_prob": 0.4931174206582728,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "action_edge": -0.0703312370326203,
+        "edge_real": -0.051331237032620304,
+        "edge": -0.017417301393222468,
+        "model_prob": 0.8125526823019933,
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -11602,7 +11627,7 @@
         "edge_real": -0.05273072982988275,
         "edge": -0.019071723523400724,
         "model_prob": 0.7425487763944931,
-        "odds_observed_at": "2026-09-15T20:28:24.754079+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -11620,7 +11645,7 @@
         "edge_real": -0.052301668504475096,
         "edge": -0.014398878591041234,
         "model_prob": 0.5034216821904681,
-        "odds_observed_at": "2026-09-15T20:28:24.753357+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.129276+00:00"
       },
       {
         "tier": "PASS",
@@ -11638,7 +11663,7 @@
         "edge_real": -0.05340259659678598,
         "edge": -0.015611010385756912,
         "model_prob": 0.48786153247992514,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.129719+00:00"
       },
       {
         "tier": "PASS",
@@ -11656,7 +11681,7 @@
         "edge_real": -0.05366801895754738,
         "edge": -0.016007149870727697,
         "model_prob": 0.4961791446100292,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -11674,7 +11699,7 @@
         "edge_real": -0.05423316453476333,
         "edge": -0.017266948120011595,
         "model_prob": 0.48062446467739295,
-        "odds_observed_at": "2026-09-15T20:28:24.754079+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -11692,7 +11717,7 @@
         "edge_real": -0.05432358963258165,
         "edge": -0.025586207658897388,
         "model_prob": 0.0781856500053979,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130248+00:00"
       },
       {
         "tier": "PASS",
@@ -11710,7 +11735,7 @@
         "edge_real": -0.05434033323486163,
         "edge": -0.018191973538719063,
         "model_prob": 0.4737460277938794,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -11728,7 +11753,43 @@
         "edge_real": -0.054570677266436385,
         "edge": -0.019388330619695113,
         "model_prob": 0.48592316270424263,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-19T19:30Z",
+        "game_id": "401856685",
+        "matchup": "FSU @ ALA",
+        "market": "ATS",
+        "side": "home",
+        "pick": "ALA -19.5",
+        "line": -19.5,
+        "price": -110,
+        "book": "DraftKings",
+        "action_edge": -0.07368120399601144,
+        "edge_real": -0.054681203996011445,
+        "edge": -0.01745272334198255,
+        "model_prob": 0.49117342829088384,
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-19T22:00Z",
+        "game_id": "401862710",
+        "matchup": "ECU @ ODU",
+        "market": "TOTAL",
+        "side": "under",
+        "pick": "Under 48.5",
+        "line": 48.5,
+        "price": -108,
+        "book": "DraftKings",
+        "action_edge": -0.0749678619594067,
+        "edge_real": -0.05596786195940671,
+        "edge": -0.01949310723131822,
+        "model_prob": 0.4858689581135167,
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -11746,7 +11807,7 @@
         "edge_real": -0.05612400525209853,
         "edge": -0.019655953058786656,
         "model_prob": 0.49002806338930666,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -11764,7 +11825,25 @@
         "edge_real": -0.05612601898685866,
         "edge": -0.019659055056864754,
         "model_prob": 0.49002644301162623,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-19T23:00Z",
+        "game_id": "401856687",
+        "matchup": "FLA @ AUB",
+        "market": "TOTAL",
+        "side": "over",
+        "pick": "Over 53.5",
+        "line": 53.5,
+        "price": -112,
+        "book": "DraftKings",
+        "action_edge": -0.0751804860497633,
+        "edge_real": -0.0561804860497633,
+        "edge": -0.019820294497398385,
+        "model_prob": 0.4941848437863213,
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -11782,25 +11861,7 @@
         "edge_real": -0.056578438063023526,
         "edge": -0.02158871489589406,
         "model_prob": 0.47203125232533294,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
-      },
-      {
-        "tier": "PASS",
-        "odds_verified": true,
-        "game_date": "2026-09-19T22:00Z",
-        "game_id": "401862710",
-        "matchup": "ECU @ ODU",
-        "market": "ATS",
-        "side": "away",
-        "pick": "ECU +3",
-        "line": -3,
-        "price": -112,
-        "book": "DraftKings",
-        "action_edge": -0.07598936412064883,
-        "edge_real": -0.05698936412064884,
-        "edge": -0.025285024898876372,
-        "model_prob": 0.491263161745783,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -11818,7 +11879,7 @@
         "edge_real": -0.05731754003253231,
         "edge": -0.021584331568700262,
         "model_prob": 0.4932507985947363,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -11836,7 +11897,7 @@
         "edge_real": -0.05735658194900828,
         "edge": -0.02635238658091278,
         "model_prob": 0.10373243162039836,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -11854,25 +11915,7 @@
         "edge_real": -0.05738422291357005,
         "edge": -0.022833516448575363,
         "model_prob": 0.47139571485226983,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
-      },
-      {
-        "tier": "PASS",
-        "odds_verified": true,
-        "game_date": "2026-09-19T23:30Z",
-        "game_id": "401856802",
-        "matchup": "WVU @ UVA",
-        "market": "ML",
-        "side": "away",
-        "pick": "WVU ML",
-        "line": null,
-        "price": 310,
-        "book": "DraftKings",
-        "action_edge": -0.07654935713423745,
-        "edge_real": -0.05754935713423746,
-        "edge": -0.026870780716123963,
-        "model_prob": 0.22763120603451403,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -11890,7 +11933,7 @@
         "edge_real": -0.058169654865182614,
         "edge": -0.02292230096529319,
         "model_prob": 0.4840798104196592,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -11908,7 +11951,7 @@
         "edge_real": -0.058226700807030185,
         "edge": -0.012993061252464922,
         "model_prob": 0.4986242426650157,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -11926,43 +11969,7 @@
         "edge_real": -0.058412250930105346,
         "edge": -0.023305750161171496,
         "model_prob": 0.48387778638474865,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
-      },
-      {
-        "tier": "PASS",
-        "odds_verified": true,
-        "game_date": "2026-09-18T23:30Z",
-        "game_id": "401858226",
-        "matchup": "MIA @ WAKE",
-        "market": "ML",
-        "side": "home",
-        "pick": "WAKE ML",
-        "line": null,
-        "price": 800,
-        "book": "DraftKings",
-        "action_edge": -0.0774795673705482,
-        "edge_real": -0.05847956737054821,
-        "edge": -0.028062288308413785,
-        "model_prob": 0.10353382907044392,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
-      },
-      {
-        "tier": "PASS",
-        "odds_verified": true,
-        "game_date": "2026-09-19T23:30Z",
-        "game_id": "401856688",
-        "matchup": "LSU @ MISS",
-        "market": "ATS",
-        "side": "away",
-        "pick": "LSU -3",
-        "line": 3,
-        "price": -108,
-        "book": "DraftKings",
-        "action_edge": -0.07839756219031564,
-        "edge_real": -0.059397562190315646,
-        "edge": -0.02922390089552227,
-        "model_prob": 0.480700072636404,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130800+00:00"
       },
       {
         "tier": "PASS",
@@ -11980,7 +11987,7 @@
         "edge_real": -0.06044554255526398,
         "edge": -0.026564314991630162,
         "model_prob": 0.49056605010920573,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -11998,25 +12005,7 @@
         "edge_real": -0.06053003010541664,
         "edge": -0.027089025763071515,
         "model_prob": 0.47553698903265307,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
-      },
-      {
-        "tier": "PASS",
-        "odds_verified": true,
-        "game_date": "2026-09-19T19:30Z",
-        "game_id": "401856685",
-        "matchup": "FSU @ ALA",
-        "market": "ATS",
-        "side": "home",
-        "pick": "ALA -19.5",
-        "line": -19.5,
-        "price": -115,
-        "book": "DraftKings",
-        "action_edge": -0.0795424713340503,
-        "edge_real": -0.06054247133405031,
-        "edge": -0.027109173974656224,
-        "model_prob": 0.4965905463840582,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -12034,7 +12023,7 @@
         "edge_real": -0.060736948534420764,
         "edge": -0.02703794721962223,
         "model_prob": 0.4818878023891886,
-        "odds_observed_at": "2026-09-15T20:28:24.754933+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -12052,7 +12041,7 @@
         "edge_real": -0.060857280802856996,
         "edge": -0.027234017089574333,
         "model_prob": 0.49019885834364313,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.129931+00:00"
       },
       {
         "tier": "PASS",
@@ -12070,7 +12059,7 @@
         "edge_real": -0.060857341283262534,
         "edge": -0.027234115708677835,
         "model_prob": 0.49019880415364125,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -12088,7 +12077,7 @@
         "edge_real": -0.06153261084632096,
         "edge": -0.028722363471141883,
         "model_prob": 0.49568855937188905,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -12106,7 +12095,7 @@
         "edge_real": -0.06153470350807821,
         "edge": -0.02872579329990213,
         "model_prob": 0.47466068695399066,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130442+00:00"
       },
       {
         "tier": "PASS",
@@ -12124,7 +12113,7 @@
         "edge_real": -0.06153494461926078,
         "edge": -0.028726188481615,
         "model_prob": 0.4746604741910816,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130248+00:00"
       },
       {
         "tier": "PASS",
@@ -12142,7 +12131,25 @@
         "edge_real": -0.06153744651053177,
         "edge": -0.030862419720093136,
         "model_prob": 0.5897269370233633,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-19T23:30Z",
+        "game_id": "401856688",
+        "matchup": "LSU @ MISS",
+        "market": "ATS",
+        "side": "away",
+        "pick": "LSU -3",
+        "line": 3,
+        "price": -110,
+        "book": "DraftKings",
+        "action_edge": -0.080607216069741,
+        "edge_real": -0.06160721606974101,
+        "edge": -0.03285706407729928,
+        "model_prob": 0.4828649496713884,
+        "odds_observed_at": "2026-09-15T22:28:15.130175+00:00"
       },
       {
         "tier": "PASS",
@@ -12160,7 +12167,7 @@
         "edge_real": -0.06260498364443629,
         "edge": -0.031189566338111416,
         "model_prob": 0.500607345046637,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -12178,7 +12185,7 @@
         "edge_real": -0.06294303602934735,
         "edge": -0.030678528103205607,
         "model_prob": 0.47989945403802325,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -12196,7 +12203,7 @@
         "edge_real": -0.06298050712118876,
         "edge": -0.030669711361809293,
         "model_prob": 0.4840963693287158,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -12214,7 +12221,7 @@
         "edge_real": -0.0635404150101879,
         "edge": -0.03205308303350903,
         "model_prob": 0.49379286908441067,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130322+00:00"
       },
       {
         "tier": "PASS",
@@ -12232,7 +12239,43 @@
         "edge_real": -0.06390314754967544,
         "edge": -0.035822805172703504,
         "model_prob": 0.6784660286458923,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-19T23:30Z",
+        "game_id": "401856802",
+        "matchup": "WVU @ UVA",
+        "market": "ML",
+        "side": "away",
+        "pick": "WVU ML",
+        "line": null,
+        "price": 310,
+        "book": "DraftKings",
+        "action_edge": -0.08308389602965102,
+        "edge_real": -0.06408389602965103,
+        "edge": -0.03710768620347889,
+        "model_prob": 0.224923819830809,
+        "odds_observed_at": "2026-09-15T22:28:15.130285+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-19T22:00Z",
+        "game_id": "401862710",
+        "matchup": "ECU @ ODU",
+        "market": "ATS",
+        "side": "away",
+        "pick": "ECU +3",
+        "line": -3,
+        "price": -120,
+        "book": "DraftKings",
+        "action_edge": -0.08335162530542577,
+        "edge_real": -0.06435162530542578,
+        "edge": -0.039236761199149116,
+        "model_prob": 0.4999678499281899,
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -12250,7 +12293,7 @@
         "edge_real": -0.06454153563651346,
         "edge": -0.034421575917749345,
         "model_prob": 0.4987085056631658,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -12268,7 +12311,7 @@
         "edge_real": -0.06454222288776966,
         "edge": -0.03442273600159845,
         "model_prob": 0.4987078147706958,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -12286,7 +12329,7 @@
         "edge_real": -0.06524977107532733,
         "edge": -0.03880635664883605,
         "model_prob": 0.1022238777870752,
-        "odds_observed_at": "2026-09-15T20:28:24.754860+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -12304,7 +12347,7 @@
         "edge_real": -0.0658776108201222,
         "edge": -0.0360328387436437,
         "model_prob": 0.49145972635263363,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -12322,43 +12365,25 @@
         "edge_real": -0.06615406827534197,
         "edge": -0.03777454477851456,
         "model_prob": 0.45914069273253433,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
         "odds_verified": true,
-        "game_date": "2026-09-20T03:00Z",
-        "game_id": "401858458",
-        "matchup": "PUR @ UCLA",
-        "market": "ATS",
-        "side": "home",
-        "pick": "UCLA -14",
-        "line": -14,
-        "price": -112,
+        "game_date": "2026-09-19T23:00Z",
+        "game_id": "401856687",
+        "matchup": "FLA @ AUB",
+        "market": "ML",
+        "side": "away",
+        "pick": "FLA ML",
+        "line": null,
+        "price": -130,
         "book": "DraftKings",
-        "action_edge": -0.0856490297170577,
-        "edge_real": -0.06664902971705772,
-        "edge": -0.04032801878114631,
-        "model_prob": 0.48261753267504426,
-        "odds_observed_at": "2026-09-15T20:28:24.755154+00:00"
-      },
-      {
-        "tier": "PASS",
-        "odds_verified": true,
-        "game_date": "2026-09-19T23:30Z",
-        "game_id": "401856802",
-        "matchup": "WVU @ UVA",
-        "market": "ATS",
-        "side": "home",
-        "pick": "UVA -10",
-        "line": -10,
-        "price": -118,
-        "book": "DraftKings",
-        "action_edge": -0.08571016650196642,
-        "edge_real": -0.06671016650196643,
-        "edge": -0.04121766634904913,
-        "model_prob": 0.4945265453752977,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "action_edge": -0.08576899889170943,
+        "edge_real": -0.06676899889170944,
+        "edge": -0.04187007662668917,
+        "model_prob": 0.5183478343346938,
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -12376,7 +12401,7 @@
         "edge_real": -0.06690069542499048,
         "edge": -0.041148043556567294,
         "model_prob": 0.3274343497884542,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -12394,7 +12419,7 @@
         "edge_real": -0.06705355661685405,
         "edge": -0.03766146778053593,
         "model_prob": 0.480077842932885,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -12412,7 +12437,43 @@
         "edge_real": -0.06713536674975029,
         "edge": -0.03787209696301961,
         "model_prob": 0.48410891469298356,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-19T23:30Z",
+        "game_id": "401856802",
+        "matchup": "WVU @ UVA",
+        "market": "ATS",
+        "side": "home",
+        "pick": "UVA -10.5",
+        "line": -10.5,
+        "price": -110,
+        "book": "DraftKings",
+        "action_edge": -0.0863357881842286,
+        "edge_real": -0.06733578818422861,
+        "edge": -0.038158932550085026,
+        "model_prob": 0.47978199755628526,
+        "odds_observed_at": "2026-09-15T22:28:15.130285+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-19T23:00Z",
+        "game_id": "401866423",
+        "matchup": "OHIO @ USA",
+        "market": "ATS",
+        "side": "away",
+        "pick": "OHIO +6",
+        "line": -6,
+        "price": -112,
+        "book": "DraftKings",
+        "action_edge": -0.08679941100281373,
+        "edge_real": -0.06779941100281374,
+        "edge": -0.04120670126311315,
+        "model_prob": 0.4820743512974164,
+        "odds_observed_at": "2026-09-15T22:28:15.129967+00:00"
       },
       {
         "tier": "PASS",
@@ -12430,7 +12491,7 @@
         "edge_real": -0.06843805412726582,
         "edge": -0.04514454945706427,
         "model_prob": 0.3807061096556923,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -12448,7 +12509,25 @@
         "edge_real": -0.06887265228939927,
         "edge": -0.040962257620661066,
         "model_prob": 0.47394601374627554,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-20T03:00Z",
+        "game_id": "401858458",
+        "matchup": "PUR @ UCLA",
+        "market": "ATS",
+        "side": "home",
+        "pick": "UCLA -14",
+        "line": -14,
+        "price": -115,
+        "book": "DraftKings",
+        "action_edge": -0.08806470624519872,
+        "edge_real": -0.06906470624519873,
+        "edge": -0.04497134679068626,
+        "model_prob": 0.48586977373323426,
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -12466,7 +12545,7 @@
         "edge_real": -0.06912817307299399,
         "edge": -0.04175692586562429,
         "model_prob": 0.46724696780854147,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -12484,7 +12563,7 @@
         "edge_real": -0.06932687649252858,
         "edge": -0.04211411914503783,
         "model_prob": 0.4670299537953446,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -12502,7 +12581,7 @@
         "edge_real": -0.06941556228676365,
         "edge": -0.04194138510407952,
         "model_prob": 0.47334654785630725,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -12520,25 +12599,7 @@
         "edge_real": -0.06942024058761631,
         "edge": -0.04506838572408435,
         "model_prob": 0.4069733707129465,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
-      },
-      {
-        "tier": "PASS",
-        "odds_verified": true,
-        "game_date": "2026-09-19T23:00Z",
-        "game_id": "401866423",
-        "matchup": "OHIO @ USA",
-        "market": "ATS",
-        "side": "away",
-        "pick": "OHIO +5.5",
-        "line": -5.5,
-        "price": -110,
-        "book": "DraftKings",
-        "action_edge": -0.08842518021365717,
-        "edge_real": -0.06942518021365718,
-        "edge": -0.04189537347162757,
-        "model_prob": 0.4775098690114504,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -12556,7 +12617,7 @@
         "edge_real": -0.06959367882753378,
         "edge": -0.042595065483082034,
         "model_prob": 0.466736325086346,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -12574,7 +12635,7 @@
         "edge_real": -0.07014783367922615,
         "edge": -0.04420292237261113,
         "model_prob": 0.45952511558354603,
-        "odds_observed_at": "2026-09-15T20:28:24.755108+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -12592,7 +12653,7 @@
         "edge_real": -0.07165652055891172,
         "edge": -0.04694634964482749,
         "model_prob": 0.490746400799563,
-        "odds_observed_at": "2026-09-15T20:28:24.754417+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -12610,7 +12671,7 @@
         "edge_real": -0.07214470678997544,
         "edge": -0.04836981307508597,
         "model_prob": 0.452745166402688,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -12628,7 +12689,7 @@
         "edge_real": -0.07222306490436285,
         "edge": -0.04710850313045668,
         "model_prob": 0.47006217981029197,
-        "odds_observed_at": "2026-09-15T20:28:24.755022+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -12646,7 +12707,7 @@
         "edge_real": -0.07228450126746004,
         "edge": -0.04716464126667803,
         "model_prob": 0.4741310073534809,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -12664,25 +12725,7 @@
         "edge_real": -0.0722845995003488,
         "edge": -0.04716482543850867,
         "model_prob": 0.47413088514528134,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
-      },
-      {
-        "tier": "PASS",
-        "odds_verified": true,
-        "game_date": "2026-09-20T03:00Z",
-        "game_id": "401858458",
-        "matchup": "PUR @ UCLA",
-        "market": "ML",
-        "side": "away",
-        "pick": "PUR ML",
-        "line": null,
-        "price": 470,
-        "book": "DraftKings",
-        "action_edge": -0.09137969114220776,
-        "edge_real": -0.07237969114220777,
-        "edge": -0.05099470177248074,
-        "model_prob": 0.1587601239364902,
-        "odds_observed_at": "2026-09-15T20:28:24.755154+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -12700,25 +12743,7 @@
         "edge_real": -0.07382663905220198,
         "edge": -0.05008285937686838,
         "model_prob": 0.47215346818238757,
-        "odds_observed_at": "2026-09-15T20:28:24.754860+00:00"
-      },
-      {
-        "tier": "PASS",
-        "odds_verified": true,
-        "game_date": "2026-09-19T23:00Z",
-        "game_id": "401856687",
-        "matchup": "FLA @ AUB",
-        "market": "ML",
-        "side": "away",
-        "pick": "FLA ML",
-        "line": null,
-        "price": -142,
-        "book": "DraftKings",
-        "action_edge": -0.09295395666129193,
-        "edge_real": -0.07395395666129194,
-        "edge": -0.054277973141902316,
-        "model_prob": 0.5287220966970277,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -12736,7 +12761,7 @@
         "edge_real": -0.07427238495113728,
         "edge": -0.051281998954215785,
         "model_prob": 0.48152799527606954,
-        "odds_observed_at": "2026-09-15T20:28:24.752249+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.128277+00:00"
       },
       {
         "tier": "PASS",
@@ -12754,7 +12779,7 @@
         "edge_real": -0.07527437535524974,
         "edge": -0.05287181576033682,
         "model_prob": 0.47017881569903697,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -12772,7 +12797,7 @@
         "edge_real": -0.07529337961979729,
         "edge": -0.05296221191192393,
         "model_prob": 0.46604233550959223,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -12790,7 +12815,7 @@
         "edge_real": -0.07539537708087447,
         "edge": -0.05638066919515192,
         "model_prob": 0.6409200614840858,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130800+00:00"
       },
       {
         "tier": "PASS",
@@ -12808,7 +12833,7 @@
         "edge_real": -0.07563206722607443,
         "edge": -0.057289967969236355,
         "model_prob": 0.5261306459117755,
-        "odds_observed_at": "2026-09-15T20:28:24.754667+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -12826,7 +12851,25 @@
         "edge_real": -0.07663191336737328,
         "edge": -0.05553080363912057,
         "model_prob": 0.46820712876536497,
-        "odds_observed_at": "2026-09-15T20:28:24.754710+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-20T03:00Z",
+        "game_id": "401858458",
+        "matchup": "PUR @ UCLA",
+        "market": "ML",
+        "side": "away",
+        "pick": "PUR ML",
+        "line": null,
+        "price": 455,
+        "book": "DraftKings",
+        "action_edge": -0.09569164934660018,
+        "edge_real": -0.0766916493466002,
+        "edge": -0.058707937263191845,
+        "model_prob": 0.16102319177332847,
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -12844,7 +12887,7 @@
         "edge_real": -0.07728881308668198,
         "edge": -0.05929944981749222,
         "model_prob": 0.5322859697936968,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -12862,25 +12905,7 @@
         "edge_real": -0.0773346489584825,
         "edge": -0.05692396375313562,
         "model_prob": 0.4671348677318488,
-        "odds_observed_at": "2026-09-15T20:28:24.754417+00:00"
-      },
-      {
-        "tier": "PASS",
-        "odds_verified": true,
-        "game_date": "2026-09-17T23:30Z",
-        "game_id": "401858225",
-        "matchup": "SYR @ PITT",
-        "market": "ML",
-        "side": "away",
-        "pick": "SYR ML",
-        "line": null,
-        "price": 330,
-        "book": "DraftKings",
-        "action_edge": -0.09664078717611517,
-        "edge_real": -0.07764078717611518,
-        "edge": -0.060560200465861594,
-        "model_prob": 0.20718331148463076,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -12898,7 +12923,7 @@
         "edge_real": -0.07790346672531069,
         "edge": -0.05806000421799573,
         "model_prob": 0.4662385397516037,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130322+00:00"
       },
       {
         "tier": "PASS",
@@ -12916,7 +12941,7 @@
         "edge_real": -0.07813448398535403,
         "edge": -0.061079545204778395,
         "model_prob": 0.5717456449658586,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.129931+00:00"
       },
       {
         "tier": "PASS",
@@ -12934,7 +12959,25 @@
         "edge_real": -0.07820666237274466,
         "edge": -0.06261477803562705,
         "model_prob": 0.4523969062428134,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-19T23:30Z",
+        "game_id": "401858232",
+        "matchup": "VT @ MD",
+        "market": "TOTAL",
+        "side": "under",
+        "pick": "Under 54.5",
+        "line": 54.5,
+        "price": -115,
+        "book": "DraftKings",
+        "action_edge": -0.09720698009353829,
+        "edge_real": -0.0782069800935383,
+        "edge": -0.05896545075867212,
+        "model_prob": 0.4755959314949594,
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -12952,7 +12995,7 @@
         "edge_real": -0.07845666503290241,
         "edge": -0.05921898442420431,
         "model_prob": 0.46933158143419923,
-        "odds_observed_at": "2026-09-15T20:28:24.754710+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -12970,25 +13013,7 @@
         "edge_real": -0.07849654489167042,
         "edge": -0.06232531612524324,
         "model_prob": 0.4150710624006315,
-        "odds_observed_at": "2026-09-15T20:28:24.755022+00:00"
-      },
-      {
-        "tier": "PASS",
-        "odds_verified": true,
-        "game_date": "2026-09-19T23:30Z",
-        "game_id": "401858232",
-        "matchup": "VT @ MD",
-        "market": "TOTAL",
-        "side": "under",
-        "pick": "Under 53.5",
-        "line": 53.5,
-        "price": -105,
-        "book": "DraftKings",
-        "action_edge": -0.09750995809720593,
-        "edge_real": -0.07850995809720594,
-        "edge": -0.05957160449375711,
-        "model_prob": 0.4549367165938394,
-        "odds_observed_at": "2026-09-15T20:28:24.754667+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -13006,7 +13031,25 @@
         "edge_real": -0.07850996645731205,
         "edge": -0.05957162124805496,
         "model_prob": 0.4549367030871667,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-19T23:00Z",
+        "game_id": "401856687",
+        "matchup": "FLA @ AUB",
+        "market": "ATS",
+        "side": "away",
+        "pick": "FLA -2.5",
+        "line": 2.5,
+        "price": -110,
+        "book": "DraftKings",
+        "action_edge": -0.09756155679517635,
+        "edge_real": -0.07856155679517636,
+        "edge": -0.05938368564682563,
+        "model_prob": 0.4651673672631804,
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -13024,7 +13067,7 @@
         "edge_real": -0.07866142248011916,
         "edge": -0.06032475395965243,
         "model_prob": 0.44825971309553414,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -13042,25 +13085,7 @@
         "edge_real": -0.07872192294411351,
         "edge": -0.05975412893269086,
         "model_prob": 0.4608366540185612,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
-      },
-      {
-        "tier": "PASS",
-        "odds_verified": true,
-        "game_date": "2026-09-19T23:00Z",
-        "game_id": "401866423",
-        "matchup": "OHIO @ USA",
-        "market": "ML",
-        "side": "away",
-        "pick": "OHIO ML",
-        "line": null,
-        "price": 185,
-        "book": "DraftKings",
-        "action_edge": -0.09844731130457779,
-        "edge_real": -0.0794473113045778,
-        "edge": -0.06341743780727971,
-        "model_prob": 0.31058737256638125,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130442+00:00"
       },
       {
         "tier": "PASS",
@@ -13078,7 +13103,25 @@
         "edge_real": -0.08011709045703809,
         "edge": -0.06259547161638188,
         "model_prob": 0.4664382844985737,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-19T23:00Z",
+        "game_id": "401866423",
+        "matchup": "OHIO @ USA",
+        "market": "ML",
+        "side": "away",
+        "pick": "OHIO ML",
+        "line": null,
+        "price": 190,
+        "book": "DraftKings",
+        "action_edge": -0.09920685673699697,
+        "edge_real": -0.08020685673699698,
+        "edge": -0.06553167711843298,
+        "model_prob": 0.30434114901228493,
+        "odds_observed_at": "2026-09-15T22:28:15.129967+00:00"
       },
       {
         "tier": "PASS",
@@ -13096,7 +13139,25 @@
         "edge_real": -0.08039830900376783,
         "edge": -0.06313108008622635,
         "model_prob": 0.46195741453049965,
-        "odds_observed_at": "2026-09-15T20:28:24.754933+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-17T23:30Z",
+        "game_id": "401858225",
+        "matchup": "SYR @ PITT",
+        "market": "ML",
+        "side": "away",
+        "pick": "SYR ML",
+        "line": null,
+        "price": 320,
+        "book": "DraftKings",
+        "action_edge": -0.09955656266329752,
+        "edge_real": -0.08055656266329753,
+        "edge": -0.06609802384776532,
+        "model_prob": 0.20984720142098312,
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -13114,25 +13175,43 @@
         "edge_real": -0.08077153879126425,
         "edge": -0.06416163425381938,
         "model_prob": 0.4510327815705124,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
         "odds_verified": true,
-        "game_date": "2026-09-19T23:00Z",
-        "game_id": "401856687",
-        "matchup": "FLA @ AUB",
-        "market": "ATS",
-        "side": "away",
-        "pick": "FLA -2.5",
-        "line": 2.5,
+        "game_date": "2026-09-20T00:00Z",
+        "game_id": "401862775",
+        "matchup": "ETAM @ TLSA",
+        "market": "TOTAL",
+        "side": "over",
+        "pick": "Over 56.5",
+        "line": 56.5,
+        "price": -112,
+        "book": "DraftKings",
+        "action_edge": -0.10001708746011345,
+        "edge_real": -0.08011708746011345,
+        "edge": -0.06259546546494668,
+        "model_prob": 0.46643828998120174,
+        "odds_observed_at": "2026-09-15T22:28:15.130512+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-19T23:30Z",
+        "game_id": "401856688",
+        "matchup": "LSU @ MISS",
+        "market": "TOTAL",
+        "side": "over",
+        "pick": "Over 58.5",
+        "line": 58.5,
         "price": -115,
         "book": "DraftKings",
-        "action_edge": -0.09999149244683318,
-        "edge_real": -0.0809914924468332,
-        "edge": -0.06461416927774574,
-        "model_prob": 0.4705844853563549,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "action_edge": -0.10044125563811557,
+        "edge_real": -0.08144125563811558,
+        "edge": -0.06554287020532847,
+        "model_prob": 0.46969052857997723,
+        "odds_observed_at": "2026-09-15T22:28:15.130175+00:00"
       },
       {
         "tier": "PASS",
@@ -13150,25 +13229,7 @@
         "edge_real": -0.08145128402569542,
         "edge": -0.06556362869049477,
         "model_prob": 0.4696702859748749,
-        "odds_observed_at": "2026-09-15T20:28:24.754079+00:00"
-      },
-      {
-        "tier": "PASS",
-        "odds_verified": true,
-        "game_date": "2026-09-19T16:00Z",
-        "game_id": "401858451",
-        "matchup": "AKR @ MINN",
-        "market": "TOTAL",
-        "side": "under",
-        "pick": "Under 49.5",
-        "line": 49.5,
-        "price": -110,
-        "book": "DraftKings",
-        "action_edge": -0.10121280990451995,
-        "edge_real": -0.08221280990451996,
-        "edge": -0.06690904844916812,
-        "model_prob": 0.45839980322505447,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -13186,7 +13247,7 @@
         "edge_real": -0.08224553781073883,
         "edge": -0.07138856123336736,
         "model_prob": 0.43787224709342426,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -13204,25 +13265,7 @@
         "edge_real": -0.08226483024898824,
         "edge": -0.06705640801257864,
         "model_prob": 0.45428503353767247,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
-      },
-      {
-        "tier": "PASS",
-        "odds_verified": true,
-        "game_date": "2026-09-19T23:30Z",
-        "game_id": "401856688",
-        "matchup": "LSU @ MISS",
-        "market": "TOTAL",
-        "side": "over",
-        "pick": "Over 59.5",
-        "line": 59.5,
-        "price": -108,
-        "book": "DraftKings",
-        "action_edge": -0.10217070841255343,
-        "edge_real": -0.08317070841255345,
-        "edge": -0.0689690654785081,
-        "model_prob": 0.4523394331749562,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -13240,7 +13283,7 @@
         "edge_real": -0.08426982762817647,
         "edge": -0.07308953514538043,
         "model_prob": 0.30937427065324075,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -13258,7 +13301,25 @@
         "edge_real": -0.08433314784558361,
         "edge": -0.07515526428343887,
         "model_prob": 0.4392382299609544,
-        "odds_observed_at": "2026-09-15T20:28:24.754667+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-19T16:00Z",
+        "game_id": "401858451",
+        "matchup": "AKR @ MINN",
+        "market": "TOTAL",
+        "side": "under",
+        "pick": "Under 48.5",
+        "line": 48.5,
+        "price": -105,
+        "book": "DraftKings",
+        "action_edge": -0.10343921261859564,
+        "edge_real": -0.08443921261859565,
+        "edge": -0.07184622680232676,
+        "model_prob": 0.44327787945321917,
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -13276,7 +13337,7 @@
         "edge_real": -0.08443921261859565,
         "edge": -0.07184622680232676,
         "model_prob": 0.44327787945321917,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -13294,7 +13355,7 @@
         "edge_real": -0.08465493849532096,
         "edge": -0.07214163803064674,
         "model_prob": 0.4566693729730773,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130652+00:00"
       },
       {
         "tier": "PASS",
@@ -13312,7 +13373,7 @@
         "edge_real": -0.0849256215083355,
         "edge": -0.07272529588544656,
         "model_prob": 0.44813715419772104,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -13330,7 +13391,7 @@
         "edge_real": -0.08579119010094509,
         "edge": -0.07460182363958869,
         "model_prob": 0.4535914681600193,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.129931+00:00"
       },
       {
         "tier": "PASS",
@@ -13348,7 +13409,25 @@
         "edge_real": -0.08580239109838442,
         "edge": -0.07477491913826884,
         "model_prob": 0.4592100284016192,
-        "odds_observed_at": "2026-09-15T20:28:24.754860+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-20T03:00Z",
+        "game_id": "401858458",
+        "matchup": "PUR @ UCLA",
+        "market": "TOTAL",
+        "side": "under",
+        "pick": "Under 53.5",
+        "line": 53.5,
+        "price": -110,
+        "book": "DraftKings",
+        "action_edge": -0.10515040239126754,
+        "edge_real": -0.08615040239126755,
+        "edge": -0.07535759847915136,
+        "model_prob": 0.44869503207631034,
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -13366,7 +13445,7 @@
         "edge_real": -0.08638823715727792,
         "edge": -0.0760448542658748,
         "model_prob": 0.4574556887261493,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -13384,7 +13463,7 @@
         "edge_real": -0.08644554959401095,
         "edge": -0.07603042583509782,
         "model_prob": 0.4438961286984535,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130652+00:00"
       },
       {
         "tier": "PASS",
@@ -13402,7 +13481,7 @@
         "edge_real": -0.08743899877209023,
         "edge": -0.07950909013522263,
         "model_prob": 0.5159299111653517,
-        "odds_observed_at": "2026-09-15T20:28:24.753996+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -13420,7 +13499,7 @@
         "edge_real": -0.0866994617993425,
         "edge": -0.07658700080767221,
         "model_prob": 0.4508599101113775,
-        "odds_observed_at": "2026-09-15T20:28:24.754979+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130579+00:00"
       },
       {
         "tier": "PASS",
@@ -13438,7 +13517,7 @@
         "edge_real": -0.08763595127256388,
         "edge": -0.07865008169062944,
         "model_prob": 0.4477268492714347,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.129719+00:00"
       },
       {
         "tier": "PASS",
@@ -13456,7 +13535,7 @@
         "edge_real": -0.08771561056088067,
         "edge": -0.08053384970759246,
         "model_prob": 0.5285450167788969,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -13474,7 +13553,7 @@
         "edge_real": -0.08789505230536376,
         "edge": -0.08144946818474628,
         "model_prob": 0.07688311341492382,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -13492,7 +13571,7 @@
         "edge_real": -0.08791214286950028,
         "edge": -0.0792392717544375,
         "model_prob": 0.4429309305401167,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -13510,7 +13589,7 @@
         "edge_real": -0.08717867983912266,
         "edge": -0.07776847117196584,
         "model_prob": 0.43560331054925416,
-        "odds_observed_at": "2026-09-15T20:28:24.755197+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130762+00:00"
       },
       {
         "tier": "PASS",
@@ -13528,25 +13607,7 @@
         "edge_real": -0.08830368952778403,
         "edge": -0.0801304219029305,
         "model_prob": 0.4452499719469445,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
-      },
-      {
-        "tier": "PASS",
-        "odds_verified": true,
-        "game_date": "2026-09-20T03:00Z",
-        "game_id": "401858458",
-        "matchup": "PUR @ UCLA",
-        "market": "TOTAL",
-        "side": "under",
-        "pick": "Under 52.5",
-        "line": 52.5,
-        "price": -108,
-        "book": "DraftKings",
-        "action_edge": -0.10747292784830059,
-        "edge_real": -0.0884729278483006,
-        "edge": -0.08050676044671795,
-        "model_prob": 0.4369507818407019,
-        "odds_observed_at": "2026-09-15T20:28:24.755154+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -13564,7 +13625,7 @@
         "edge_real": -0.08862984938324343,
         "edge": -0.08194869400446028,
         "model_prob": 0.21274387363494263,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -13582,7 +13643,7 @@
         "edge_real": -0.08783500584600278,
         "edge": -0.07909059798700262,
         "model_prob": 0.44701186286420336,
-        "odds_observed_at": "2026-09-15T20:28:24.754371+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130106+00:00"
       },
       {
         "tier": "PASS",
@@ -13600,7 +13661,7 @@
         "edge_real": -0.08878284334961196,
         "edge": -0.08119705834931919,
         "model_prob": 0.43570938254111624,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130248+00:00"
       },
       {
         "tier": "PASS",
@@ -13618,25 +13679,7 @@
         "edge_real": -0.08881536528091319,
         "edge": -0.08126957928327729,
         "model_prob": 0.4431853031529842,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
-      },
-      {
-        "tier": "PASS",
-        "odds_verified": true,
-        "game_date": "2026-09-19T23:30Z",
-        "game_id": "401856802",
-        "matchup": "WVU @ UVA",
-        "market": "TOTAL",
-        "side": "over",
-        "pick": "Over 53.5",
-        "line": 53.5,
-        "price": -108,
-        "book": "DraftKings",
-        "action_edge": -0.10794116436246676,
-        "edge_real": -0.08894116436246677,
-        "edge": -0.08155024272093388,
-        "model_prob": 0.43505195045899714,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -13654,7 +13697,7 @@
         "edge_real": -0.08911439368983637,
         "edge": -0.0822123655274656,
         "model_prob": 0.4527601776169208,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130800+00:00"
       },
       {
         "tier": "PASS",
@@ -13672,7 +13715,7 @@
         "edge_real": -0.088417869540252,
         "edge": -0.08036360434726307,
         "model_prob": 0.44102043089991705,
-        "odds_observed_at": "2026-09-15T20:28:24.752570+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.128604+00:00"
       },
       {
         "tier": "PASS",
@@ -13690,7 +13733,7 @@
         "edge_real": -0.08932800913503904,
         "edge": -0.08250806588708062,
         "model_prob": 0.446437546735603,
-        "odds_observed_at": "2026-09-15T20:28:24.754502+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -13708,7 +13751,7 @@
         "edge_real": -0.08977831820301439,
         "edge": -0.08342333176908576,
         "model_prob": 0.4312725465655687,
-        "odds_observed_at": "2026-09-15T20:28:24.754292+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130037+00:00"
       },
       {
         "tier": "PASS",
@@ -13726,7 +13769,7 @@
         "edge_real": -0.08982052638628728,
         "edge": -0.08360326611576539,
         "model_prob": 0.42522572951368953,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -13744,7 +13787,7 @@
         "edge_real": -0.08999706349543332,
         "edge": -0.08399647902420758,
         "model_prob": 0.4431565339472435,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -13762,25 +13805,7 @@
         "edge_real": -0.09001348263969472,
         "edge": -0.08484238458525266,
         "model_prob": 0.11044662392480364,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
-      },
-      {
-        "tier": "PASS",
-        "odds_verified": true,
-        "game_date": "2026-09-19T20:00Z",
-        "game_id": "401866422",
-        "matchup": "BALL @ LIB",
-        "market": "ATS",
-        "side": "home",
-        "pick": "LIB -14.5",
-        "line": -14.5,
-        "price": -105,
-        "book": "DraftKings",
-        "action_edge": -0.10906066621405149,
-        "edge_real": -0.0900606662140515,
-        "edge": -0.0841382221070575,
-        "model_prob": 0.42403915603041353,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -13798,7 +13823,7 @@
         "edge_real": -0.0882705833170283,
         "edge": -0.08016737127490157,
         "model_prob": 0.4317996584287296,
-        "odds_observed_at": "2026-09-15T20:28:24.753270+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.129205+00:00"
       },
       {
         "tier": "PASS",
@@ -13816,25 +13841,7 @@
         "edge_real": -0.09008082438911102,
         "edge": -0.08508218853964317,
         "model_prob": 0.2364818703210012,
-        "odds_observed_at": "2026-09-15T20:28:24.754933+00:00"
-      },
-      {
-        "tier": "PASS",
-        "odds_verified": true,
-        "game_date": "2026-09-19T23:00Z",
-        "game_id": "401866423",
-        "matchup": "OHIO @ USA",
-        "market": "TOTAL",
-        "side": "under",
-        "pick": "Under 51.5",
-        "line": 51.5,
-        "price": -108,
-        "book": "DraftKings",
-        "action_edge": -0.10915180226813231,
-        "edge_real": -0.09015180226813233,
-        "edge": -0.0842616243393675,
-        "model_prob": 0.4293924086205486,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -13852,7 +13859,7 @@
         "edge_real": -0.09042025124459295,
         "edge": -0.08832185919340953,
         "model_prob": 0.02010252231636056,
-        "odds_observed_at": "2026-09-15T20:28:24.754037+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.129825+00:00"
       },
       {
         "tier": "PASS",
@@ -13870,7 +13877,61 @@
         "edge_real": -0.0904399037030441,
         "edge": -0.08498414022418153,
         "model_prob": 0.44074103656335617,
-        "odds_observed_at": "2026-09-15T20:28:24.755022+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-19T23:30Z",
+        "game_id": "401856802",
+        "matchup": "WVU @ UVA",
+        "market": "TOTAL",
+        "side": "over",
+        "pick": "Over 53.5",
+        "line": 53.5,
+        "price": -118,
+        "book": "DraftKings",
+        "action_edge": -0.10945998730835783,
+        "edge_real": -0.09045998730835784,
+        "edge": -0.08516634935048459,
+        "model_prob": 0.4458988903521166,
+        "odds_observed_at": "2026-09-15T22:28:15.130285+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-19T23:00Z",
+        "game_id": "401866423",
+        "matchup": "OHIO @ USA",
+        "market": "TOTAL",
+        "side": "under",
+        "pick": "Under 50.5",
+        "line": 50.5,
+        "price": -102,
+        "book": "DraftKings",
+        "action_edge": -0.10955973889928729,
+        "edge_real": -0.0905597388992873,
+        "edge": -0.08538598266396719,
+        "model_prob": 0.4154220020503714,
+        "odds_observed_at": "2026-09-15T22:28:15.129967+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-19T19:30Z",
+        "game_id": "401856797",
+        "matchup": "M-OH @ CIN",
+        "market": "ML",
+        "side": "away",
+        "pick": "M-OH ML",
+        "line": null,
+        "price": 500,
+        "book": "DraftKings",
+        "action_edge": -0.10958372154982954,
+        "edge_real": -0.09058372154982955,
+        "edge": -0.08613198061800019,
+        "model_prob": 0.1370725140821928,
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -13888,7 +13949,7 @@
         "edge_real": -0.0907428421816782,
         "edge": -0.08578930554664614,
         "model_prob": 0.4442057679482245,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -13906,7 +13967,7 @@
         "edge_real": -0.09081902035481143,
         "edge": -0.0857622987356643,
         "model_prob": 0.4256519825716203,
-        "odds_observed_at": "2026-09-15T20:28:24.753583+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.129470+00:00"
       },
       {
         "tier": "PASS",
@@ -13924,7 +13985,7 @@
         "edge_real": -0.09090288841743056,
         "edge": -0.08601832371668659,
         "model_prob": 0.4193803696778903,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -13942,7 +14003,25 @@
         "edge_real": -0.09118264862470557,
         "edge": -0.08840296002494495,
         "model_prob": 0.4301527855526799,
-        "odds_observed_at": "2026-09-15T20:28:24.753996+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-19T20:00Z",
+        "game_id": "401866422",
+        "matchup": "BALL @ LIB",
+        "market": "ATS",
+        "side": "home",
+        "pick": "LIB -14.5",
+        "line": -14.5,
+        "price": -110,
+        "book": "DraftKings",
+        "action_edge": -0.11022031958399518,
+        "edge_real": -0.0912203195839952,
+        "edge": -0.08500015789734791,
+        "model_prob": 0.42684121136208175,
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -13960,7 +14039,7 @@
         "edge_real": -0.09038914170208065,
         "edge": -0.0847950360145207,
         "model_prob": 0.43560231558622486,
-        "odds_observed_at": "2026-09-15T20:28:24.754120+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.129895+00:00"
       },
       {
         "tier": "PASS",
@@ -13978,7 +14057,7 @@
         "edge_real": -0.09129634481182133,
         "edge": -0.0868375142779208,
         "model_prob": 0.42998180149150916,
-        "odds_observed_at": "2026-09-15T20:28:24.753228+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.129167+00:00"
       },
       {
         "tier": "PASS",
@@ -13996,7 +14075,7 @@
         "edge_real": -0.09133018343681483,
         "edge": -0.08697372295392182,
         "model_prob": 0.43510090413179436,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130003+00:00"
       },
       {
         "tier": "PASS",
@@ -14014,7 +14093,7 @@
         "edge_real": -0.09145908871055498,
         "edge": -0.08720426419529273,
         "model_prob": 0.42883224750198734,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -14032,7 +14111,7 @@
         "edge_real": -0.09155613523534947,
         "edge": -0.0874229742891376,
         "model_prob": 0.4281218233084034,
-        "odds_observed_at": "2026-09-15T20:28:24.630010+00:00"
+        "odds_observed_at": "2026-09-15T22:28:14.923757+00:00"
       },
       {
         "tier": "PASS",
@@ -14050,7 +14129,7 @@
         "edge_real": -0.09159626830091545,
         "edge": -0.08776409307105447,
         "model_prob": 0.44171260482408514,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -14068,7 +14147,7 @@
         "edge_real": -0.09073025153546593,
         "edge": -0.08563254304964561,
         "model_prob": 0.4204071075244678,
-        "odds_observed_at": "2026-09-15T20:28:24.754331+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130070+00:00"
       },
       {
         "tier": "PASS",
@@ -14086,7 +14165,7 @@
         "edge_real": -0.0917154751817572,
         "edge": -0.0877820652734882,
         "model_prob": 0.426911621743041,
-        "odds_observed_at": "2026-09-15T20:28:24.755108+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -14104,7 +14183,7 @@
         "edge_real": -0.09172820786751362,
         "edge": -0.08786395962105503,
         "model_prob": 0.4321298723201453,
-        "odds_observed_at": "2026-09-15T20:28:24.754502+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -14122,25 +14201,7 @@
         "edge_real": -0.09179675338519737,
         "edge": -0.08801725651723269,
         "model_prob": 0.4132758136057195,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
-      },
-      {
-        "tier": "PASS",
-        "odds_verified": true,
-        "game_date": "2026-09-19T19:30Z",
-        "game_id": "401856797",
-        "matchup": "M-OH @ CIN",
-        "market": "ML",
-        "side": "away",
-        "pick": "M-OH ML",
-        "line": null,
-        "price": 470,
-        "book": "DraftKings",
-        "action_edge": -0.11091140909722197,
-        "edge_real": -0.09191140909722198,
-        "edge": -0.08879969288002106,
-        "model_prob": 0.14124759825727695,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -14150,15 +14211,15 @@
         "matchup": "AKR @ MINN",
         "market": "ATS",
         "side": "home",
-        "pick": "MINN -24.5",
-        "line": -24.5,
-        "price": -102,
+        "pick": "MINN -23.5",
+        "line": -23.5,
+        "price": -110,
         "book": "DraftKings",
-        "action_edge": -0.11094621023289489,
-        "edge_real": -0.0919462102328949,
-        "edge": -0.08844256359554269,
-        "model_prob": 0.40626509902729735,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "action_edge": -0.11125818877365104,
+        "edge_real": -0.09225818877365105,
+        "edge": -0.08899606917843213,
+        "model_prob": 0.41871562493890135,
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -14176,7 +14237,7 @@
         "edge_real": -0.09144960288166436,
         "edge": -0.0871718114974331,
         "model_prob": 0.425253545634216,
-        "odds_observed_at": "2026-09-15T20:28:24.754979+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130579+00:00"
       },
       {
         "tier": "PASS",
@@ -14194,7 +14255,7 @@
         "edge_real": -0.09250872691607105,
         "edge": -0.09002404418243039,
         "model_prob": 0.08830566692829755,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -14206,13 +14267,13 @@
         "side": "under",
         "pick": "Under 49.5",
         "line": 49.5,
-        "price": -110,
+        "price": -112,
         "book": "DraftKings",
-        "action_edge": -0.1119536148639197,
-        "edge_real": -0.09295361486391972,
-        "edge": -0.09056058088942079,
-        "model_prob": 0.4113446255064873,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "action_edge": -0.1120606916645888,
+        "edge_real": -0.09306069166458882,
+        "edge": -0.09080654399160484,
+        "model_prob": 0.4135095025414717,
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -14230,7 +14291,7 @@
         "edge_real": -0.09321423070146945,
         "edge": -0.091144497951924,
         "model_prob": 0.4079207272312697,
-        "odds_observed_at": "2026-09-15T20:28:24.754037+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.129825+00:00"
       },
       {
         "tier": "PASS",
@@ -14248,7 +14309,7 @@
         "edge_real": -0.09325291232364044,
         "edge": -0.09123100395068602,
         "model_prob": 0.40737074414801133,
-        "odds_observed_at": "2026-09-15T20:28:24.752531+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.128546+00:00"
       },
       {
         "tier": "PASS",
@@ -14266,7 +14327,7 @@
         "edge_real": -0.0934767317132778,
         "edge": -0.09175860832972953,
         "model_prob": 0.41246995100360995,
-        "odds_observed_at": "2026-09-15T20:28:24.753228+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.129167+00:00"
       },
       {
         "tier": "PASS",
@@ -14284,7 +14345,7 @@
         "edge_real": -0.0927644890672056,
         "edge": -0.09014265660600436,
         "model_prob": 0.41711592815226073,
-        "odds_observed_at": "2026-09-15T20:28:24.754331+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130070+00:00"
       },
       {
         "tier": "PASS",
@@ -14302,7 +14363,7 @@
         "edge_real": -0.09383273011770257,
         "edge": -0.09252401061034683,
         "model_prob": 0.393787618908095,
-        "odds_observed_at": "2026-09-15T20:28:24.753583+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.129470+00:00"
       },
       {
         "tier": "PASS",
@@ -14320,7 +14381,7 @@
         "edge_real": -0.09393302721022907,
         "edge": -0.09322019812213625,
         "model_prob": 0.03591014578076779,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -14338,7 +14399,7 @@
         "edge_real": -0.09394504751653499,
         "edge": -0.09278724244982617,
         "model_prob": 0.3859758392408099,
-        "odds_observed_at": "2026-09-15T20:28:24.754292+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130037+00:00"
       },
       {
         "tier": "PASS",
@@ -14356,7 +14417,25 @@
         "edge_real": -0.09304777641050097,
         "edge": -0.09077763783935638,
         "model_prob": 0.4065748091810199,
-        "odds_observed_at": "2026-09-15T20:28:24.753357+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.129276+00:00"
+      },
+      {
+        "tier": "PASS",
+        "odds_verified": true,
+        "game_date": "2026-09-20T00:00Z",
+        "game_id": "401862775",
+        "matchup": "ETAM @ TLSA",
+        "market": "ATS",
+        "side": "home",
+        "pick": "TLSA -42.5",
+        "line": -42.5,
+        "price": -110,
+        "book": "DraftKings",
+        "action_edge": -0.11312018876271297,
+        "edge_real": -0.09322018876271297,
+        "edge": -0.09115782531295977,
+        "model_prob": 0.4078367877310627,
+        "odds_observed_at": "2026-09-15T22:28:15.130512+00:00"
       },
       {
         "tier": "PASS",
@@ -14374,7 +14453,7 @@
         "edge_real": -0.0941286812852534,
         "edge": -0.0933050533216174,
         "model_prob": 0.11452948974436605,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -14392,7 +14471,7 @@
         "edge_real": -0.09413595536760312,
         "edge": -0.093189853947638,
         "model_prob": 0.38632931559157185,
-        "odds_observed_at": "2026-09-15T20:28:24.753951+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.129755+00:00"
       },
       {
         "tier": "PASS",
@@ -14410,7 +14489,7 @@
         "edge_real": -0.09414315104452552,
         "edge": -0.09357976393299791,
         "model_prob": 0.03541155267393692,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -14428,7 +14507,7 @@
         "edge_real": -0.09325376024227769,
         "edge": -0.09123289967957776,
         "model_prob": 0.4073585536117647,
-        "odds_observed_at": "2026-09-15T20:28:24.754120+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.129895+00:00"
       },
       {
         "tier": "PASS",
@@ -14446,7 +14525,7 @@
         "edge_real": -0.09330115695031689,
         "edge": -0.09134389642968678,
         "model_prob": 0.4101553488889249,
-        "odds_observed_at": "2026-09-15T20:28:24.752570+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.128604+00:00"
       },
       {
         "tier": "PASS",
@@ -14464,7 +14543,7 @@
         "edge_real": -0.09330232270180427,
         "edge": -0.09134649717119678,
         "model_prob": 0.41013796780687617,
-        "odds_observed_at": "2026-09-15T20:28:24.754371+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130106+00:00"
       },
       {
         "tier": "PASS",
@@ -14482,7 +14561,7 @@
         "edge_real": -0.09333316050642194,
         "edge": -0.09141527836969489,
         "model_prob": 0.40967383642137223,
-        "odds_observed_at": "2026-09-15T20:28:24.752249+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.128277+00:00"
       },
       {
         "tier": "PASS",
@@ -14500,7 +14579,7 @@
         "edge_real": -0.0942470696851009,
         "edge": -0.09399618484017014,
         "model_prob": 0.014460299797284026,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130652+00:00"
       },
       {
         "tier": "PASS",
@@ -14518,7 +14597,7 @@
         "edge_real": -0.09425364874623904,
         "edge": -0.09344616087972651,
         "model_prob": 0.3827025495882237,
-        "odds_observed_at": "2026-09-15T20:28:24.630010+00:00"
+        "odds_observed_at": "2026-09-15T22:28:14.923757+00:00"
       },
       {
         "tier": "PASS",
@@ -14536,7 +14615,7 @@
         "edge_real": -0.09436257401640782,
         "edge": -0.09387900731927293,
         "model_prob": 0.05611814754748301,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -14554,7 +14633,7 @@
         "edge_real": -0.09447596456297677,
         "edge": -0.09408463222010519,
         "model_prob": 0.055400249069355034,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -14572,7 +14651,7 @@
         "edge_real": -0.09449472140409546,
         "edge": -0.0939729462213227,
         "model_prob": 0.38429640473611537,
-        "odds_observed_at": "2026-09-15T20:28:24.753951+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.129755+00:00"
       },
       {
         "tier": "PASS",
@@ -14590,7 +14669,7 @@
         "edge_real": -0.09370091978338556,
         "edge": -0.09223264786880495,
         "model_prob": 0.39644355730522873,
-        "odds_observed_at": "2026-09-15T20:28:24.755197+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130762+00:00"
       },
       {
         "tier": "PASS",
@@ -14608,7 +14687,7 @@
         "edge_real": -0.09478217713130747,
         "edge": -0.09466042419408664,
         "model_prob": 0.029496842280286817,
-        "odds_observed_at": "2026-09-15T20:28:25.728677+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.130442+00:00"
       },
       {
         "tier": "PASS",
@@ -14620,13 +14699,13 @@
         "side": "away",
         "pick": "MSU ML",
         "line": null,
-        "price": 1800,
+        "price": 1700,
         "book": "DraftKings",
-        "action_edge": -0.11383242412332328,
-        "edge_real": -0.0948324241233233,
-        "edge": -0.09473388848230604,
-        "model_prob": 0.03505042709763351,
-        "odds_observed_at": "2026-09-15T20:28:24.754417+00:00"
+        "action_edge": -0.1138640629614004,
+        "edge_real": -0.09486406296140042,
+        "edge": -0.09478323873972803,
+        "model_prob": 0.03644506050161267,
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -14644,7 +14723,7 @@
         "edge_real": -0.09490390461046011,
         "edge": -0.0948765617286568,
         "model_prob": 0.012539720085414374,
-        "odds_observed_at": "2026-09-15T20:28:24.754710+00:00"
+        "odds_observed_at": "2026-09-15T22:28:19.549716+00:00"
       },
       {
         "tier": "PASS",
@@ -14662,15 +14741,12 @@
         "edge_real": -0.0932838788409205,
         "edge": -0.0913053444419236,
         "model_prob": 0.40336468261470493,
-        "odds_observed_at": "2026-09-15T20:28:24.753270+00:00"
+        "odds_observed_at": "2026-09-15T22:28:15.129205+00:00"
       }
     ],
-    "lastGoodAt": "2026-09-15T22:20:22.300Z"
+    "lastGoodAt": "2026-09-15T22:44:22.972Z"
   },
   "mlb": {
-    "accuracy": {
-      "generated_at": "2026-09-15T22:05:33+00:00"
-    },
     "meta": {
       "generated_at": "2026-09-15T22:05:33+00:00",
       "day_summary": {
@@ -14819,6 +14895,9 @@
         "measured_total_bias": -0.443,
         "probability_reason": "10 independent snapshots of 150 needed"
       }
+    },
+    "accuracy": {
+      "generated_at": "2026-09-15T22:05:33+00:00"
     },
     "slate": {
       "generated_at": "2026-09-15T22:04:25+00:00",
@@ -16190,6 +16269,6 @@
         }
       ]
     },
-    "lastGoodAt": "2026-09-15T22:20:22.300Z"
+    "lastGoodAt": "2026-09-15T22:44:22.972Z"
   }
 }
