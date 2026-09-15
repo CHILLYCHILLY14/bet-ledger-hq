@@ -1,7 +1,7 @@
 /*
  * Ledger HQ - every bet from every board, in one place.
  *
- * This page keeps no ledger of its own. It reads the sheet the five boards sync
+ * This page keeps no ledger of its own. It reads the sheet the connected boards sync
  * to, and when you settle something here it writes the row straight back, with
  * the board's own record (native_json) passed through untouched: each board is
  * still the only thing that decides what its own entry looks like, and it
@@ -14,7 +14,8 @@
 (function () {
   "use strict";
 
-  var BS = window.BetSync;
+  var BS = window.BetSync, D = window.KevLedgerDetails;
+  var baselineReady=false;
   var $ = function (s, r) { return (r || document).querySelector(s); };
   var main = $("#main");
 
@@ -30,6 +31,7 @@
     { app: "mlb-edge", label: "MLB Edge", hue: "var(--b1)" },
     { app: "ncaaf-lab", label: "NCAAF Lab", hue: "var(--b2)" },
     { app: "nfl-lab", label: "NFL Lab", hue: "var(--b3)" },
+    { app: "wnba-lab", label: "WNBA Lab", hue: "#b58aff" },
     { app: "props", label: "Props", hue: "var(--b4)" },
     { app: "ladder", label: "Ladder", hue: "var(--b5)" }
   ];
@@ -141,7 +143,7 @@
     var last = pts[pts.length - 1];
     var first = pts.find(function (p) { return p.date; });
 
-    return '<figure><figcaption>Bankroll after every settled bet, all five boards' +
+    return '<figure><figcaption>Bankroll after every settled bet, all connected boards' +
       ' — started at ' + money(starting) + '</figcaption>' +
       '<div class="plot" id="curveBox">' +
       '<svg viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="Bankroll over time">' +
@@ -432,6 +434,7 @@
       breakdown(rows, "tier", "Tier", ["BEST BET", "GOOD", "LEAN", "PASS"]) +
       breakdown(rows, "market", "Market") +
       allBets(rows) +
+      closingDetails(rows) + historyBlock() +
       settingsBlock();
 
     // the curve needs its own points back to answer a hover
@@ -453,11 +456,20 @@
     $("#sync").hidden = false;
   }
 
+  function closingDetails(rows) {
+    return '<h2>Closing lines and prices</h2><p class="note">Save the same book’s last pregame quote. Price comparisons require an unchanged line. These observations do not change a wager or settle it.</p><div class="card scroll"><table><thead><tr><th>Pick</th><th>Original</th><th>Closing line</th><th>Closing odds</th><th>Observed (local time)</th><th></th></tr></thead><tbody>'+rows.slice().sort(function(a,b){return String(b.event_date).localeCompare(String(a.event_date));}).slice(0,100).map(function(r){
+      var c=D.closing(S.settings,r.id)||{},localTime=c.observed_at?new Date(Date.parse(c.observed_at)-new Date(c.observed_at).getTimezoneOffset()*60000).toISOString().slice(0,16):'';
+      return '<tr data-detail-id="'+esc(r.id)+'"><td>'+esc(r.selection)+'<br><small>'+esc(r.book||'Book unknown')+'</small></td><td>'+american(r.price)+(r.line!=null?' · '+esc(r.line):'')+'</td><td><input aria-label="Closing line" class="num" data-detail="line" type="number" step="0.5" value="'+esc(c.line??'')+'"></td><td><input aria-label="Closing odds" class="num" data-detail="price" type="number" step="1" value="'+esc(c.price??r.closing_price??'')+'"></td><td><input aria-label="Quote observed time" data-detail="observed" type="datetime-local" value="'+esc(localTime)+'"></td><td><button class="btn sm" data-act="save-close">Save quote</button></td></tr>';
+    }).join('')+'</tbody></table></div>';
+  }
+  function historyBlock(){var entries=D.history(S.settings).slice(0,100);return '<h2>Observed ledger changes</h2><p class="note">Changes seen while Ledger HQ syncs, shared across devices. The first read establishes a baseline. Offline changes that happen between reads may be missed; this is not a complete server audit. Latest 100 shown. Recording starts with this update.</p><div class="card scroll">'+(entries.length?'<table><thead><tr><th>Observed</th><th>Pick</th><th>Writer</th><th>Changes</th></tr></thead><tbody>'+entries.map(function(e){return '<tr><td>'+esc(e.observed_at)+'</td><td>'+esc(e.selection||e.id)+'</td><td>'+esc(e.device)+'</td><td>'+e.changes.map(function(c){return esc(c.field)+': '+esc(c.from??'—')+' → '+esc(c.to??'—');}).join('<br>')+'</td></tr>';}).join('')+'</tbody></table>':'<p class="note">No changes observed yet.</p>')+'</div>';}
+  function logSettings(before,after){var patch={};D.observe(before,after,new Date().toISOString(),BS.deviceName()).forEach(function(e){Object.assign(patch,D.historySetting(e,crypto.randomUUID()));});return patch;}
+
   function renderGate() {
     $("#sync").hidden = true;
     main.innerHTML = '<div class="gate card">' +
       '<h2 style="margin-top:0">Connect to your sheet</h2>' +
-      '<p class="note">The same web app URL and token your five boards use. They ' +
+      '<p class="note">The same web app URL and token your connected boards use. They ' +
       'are kept in this browser and go nowhere else.</p>' +
       '<label>Web app URL<input id="url" type="url" spellcheck="false" ' +
         'placeholder="https://script.google.com/macros/s/…/exec"></label>' +
@@ -472,12 +484,15 @@
 
   function pull() {
     var cfg = BS.loadConfig();
-    if (!cfg) return Promise.resolve();
+    if (!cfg || S.busy) return Promise.resolve();
     S.busy = true; S.error = "";
     if (S.loaded) $("#stamp").textContent = "syncing…";
     return BS.pullAll(cfg, "").then(function (res) {
-      S.rows = (res.rows || []).map(BS.canonical);
-      S.settings = res.settings || {};
+      var nextRows=(res.rows || []).map(BS.canonical),observations=baselineReady?logSettings(S.rows,nextRows):{};
+      baselineReady=true;S.rows=nextRows;S.settings=res.settings||{};
+      if(Object.keys(observations).length){
+        return BS.pushRows(cfg,[],observations).then(function(saved){S.settings=saved.settings||S.settings;S.loaded=true;S.lastSync=new Date().toISOString();S.busy=false;render();});
+      }
       S.loaded = true;
       S.lastSync = new Date().toISOString();
       S.busy = false;
@@ -493,10 +508,14 @@
      changed replaced. native_json rides along untouched. */
   function push(row) {
     var cfg = BS.loadConfig();
-    if (!cfg) return Promise.resolve();
+    if (!cfg || S.busy) return Promise.resolve();
     S.busy = true;
+    row.device=BS.deviceName();
     row.base_rev = row.updated_at;
-    return BS.pushRows(cfg, [row]).then(function (res) {
+    var previous=S.rows.slice();
+    return BS.pushRows(cfg, [row]).then(async function (res) {
+      var observations=logSettings(previous,BS.mergeRows(previous,res.rows||[]));
+      if(Object.keys(observations).length){try{var logged=await BS.pushRows(cfg,[],observations);res.settings=logged.settings||res.settings;}catch(_){S.error="Wager saved; change history could not be recorded.";}}
       S.rows = BS.mergeRows(S.rows, res.rows || []);
       S.settings = res.settings || S.settings;
       S.lastSync = new Date().toISOString();
@@ -531,6 +550,7 @@
   document.addEventListener("click", function (e) {
     var t = e.target.closest("[data-act],#connect,#csv,#saveStarting,#forget,#sync");
     if (!t) return;
+    if(S.busy && (t.hasAttribute("data-act") || t.id==="saveStarting" || t.id==="sync"))return;
 
     if (t.id === "sync") return pull();
 
@@ -584,6 +604,15 @@
     }
     if (act === "status") { S.status = t.getAttribute("data-status"); return render(); }
 
+    if (act === "save-close") {
+      if(S.busy)return;
+      var tr=t.closest('[data-detail-id]'),row=find(tr.dataset.detailId),line=tr.querySelector('[data-detail="line"]').value,price=tr.querySelector('[data-detail="price"]').value,observed=tr.querySelector('[data-detail="observed"]').value;
+      if(price===''||Math.abs(Number(price))<100||!Number.isFinite(Number(price))||!observed||!Number.isFinite(Date.parse(observed))||Date.parse(observed)>Date.now()+60000){S.error='Enter valid American odds and the past time you observed that quote.';return render();}
+      var value={line:line===''?null:Number(line),price:Number(price),observed_at:new Date(observed).toISOString(),book:row.book||'',device:BS.deviceName()},patch={};
+      patch[D.closeKey(row.id)]=JSON.stringify(value);
+      var old=D.closing(S.settings,row.id);Object.assign(patch,D.historySetting({id:row.id,selection:row.selection,device:BS.deviceName(),observed_at:new Date().toISOString(),changes:[{field:'closing quote',from:old?JSON.stringify(old):null,to:JSON.stringify(value)}]},crypto.randomUUID()));
+      S.busy=true;return BS.pushRows(BS.loadConfig(),[],patch).then(function(res){S.settings=res.settings||S.settings;S.busy=false;S.error='';render();}).catch(function(err){S.busy=false;S.error=BS.friendlyError(err);render();});
+    }
     if (act === "settle") {
       var card = t.closest(".bet");
       var row = find(card.getAttribute("data-id"));

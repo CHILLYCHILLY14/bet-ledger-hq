@@ -4,11 +4,12 @@ import {readFile,mkdir} from "node:fs/promises";
 import path from "node:path";
 import assert from "node:assert/strict";
 const root=process.cwd();
+await mkdir("test-results",{recursive:true});
 const server=createServer(async(req,res)=>{
   const pathname=decodeURIComponent(new URL(req.url,"http://localhost").pathname),rel=pathname.replace(/^\/bet-ledger-hq\//,"");
   const file=path.resolve(root,rel===""?"index.html":rel);
   if(!file.startsWith(root+path.sep)){res.writeHead(403);res.end();return;}
-  try{const data=await readFile(file);res.setHeader("Content-Type",file.endsWith(".css")?"text/css":file.endsWith(".js")?"text/javascript":file.endsWith(".json")?"application/json":"text/html");res.end(data);}
+  try{const data=await readFile(file);res.setHeader("Content-Type",file.endsWith(".css")?"text/css":file.endsWith(".js")?"text/javascript":file.endsWith(".json")?"application/json":file.endsWith(".jpg")?"image/jpeg":file.endsWith(".png")?"image/png":"text/html");res.end(data);}
   catch(_){res.writeHead(404);res.end("Not found");}
 });
 await new Promise(resolve=>server.listen(0,"127.0.0.1",resolve));
@@ -22,8 +23,9 @@ try{
     const stamp=new Date().toISOString(),start=new Date(Date.now()+3600000).toISOString();
     const chosen=new Intl.DateTimeFormat("en-CA",{timeZone:"America/Toronto",year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date(start));
     await page.route("**/data/**",route=>{
+      if(route.request().url().includes("/data/tickets/"))return route.continue();
       const u=route.request().url();let data={generated_at:stamp};
-      if(u.includes("board.json"))data=[{game_id:"1",game_date:start,tier:"GOOD",stake:2,price:-110,matchup:"DEN @ KC",pick:"DEN ML",book:"DraftKings"}];
+      if(u.includes("board.json"))data=[{game_id:"1",game_date:start,tipoff:start,odds_fetched_at:stamp,side:"away",market:"ML",tier:"GOOD",stake:2,price:-110,matchup:"DEN @ KC",pick:"DEN ML",book:"DraftKings"}];
       if(u.includes("latest.json"))data={generated_at:stamp,games:[]};
       if(u.includes("accuracy.json"))data={generated_at:stamp,scope:{season:2026,season_type_label:"regular season"},games:{winner:{n:15,correct:11,accuracy:11/15}}};
       return route.fulfill({contentType:"application/json",body:JSON.stringify(data)});
@@ -39,12 +41,16 @@ try{
     await frame.getByRole("heading",{name:"KEVBOT BETS Daily Top Picks"}).waitFor();
     assert.ok((await frame.locator("#ticket-preview").getAttribute("src")).startsWith("blob:"));
     if(width===393)await page.screenshot({path:"test-results/ticket-preview-393.png",fullPage:true});
+    const classicSrc=await frame.locator('#ticket-preview').getAttribute('src');
+    await frame.locator('#ticket-style').selectOption('baseball');
+    await frame.locator('#ticket-preview').evaluate((img,old)=>new Promise(resolve=>{const timer=setInterval(()=>{if(img.src!==old){clearInterval(timer);resolve();}},25);}),classicSrc);
+    await frame.locator('#ticket-preview').evaluate(img=>img.decode());
     await frame.getByRole("button",{name:"Close image preview"}).click();
     await frame.getByRole("button",{name:"Accuracy",exact:true}).click();
     await frame.getByRole("heading",{name:"Predictions, not your bet record"}).waitFor({state:"visible"});
     await frame.getByRole("button",{name:"Exposure",exact:true}).click();
     await frame.getByText("Connect and sync in Ledger").waitFor();
-    assert.equal(await page.locator(".board-link").count(),7);
+    assert.equal(await page.locator(".board-link").count(),9);
     assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
     const child=page.frames().find(f=>f.url().endsWith("today.html"));
     assert.ok(await child.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));

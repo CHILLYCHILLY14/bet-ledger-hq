@@ -1,0 +1,978 @@
+{
+  "schema": 1,
+  "entries": {
+    "mlb|822849|2026-09-16T00:05:00Z|RL||home|line=-1.5": {
+      "pick": {
+        "key": "mlb",
+        "app": "mlb-edge",
+        "sport": "MLB",
+        "event": "BOS @ TEX",
+        "eventId": "822849",
+        "player": "",
+        "playerId": "",
+        "side": "home",
+        "home": "TEX",
+        "away": "BOS",
+        "version": "unversioned",
+        "start": "2026-09-16T00:05:00Z",
+        "when": 1789517100000,
+        "day": "2026-09-15",
+        "pick": "TEX -1.5",
+        "market": "RL",
+        "line": -1.5,
+        "sourceLine": -1.5,
+        "price": 153,
+        "book": "DraftKings",
+        "tier": "BEST BET",
+        "score": 0.0526,
+        "quote": "2026-09-15T20:39:28.767006+00:00",
+        "review": [],
+        "probability": 0.4368,
+        "source": "MLB"
+      },
+      "first_ticket": "43932cccb3d30ec3",
+      "published_at": "2026-09-15T21:31:56.061Z",
+      "result": {
+        "status": "Pending"
+      },
+      "history": [],
+      "closing": {
+        "line": -1.5,
+        "price": 153,
+        "observed_at": "2026-09-15T20:39:28.767006+00:00",
+        "book": "DraftKings",
+        "minutes_before_start": 206,
+        "line_advantage": 0,
+        "price_advantage": 0
+      }
+    },
+    "mlb|822925|2026-09-15T22:40:00Z|RL||home|line=-1.5": {
+      "pick": {
+        "key": "mlb",
+        "app": "mlb-edge",
+        "sport": "MLB",
+        "event": "ATH @ TB",
+        "eventId": "822925",
+        "player": "",
+        "playerId": "",
+        "side": "home",
+        "home": "TB",
+        "away": "ATH",
+        "version": "unversioned",
+        "start": "2026-09-15T22:40:00Z",
+        "when": 1789512000000,
+        "day": "2026-09-15",
+        "pick": "TB -1.5",
+        "market": "RL",
+        "line": -1.5,
+        "sourceLine": -1.5,
+        "price": -103,
+        "book": "DraftKings",
+        "tier": "BEST BET",
+        "score": 0.052,
+        "quote": "2026-09-15T20:39:28.767006+00:00",
+        "review": [],
+        "probability": 0.5574,
+        "source": "MLB"
+      },
+      "first_ticket": "43932cccb3d30ec3",
+      "published_at": "2026-09-15T21:31:56.061Z",
+      "result": {
+        "status": "Pending"
+      },
+      "history": [],
+      "closing": {
+        "line": -1.5,
+        "price": -103,
+        "observed_at": "2026-09-15T20:39:28.767006+00:00",
+        "book": "DraftKings",
+        "minutes_before_start": 121,
+        "line_advantage": 0,
+        "price_advantage": 0
+      }
+    },
+    "mlb|824384|2026-09-15T22:40:00Z|ML||away|line=": {
+      "pick": {
+        "key": "mlb",
+        "app": "mlb-edge",
+        "sport": "MLB",
+        "event": "CWS @ CLE",
+        "eventId": "824384",
+        "player": "",
+        "playerId": "",
+        "side": "away",
+        "home": "CLE",
+        "away": "CWS",
+        "version": "unversioned",
+        "start": "2026-09-15T22:40:00Z",
+        "when": 1789512000000,
+        "day": "2026-09-15",
+        "pick": "CWS ML",
+        "market": "ML",
+        "line": null,
+        "sourceLine": null,
+        "price": 129,
+        "book": "DraftKings",
+        "tier": "BEST BET",
+        "score": 0.0507,
+        "quote": "2026-09-15T20:39:28.767006+00:00",
+        "review": [],
+        "probability": 0.4751,
+        "source": "MLB"
+      },
+      "first_ticket": "43932cccb3d30ec3",
+      "published_at": "2026-09-15T21:31:56.061Z",
+      "result": {
+        "status": "Pending"
+      },
+      "history": [],
+      "closing": {
+        "line": null,
+        "price": 129,
+        "observed_at": "2026-09-15T20:39:28.767006+00:00",
+        "book": "DraftKings",
+        "minutes_before_start": 121,
+        "line_advantage": null,
+        "price_advantage": 0
+      }
+    },
+    "mlb|823333|2026-09-15T22:40:00Z|ML||home|line=": {
+      "pick": {
+        "key": "mlb",
+        "app": "mlb-edge",
+        "sport": "MLB",
+        "event": "MIL @ PIT",
+        "eventId": "823333",
+        "player": "",
+        "playerId": "",
+        "side": "home",
+        "home": "PIT",
+        "away": "MIL",
+        "version": "unversioned",
+        "start": "2026-09-15T22:40:00Z",
+        "when": 1789512000000,
+        "day": "2026-09-15",
+        "pick": "PIT ML",
+        "market": "ML",
+        "line": null,
+        "sourceLine": null,
+        "price": 177,
+        "book": "DraftKings",
+        "tier": "GOOD",
+        "score": 0.0534,
+        "quote": "2026-09-15T20:39:28.767006+00:00",
+        "review": [],
+        "probability": 0.403,
+        "source": "MLB"
+      },
+      "first_ticket": "43932cccb3d30ec3",
+      "published_at": "2026-09-15T21:31:56.061Z",
+      "result": {
+        "status": "Pending"
+      },
+      "history": [],
+      "closing": {
+        "line": null,
+        "price": 177,
+        "observed_at": "2026-09-15T20:39:28.767006+00:00",
+        "book": "DraftKings",
+        "minutes_before_start": 121,
+        "line_advantage": null,
+        "price_advantage": 0
+      }
+    },
+    "mlb|822683|2026-09-15T22:45:00Z|ML||home|line=": {
+      "pick": {
+        "key": "mlb",
+        "app": "mlb-edge",
+        "sport": "MLB",
+        "event": "PHI @ WSH",
+        "eventId": "822683",
+        "player": "",
+        "playerId": "",
+        "side": "home",
+        "home": "WSH",
+        "away": "PHI",
+        "version": "unversioned",
+        "start": "2026-09-15T22:45:00Z",
+        "when": 1789512300000,
+        "day": "2026-09-15",
+        "pick": "WSH ML",
+        "market": "ML",
+        "line": null,
+        "sourceLine": null,
+        "price": 177,
+        "book": "DraftKings",
+        "tier": "GOOD",
+        "score": 0.0517,
+        "quote": "2026-09-15T20:39:28.767006+00:00",
+        "review": [
+          "Projected batting orders; lineups not confirmed."
+        ],
+        "probability": 0.3954,
+        "source": "MLB"
+      },
+      "first_ticket": "43932cccb3d30ec3",
+      "published_at": "2026-09-15T21:31:56.061Z",
+      "result": {
+        "status": "Pending"
+      },
+      "history": [],
+      "closing": {
+        "line": null,
+        "price": 177,
+        "observed_at": "2026-09-15T20:39:28.767006+00:00",
+        "book": "DraftKings",
+        "minutes_before_start": 126,
+        "line_advantage": null,
+        "price_advantage": 0
+      }
+    },
+    "mlb|823980|2026-09-16T01:38:00Z|ML||home|line=": {
+      "pick": {
+        "key": "mlb",
+        "app": "mlb-edge",
+        "sport": "MLB",
+        "event": "SEA @ LAA",
+        "eventId": "823980",
+        "player": "",
+        "playerId": "",
+        "side": "home",
+        "home": "LAA",
+        "away": "SEA",
+        "version": "unversioned",
+        "start": "2026-09-16T01:38:00Z",
+        "when": 1789522680000,
+        "day": "2026-09-15",
+        "pick": "LAA ML",
+        "market": "ML",
+        "line": null,
+        "sourceLine": null,
+        "price": 144,
+        "book": "DraftKings",
+        "tier": "GOOD",
+        "score": 0.0413,
+        "quote": "2026-09-15T20:39:28.767006+00:00",
+        "review": [
+          "Projected batting orders; lineups not confirmed."
+        ],
+        "probability": 0.4318,
+        "source": "MLB"
+      },
+      "first_ticket": "43932cccb3d30ec3",
+      "published_at": "2026-09-15T21:31:56.061Z",
+      "result": {
+        "status": "Pending"
+      },
+      "history": [],
+      "closing": {
+        "line": null,
+        "price": 144,
+        "observed_at": "2026-09-15T20:39:28.767006+00:00",
+        "book": "DraftKings",
+        "minutes_before_start": 299,
+        "line_advantage": null,
+        "price_advantage": 0
+      }
+    },
+    "ncaaf|401871047|2026-09-19T22:30Z|ML||home|line=": {
+      "pick": {
+        "key": "ncaaf",
+        "app": "ncaaf-lab",
+        "sport": "NCAAF",
+        "event": "MRSH @ MOST",
+        "eventId": "401871047",
+        "player": "",
+        "playerId": "",
+        "side": "home",
+        "home": "",
+        "away": "",
+        "version": "unversioned",
+        "start": "2026-09-19T22:30Z",
+        "when": 1789857000000,
+        "day": "2026-09-19",
+        "pick": "MOST ML",
+        "market": "ML",
+        "line": null,
+        "sourceLine": null,
+        "price": 140,
+        "book": "DraftKings",
+        "tier": "LEAN",
+        "score": 0.06477782163772537,
+        "quote": "2026-09-15T20:28:25.728677+00:00",
+        "review": [
+          "Availability reports not confirmed."
+        ],
+        "probability": 0.47145498322110313,
+        "source": "NCAAF"
+      },
+      "first_ticket": "f45ee23b223ddf49",
+      "published_at": "2026-09-15T21:31:56.061Z",
+      "result": {
+        "status": "Pending"
+      },
+      "history": [],
+      "closing": {
+        "line": null,
+        "price": 140,
+        "observed_at": "2026-09-15T20:28:25.728677+00:00",
+        "book": "DraftKings",
+        "minutes_before_start": 5882,
+        "line_advantage": null,
+        "price_advantage": 0
+      }
+    },
+    "ncaaf|401856797|2026-09-19T19:30Z|TOTAL||over|line=49.5": {
+      "pick": {
+        "key": "ncaaf",
+        "app": "ncaaf-lab",
+        "sport": "NCAAF",
+        "event": "M-OH @ CIN",
+        "eventId": "401856797",
+        "player": "",
+        "playerId": "",
+        "side": "over",
+        "home": "",
+        "away": "",
+        "version": "unversioned",
+        "start": "2026-09-19T19:30Z",
+        "when": 1789846200000,
+        "day": "2026-09-19",
+        "pick": "Over 49.5",
+        "market": "TOTAL",
+        "line": 49.5,
+        "sourceLine": 49.5,
+        "price": -110,
+        "book": "DraftKings",
+        "tier": "LEAN",
+        "score": 0.06293985585511098,
+        "quote": "2026-09-15T20:28:25.728677+00:00",
+        "review": [
+          "Availability reports not confirmed."
+        ],
+        "probability": 0.5886553744935127,
+        "source": "NCAAF"
+      },
+      "first_ticket": "f45ee23b223ddf49",
+      "published_at": "2026-09-15T21:31:56.061Z",
+      "result": {
+        "status": "Pending"
+      },
+      "history": [],
+      "closing": {
+        "line": 49.5,
+        "price": -110,
+        "observed_at": "2026-09-15T20:28:25.728677+00:00",
+        "book": "DraftKings",
+        "minutes_before_start": 5702,
+        "line_advantage": 0,
+        "price_advantage": 0
+      }
+    },
+    "ncaaf|401856686|2026-09-19T16:00Z|ATS||home|line=24.5": {
+      "pick": {
+        "key": "ncaaf",
+        "app": "ncaaf-lab",
+        "sport": "NCAAF",
+        "event": "UGA @ ARK",
+        "eventId": "401856686",
+        "player": "",
+        "playerId": "",
+        "side": "home",
+        "home": "",
+        "away": "",
+        "version": "unversioned",
+        "start": "2026-09-19T16:00Z",
+        "when": 1789833600000,
+        "day": "2026-09-19",
+        "pick": "ARK +24.5",
+        "market": "ATS",
+        "line": 24.5,
+        "sourceLine": 24.5,
+        "price": 100,
+        "book": "DraftKings",
+        "tier": "LEAN",
+        "score": 0.060965013501746816,
+        "quote": "2026-09-15T20:28:25.728677+00:00",
+        "review": [
+          "Availability reports not confirmed."
+        ],
+        "probability": 0.5582873951759149,
+        "source": "NCAAF"
+      },
+      "first_ticket": "f45ee23b223ddf49",
+      "published_at": "2026-09-15T21:31:56.061Z",
+      "result": {
+        "status": "Pending"
+      },
+      "history": [],
+      "closing": {
+        "line": 24.5,
+        "price": 100,
+        "observed_at": "2026-09-15T20:28:25.728677+00:00",
+        "book": "DraftKings",
+        "minutes_before_start": 5492,
+        "line_advantage": 0,
+        "price_advantage": 0
+      }
+    },
+    "ncaaf|401861963|2026-09-19T23:00Z|ML||home|line=": {
+      "pick": {
+        "key": "ncaaf",
+        "app": "ncaaf-lab",
+        "sport": "NCAAF",
+        "event": "CONN @ USM",
+        "eventId": "401861963",
+        "player": "",
+        "playerId": "",
+        "side": "home",
+        "home": "",
+        "away": "",
+        "version": "unversioned",
+        "start": "2026-09-19T23:00Z",
+        "when": 1789858800000,
+        "day": "2026-09-19",
+        "pick": "USM ML",
+        "market": "ML",
+        "line": null,
+        "sourceLine": null,
+        "price": 130,
+        "book": "DraftKings",
+        "tier": "LEAN",
+        "score": 0.060001246790998115,
+        "quote": "2026-09-15T20:28:24.753996+00:00",
+        "review": [
+          "Availability reports not confirmed."
+        ],
+        "probability": 0.4840700888346483,
+        "source": "NCAAF"
+      },
+      "first_ticket": "f45ee23b223ddf49",
+      "published_at": "2026-09-15T21:31:56.061Z",
+      "result": {
+        "status": "Pending"
+      },
+      "history": [],
+      "closing": {
+        "line": null,
+        "price": 130,
+        "observed_at": "2026-09-15T20:28:24.753996+00:00",
+        "book": "DraftKings",
+        "minutes_before_start": 5912,
+        "line_advantage": null,
+        "price_advantage": 0
+      }
+    },
+    "ncaaf|401856795|2026-09-19T23:30Z|ATS||home|line=17.5": {
+      "pick": {
+        "key": "ncaaf",
+        "app": "ncaaf-lab",
+        "sport": "NCAAF",
+        "event": "BYU @ CSU",
+        "eventId": "401856795",
+        "player": "",
+        "playerId": "",
+        "side": "home",
+        "home": "",
+        "away": "",
+        "version": "unversioned",
+        "start": "2026-09-19T23:30Z",
+        "when": 1789860600000,
+        "day": "2026-09-19",
+        "pick": "CSU +17.5",
+        "market": "ATS",
+        "line": 17.5,
+        "sourceLine": 17.5,
+        "price": -105,
+        "book": "DraftKings",
+        "tier": "LEAN",
+        "score": 0.05850317530558099,
+        "quote": "2026-09-15T20:28:24.754502+00:00",
+        "review": [
+          "Availability reports not confirmed."
+        ],
+        "probability": 0.5678701276798547,
+        "source": "NCAAF"
+      },
+      "first_ticket": "f45ee23b223ddf49",
+      "published_at": "2026-09-15T21:31:56.061Z",
+      "result": {
+        "status": "Pending"
+      },
+      "history": [],
+      "closing": {
+        "line": 17.5,
+        "price": -105,
+        "observed_at": "2026-09-15T20:28:24.754502+00:00",
+        "book": "DraftKings",
+        "minutes_before_start": 5942,
+        "line_advantage": 0,
+        "price_advantage": 0
+      }
+    },
+    "ncaaf|401864507|2026-09-20T02:30Z|ATS||home|line=27.5": {
+      "pick": {
+        "key": "ncaaf",
+        "app": "ncaaf-lab",
+        "sport": "NCAAF",
+        "event": "NDSU @ SAC",
+        "eventId": "401864507",
+        "player": "",
+        "playerId": "",
+        "side": "home",
+        "home": "",
+        "away": "",
+        "version": "unversioned",
+        "start": "2026-09-20T02:30Z",
+        "when": 1789871400000,
+        "day": "2026-09-19",
+        "pick": "SAC +27.5",
+        "market": "ATS",
+        "line": 27.5,
+        "sourceLine": 27.5,
+        "price": -108,
+        "book": "DraftKings",
+        "tier": "LEAN",
+        "score": 0.05676748100507278,
+        "quote": "2026-09-15T20:28:24.755108+00:00",
+        "review": [
+          "Availability reports not confirmed."
+        ],
+        "probability": 0.573088378256959,
+        "source": "NCAAF"
+      },
+      "first_ticket": "f45ee23b223ddf49",
+      "published_at": "2026-09-15T21:31:56.061Z",
+      "result": {
+        "status": "Pending"
+      },
+      "history": [],
+      "closing": {
+        "line": 27.5,
+        "price": -108,
+        "observed_at": "2026-09-15T20:28:24.755108+00:00",
+        "book": "DraftKings",
+        "minutes_before_start": 6122,
+        "line_advantage": 0,
+        "price_advantage": 0
+      }
+    },
+    "ncaaf|401869948|2026-09-19T23:00Z|TOTAL||under|line=52.5": {
+      "pick": {
+        "key": "ncaaf",
+        "app": "ncaaf-lab",
+        "sport": "NCAAF",
+        "event": "GASO @ JVST",
+        "eventId": "401869948",
+        "player": "",
+        "playerId": "",
+        "side": "under",
+        "home": "",
+        "away": "",
+        "version": "unversioned",
+        "start": "2026-09-19T23:00Z",
+        "when": 1789858800000,
+        "day": "2026-09-19",
+        "pick": "Under 52.5",
+        "market": "TOTAL",
+        "line": 52.5,
+        "sourceLine": 52.5,
+        "price": -105,
+        "book": "DraftKings",
+        "tier": "LEAN",
+        "score": 0.056464235106248824,
+        "quote": "2026-09-15T20:28:25.728677+00:00",
+        "review": [
+          "Availability reports not confirmed."
+        ],
+        "probability": 0.5648990958682056,
+        "source": "NCAAF"
+      },
+      "first_ticket": "f45ee23b223ddf49",
+      "published_at": "2026-09-15T21:31:56.061Z",
+      "result": {
+        "status": "Pending"
+      },
+      "history": [],
+      "closing": {
+        "line": 52.5,
+        "price": -105,
+        "observed_at": "2026-09-15T20:28:25.728677+00:00",
+        "book": "DraftKings",
+        "minutes_before_start": 5912,
+        "line_advantage": 0,
+        "price_advantage": 0
+      }
+    },
+    "ncaaf|401858456|2026-09-19T16:00Z|ATS||away|line=40.5": {
+      "pick": {
+        "key": "ncaaf",
+        "app": "ncaaf-lab",
+        "sport": "NCAAF",
+        "event": "BUFF @ PSU",
+        "eventId": "401858456",
+        "player": "",
+        "playerId": "",
+        "side": "away",
+        "home": "",
+        "away": "",
+        "version": "unversioned",
+        "start": "2026-09-19T16:00Z",
+        "when": 1789833600000,
+        "day": "2026-09-19",
+        "pick": "BUFF +40.5",
+        "market": "ATS",
+        "line": 40.5,
+        "sourceLine": -40.5,
+        "price": -102,
+        "book": "DraftKings",
+        "tier": "LEAN",
+        "score": 0.055634444905353304,
+        "quote": "2026-09-15T20:28:25.728677+00:00",
+        "review": [
+          "Availability reports not confirmed."
+        ],
+        "probability": 0.5557942320517755,
+        "source": "NCAAF"
+      },
+      "first_ticket": "f45ee23b223ddf49",
+      "published_at": "2026-09-15T21:31:56.061Z",
+      "result": {
+        "status": "Pending"
+      },
+      "history": [],
+      "closing": {
+        "line": 40.5,
+        "price": -102,
+        "observed_at": "2026-09-15T20:28:25.728677+00:00",
+        "book": "DraftKings",
+        "minutes_before_start": 5492,
+        "line_advantage": 0,
+        "price_advantage": 0
+      }
+    },
+    "ncaaf|401858454|2026-09-19T16:00Z|ATS||away|line=52.5": {
+      "pick": {
+        "key": "ncaaf",
+        "app": "ncaaf-lab",
+        "sport": "NCAAF",
+        "event": "KENT @ OSU",
+        "eventId": "401858454",
+        "player": "",
+        "playerId": "",
+        "side": "away",
+        "home": "",
+        "away": "",
+        "version": "unversioned",
+        "start": "2026-09-19T16:00Z",
+        "when": 1789833600000,
+        "day": "2026-09-19",
+        "pick": "KENT +52.5",
+        "market": "ATS",
+        "line": 52.5,
+        "sourceLine": -52.5,
+        "price": -108,
+        "book": "DraftKings",
+        "tier": "LEAN",
+        "score": 0.05537896632780833,
+        "quote": "2026-09-15T20:28:25.728677+00:00",
+        "review": [
+          "Availability reports not confirmed."
+        ],
+        "probability": 0.5711677524980127,
+        "source": "NCAAF"
+      },
+      "first_ticket": "f45ee23b223ddf49",
+      "published_at": "2026-09-15T21:31:56.061Z",
+      "result": {
+        "status": "Pending"
+      },
+      "history": [],
+      "closing": {
+        "line": 52.5,
+        "price": -108,
+        "observed_at": "2026-09-15T20:28:25.728677+00:00",
+        "book": "DraftKings",
+        "minutes_before_start": 5492,
+        "line_advantage": 0,
+        "price_advantage": 0
+      }
+    },
+    "ncaaf|401858451|2026-09-19T16:00Z|ATS||away|line=24.5": {
+      "pick": {
+        "key": "ncaaf",
+        "app": "ncaaf-lab",
+        "sport": "NCAAF",
+        "event": "AKR @ MINN",
+        "eventId": "401858451",
+        "player": "",
+        "playerId": "",
+        "side": "away",
+        "home": "",
+        "away": "",
+        "version": "unversioned",
+        "start": "2026-09-19T16:00Z",
+        "when": 1789833600000,
+        "day": "2026-09-19",
+        "pick": "AKR +24.5",
+        "market": "ATS",
+        "line": 24.5,
+        "sourceLine": -24.5,
+        "price": -118,
+        "book": "DraftKings",
+        "tier": "LEAN",
+        "score": 0.05413734994754945,
+        "quote": "2026-09-15T20:28:25.728677+00:00",
+        "review": [
+          "Availability reports not confirmed."
+        ],
+        "probability": 0.5937349009727027,
+        "source": "NCAAF"
+      },
+      "first_ticket": "f45ee23b223ddf49",
+      "published_at": "2026-09-15T21:31:56.061Z",
+      "result": {
+        "status": "Pending"
+      },
+      "history": [],
+      "closing": {
+        "line": 24.5,
+        "price": -118,
+        "observed_at": "2026-09-15T20:28:25.728677+00:00",
+        "book": "DraftKings",
+        "minutes_before_start": 5492,
+        "line_advantage": 0,
+        "price_advantage": 0
+      }
+    },
+    "nfl|401872935|2026-09-20T17:00Z|ML||away|line=": {
+      "pick": {
+        "key": "nfl",
+        "app": "nfl-lab",
+        "sport": "NFL",
+        "event": "CLE @ TB",
+        "eventId": "401872935",
+        "player": "",
+        "playerId": "",
+        "side": "away",
+        "home": "",
+        "away": "",
+        "version": "unversioned",
+        "start": "2026-09-20T17:00Z",
+        "when": 1789923600000,
+        "day": "2026-09-20",
+        "pick": "CLE ML",
+        "market": "ML",
+        "line": null,
+        "sourceLine": null,
+        "price": 320,
+        "book": "DraftKings",
+        "tier": "BEST BET",
+        "score": 0.04046137388858246,
+        "quote": null,
+        "review": [
+          "Quote time not supplied; confirm the current price."
+        ],
+        "probability": 0.2906,
+        "source": "NFL"
+      },
+      "first_ticket": "2379c71883bfce89",
+      "published_at": "2026-09-15T21:35:58.161Z",
+      "result": {
+        "status": "Pending"
+      },
+      "history": []
+    },
+    "nfl|401872938|2026-09-20T17:00Z|ML||away|line=": {
+      "pick": {
+        "key": "nfl",
+        "app": "nfl-lab",
+        "sport": "NFL",
+        "event": "NO @ BAL",
+        "eventId": "401872938",
+        "player": "",
+        "playerId": "",
+        "side": "away",
+        "home": "",
+        "away": "",
+        "version": "unversioned",
+        "start": "2026-09-20T17:00Z",
+        "when": 1789923600000,
+        "day": "2026-09-20",
+        "pick": "NO ML",
+        "market": "ML",
+        "line": null,
+        "sourceLine": null,
+        "price": 320,
+        "book": "DraftKings",
+        "tier": "BEST BET",
+        "score": 0.040443598694724844,
+        "quote": null,
+        "review": [
+          "Quote time not supplied; confirm the current price."
+        ],
+        "probability": 0.2881,
+        "source": "NFL"
+      },
+      "first_ticket": "2379c71883bfce89",
+      "published_at": "2026-09-15T21:35:58.161Z",
+      "result": {
+        "status": "Pending"
+      },
+      "history": []
+    },
+    "nfl|401872941|2026-09-20T20:05Z|ML||away|line=": {
+      "pick": {
+        "key": "nfl",
+        "app": "nfl-lab",
+        "sport": "NFL",
+        "event": "LV @ LAC",
+        "eventId": "401872941",
+        "player": "",
+        "playerId": "",
+        "side": "away",
+        "home": "",
+        "away": "",
+        "version": "unversioned",
+        "start": "2026-09-20T20:05Z",
+        "when": 1789934700000,
+        "day": "2026-09-20",
+        "pick": "LV ML",
+        "market": "ML",
+        "line": null,
+        "sourceLine": null,
+        "price": 250,
+        "book": "DraftKings",
+        "tier": "BEST BET",
+        "score": 0.04036631771518107,
+        "quote": null,
+        "review": [
+          "Quote time not supplied; confirm the current price."
+        ],
+        "probability": 0.3389,
+        "source": "NFL"
+      },
+      "first_ticket": "2379c71883bfce89",
+      "published_at": "2026-09-15T21:35:58.161Z",
+      "result": {
+        "status": "Pending"
+      },
+      "history": []
+    },
+    "nfl|401872939|2026-09-20T17:00Z|ML||home|line=": {
+      "pick": {
+        "key": "nfl",
+        "app": "nfl-lab",
+        "sport": "NFL",
+        "event": "PHI @ TEN",
+        "eventId": "401872939",
+        "player": "",
+        "playerId": "",
+        "side": "home",
+        "home": "",
+        "away": "",
+        "version": "unversioned",
+        "start": "2026-09-20T17:00Z",
+        "when": 1789923600000,
+        "day": "2026-09-20",
+        "pick": "TEN ML",
+        "market": "ML",
+        "line": null,
+        "sourceLine": null,
+        "price": 245,
+        "book": "DraftKings",
+        "tier": "BEST BET",
+        "score": 0.04031962919744086,
+        "quote": null,
+        "review": [
+          "Quote time not supplied; confirm the current price."
+        ],
+        "probability": 0.3414,
+        "source": "NFL"
+      },
+      "first_ticket": "2379c71883bfce89",
+      "published_at": "2026-09-15T21:35:58.161Z",
+      "result": {
+        "status": "Pending"
+      },
+      "history": []
+    },
+    "nfl|401872944|2026-09-20T20:25Z|ML||away|line=": {
+      "pick": {
+        "key": "nfl",
+        "app": "nfl-lab",
+        "sport": "NFL",
+        "event": "WSH @ DAL",
+        "eventId": "401872944",
+        "player": "",
+        "playerId": "",
+        "side": "away",
+        "home": "",
+        "away": "",
+        "version": "unversioned",
+        "start": "2026-09-20T20:25Z",
+        "when": 1789935900000,
+        "day": "2026-09-20",
+        "pick": "WSH ML",
+        "market": "ML",
+        "line": null,
+        "sourceLine": null,
+        "price": 180,
+        "book": "DraftKings",
+        "tier": "GOOD",
+        "score": 0.039703056700647506,
+        "quote": null,
+        "review": [
+          "Quote time not supplied; confirm the current price."
+        ],
+        "probability": 0.4059,
+        "source": "NFL"
+      },
+      "first_ticket": "2379c71883bfce89",
+      "published_at": "2026-09-15T21:35:58.161Z",
+      "result": {
+        "status": "Pending"
+      },
+      "history": []
+    },
+    "nfl|401872947|2026-09-22T00:15Z|ML||away|line=": {
+      "pick": {
+        "key": "nfl",
+        "app": "nfl-lab",
+        "sport": "NFL",
+        "event": "NYG @ LAR",
+        "eventId": "401872947",
+        "player": "",
+        "playerId": "",
+        "side": "away",
+        "home": "",
+        "away": "",
+        "version": "unversioned",
+        "start": "2026-09-22T00:15Z",
+        "when": 1790036100000,
+        "day": "2026-09-21",
+        "pick": "NYG ML",
+        "market": "ML",
+        "line": null,
+        "sourceLine": null,
+        "price": 280,
+        "book": "DraftKings",
+        "tier": "BEST BET",
+        "score": 0.040479393134600666,
+        "quote": null,
+        "review": [
+          "Quote time not supplied; confirm the current price."
+        ],
+        "probability": 0.3258,
+        "source": "NFL"
+      },
+      "first_ticket": "9ac6ad26a59743f6",
+      "published_at": "2026-09-15T21:35:58.161Z",
+      "result": {
+        "status": "Pending"
+      },
+      "history": []
+    }
+  },
+  "checked_at": "2026-09-15T21:35:58.161Z"
+}

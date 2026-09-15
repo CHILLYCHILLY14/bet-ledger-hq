@@ -4,6 +4,7 @@
   const C=window.KevToday, BS=window.BetSync, $=s=>document.querySelector(s);
   const sources={
     mlb:{meta:"../mlb-edge/data/index.json",slate:"../mlb-edge/data/latest.json",accuracy:"../mlb-edge/data/predictions.json"},
+    wnba:{meta:"../wnba-edge-lab/data/meta.json",board:"../wnba-edge-lab/data/board.json",accuracy:"../wnba-edge-lab/data/accuracy.json"},
     nfl:{meta:"../nfl-edge-lab/data/meta.json",board:"../nfl-edge-lab/data/board.json",accuracy:"../nfl-edge-lab/data/accuracy.json"},
     ncaaf:{meta:"../ncaaf-edge-lab/data/meta.json",board:"../ncaaf-edge-lab/data/board.json",accuracy:"../ncaaf-edge-lab/data/accuracy.json"},
     props:{meta:"../props-edge/data/meta.json",board:"../props-edge/data/board.json",accuracy:"../props-edge/data/accuracy.json"},
@@ -18,7 +19,7 @@
   const time=v=>C.instant(v)==null?"Unknown":new Intl.DateTimeFormat("en-CA",{timeZone:"America/Toronto",month:"short",day:"numeric",hour:"numeric",minute:"2-digit"}).format(new Date(v));
   function elapsed(v){const n=C.instant(v);if(n==null)return "not available";const m=Math.max(0,Math.floor((Date.now()-n)/60000));return m<1?"just now":m<60?m+"m ago":num(m/60)+"h ago";}
   const tickerLeagues={NBA:"basketball/nba",WNBA:"basketball/wnba",MLB:"baseball/mlb",NCAAF:"football/college-football",NCAAB:"basketball/mens-college-basketball",NHL:"hockey/nhl",NFL:"football/nfl"};
-  let ticketBlob=null,ticketUrl="";
+  let ticketBlob=null,ticketUrl="",currentTicket=null;
   function scoreText(event){
     const c=event.competitions?.[0],teams=c?.competitors||[],away=teams.find(x=>x.homeAway==="away"),home=teams.find(x=>x.homeAway==="home");
     if(!away||!home)return "";
@@ -44,23 +45,17 @@
   function loadImage(src){return new Promise((resolve,reject)=>{const img=new Image();img.onload=()=>resolve(img);img.onerror=reject;img.src=src;});}
   function rounded(ctx,x,y,w,h,r){ctx.beginPath();ctx.moveTo(x+r,y);ctx.arcTo(x+w,y,x+w,y+h,r);ctx.arcTo(x+w,y+h,x,y+h,r);ctx.arcTo(x,y+h,x,y,r);ctx.arcTo(x,y,x+w,y,r);ctx.closePath();}
   function fit(ctx,text,max){let s=String(text||"");while(s.length&&ctx.measureText(s).width>max)s=s.slice(0,-1);return s===String(text||"")?s:s.replace(/[ .,;:-]+$/g,"")+"…";}
-  async function buildTicket(){
-    const rows=ticketRows(),canvas=document.createElement("canvas"),ctx=canvas.getContext("2d"),W=1080,H=1350;canvas.width=W;canvas.height=H;
-    const bg=ctx.createLinearGradient(0,0,W,H);bg.addColorStop(0,"#071019");bg.addColorStop(.55,"#111d29");bg.addColorStop(1,"#071019");ctx.fillStyle=bg;ctx.fillRect(0,0,W,H);
-    ctx.strokeStyle="#263849";ctx.lineWidth=2;for(let x=-400;x<W+400;x+=90){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x+500,H);ctx.stroke();}
-    ctx.fillStyle="#d71920";ctx.fillRect(0,0,W,18);ctx.fillStyle="#7be7bd";ctx.fillRect(0,H-18,W,18);
-    try{const logo=await loadImage("kevbot-logo.jpg");rounded(ctx,58,54,148,148,24);ctx.save();ctx.clip();ctx.drawImage(logo,58,54,148,148);ctx.restore();ctx.strokeStyle="#ffffff44";ctx.lineWidth=3;rounded(ctx,58,54,148,148,24);ctx.stroke();}catch(_){}
-    ctx.fillStyle="#fff";ctx.font="900 62px Inter, Arial, sans-serif";ctx.fillText("KEVBOT BETS",236,112);ctx.fillStyle="#7be7bd";ctx.font="800 24px Inter, Arial, sans-serif";ctx.letterSpacing="3px";ctx.fillText("DAILY TOP PICKS",239,153);ctx.letterSpacing="0px";
-    const date=new Date($("#date").value+"T12:00:00");ctx.fillStyle="#a7b6c8";ctx.font="600 24px Inter, Arial, sans-serif";ctx.fillText(new Intl.DateTimeFormat("en-CA",{timeZone:"America/Toronto",weekday:"long",month:"long",day:"numeric",year:"numeric"}).format(date),239,190);
-    ctx.fillStyle="#d71920";rounded(ctx,58,225,W-116,56,14);ctx.fill();ctx.fillStyle="#fff";ctx.font="800 22px Inter, Arial, sans-serif";ctx.fillText("#",79,261);ctx.fillText("PLAY",135,261);ctx.fillText("SPORT",730,261);ctx.fillText("ODDS",888,261);
-    const rowH=91,startY=296;
-    if(!rows.length){ctx.fillStyle="#fff";ctx.font="700 34px Inter, Arial, sans-serif";ctx.fillText("No verified qualified plays for this date.",80,390);ctx.fillStyle="#a7b6c8";ctx.font="24px Inter, Arial, sans-serif";ctx.fillText("No forced bets. Check again after the boards refresh.",80,432);}
-    rows.forEach((r,i)=>{const y=startY+i*rowH;ctx.fillStyle=i%2?"#101c28":"#0c1722";rounded(ctx,58,y,W-116,rowH-8,12);ctx.fill();ctx.fillStyle="#7be7bd";ctx.font="900 30px Inter, Arial, sans-serif";ctx.fillText(String(i+1).padStart(2,"0"),77,y+49);ctx.fillStyle="#fff";ctx.font="800 25px Inter, Arial, sans-serif";ctx.fillText(fit(ctx,r.pick,530),135,y+35);ctx.fillStyle="#91a3b8";ctx.font="18px Inter, Arial, sans-serif";ctx.fillText(fit(ctx,r.event,530),135,y+64);ctx.fillStyle="#fff";ctx.font="800 21px Inter, Arial, sans-serif";ctx.fillText(r.source,730,y+38);ctx.fillStyle=r.tier==="BEST BET"?"#ffd166":"#7be7bd";ctx.font="700 16px Inter, Arial, sans-serif";ctx.fillText(r.tier,730,y+64);ctx.fillStyle="#fff";ctx.font="900 25px ui-monospace, monospace";ctx.fillText(odds(r.price),888,y+49);});
-    ctx.fillStyle="#91a3b8";ctx.font="18px Inter, Arial, sans-serif";ctx.fillText("Model-qualified plays only · Confirm the live price before betting · 19+ · Bet responsibly",58,H-58);
-    ticketBlob=await new Promise(resolve=>canvas.toBlob(resolve,"image/png"));if(ticketUrl)URL.revokeObjectURL(ticketUrl);ticketUrl=URL.createObjectURL(ticketBlob);$("#ticket-preview").src=ticketUrl;$("#ticket-note").textContent=rows.length===10?"Your 10-play image is ready.":"Image created with "+rows.length+" verified play"+(rows.length===1?"":"s")+" available for this date.";$("#ticket-share").hidden=!(navigator.canShare&&navigator.canShare({files:[new File([ticketBlob],"kevbot-bets-top-picks.png",{type:"image/png"})]}));$("#ticket-dialog").showModal();
+  async function buildTicket(fresh=false){
+    if(fresh||!currentTicket){currentTicket={id:"local-"+crypto.randomUUID().slice(0,8),day:$("#date").value,published_at:new Date().toISOString(),picks:ticketRows()};
+      try{const saved=JSON.parse(localStorage.getItem("kevbot.local-tickets.v1")||"[]");saved.unshift(currentTicket);localStorage.setItem("kevbot.local-tickets.v1",JSON.stringify(saved.slice(0,30)));}catch(_){currentTicket.saveFailed=true;}
+    }
+    const rows=currentTicket.picks,canvas=document.createElement("canvas"),ctx=canvas.getContext("2d"),W=1080,H=1350;canvas.width=W;canvas.height=H;
+    const ticket=currentTicket;
+    await window.KevTicketRenderer.draw(canvas,ticket,{style:$("#ticket-style").value});
+    ticketBlob=await new Promise(resolve=>canvas.toBlob(resolve,"image/png"));if(ticketUrl)URL.revokeObjectURL(ticketUrl);ticketUrl=URL.createObjectURL(ticketBlob);$("#ticket-preview").src=ticketUrl;$("#ticket-note").textContent=rows.length===10?"Your 10-play image is ready.":"Image created with "+rows.length+" verified play"+(rows.length===1?"":"s")+" available for this date.";$("#ticket-note").textContent+=currentTicket.saveFailed?" This browser could not save the snapshot; download it now.":" Saved in Tickets & results on this browser.";$("#ticket-share").hidden=!(navigator.canShare&&navigator.canShare({files:[new File([ticketBlob],"kevbot-bets-top-picks.png",{type:"image/png"})]}));if(!$("#ticket-dialog").open)$("#ticket-dialog").showModal();
   }
-  function downloadTicket(){if(!ticketBlob)return;const a=document.createElement("a");a.href=ticketUrl;a.download="kevbot-bets-top-picks-"+$("#date").value+".png";a.click();}
-  async function shareTicket(){if(!ticketBlob)return;const file=new File([ticketBlob],"kevbot-bets-top-picks-"+$("#date").value+".png",{type:"image/png"});try{await navigator.share({title:"KEVBOT BETS Daily Top Picks",files:[file]});}catch(_){}
+  function downloadTicket(){if(!ticketBlob)return;const a=document.createElement("a");a.href=ticketUrl;a.download="kevbot-bets-top-picks-"+currentTicket.day+".png";a.click();}
+  async function shareTicket(){if(!ticketBlob)return;const file=new File([ticketBlob],"kevbot-bets-top-picks-"+currentTicket.day+".png",{type:"image/png"});try{await navigator.share({title:"KEVBOT BETS Daily Top Picks",files:[file]});}catch(_){}
   }
   const link=(key,label)=>'<a class="cta" href="./#'+key+'" target="_top">'+esc(label||("Open "+C.LABELS[key]))+' →</a>';
   const empty=text=>'<div class="empty">'+esc(text)+'</div>';
@@ -85,7 +80,7 @@
     $("#health").innerHTML=Object.keys(sources).map(key=>{
       const b=S.feeds[key]||{error:true},h=C.health(key,b),meta=b.meta||b.slate||{};
       const auth=key==="props"?(meta.odds_mode==="keyless"?"Keyless mode. Player statistics available; no verified prop-price source connected.":"Player statistics: no key. This published snapshot predates the keyless-only switch."):key==="ladder"?"Market-based screening; see the Ladder board for its source.":"Existing public data feeds; no personal API key required.";
-      return '<article class="card"><span class="tag '+h.status+'">'+esc(h.status)+'</span><h3>'+esc(h.label)+'</h3><p>Published '+esc(h.stamp?time(h.stamp)+" ET":"time unavailable")+'<br><small>Data age: '+esc(elapsed(h.stamp))+'</small></p><p class="note">'+esc(auth)+'</p>'+(key==="ladder"?'<p class="note">This timestamp covers screening history, not the current Ladder quote.</p>':"")+h.warnings.map(w=>'<p class="warning">'+esc(w)+'</p>').join("")+link(key)+'</article>';
+      return '<article class="card"><span class="tag '+h.status+'">'+esc(h.status)+'</span><h3>'+esc(h.label)+'</h3><p>Published '+esc(h.stamp?time(h.stamp)+" ET":"time unavailable")+'<br><small>Data age: '+esc(elapsed(h.stamp))+'</small></p><p class="note">'+esc(auth)+'</p>'+(key==="ladder"?'<p class="note">This timestamp covers screening history, not the current Ladder quote.</p>':"")+(b.error&&b.lastGoodAt?'<p class="note">Last successful read: '+esc(time(b.lastGoodAt))+' ET</p>':"")+h.warnings.map(w=>'<p class="warning">'+esc(w)+'</p>').join("")+link(key)+'</article>';
     }).join("");
   }
   function metric(label,value){return '<p><span>'+esc(label)+'</span><b>'+esc(value)+'</b></p>';}
@@ -136,7 +131,12 @@
     await Promise.all(Object.entries(sources).map(async([key,paths])=>{
       const b={};await Promise.all(Object.entries(paths).map(async([field,url])=>{
         try{b[field]=await get(url);}catch(_){if(field!=="accuracy"||key==="ladder")b.error=true;}
-      }));S.feeds[key]=b;
+      }));
+      const cacheKey="kevbot.feed.v1."+key;
+      if(b.error){let prior=S.feeds[key];try{prior=prior||JSON.parse(localStorage.getItem(cacheKey)||"null");}catch(_){}
+        S.feeds[key]={...(prior||b),error:true,failedAt:new Date().toISOString()};
+      }else{b.lastGoodAt=new Date().toISOString();S.feeds[key]=b;try{localStorage.setItem(cacheKey,JSON.stringify({meta:b.meta,lastGoodAt:b.lastGoodAt,slate:b.slate?{generated_at:b.slate.generated_at}:undefined,accuracy:b.accuracy?{generated_at:b.accuracy.generated_at}:undefined}));}catch(_){}}
+
     }));
     S.busy=false;S.loadedAt=new Date().toISOString();$("#refresh").disabled=false;
     const failed=Object.values(S.feeds).filter(b=>b.error).length;
@@ -151,11 +151,12 @@
   }));
   $("#refresh").addEventListener("click",refresh);
   $("#ticker-refresh").addEventListener("click",refreshTicker);
-  $("#make-top-ten").addEventListener("click",buildTicket);
+  $("#make-top-ten").addEventListener("click",()=>buildTicket(true).catch(e=>$("#refresh-status").textContent=e.message));
+  $("#ticket-style").addEventListener("change",()=>buildTicket().catch(e=>$("#ticket-note").textContent=e.message));
   $("#ticket-close").addEventListener("click",()=>$("#ticket-dialog").close());
   $("#ticket-download").addEventListener("click",downloadTicket);
   $("#ticket-share").addEventListener("click",shareTicket);
-  window.makeKevbotTicket=buildTicket;
+  window.makeKevbotTicket=()=>buildTicket(true).catch(e=>$("#refresh-status").textContent=e.message);
   window.addEventListener("message",e=>{
     if(e.source!==window.parent||e.origin!==window.location.origin)return;
     if(e.data?.type==="kevbotbets:deactivate")S.active=false;

@@ -3,6 +3,7 @@ name: Tests
 on:
   push:
     branches: [main]
+    paths-ignore: ["data/tickets/**"]
   pull_request:
   workflow_dispatch:
 
@@ -18,8 +19,9 @@ jobs:
           node-version: "20"
       - run: node tests/test_betsync.mjs
       - run: node tests/test_server.mjs
-      - run: node --check hub.js && node --check hq.js && node --check today.js && node --check today-core.js
+      - run: node --check hub.js && node --check hq.js && node --check today.js && node --check today-core.js && node --check archive.js && node --check ticket-renderer.js && node --check scripts/refresh-tickets.mjs
 
+      - run: node tests/test_tickets.mjs
       - run: node tests/test_today.mjs
       - run: npm install --ignore-scripts
       - run: npx playwright install --with-deps chromium

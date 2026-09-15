@@ -53,4 +53,21 @@ test("Ladder pushes and voids are not counted as losses",()=>{
   const a=C.accuracy("ladder",{accuracy:{overall:{settled:8,wins:4,losses:2,pushes:1,voids:1}}});
   assert.equal(a.losses,2);assert.equal(a.pushes,1);assert.equal(a.voids,1);
 });
+test('WNBA uses tipoff and quote timestamp, never a zero-stake pick',()=>{
+ const row={...base,tipoff:start,game_date:undefined,odds_fetched_at:stamp,side:'away'};
+ assert.equal(C.plays('wnba',{meta:{generated_at:stamp},board:[row]},now).length,1);
+ assert.equal(C.plays('wnba',{meta:{generated_at:stamp},board:[{...row,stake:0}]},now).length,0);
+});
+test('away NFL and college spreads are converted from home-oriented lines',()=>{
+ for(const key of ['nfl','ncaaf'])assert.equal(C.plays(key,{meta:{generated_at:stamp},board:[{...base,market:'ATS',side:'away',line:-7,pick:'DEN +7'}]},now)[0].line,7);
+});
+test('WNBA already stores selection-oriented spread lines',()=>assert.equal(C.plays('wnba',{meta:{generated_at:stamp},board:[{...base,market:'ATS',side:'away',line:7,pick:'SEA +7'}]},now)[0].line,7));
+test('MLB selection resolves side without inventing it',()=>{
+ const game={gamePk:1,home:'TB',away:'ATH',start,status:'Scheduled',odds:{fetched_at:stamp},bets:[{tier:'GOOD',stake:1,price:-110,market:'RL',line:-1.5,selection:'ATH',label:'ATH +1.5'}]};
+ const row=C.plays('mlb',{meta:{generated_at:stamp},slate:{games:[game]}},now)[0];assert.equal(row.side,'away');assert.equal(row.line,1.5);
+});
+test('raw edge scales cannot let one sport take every place in the same tier',()=>{
+ const rows=[...Array.from({length:10},(_,i)=>({key:'mlb',tier:'GOOD',score:100+i,when:i})),{key:'nfl',tier:'GOOD',score:.01,when:20}];
+ assert.equal(C.topPlays(rows,2).some(r=>r.key==='nfl'),true);
+});
 console.log(count+" Today checks passed.");

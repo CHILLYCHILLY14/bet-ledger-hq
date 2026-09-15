@@ -4,8 +4,10 @@
   "use strict";
   const configs = {
     today:{title:"Today",description:"Your daily board, data health and shared exposure.",url:"today.html"},
+    archive:{title:"Ticket archive",description:"Published picks, original prices and verified results.",url:"archive.html"},
     ledger:{title:"Shared ledger",description:"Your bets, bankroll and results across every board.",url:"ledger.html"},
     mlb:{title:"MLB Edge",description:"Baseball matchups, best bets and your game simulator.",url:"../mlb-edge/"},
+    wnba:{title:"WNBA Edge Lab",description:"WNBA matchups, qualified plays and your shared ledger.",url:"../wnba-edge-lab/"},
     nfl:{title:"NFL Edge Lab",description:"NFL matchups, predictions and your season record.",url:"../nfl-edge-lab/"},
     ncaaf:{title:"NCAAF Edge Lab",description:"College football schedules, edges and simulations.",url:"../ncaaf-edge-lab/"},
     props:{title:"NFL Props",description:"Player props, matchup analysis and parlay boards.",url:"../props-edge/"},

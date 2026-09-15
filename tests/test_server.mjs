@@ -557,6 +557,13 @@ test("the bankroll HQ shows is the one the boards size against", async () => {
   assert.equal(hq.current, 395);
 });
 
+test("closing quotes and independent history entries round-trip with the deployed schema",async()=>{
+  const srv=server(),a=device(srv,"Mac");a.put([entry()]);await a.sync();
+  const before=srv.post({token:srv.token,action:"pull",since:""});
+  for(const [key,value] of [["kevbot_close_v1_bet",JSON.stringify({line:3,price:-110})],["kevbot_history_v1_one","first device"],["kevbot_history_v1_two","second device"]])srv.post({token:srv.token,action:"push",rows:[],settings:{[key]:value},since:""});
+  const after=srv.post({token:srv.token,action:"pull",since:""});
+  assert.equal(after.settings.kevbot_history_v1_one,"first device");assert.equal(after.settings.kevbot_history_v1_two,"second device");assert.equal(JSON.parse(after.settings.kevbot_close_v1_bet).line,3);assert.deepEqual(after.rows,before.rows);
+});
 for (const [name, fn] of cases) {
   try {
     await fn();

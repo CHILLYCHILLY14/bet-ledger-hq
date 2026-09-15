@@ -6,8 +6,8 @@
 })(typeof self!=="undefined"?self:this,function(){
   "use strict";
   const HOUR=3600000;
-  const LABELS={mlb:"MLB",nfl:"NFL",ncaaf:"NCAAF",props:"Props",ladder:"Ladder"};
-  const APP={mlb:"mlb-edge",nfl:"nfl-lab",ncaaf:"ncaaf-lab",props:"props",ladder:"ladder"};
+  const LABELS={wnba:"WNBA",mlb:"MLB",nfl:"NFL",ncaaf:"NCAAF",props:"Props",ladder:"Ladder"};
+  const APP={wnba:"wnba-lab",mlb:"mlb-edge",nfl:"nfl-lab",ncaaf:"ncaaf-lab",props:"props",ladder:"ladder"};
   function number(v){return v==null||v===""||!Number.isFinite(Number(v))?null:Number(v);}
   function instant(v){if(!v)return null;const n=Date.parse(v);return Number.isFinite(n)?n:null;}
   function day(v){if(typeof v==="string"&&/^\d{4}-\d{2}-\d{2}$/.test(v))return v;const n=typeof v==="number"?v:instant(v);if(n==null)return "";return new Intl.DateTimeFormat("en-CA",{timeZone:"America/Toronto",year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date(n));}
@@ -25,7 +25,7 @@
     const stamp=meta.generated_at||meta.generated||bundle.accuracy?.generated_at;
     const limit=key==="props"?6:key==="ncaaf"?4:6;
     const age=freshness(stamp,limit,now),warnings=[];
-    if(bundle.error)warnings.push("Feed unavailable; no current recommendation list.");
+    if(bundle.error)warnings.push("Latest fetch failed; retained data is for reference only. No current recommendations from this board.");
     if(age.status!=="recent")warnings.push(age.status==="stale"?"Published data is stale.":"Published data time is unavailable.");
     if(key==="props"){
       const source=meta.source_by_sport?.NFL||{};
@@ -35,6 +35,7 @@
       if((meta.source_by_provider?.the_odds_api?.eligible_priced_quotes||0)===0&&(meta.source_by_provider?.odds_api_io?.eligible_priced_quotes||0)>0)warnings.push("Using the configured fallback odds provider.");
       if(!(meta.counts?.eligible_priced_quotes>0))warnings.push("No verified prop prices; projections are not wagers.");
     }
+    if(key==="wnba"&&meta.odds_health?.status==="partial")warnings.push("Some games have no usable prices; those games cannot qualify.");
     if(key==="ncaaf"){
       if(meta.context_health?.availability?.status!=="available")warnings.push("Availability reports missing or incomplete; verify team news.");
       if(meta.quote_coverage?.games_multiple_books===0)warnings.push("No multi-book comparison in this refresh.");
@@ -45,15 +46,15 @@
   function plays(key,bundle,now=Date.now()){
     const rows=[],meta=bundle.meta||{},published=meta.generated_at||bundle.slate?.generated_at;
     function add(r,game){
-      const t=tier(r.tier),start=r.start_time||r.game_date||game?.start;
+      const t=tier(r.tier),start=r.start_time||r.tipoff||r.game_date||game?.start;
       if(!["BEST BET","GOOD","LEAN"].includes(t)||r.held||r.odds_verified===false)return;
       if(key==="mlb"&&!(number(r.stake)>0))return;
-      if(key==="nfl"&&!(number(r.stake)>0))return;
+      if(["nfl","wnba"].includes(key)&&!(number(r.stake)>0))return;
       if(key==="props"&&!(number(r.recommended_stake)>0))return;
       if(["Final","Postponed","Cancelled","Canceled","Suspended","In Progress"].includes(game?.status))return;
       const when=instant(start),price=american(r.price_american??r.price);
       if(when==null||when<=now||price==null)return;
-      const quote=r.updated_at||r.odds_observed_at||game?.odds?.fetched_at;
+      const quote=r.odds_observed_at||r.odds_fetched_at||game?.odds?.fetched_at||r.updated_at;
       const age=freshness(quote,key==="props"?Math.min(6,number(meta.max_odds_age_hours)||6):key==="ncaaf"?3:6,now);
       const publishedAge=freshness(published,key==="ncaaf"?4:6,now);
       if((quote&&age.status==="unknown")||age.status==="stale"||publishedAge.status!=="recent"||bundle.error)return;
@@ -64,10 +65,13 @@
       if(key==="props"&&!(number(r.current_season_samples)>0))review.push("No current-season player sample yet.");
       if(key==="props"&&r.roster_verified===false)return;
       const event=r.matchup||(game?String(game.away)+" @ "+String(game.home):"");
+      const selection=String(r.selection||"").toLowerCase();
+      const side=r.side||(game?(selection===String(game.home).toLowerCase()?"home":selection===String(game.away).toLowerCase()?"away":["over","under"].includes(selection)?selection:""):"");
+      const rawLine=number(r.line),line=rawLine!=null&&["nfl","ncaaf","mlb"].includes(key)&&["ATS","RL"].includes(r.market)&&side==="away"?-rawLine:rawLine;
       rows.push({key,app:APP[key],sport:key==="props"?"NFL":LABELS[key],event,
         eventId:String(r.result_event_id||r.game_id||r.event_id||game?.gamePk||""),
-        player:r.player||"",start,when,day:day(start),pick:r.pick||r.label||r.selection||"",
-        market:r.market||"",line:number(r.line),price,book:r.book||"Unspecified book",
+        player:r.player||"",playerId:String(r.player_id||""),side,home:r.home||game?.home||"",away:r.away||game?.away||"",version:String(r.model_version||meta.model_version||meta.version||"unversioned"),start,when,day:day(start),pick:r.pick||r.label||r.selection||"",
+        market:r.market||"",line,sourceLine:rawLine,price,book:r.book||"Unspecified book",
         tier:t,score:number(r.action_edge??r.edge_real??r.edge),quote:quote||null,
         review,probability:number(r.model_prob??r.p_final),source:LABELS[key]});
     }
@@ -82,10 +86,19 @@
   }
   function topPlays(rows,limit=10){
     const order={"BEST BET":0,GOOD:1,LEAN:2};
-    return rows.slice().sort((a,b)=>(order[a.tier]??9)-(order[b.tier]??9)||
-      (number(b.score)??-Infinity)-(number(a.score)??-Infinity)||
-      (number(b.probability)??-Infinity)-(number(a.probability)??-Infinity)||
-      a.when-b.when||a.key.localeCompare(b.key)).slice(0,Math.max(0,limit));
+    const bySource=new Map();
+    for(const r of rows){if(!bySource.has(r.key))bySource.set(r.key,[]);bySource.get(r.key).push(r);}
+    const queues=[...bySource.values()].map(group=>group.sort((a,b)=>(order[a.tier]??9)-(order[b.tier]??9)||
+      (number(b.score)??-Infinity)-(number(a.score)??-Infinity)||a.when-b.when));
+    const ranked=[];
+    for(const t of ["BEST BET","GOOD","LEAN"]){
+      let available=queues.map(q=>q.filter(r=>r.tier===t));
+      while(available.some(q=>q.length)){
+        const round=available.filter(q=>q.length).map(q=>q.shift()).sort((a,b)=>a.when-b.when||a.key.localeCompare(b.key));
+        ranked.push(...round);
+      }
+    }
+    return ranked.slice(0,Math.max(0,limit));
   }
   function rate(correct,n){return number(n)>0&&number(correct)!=null?correct/n:null;}
   function accuracy(key,bundle){
@@ -109,7 +122,7 @@
       notes:["Only the current-season accuracy feed is used; legacy mixed-season exports are excluded.","Small samples do not establish a betting edge."]};
   }
   const NFL_TEAMS={"arizona cardinals":"ari","atlanta falcons":"atl","baltimore ravens":"bal","buffalo bills":"buf","carolina panthers":"car","chicago bears":"chi","cincinnati bengals":"cin","cleveland browns":"cle","dallas cowboys":"dal","denver broncos":"den","detroit lions":"det","green bay packers":"gb","houston texans":"hou","indianapolis colts":"ind","jacksonville jaguars":"jax","kansas city chiefs":"kc","las vegas raiders":"lv","los angeles chargers":"lac","los angeles rams":"lar","miami dolphins":"mia","minnesota vikings":"min","new england patriots":"ne","new orleans saints":"no","new york giants":"nyg","new york jets":"nyj","philadelphia eagles":"phi","pittsburgh steelers":"pit","san francisco 49ers":"sf","seattle seahawks":"sea","tampa bay buccaneers":"tb","tennessee titans":"ten","washington commanders":"wsh","was":"wsh","jac":"jax"};
-  function league(row){return String(row.sport||({props:"NFL","nfl-lab":"NFL","ncaaf-lab":"NCAAF","mlb-edge":"MLB"}[row.app])||"").toUpperCase();}
+  function league(row){return String(row.sport||({props:"NFL","nfl-lab":"NFL","ncaaf-lab":"NCAAF","mlb-edge":"MLB","wnba-lab":"WNBA"}[row.app])||"").toUpperCase();}
   function team(s,sport){const n=String(s||"").toLowerCase().replace(/[.]/g,"").replace(/\s+/g," ").trim();return sport==="NFL"?(NFL_TEAMS[n]||n):n;}
   function eventKey(row){
     const sport=league(row),event=String(row.event||row.matchup||"");
