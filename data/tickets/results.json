@@ -39,9 +39,9 @@
       "closing": {
         "line": -1.5,
         "price": 153,
-        "observed_at": "2026-09-15T22:03:12.709829+00:00",
+        "observed_at": "2026-09-15T23:35:40.638172+00:00",
         "book": "DraftKings",
-        "minutes_before_start": 122,
+        "minutes_before_start": 29,
         "line_advantage": 0,
         "price_advantage": 0
       }
@@ -90,7 +90,7 @@
         "line_advantage": 0,
         "price_advantage": 0.004805959389643122
       },
-      "checked_at": "2026-09-15T23:19:19.643Z"
+      "checked_at": "2026-09-15T23:44:16.387Z"
     },
     "mlb|824384|2026-09-15T22:40:00Z|ML||away|line=": {
       "pick": {
@@ -136,7 +136,7 @@
         "line_advantage": null,
         "price_advantage": -0.007496673351200411
       },
-      "checked_at": "2026-09-15T23:19:19.643Z"
+      "checked_at": "2026-09-15T23:44:16.387Z"
     },
     "mlb|823333|2026-09-15T22:40:00Z|ML||home|line=": {
       "pick": {
@@ -182,7 +182,7 @@
         "line_advantage": null,
         "price_advantage": 0
       },
-      "checked_at": "2026-09-15T23:19:19.643Z"
+      "checked_at": "2026-09-15T23:44:16.387Z"
     },
     "mlb|822683|2026-09-15T22:45:00Z|ML||home|line=": {
       "pick": {
@@ -230,7 +230,7 @@
         "line_advantage": null,
         "price_advantage": -0.0012986001090824484
       },
-      "checked_at": "2026-09-15T23:19:19.643Z"
+      "checked_at": "2026-09-15T23:44:16.387Z"
     },
     "mlb|823980|2026-09-16T01:38:00Z|ML||home|line=": {
       "pick": {
@@ -271,12 +271,12 @@
       "history": [],
       "closing": {
         "line": null,
-        "price": 144,
-        "observed_at": "2026-09-15T22:03:12.709829+00:00",
+        "price": 140,
+        "observed_at": "2026-09-15T23:35:40.638172+00:00",
         "book": "DraftKings",
-        "minutes_before_start": 215,
+        "minutes_before_start": 122,
         "line_advantage": null,
-        "price_advantage": 0
+        "price_advantage": 0.0068306010928961824
       }
     },
     "ncaaf|401871047|2026-09-19T22:30Z|ML||home|line=": {
@@ -1016,12 +1016,12 @@
       "history": [],
       "closing": {
         "line": null,
-        "price": 166,
-        "observed_at": "2026-09-15T22:03:12.709829+00:00",
+        "price": 164,
+        "observed_at": "2026-09-15T23:35:40.638172+00:00",
         "book": "DraftKings",
-        "minutes_before_start": 157,
+        "minutes_before_start": 64,
         "line_advantage": null,
-        "price_advantage": 0
+        "price_advantage": 0.002848029163818655
       }
     },
     "ncaaf|401858451|2026-09-19T16:00Z|ATS||away|line=23.5": {
@@ -1070,7 +1070,52 @@
         "line_advantage": 0,
         "price_advantage": 0
       }
+    },
+    "mlb|824143|2026-09-16T00:10:00Z|TOTAL||over|line=8": {
+      "pick": {
+        "key": "mlb",
+        "app": "mlb-edge",
+        "sport": "MLB",
+        "event": "KC @ HOU",
+        "eventId": "824143",
+        "player": "",
+        "playerId": "",
+        "side": "over",
+        "home": "HOU",
+        "away": "KC",
+        "version": "unversioned",
+        "start": "2026-09-16T00:10:00Z",
+        "when": 1789517400000,
+        "day": "2026-09-15",
+        "pick": "Over 8.0",
+        "market": "TOTAL",
+        "line": 8,
+        "sourceLine": 8,
+        "price": -105,
+        "book": "DraftKings",
+        "tier": "GOOD",
+        "score": 0.0446,
+        "quote": "2026-09-15T23:35:40.638172+00:00",
+        "review": [],
+        "probability": 0.5752,
+        "source": "MLB"
+      },
+      "first_ticket": "59aab151efd5cb9b",
+      "published_at": "2026-09-15T23:44:16.387Z",
+      "result": {
+        "status": "Pending"
+      },
+      "history": [],
+      "closing": {
+        "line": 8,
+        "price": -105,
+        "observed_at": "2026-09-15T23:35:40.638172+00:00",
+        "book": "DraftKings",
+        "minutes_before_start": 34,
+        "line_advantage": 0,
+        "price_advantage": 0
+      }
     }
   },
-  "checked_at": "2026-09-15T23:19:19.643Z"
+  "checked_at": "2026-09-15T23:44:16.387Z"
 }

@@ -3,7 +3,7 @@
     "meta": {
       "league": "WNBA",
       "season": 2026,
-      "generated_at": "2026-09-15T21:37:16+00:00",
+      "generated_at": "2026-09-15T23:26:00+00:00",
       "built_for": "2026-09-15",
       "source": "ESPN schedule, box-score/team efficiency, predictor, injuries and DraftKings prices",
       "source_status": "live",
@@ -29,9 +29,6 @@
         "total_sigma": 17.641
       }
     },
-    "accuracy": {
-      "generated_at": "2026-09-15T21:37:16.868124+00:00"
-    },
     "board": [
       {
         "tier": "AVOID",
@@ -50,7 +47,7 @@
         "edge_real": -0.0403,
         "edge": 0.043,
         "model_prob": 0.1111,
-        "odds_fetched_at": "2026-09-15T21:37:14+00:00"
+        "odds_fetched_at": "2026-09-15T23:25:55+00:00"
       },
       {
         "tier": "AVOID",
@@ -67,9 +64,9 @@
         "price": -112,
         "book": "DraftKings",
         "edge_real": 0,
-        "edge": 0.0327,
-        "model_prob": 0.532,
-        "odds_fetched_at": "2026-09-15T21:37:14+00:00"
+        "edge": 0.032,
+        "model_prob": 0.531,
+        "odds_fetched_at": "2026-09-15T23:25:55+00:00"
       },
       {
         "tier": "AVOID",
@@ -88,7 +85,7 @@
         "edge_real": 0,
         "edge": 0.0299,
         "model_prob": 0.526,
-        "odds_fetched_at": "2026-09-15T21:37:14+00:00"
+        "odds_fetched_at": "2026-09-15T23:25:55+00:00"
       },
       {
         "tier": "AVOID",
@@ -107,7 +104,26 @@
         "edge_real": -0.0462,
         "edge": 0.0275,
         "model_prob": 0.2138,
-        "odds_fetched_at": "2026-09-15T21:37:14+00:00"
+        "odds_fetched_at": "2026-09-15T23:25:55+00:00"
+      },
+      {
+        "tier": "AVOID",
+        "stake": 0,
+        "tipoff": "2026-09-18T02:00Z",
+        "game_id": "401857193",
+        "matchup": "PHX @ POR",
+        "market": "TOTAL",
+        "side": "under",
+        "home": "POR",
+        "away": "PHX",
+        "pick": "Under 175.5",
+        "line": 175.5,
+        "price": -105,
+        "book": "DraftKings",
+        "edge_real": -0.0093,
+        "edge": 0.0244,
+        "model_prob": 0.5074,
+        "odds_fetched_at": "2026-09-15T23:25:55+00:00"
       },
       {
         "tier": "AVOID",
@@ -126,26 +142,7 @@
         "edge_real": -0.0123,
         "edge": 0.0219,
         "model_prob": 0.5172,
-        "odds_fetched_at": "2026-09-15T21:37:14+00:00"
-      },
-      {
-        "tier": "AVOID",
-        "stake": 0,
-        "tipoff": "2026-09-18T02:00Z",
-        "game_id": "401857193",
-        "matchup": "PHX @ POR",
-        "market": "TOTAL",
-        "side": "under",
-        "home": "POR",
-        "away": "PHX",
-        "pick": "Under 176.5",
-        "line": 176.5,
-        "price": -112,
-        "book": "DraftKings",
-        "edge_real": -0.0248,
-        "edge": 0.0099,
-        "model_prob": 0.5136,
-        "odds_fetched_at": "2026-09-15T21:37:14+00:00"
+        "odds_fetched_at": "2026-09-15T23:25:55+00:00"
       },
       {
         "tier": "AVOID",
@@ -164,7 +161,7 @@
         "edge_real": -0.0137,
         "edge": 0.0096,
         "model_prob": 0.6096,
-        "odds_fetched_at": "2026-09-15T21:37:14+00:00"
+        "odds_fetched_at": "2026-09-15T23:25:55+00:00"
       },
       {
         "tier": "AVOID",
@@ -183,7 +180,7 @@
         "edge_real": -0.0304,
         "edge": 0.0035,
         "model_prob": 0.5053,
-        "odds_fetched_at": "2026-09-15T21:37:14+00:00"
+        "odds_fetched_at": "2026-09-15T23:25:55+00:00"
       },
       {
         "tier": "AVOID",
@@ -202,7 +199,7 @@
         "edge_real": -0.0308,
         "edge": 0.0028,
         "model_prob": 0.505,
-        "odds_fetched_at": "2026-09-15T21:37:14+00:00"
+        "odds_fetched_at": "2026-09-15T23:25:55+00:00"
       },
       {
         "tier": "AVOID",
@@ -221,7 +218,7 @@
         "edge_real": -0.0301,
         "edge": 0.0024,
         "model_prob": 0.5047,
-        "odds_fetched_at": "2026-09-15T21:37:14+00:00"
+        "odds_fetched_at": "2026-09-15T23:25:55+00:00"
       },
       {
         "tier": "AVOID",
@@ -240,7 +237,7 @@
         "edge_real": -0.0321,
         "edge": 0.0017,
         "model_prob": 0.4927,
-        "odds_fetched_at": "2026-09-15T21:37:14+00:00"
+        "odds_fetched_at": "2026-09-15T23:25:55+00:00"
       },
       {
         "tier": "AVOID",
@@ -259,7 +256,7 @@
         "edge_real": -0.0199,
         "edge": 0,
         "model_prob": 0.728,
-        "odds_fetched_at": "2026-09-15T21:37:14+00:00"
+        "odds_fetched_at": "2026-09-15T23:25:55+00:00"
       },
       {
         "tier": "AVOID",
@@ -278,7 +275,7 @@
         "edge_real": -0.0392,
         "edge": 0,
         "model_prob": 0.5027,
-        "odds_fetched_at": "2026-09-15T21:37:14+00:00"
+        "odds_fetched_at": "2026-09-15T23:25:55+00:00"
       },
       {
         "tier": "AVOID",
@@ -294,10 +291,10 @@
         "line": null,
         "price": -102,
         "book": "DraftKings",
-        "edge_real": -0.035,
+        "edge_real": -0.036,
         "edge": 0,
-        "model_prob": 0.483,
-        "odds_fetched_at": "2026-09-15T21:37:14+00:00"
+        "model_prob": 0.4821,
+        "odds_fetched_at": "2026-09-15T23:25:55+00:00"
       },
       {
         "tier": "AVOID",
@@ -316,7 +313,26 @@
         "edge_real": -0.0354,
         "edge": 0,
         "model_prob": 0.5007,
-        "odds_fetched_at": "2026-09-15T21:37:14+00:00"
+        "odds_fetched_at": "2026-09-15T23:25:55+00:00"
+      },
+      {
+        "tier": "AVOID",
+        "stake": 0,
+        "tipoff": "2026-09-18T02:00Z",
+        "game_id": "401857193",
+        "matchup": "PHX @ POR",
+        "market": "ML",
+        "side": "away",
+        "home": "POR",
+        "away": "PHX",
+        "pick": "PHX ML",
+        "line": null,
+        "price": -118,
+        "book": "DraftKings",
+        "edge_real": -0.0349,
+        "edge": -0.0012,
+        "model_prob": 0.5179,
+        "odds_fetched_at": "2026-09-15T23:25:55+00:00"
       },
       {
         "tier": "AVOID",
@@ -335,7 +351,7 @@
         "edge_real": -0.0366,
         "edge": -0.0013,
         "model_prob": 0.4993,
-        "odds_fetched_at": "2026-09-15T21:37:14+00:00"
+        "odds_fetched_at": "2026-09-15T23:25:55+00:00"
       },
       {
         "tier": "AVOID",
@@ -354,26 +370,7 @@
         "edge_real": -0.0472,
         "edge": -0.0024,
         "model_prob": 0.272,
-        "odds_fetched_at": "2026-09-15T21:37:14+00:00"
-      },
-      {
-        "tier": "AVOID",
-        "stake": 0,
-        "tipoff": "2026-09-18T02:00Z",
-        "game_id": "401857193",
-        "matchup": "PHX @ POR",
-        "market": "ML",
-        "side": "away",
-        "home": "POR",
-        "away": "PHX",
-        "pick": "PHX ML",
-        "line": null,
-        "price": -118,
-        "book": "DraftKings",
-        "edge_real": -0.0358,
-        "edge": -0.003,
-        "model_prob": 0.517,
-        "odds_fetched_at": "2026-09-15T21:37:14+00:00"
+        "odds_fetched_at": "2026-09-15T23:25:55+00:00"
       },
       {
         "tier": "AVOID",
@@ -392,7 +389,7 @@
         "edge_real": -0.0387,
         "edge": -0.0083,
         "model_prob": 0.5073,
-        "odds_fetched_at": "2026-09-15T21:37:14+00:00"
+        "odds_fetched_at": "2026-09-15T23:25:55+00:00"
       },
       {
         "tier": "AVOID",
@@ -411,7 +408,7 @@
         "edge_real": -0.0377,
         "edge": -0.0094,
         "model_prob": 0.4953,
-        "odds_fetched_at": "2026-09-15T21:37:14+00:00"
+        "odds_fetched_at": "2026-09-15T23:25:55+00:00"
       },
       {
         "tier": "AVOID",
@@ -430,7 +427,7 @@
         "edge_real": -0.04,
         "edge": -0.0098,
         "model_prob": 0.495,
-        "odds_fetched_at": "2026-09-15T21:37:14+00:00"
+        "odds_fetched_at": "2026-09-15T23:25:55+00:00"
       },
       {
         "tier": "AVOID",
@@ -449,7 +446,7 @@
         "edge_real": -0.0402,
         "edge": -0.0105,
         "model_prob": 0.4947,
-        "odds_fetched_at": "2026-09-15T21:37:14+00:00"
+        "odds_fetched_at": "2026-09-15T23:25:55+00:00"
       },
       {
         "tier": "AVOID",
@@ -468,26 +465,7 @@
         "edge_real": -0.026,
         "edge": -0.0108,
         "model_prob": 0.7862,
-        "odds_fetched_at": "2026-09-15T21:37:14+00:00"
-      },
-      {
-        "tier": "AVOID",
-        "stake": 0,
-        "tipoff": "2026-09-18T02:00Z",
-        "game_id": "401857193",
-        "matchup": "PHX @ POR",
-        "market": "TOTAL",
-        "side": "over",
-        "home": "POR",
-        "away": "PHX",
-        "pick": "Over 176.5",
-        "line": 176.5,
-        "price": -108,
-        "book": "DraftKings",
-        "edge_real": -0.0399,
-        "edge": -0.0172,
-        "model_prob": 0.4864,
-        "odds_fetched_at": "2026-09-15T21:37:14+00:00"
+        "odds_fetched_at": "2026-09-15T23:25:55+00:00"
       },
       {
         "tier": "AVOID",
@@ -506,7 +484,7 @@
         "edge_real": -0.0459,
         "edge": -0.0237,
         "model_prob": 0.3904,
-        "odds_fetched_at": "2026-09-15T21:37:14+00:00"
+        "odds_fetched_at": "2026-09-15T23:25:55+00:00"
       },
       {
         "tier": "AVOID",
@@ -525,7 +503,7 @@
         "edge_real": -0.0315,
         "edge": -0.024,
         "model_prob": 0.8889,
-        "odds_fetched_at": "2026-09-15T21:37:14+00:00"
+        "odds_fetched_at": "2026-09-15T23:25:55+00:00"
       },
       {
         "tier": "AVOID",
@@ -544,7 +522,26 @@
         "edge_real": -0.0423,
         "edge": -0.0289,
         "model_prob": 0.4828,
-        "odds_fetched_at": "2026-09-15T21:37:14+00:00"
+        "odds_fetched_at": "2026-09-15T23:25:55+00:00"
+      },
+      {
+        "tier": "AVOID",
+        "stake": 0,
+        "tipoff": "2026-09-18T02:00Z",
+        "game_id": "401857193",
+        "matchup": "PHX @ POR",
+        "market": "TOTAL",
+        "side": "over",
+        "home": "POR",
+        "away": "PHX",
+        "pick": "Over 175.5",
+        "line": 175.5,
+        "price": -115,
+        "book": "DraftKings",
+        "edge_real": -0.0424,
+        "edge": -0.0305,
+        "model_prob": 0.4926,
+        "odds_fetched_at": "2026-09-15T23:25:55+00:00"
       },
       {
         "tier": "AVOID",
@@ -563,7 +560,7 @@
         "edge_real": -0.0437,
         "edge": -0.0369,
         "model_prob": 0.474,
-        "odds_fetched_at": "2026-09-15T21:37:14+00:00"
+        "odds_fetched_at": "2026-09-15T23:25:55+00:00"
       },
       {
         "tier": "AVOID",
@@ -579,10 +576,10 @@
         "line": -1.5,
         "price": -108,
         "book": "DraftKings",
-        "edge_real": -0.0481,
-        "edge": -0.0401,
-        "model_prob": 0.468,
-        "odds_fetched_at": "2026-09-15T21:37:14+00:00"
+        "edge_real": -0.048,
+        "edge": -0.0393,
+        "model_prob": 0.469,
+        "odds_fetched_at": "2026-09-15T23:25:55+00:00"
       },
       {
         "tier": "AVOID",
@@ -598,10 +595,10 @@
         "line": null,
         "price": 525,
         "book": "DraftKings",
-        "edge_real": -0.0147,
+        "edge_real": -0.0168,
         "edge": 0.043,
-        "model_prob": 0.1576,
-        "odds_fetched_at": "2026-09-15T21:37:14+00:00"
+        "model_prob": 0.1572,
+        "odds_fetched_at": "2026-09-15T23:25:56+00:00"
       },
       {
         "tier": "AVOID",
@@ -620,7 +617,7 @@
         "edge_real": -0.0483,
         "edge": 0.0387,
         "model_prob": 0.1523,
-        "odds_fetched_at": "2026-09-15T21:37:14+00:00"
+        "odds_fetched_at": "2026-09-15T23:25:56+00:00"
       },
       {
         "tier": "AVOID",
@@ -639,7 +636,7 @@
         "edge_real": 0.005,
         "edge": 0.0352,
         "model_prob": 0.5185,
-        "odds_fetched_at": "2026-09-15T21:37:14+00:00"
+        "odds_fetched_at": "2026-09-15T23:25:56+00:00"
       },
       {
         "tier": "AVOID",
@@ -658,7 +655,7 @@
         "edge_real": 0.0136,
         "edge": 0.0343,
         "model_prob": 0.5355,
-        "odds_fetched_at": "2026-09-15T21:37:14+00:00"
+        "odds_fetched_at": "2026-09-15T23:25:56+00:00"
       },
       {
         "tier": "AVOID",
@@ -674,10 +671,10 @@
         "line": 161.5,
         "price": -110,
         "book": "DraftKings",
-        "edge_real": 0.0101,
+        "edge_real": 0.0097,
         "edge": 0.0335,
-        "model_prob": 0.5332,
-        "odds_fetched_at": "2026-09-15T21:37:14+00:00"
+        "model_prob": 0.533,
+        "odds_fetched_at": "2026-09-15T23:25:56+00:00"
       },
       {
         "tier": "AVOID",
@@ -696,7 +693,7 @@
         "edge_real": -0.038,
         "edge": 0.0192,
         "model_prob": 0.3115,
-        "odds_fetched_at": "2026-09-15T21:37:14+00:00"
+        "odds_fetched_at": "2026-09-15T23:25:56+00:00"
       },
       {
         "tier": "AVOID",
@@ -715,7 +712,7 @@
         "edge_real": -0.0158,
         "edge": 0.0174,
         "model_prob": 0.5324,
-        "odds_fetched_at": "2026-09-15T21:37:14+00:00"
+        "odds_fetched_at": "2026-09-15T23:25:56+00:00"
       },
       {
         "tier": "AVOID",
@@ -734,7 +731,7 @@
         "edge_real": -0.0313,
         "edge": 0.0001,
         "model_prob": 0.5036,
-        "odds_fetched_at": "2026-09-15T21:37:14+00:00"
+        "odds_fetched_at": "2026-09-15T23:25:56+00:00"
       },
       {
         "tier": "AVOID",
@@ -750,10 +747,10 @@
         "line": -12.5,
         "price": -110,
         "book": "DraftKings",
-        "edge_real": -0.0351,
+        "edge_real": -0.0339,
         "edge": 0,
-        "model_prob": 0.501,
-        "odds_fetched_at": "2026-09-15T21:37:14+00:00"
+        "model_prob": 0.5022,
+        "odds_fetched_at": "2026-09-15T23:25:56+00:00"
       },
       {
         "tier": "AVOID",
@@ -769,10 +766,10 @@
         "line": 12.5,
         "price": -110,
         "book": "DraftKings",
-        "edge_real": -0.0369,
-        "edge": -0.0019,
-        "model_prob": 0.499,
-        "odds_fetched_at": "2026-09-15T21:37:14+00:00"
+        "edge_real": -0.038,
+        "edge": -0.0045,
+        "model_prob": 0.4978,
+        "odds_fetched_at": "2026-09-15T23:25:56+00:00"
       },
       {
         "tier": "AVOID",
@@ -791,7 +788,7 @@
         "edge_real": -0.037,
         "edge": -0.0071,
         "model_prob": 0.4964,
-        "odds_fetched_at": "2026-09-15T21:37:14+00:00"
+        "odds_fetched_at": "2026-09-15T23:25:56+00:00"
       },
       {
         "tier": "AVOID",
@@ -810,7 +807,7 @@
         "edge_real": -0.0309,
         "edge": -0.0124,
         "model_prob": 0.6885,
-        "odds_fetched_at": "2026-09-15T21:37:14+00:00"
+        "odds_fetched_at": "2026-09-15T23:25:56+00:00"
       },
       {
         "tier": "AVOID",
@@ -829,7 +826,7 @@
         "edge_real": -0.0244,
         "edge": -0.0125,
         "model_prob": 0.8477,
-        "odds_fetched_at": "2026-09-15T21:37:14+00:00"
+        "odds_fetched_at": "2026-09-15T23:25:56+00:00"
       },
       {
         "tier": "AVOID",
@@ -848,7 +845,7 @@
         "edge_real": -0.0451,
         "edge": -0.026,
         "model_prob": 0.4676,
-        "odds_fetched_at": "2026-09-15T21:37:14+00:00"
+        "odds_fetched_at": "2026-09-15T23:25:56+00:00"
       },
       {
         "tier": "AVOID",
@@ -864,10 +861,10 @@
         "line": null,
         "price": -750,
         "book": "DraftKings",
-        "edge_real": -0.0359,
-        "edge": -0.028,
-        "model_prob": 0.8424,
-        "odds_fetched_at": "2026-09-15T21:37:14+00:00"
+        "edge_real": -0.0357,
+        "edge": -0.0277,
+        "model_prob": 0.8428,
+        "odds_fetched_at": "2026-09-15T23:25:56+00:00"
       },
       {
         "tier": "AVOID",
@@ -885,8 +882,8 @@
         "book": "DraftKings",
         "edge_real": -0.0443,
         "edge": -0.0405,
-        "model_prob": 0.4668,
-        "odds_fetched_at": "2026-09-15T21:37:14+00:00"
+        "model_prob": 0.467,
+        "odds_fetched_at": "2026-09-15T23:25:56+00:00"
       },
       {
         "tier": "AVOID",
@@ -905,7 +902,7 @@
         "edge_real": -0.0444,
         "edge": -0.0413,
         "model_prob": 0.4645,
-        "odds_fetched_at": "2026-09-15T21:37:14+00:00"
+        "odds_fetched_at": "2026-09-15T23:25:56+00:00"
       },
       {
         "tier": "AVOID",
@@ -924,16 +921,19 @@
         "edge_real": -0.0482,
         "edge": -0.0413,
         "model_prob": 0.4815,
-        "odds_fetched_at": "2026-09-15T21:37:14+00:00"
+        "odds_fetched_at": "2026-09-15T23:25:56+00:00"
       }
     ],
-    "lastGoodAt": "2026-09-15T23:19:19.643Z"
+    "accuracy": {
+      "generated_at": "2026-09-15T23:26:00.568347+00:00"
+    },
+    "lastGoodAt": "2026-09-15T23:44:16.387Z"
   },
   "ladder": {
     "accuracy": {
       "generated_at": "2026-09-15T23:12:39.046808+00:00"
     },
-    "lastGoodAt": "2026-09-15T23:19:19.643Z"
+    "lastGoodAt": "2026-09-15T23:44:16.387Z"
   },
   "props": {
     "board": [],
@@ -1049,692 +1049,9 @@
     "accuracy": {
       "generated_at": "2026-09-15T20:10:46.016717+00:00"
     },
-    "lastGoodAt": "2026-09-15T23:19:19.643Z"
+    "lastGoodAt": "2026-09-15T23:44:16.387Z"
   },
   "nfl": {
-    "meta": {
-      "generated_at": "2026-09-15T20:29:02+00:00",
-      "season": 2026,
-      "league": "NFL",
-      "home_field_advantage": 1.93,
-      "market_home_field": 1.7,
-      "calibration": {
-        "enabled": false,
-        "a": 1,
-        "b": 0,
-        "n": 196,
-        "reason": "needs 400 graded calls, has 196"
-      },
-      "per_team_home_field": {
-        "SEA": 1.95,
-        "PIT": 2.03,
-        "IND": 1.55,
-        "HOU": 1.8,
-        "CAR": 1.47,
-        "JAX": 2.35,
-        "DET": 1.91,
-        "TEN": 1.64,
-        "CIN": 2.01,
-        "LAC": 1.66,
-        "MIN": 2.22,
-        "LV": 2.16,
-        "PHI": 1.93,
-        "NYG": 2.04,
-        "KC": 2.29
-      },
-      "divisions": {
-        "BUF": [
-          "AFC",
-          "East"
-        ],
-        "MIA": [
-          "AFC",
-          "East"
-        ],
-        "NE": [
-          "AFC",
-          "East"
-        ],
-        "NYJ": [
-          "AFC",
-          "East"
-        ],
-        "BAL": [
-          "AFC",
-          "North"
-        ],
-        "CIN": [
-          "AFC",
-          "North"
-        ],
-        "CLE": [
-          "AFC",
-          "North"
-        ],
-        "PIT": [
-          "AFC",
-          "North"
-        ],
-        "HOU": [
-          "AFC",
-          "South"
-        ],
-        "IND": [
-          "AFC",
-          "South"
-        ],
-        "JAX": [
-          "AFC",
-          "South"
-        ],
-        "TEN": [
-          "AFC",
-          "South"
-        ],
-        "DEN": [
-          "AFC",
-          "West"
-        ],
-        "KC": [
-          "AFC",
-          "West"
-        ],
-        "LV": [
-          "AFC",
-          "West"
-        ],
-        "LAC": [
-          "AFC",
-          "West"
-        ],
-        "DAL": [
-          "NFC",
-          "East"
-        ],
-        "NYG": [
-          "NFC",
-          "East"
-        ],
-        "PHI": [
-          "NFC",
-          "East"
-        ],
-        "WSH": [
-          "NFC",
-          "East"
-        ],
-        "WAS": [
-          "NFC",
-          "East"
-        ],
-        "CHI": [
-          "NFC",
-          "North"
-        ],
-        "DET": [
-          "NFC",
-          "North"
-        ],
-        "GB": [
-          "NFC",
-          "North"
-        ],
-        "MIN": [
-          "NFC",
-          "North"
-        ],
-        "ATL": [
-          "NFC",
-          "South"
-        ],
-        "CAR": [
-          "NFC",
-          "South"
-        ],
-        "NO": [
-          "NFC",
-          "South"
-        ],
-        "TB": [
-          "NFC",
-          "South"
-        ],
-        "ARI": [
-          "NFC",
-          "West"
-        ],
-        "LAR": [
-          "NFC",
-          "West"
-        ],
-        "SF": [
-          "NFC",
-          "West"
-        ],
-        "SEA": [
-          "NFC",
-          "West"
-        ]
-      },
-      "league_avg_points": 23.1,
-      "prior_note": "55% ESPN FPI / 45% win totals + prior results; base was 55% market win totals / 45% last season, plus market-spread prior fading from 35% as results arrive",
-      "fpi": {
-        "available": true,
-        "teams": 32,
-        "last_updated": "2026-09-15T06:00Z",
-        "weight": 0.55,
-        "source": "ESPN NFL Football Power Index"
-      },
-      "games_final": 65,
-      "games_upcoming": 49,
-      "current_week": {
-        "season_type": 2,
-        "season_type_label": "Regular Season",
-        "week": 1,
-        "label": "Week 1",
-        "alternate_label": "Week 1",
-        "start": "2026-09-06T07:00Z",
-        "end": "2026-09-16T06:59Z"
-      },
-      "calendar": [
-        {
-          "season_type": 1,
-          "season_type_label": "Preseason",
-          "week": 1,
-          "label": "Hall of Fame Weekend",
-          "alternate_label": "HOF",
-          "start": "2026-08-06T07:00Z",
-          "end": "2026-08-13T06:59Z"
-        },
-        {
-          "season_type": 1,
-          "season_type_label": "Preseason",
-          "week": 2,
-          "label": "Preseason Week 1",
-          "alternate_label": "Pre Wk 1",
-          "start": "2026-08-13T07:00Z",
-          "end": "2026-08-20T06:59Z"
-        },
-        {
-          "season_type": 1,
-          "season_type_label": "Preseason",
-          "week": 3,
-          "label": "Preseason Week 2",
-          "alternate_label": "Pre Wk 2",
-          "start": "2026-08-20T07:00Z",
-          "end": "2026-08-27T06:59Z"
-        },
-        {
-          "season_type": 1,
-          "season_type_label": "Preseason",
-          "week": 4,
-          "label": "Preseason Week 3",
-          "alternate_label": "Pre Wk 3",
-          "start": "2026-08-27T07:00Z",
-          "end": "2026-09-06T06:59Z"
-        },
-        {
-          "season_type": 2,
-          "season_type_label": "Regular Season",
-          "week": 1,
-          "label": "Week 1",
-          "alternate_label": "Week 1",
-          "start": "2026-09-06T07:00Z",
-          "end": "2026-09-16T06:59Z"
-        },
-        {
-          "season_type": 2,
-          "season_type_label": "Regular Season",
-          "week": 2,
-          "label": "Week 2",
-          "alternate_label": "Week 2",
-          "start": "2026-09-16T07:00Z",
-          "end": "2026-09-23T06:59Z"
-        },
-        {
-          "season_type": 2,
-          "season_type_label": "Regular Season",
-          "week": 3,
-          "label": "Week 3",
-          "alternate_label": "Week 3",
-          "start": "2026-09-23T07:00Z",
-          "end": "2026-09-30T06:59Z"
-        },
-        {
-          "season_type": 2,
-          "season_type_label": "Regular Season",
-          "week": 4,
-          "label": "Week 4",
-          "alternate_label": "Week 4",
-          "start": "2026-09-30T07:00Z",
-          "end": "2026-10-07T06:59Z"
-        },
-        {
-          "season_type": 2,
-          "season_type_label": "Regular Season",
-          "week": 5,
-          "label": "Week 5",
-          "alternate_label": "Week 5",
-          "start": "2026-10-07T07:00Z",
-          "end": "2026-10-14T06:59Z"
-        },
-        {
-          "season_type": 2,
-          "season_type_label": "Regular Season",
-          "week": 6,
-          "label": "Week 6",
-          "alternate_label": "Week 6",
-          "start": "2026-10-14T07:00Z",
-          "end": "2026-10-21T06:59Z"
-        },
-        {
-          "season_type": 2,
-          "season_type_label": "Regular Season",
-          "week": 7,
-          "label": "Week 7",
-          "alternate_label": "Week 7",
-          "start": "2026-10-21T07:00Z",
-          "end": "2026-10-28T06:59Z"
-        },
-        {
-          "season_type": 2,
-          "season_type_label": "Regular Season",
-          "week": 8,
-          "label": "Week 8",
-          "alternate_label": "Week 8",
-          "start": "2026-10-28T07:00Z",
-          "end": "2026-11-04T07:59Z"
-        },
-        {
-          "season_type": 2,
-          "season_type_label": "Regular Season",
-          "week": 9,
-          "label": "Week 9",
-          "alternate_label": "Week 9",
-          "start": "2026-11-04T08:00Z",
-          "end": "2026-11-11T07:59Z"
-        },
-        {
-          "season_type": 2,
-          "season_type_label": "Regular Season",
-          "week": 10,
-          "label": "Week 10",
-          "alternate_label": "Week 10",
-          "start": "2026-11-11T08:00Z",
-          "end": "2026-11-18T07:59Z"
-        },
-        {
-          "season_type": 2,
-          "season_type_label": "Regular Season",
-          "week": 11,
-          "label": "Week 11",
-          "alternate_label": "Week 11",
-          "start": "2026-11-18T08:00Z",
-          "end": "2026-11-25T07:59Z"
-        },
-        {
-          "season_type": 2,
-          "season_type_label": "Regular Season",
-          "week": 12,
-          "label": "Week 12",
-          "alternate_label": "Week 12",
-          "start": "2026-11-25T08:00Z",
-          "end": "2026-12-02T07:59Z"
-        },
-        {
-          "season_type": 2,
-          "season_type_label": "Regular Season",
-          "week": 13,
-          "label": "Week 13",
-          "alternate_label": "Week 13",
-          "start": "2026-12-02T08:00Z",
-          "end": "2026-12-09T07:59Z"
-        },
-        {
-          "season_type": 2,
-          "season_type_label": "Regular Season",
-          "week": 14,
-          "label": "Week 14",
-          "alternate_label": "Week 14",
-          "start": "2026-12-09T08:00Z",
-          "end": "2026-12-16T07:59Z"
-        },
-        {
-          "season_type": 2,
-          "season_type_label": "Regular Season",
-          "week": 15,
-          "label": "Week 15",
-          "alternate_label": "Week 15",
-          "start": "2026-12-16T08:00Z",
-          "end": "2026-12-23T07:59Z"
-        },
-        {
-          "season_type": 2,
-          "season_type_label": "Regular Season",
-          "week": 16,
-          "label": "Week 16",
-          "alternate_label": "Week 16",
-          "start": "2026-12-23T08:00Z",
-          "end": "2026-12-30T07:59Z"
-        },
-        {
-          "season_type": 2,
-          "season_type_label": "Regular Season",
-          "week": 17,
-          "label": "Week 17",
-          "alternate_label": "Week 17",
-          "start": "2026-12-30T08:00Z",
-          "end": "2027-01-06T07:59Z"
-        },
-        {
-          "season_type": 2,
-          "season_type_label": "Regular Season",
-          "week": 18,
-          "label": "Week 18",
-          "alternate_label": "Week 18",
-          "start": "2027-01-06T08:00Z",
-          "end": "2027-01-13T07:59Z"
-        },
-        {
-          "season_type": 3,
-          "season_type_label": "Postseason",
-          "week": 1,
-          "label": "Wild Card",
-          "alternate_label": "Wild Card",
-          "start": "2027-01-13T08:00Z",
-          "end": "2027-01-20T07:59Z"
-        },
-        {
-          "season_type": 3,
-          "season_type_label": "Postseason",
-          "week": 2,
-          "label": "Divisional Round",
-          "alternate_label": "Div Rd",
-          "start": "2027-01-20T08:00Z",
-          "end": "2027-01-27T07:59Z"
-        },
-        {
-          "season_type": 3,
-          "season_type_label": "Postseason",
-          "week": 3,
-          "label": "Conference Championship",
-          "alternate_label": "Conf Champ",
-          "start": "2027-01-27T08:00Z",
-          "end": "2027-02-03T07:59Z"
-        },
-        {
-          "season_type": 3,
-          "season_type_label": "Postseason",
-          "week": 4,
-          "label": "Pro Bowl",
-          "alternate_label": "Pro Bowl",
-          "start": "2027-02-03T08:00Z",
-          "end": "2027-02-10T07:59Z"
-        },
-        {
-          "season_type": 3,
-          "season_type_label": "Postseason",
-          "week": 5,
-          "label": "Super Bowl",
-          "alternate_label": "Super Bowl",
-          "start": "2027-02-10T08:00Z",
-          "end": "2027-02-16T07:59Z"
-        }
-      ],
-      "settings": {
-        "_comment": "Every knob the model uses. Edit this file, commit, and the next scheduled run recalculates everything. This is the web version of the workbook's Control Panel sheet.",
-        "league": "nfl",
-        "season": 2026,
-        "prior_season": 2025,
-        "currency": "CAD",
-        "currency_symbol": "C$",
-        "timezone": "America/Toronto",
-        "bankroll": {
-          "starting": 500,
-          "kelly_fraction": 0.25,
-          "max_stake_pct": 0.05,
-          "min_stake": 1,
-          "round_stake_to": 0.5,
-          "size_off": "settled",
-          "_size_off_note": "'settled' sizes off the bankroll implied by settled bets only, so a stake never depends on the outcome of the bet it is sizing. 'starting' always sizes off the starting bankroll, like the workbook did."
-        },
-        "tiers": {
-          "_note": "Tier input is compressed expected return per unit at the offered price, capped by no-vig model value, minus selection and confidence reserves. Probability edge is published separately. Version 2026-09-06-ev2; historical tiers stay frozen.",
-          "best_bet": 0.04,
-          "good": 0.028,
-          "lean": 0.015,
-          "_nfl_note": "Far lower than the college thresholds, because the NFL market is the sharpest in North American sport: 32 teams, enormous handle, every book pricing the same 16 games all week. Real NFL edges live between 1% and 4%. A model reporting a 12% edge on a Sunday side has found a bug, not an opportunity.",
-          "lock_rules": {
-            "_note": "Extra conditions a play must ALSO satisfy to be called BEST BET. The label is reserved for the rare spot where the model, the market and the data all point the same way -- everything else tops out at GOOD no matter how big the raw number looks.",
-            "min_confidence": 0.72,
-            "min_line_gap": 1,
-            "_min_line_gap_note": "Points of disagreement between the model's line and the market's. A big probability edge on a line the model actually agrees with is a pricing artefact, not a read.",
-            "max_line_gap": 6,
-            "_max_line_gap_note": "The other side of the same coin. If the model is seven points away from a market that prices this game for a living, the model is the one that is wrong.",
-            "min_price": -250,
-            "require_no_stale_odds": true,
-            "max_adverse_line_move": 1,
-            "_adverse_move_note": "Points the market may move AGAINST our side since we first saw the line before BEST BET is withdrawn. The market moving away from you after you form an opinion is the clearest signal available that the opinion is the stale one."
-          },
-          "_best_reachability_note": "4% clears the 5.5% compression ceiling minus the 1% selection reserve at mature confidence. The previous 4.5% threshold equalled the unattainable asymptote. Existing BEST data/price/movement locks also apply."
-        },
-        "model": {
-          "projection_blend": 0.55,
-          "_projection_blend_note": "How much of the model's DISAGREEMENT with the market line survives into the number it actually bets. 0.55 keeps just over half. The market spread is the single best public estimate of a game, so the model's job is to nudge it, not to replace it. This is where the humility belongs -- it is legible ('our line vs their line') in a way that blending raw probabilities never is.",
-          "max_spread_disagreement": 6,
-          "_max_disagreement_note": "Soft ceiling, in points, on how far the model's line may sit from the market's. Applied with a tanh squeeze rather than a hard clip, so a 3-point disagreement passes through nearly untouched while a 15-point one -- which is always a data problem, not an insight -- compresses to about 6.",
-          "edge_compression": 0.055,
-          "_edge_compression_note": "The fix for absurd edges. Raw edge is squeezed through max_edge * tanh(raw / max_edge), so 2% stays 1.9%, 4% becomes 3.5%, and a nonsense 20% lands at 5.4% instead of screaming BEST BET. Small edges pass through nearly unchanged; large ones asymptote. Every number shown on the site is the compressed one, and the raw figure is kept alongside it so you can see what was squeezed.",
-          "market_blend": 0.35,
-          "_market_blend_note": "A second, smaller dose of humility applied at the probability level, on top of the projection blend above. Kept low precisely because projection_blend already anchors the line to the market -- blending twice at full strength would leave the model with no opinion at all.",
-          "max_model_prob": 0.85,
-          "margin_sd": 13.2,
-          "_margin_sd_note": "Standard deviation of NFL final margins. The workbook used 13.5; the modern-era number is closer to 13.2 and it barely matters, but it is measurable so it should be measured.",
-          "total_sd": 10.2,
-          "use_key_numbers": true,
-          "ties_are_push": true,
-          "_ties_note": "NFL regular-season games can end tied (~0.2% of games) and a moneyline tie is graded as a PUSH, not a loss. The workbook priced ties as impossible and the college model splits them; here they are priced and graded as pushes.",
-          "home_field_fallback": 1.9,
-          "_hfa_note": "Modern NFL home-field advantage, in points. It has fallen a long way from the old 3-point rule of thumb; 2015-2024 sits near 1.7-2.2. The pipeline solves it from results and shrinks toward this number early in the year.",
-          "rest_day_weight": 0.12,
-          "_rest_note": "Points per day of rest advantage. Small in the NFL because almost every team is on the same weekly cycle -- it exists to price Thursday games, bye weeks and the London turnaround, not to reward a normal Sunday.",
-          "bye_week_bonus": 0.6,
-          "travel_weight_per_1000mi": 0.35,
-          "timezone_penalty": 0.4,
-          "_timezone_note": "Points deducted from a west-coast team playing a 1pm Eastern kickoff, the one travel effect with real evidence behind it.",
-          "divisional_total_adj": -0.8,
-          "_divisional_note": "Division games are played twice a year by teams that know each other cold, and they run measurably tighter and lower-scoring than the same matchup between strangers. Small, and applied only to the total.",
-          "per_team_home_field": true,
-          "_per_team_hfa_note": "Solve each stadium's own home-field value and shrink it hard toward the league number. Denver's altitude and Seattle's noise are real; most of the other 30 are noise, and the shrinkage is what tells them apart.",
-          "calibration": {
-            "enabled": true,
-            "min_samples": 400,
-            "_min_samples_note": "Graded calls required before the model is allowed to correct its own probabilities. High on purpose -- a recalibration fitted on forty results is fitted to noise, and is worse than no correction at all.",
-            "min_slope": 0.5,
-            "max_slope": 1.6,
-            "max_bias": 0.35,
-            "_clamp_note": "Safety rails on the Platt fit. A wild fit means something upstream is broken; the correct response is a nudge and a warning in the log, not letting one strange month invert the model."
-          },
-          "min_games_for_full_confidence": 4,
-          "early_season_shrink": 0.5,
-          "_early_season_shrink_note": "How hard a team's current-season rating is pulled back toward its preseason prior before it has min_games_for_full_confidence games played.",
-          "selection_haircut": 0.01,
-          "_selection_haircut_note": "Winner's-curse conservatism, subtracted from every estimated edge before tiering. You only bet where the model disagrees with the market, which is exactly where the model's own error is largest, so selected edges are overstated even when the model is calibrated across all games. Raise it to bet less and more selectively; re-measure it with `python -m pipeline.backtest` rather than trusting this number.",
-          "confidence_penalty_max": 0.018,
-          "_confidence_penalty_note": "Bounded expected-return reserve: (1-confidence) × 1.8%, plus the selection haircut. Confidence never multiplies the tier thresholds."
-        },
-        "ratings": {
-          "ridge_lambda": 14,
-          "mov_cap": 24,
-          "_mov_cap_note": "NFL blowouts are rarer and less informative than college ones; capping margin at 24 keeps a 45-7 Thursday nighter from dominating the fit.",
-          "recency_halflife_games": 8,
-          "_recency_note": "Half-life in team-games (x7 = days). 8 means a game from two months ago counts about half as much as this week's. Shorter than the college half-life because NFL rosters and form move faster.",
-          "prior_season_weight": 0.45,
-          "prior_regression": 0.55,
-          "_prior_regression_note": "Fraction of last season's solved rating retained as this season's preseason prior. ~0.55 matches the observed year-over-year correlation of NFL team strength.",
-          "use_espn_fpi": true,
-          "fpi_weight": 0.55,
-          "_fpi_weight_note": "Share of the independent preseason prior taken from current-season ESPN NFL FPI. FPI adds predictive EPA, QB/player and unit information; the remaining 45% keeps market win totals plus this model's prior results as a separate opinion.",
-          "use_market_win_totals": true,
-          "use_market_spread_ratings": true,
-          "market_spread_prior_weight": 0.35,
-          "_market_spread_prior_weight_note": "Maximum preseason weight on ratings solved from current point spreads. It fades to zero as results arrive and stays below 50% so the model cannot erase every edge by copying the same market it evaluates.",
-          "_market_spread_ratings_note": "Solve a power rating per team from the posted point spreads and use it as the early-season prior, fading it out as each team plays. In Week 2 the market's opinion -- which has already priced the draft, free agency and the quarterback's ankle, with real money behind it -- is worth more than the model's own one-game sample.",
-          "_win_totals_note": "Blend the preseason prior with the market's own 2026 win totals from config/win_totals.json. The market's preseason opinion is better than last season's results alone, which is exactly why the workbook seeded ratings from win totals in the first place."
-        },
-        "injuries": {
-          "enabled": true,
-          "_note": "Auto-adjustment from ESPN's injury feed, QB-weighted. Every point applied is shown on the game card and written into the JSON, so nothing moves invisibly.",
-          "status_weight": {
-            "out": 1,
-            "injured reserve": 1,
-            "suspension": 1,
-            "physically unable to perform": 1,
-            "non football injury": 1,
-            "doubtful": 0.65,
-            "questionable": 0.2,
-            "probable": 0,
-            "day-to-day": 0.1,
-            "active": 0
-          },
-          "position_points": {
-            "QB_starter": 4.5,
-            "QB_backup": 0.2,
-            "RB": 0.55,
-            "WR": 0.65,
-            "TE": 0.4,
-            "OL": 0.45,
-            "C": 0.5,
-            "T": 0.55,
-            "G": 0.4,
-            "DL": 0.5,
-            "DE": 0.55,
-            "DT": 0.45,
-            "LB": 0.35,
-            "CB": 0.5,
-            "S": 0.3,
-            "K": 0.35,
-            "P": 0.1,
-            "LS": 0.05,
-            "default": 0.25
-          },
-          "_position_points_note": "Points of team strength lost when that player is fully OUT. The starting-QB number is the only large one and it is deliberately conservative: market studies put a starting QB's value between 3 and 7 points depending on the backup, and this model has no way to know how good the backup is.",
-          "max_team_points": 7,
-          "_max_team_points_note": "Hard cap on how much one team's injury list can move the line. Without it, a long Week 14 report stacks a dozen small deductions into a fake double-digit swing.",
-          "total_points_per_offensive_point": 0.55,
-          "_total_note": "How much a team's offensive injury load pulls the projected combined score down.",
-          "starter_snap_rank": 1,
-          "depth_chart_enabled": true
-        },
-        "weather": {
-          "enabled": true,
-          "provider": "open-meteo",
-          "_provider_note": "Open-Meteo is keyless, free, and does not rate-limit a job that asks for 16 forecasts twice a day. No account, no secret, nothing to expire.",
-          "forecast_days": 16,
-          "wind_thresholds": [
-            [
-              12,
-              -0.8
-            ],
-            [
-              16,
-              -1.8
-            ],
-            [
-              20,
-              -3
-            ],
-            [
-              25,
-              -4.5
-            ]
-          ],
-          "_wind_note": "[mph, points off the projected total]. Wind is the only weather variable with a large, repeatable effect on NFL scoring -- it kills the deep passing game and the kicking game together. Rain and cold matter far less than television makes you believe.",
-          "precip_prob_threshold": 55,
-          "precip_total_adj": -1,
-          "snow_total_adj": -2,
-          "cold_temp_f": 20,
-          "cold_total_adj": -1.2,
-          "heat_temp_f": 92,
-          "heat_total_adj": -0.5,
-          "indoor_ignores_weather": true
-        },
-        "markets": {
-          "moneyline": true,
-          "spread": true,
-          "total": true
-        },
-        "filters": {
-          "_note": "Bets that fail these are still shown with the reason. No model pick is auto-logged: My Ledger contains only wagers the user explicitly adds in the browser.",
-          "min_price": -350,
-          "max_price": 550,
-          "skip_if_no_odds": true,
-          "max_bets_per_game": 1,
-          "_max_bets_per_game_note": "Correlation guard. A team's moneyline and its spread are close to the same bet, so taking both is one position at double the variance Kelly assumed.",
-          "max_plays_per_week": 6,
-          "_max_plays_per_week_note": "Hard cap on how many bets one NFL week can produce, best edges first. A 16-game slate with a 2.5% threshold will happily qualify twenty plays; that is a spray, not a staking plan.",
-          "bet_within_days": 8,
-          "_bet_within_days_note": "Games further out than this are priced and displayed but not staked. Seeing an edge three weeks early is useful; betting into a market that thin is not, and the number will move several times before kickoff. The card shows the date the play opens.",
-          "bet_preseason": false,
-          "_bet_preseason_note": "Preseason games are priced and displayed but never tiered as a play. Starter snap counts, not team strength, decide preseason games, and no rating model sees the coach's snap plan.",
-          "bet_postseason": true
-        },
-        "data": {
-          "odds_provider_priority": [
-            "DraftKings",
-            "ESPN BET",
-            "Caesars Sportsbook",
-            "William Hill (New Jersey)",
-            "consensus",
-            "numberfire",
-            "teamrankings"
-          ],
-          "full_season_odds_sweep": true,
-          "_sweep_note": "Re-fetch the whole remaining season every run, not just the next few weeks. Books post lines for all 18 regular-season weeks in August, so this is real data sitting there unused -- and sweeping it every run is what captures the opening number and every move since, for the whole season rather than the fortnight in front of us. Costs about nine HTTP requests.",
-          "outlook": true,
-          "_outlook_note": "Project every future game that has a posted line, however far out, and publish it as a look-ahead view. These are NOT tracked in the shadow book and NOT staked: a call frozen four months early would be graded against a line that moved twenty times, which would corrupt the accuracy record rather than extend it.",
-          "lookahead_days": 24,
-          "_lookahead_note": "How far ahead games are priced. Set wide on purpose: books post Week 1 lines in August, and a 14-day window in late August sees nothing but preseason -- an empty board that looks broken and is not. Pricing early also captures the opening number, which is where closing line value comes from.",
-          "lookback_days": 5,
-          "news_limit": 40,
-          "fetch_news": true,
-          "fetch_stats": true
-        }
-      },
-      "league_context": {
-        "ppg": 24.7,
-        "papg": 24.7,
-        "total": 49.4,
-        "n": 32
-      },
-      "counts": {
-        "board": 292,
-        "qualified": 19,
-        "actionable": 6,
-        "held": 13,
-        "tracked_calls": 492,
-        "upcoming_without_a_line": 0,
-        "upcoming": 49,
-        "all_preseason": false
-      },
-      "odds_health": {
-        "status": "ok",
-        "expected_games": 49,
-        "line_games": 49,
-        "priced_games": 49,
-        "moneyline_games": 49,
-        "spread_games": 48,
-        "total_games": 49,
-        "keyless": true,
-        "provider": "ESPN public feed"
-      },
-      "horizon_days": 24,
-      "weather_forecast_days": 16,
-      "bet_within_days": 8
-    },
-    "accuracy": {
-      "generated_at": "2026-09-15T20:29:02.538275+00:00"
-    },
     "board": [
       {
         "tier": "BEST BET",
@@ -6737,7 +6054,690 @@
         "model_prob": 0.3985
       }
     ],
-    "lastGoodAt": "2026-09-15T23:19:19.643Z"
+    "accuracy": {
+      "generated_at": "2026-09-15T20:29:02.538275+00:00"
+    },
+    "meta": {
+      "generated_at": "2026-09-15T20:29:02+00:00",
+      "season": 2026,
+      "league": "NFL",
+      "home_field_advantage": 1.93,
+      "market_home_field": 1.7,
+      "calibration": {
+        "enabled": false,
+        "a": 1,
+        "b": 0,
+        "n": 196,
+        "reason": "needs 400 graded calls, has 196"
+      },
+      "per_team_home_field": {
+        "SEA": 1.95,
+        "PIT": 2.03,
+        "IND": 1.55,
+        "HOU": 1.8,
+        "CAR": 1.47,
+        "JAX": 2.35,
+        "DET": 1.91,
+        "TEN": 1.64,
+        "CIN": 2.01,
+        "LAC": 1.66,
+        "MIN": 2.22,
+        "LV": 2.16,
+        "PHI": 1.93,
+        "NYG": 2.04,
+        "KC": 2.29
+      },
+      "divisions": {
+        "BUF": [
+          "AFC",
+          "East"
+        ],
+        "MIA": [
+          "AFC",
+          "East"
+        ],
+        "NE": [
+          "AFC",
+          "East"
+        ],
+        "NYJ": [
+          "AFC",
+          "East"
+        ],
+        "BAL": [
+          "AFC",
+          "North"
+        ],
+        "CIN": [
+          "AFC",
+          "North"
+        ],
+        "CLE": [
+          "AFC",
+          "North"
+        ],
+        "PIT": [
+          "AFC",
+          "North"
+        ],
+        "HOU": [
+          "AFC",
+          "South"
+        ],
+        "IND": [
+          "AFC",
+          "South"
+        ],
+        "JAX": [
+          "AFC",
+          "South"
+        ],
+        "TEN": [
+          "AFC",
+          "South"
+        ],
+        "DEN": [
+          "AFC",
+          "West"
+        ],
+        "KC": [
+          "AFC",
+          "West"
+        ],
+        "LV": [
+          "AFC",
+          "West"
+        ],
+        "LAC": [
+          "AFC",
+          "West"
+        ],
+        "DAL": [
+          "NFC",
+          "East"
+        ],
+        "NYG": [
+          "NFC",
+          "East"
+        ],
+        "PHI": [
+          "NFC",
+          "East"
+        ],
+        "WSH": [
+          "NFC",
+          "East"
+        ],
+        "WAS": [
+          "NFC",
+          "East"
+        ],
+        "CHI": [
+          "NFC",
+          "North"
+        ],
+        "DET": [
+          "NFC",
+          "North"
+        ],
+        "GB": [
+          "NFC",
+          "North"
+        ],
+        "MIN": [
+          "NFC",
+          "North"
+        ],
+        "ATL": [
+          "NFC",
+          "South"
+        ],
+        "CAR": [
+          "NFC",
+          "South"
+        ],
+        "NO": [
+          "NFC",
+          "South"
+        ],
+        "TB": [
+          "NFC",
+          "South"
+        ],
+        "ARI": [
+          "NFC",
+          "West"
+        ],
+        "LAR": [
+          "NFC",
+          "West"
+        ],
+        "SF": [
+          "NFC",
+          "West"
+        ],
+        "SEA": [
+          "NFC",
+          "West"
+        ]
+      },
+      "league_avg_points": 23.1,
+      "prior_note": "55% ESPN FPI / 45% win totals + prior results; base was 55% market win totals / 45% last season, plus market-spread prior fading from 35% as results arrive",
+      "fpi": {
+        "available": true,
+        "teams": 32,
+        "last_updated": "2026-09-15T06:00Z",
+        "weight": 0.55,
+        "source": "ESPN NFL Football Power Index"
+      },
+      "games_final": 65,
+      "games_upcoming": 49,
+      "current_week": {
+        "season_type": 2,
+        "season_type_label": "Regular Season",
+        "week": 1,
+        "label": "Week 1",
+        "alternate_label": "Week 1",
+        "start": "2026-09-06T07:00Z",
+        "end": "2026-09-16T06:59Z"
+      },
+      "calendar": [
+        {
+          "season_type": 1,
+          "season_type_label": "Preseason",
+          "week": 1,
+          "label": "Hall of Fame Weekend",
+          "alternate_label": "HOF",
+          "start": "2026-08-06T07:00Z",
+          "end": "2026-08-13T06:59Z"
+        },
+        {
+          "season_type": 1,
+          "season_type_label": "Preseason",
+          "week": 2,
+          "label": "Preseason Week 1",
+          "alternate_label": "Pre Wk 1",
+          "start": "2026-08-13T07:00Z",
+          "end": "2026-08-20T06:59Z"
+        },
+        {
+          "season_type": 1,
+          "season_type_label": "Preseason",
+          "week": 3,
+          "label": "Preseason Week 2",
+          "alternate_label": "Pre Wk 2",
+          "start": "2026-08-20T07:00Z",
+          "end": "2026-08-27T06:59Z"
+        },
+        {
+          "season_type": 1,
+          "season_type_label": "Preseason",
+          "week": 4,
+          "label": "Preseason Week 3",
+          "alternate_label": "Pre Wk 3",
+          "start": "2026-08-27T07:00Z",
+          "end": "2026-09-06T06:59Z"
+        },
+        {
+          "season_type": 2,
+          "season_type_label": "Regular Season",
+          "week": 1,
+          "label": "Week 1",
+          "alternate_label": "Week 1",
+          "start": "2026-09-06T07:00Z",
+          "end": "2026-09-16T06:59Z"
+        },
+        {
+          "season_type": 2,
+          "season_type_label": "Regular Season",
+          "week": 2,
+          "label": "Week 2",
+          "alternate_label": "Week 2",
+          "start": "2026-09-16T07:00Z",
+          "end": "2026-09-23T06:59Z"
+        },
+        {
+          "season_type": 2,
+          "season_type_label": "Regular Season",
+          "week": 3,
+          "label": "Week 3",
+          "alternate_label": "Week 3",
+          "start": "2026-09-23T07:00Z",
+          "end": "2026-09-30T06:59Z"
+        },
+        {
+          "season_type": 2,
+          "season_type_label": "Regular Season",
+          "week": 4,
+          "label": "Week 4",
+          "alternate_label": "Week 4",
+          "start": "2026-09-30T07:00Z",
+          "end": "2026-10-07T06:59Z"
+        },
+        {
+          "season_type": 2,
+          "season_type_label": "Regular Season",
+          "week": 5,
+          "label": "Week 5",
+          "alternate_label": "Week 5",
+          "start": "2026-10-07T07:00Z",
+          "end": "2026-10-14T06:59Z"
+        },
+        {
+          "season_type": 2,
+          "season_type_label": "Regular Season",
+          "week": 6,
+          "label": "Week 6",
+          "alternate_label": "Week 6",
+          "start": "2026-10-14T07:00Z",
+          "end": "2026-10-21T06:59Z"
+        },
+        {
+          "season_type": 2,
+          "season_type_label": "Regular Season",
+          "week": 7,
+          "label": "Week 7",
+          "alternate_label": "Week 7",
+          "start": "2026-10-21T07:00Z",
+          "end": "2026-10-28T06:59Z"
+        },
+        {
+          "season_type": 2,
+          "season_type_label": "Regular Season",
+          "week": 8,
+          "label": "Week 8",
+          "alternate_label": "Week 8",
+          "start": "2026-10-28T07:00Z",
+          "end": "2026-11-04T07:59Z"
+        },
+        {
+          "season_type": 2,
+          "season_type_label": "Regular Season",
+          "week": 9,
+          "label": "Week 9",
+          "alternate_label": "Week 9",
+          "start": "2026-11-04T08:00Z",
+          "end": "2026-11-11T07:59Z"
+        },
+        {
+          "season_type": 2,
+          "season_type_label": "Regular Season",
+          "week": 10,
+          "label": "Week 10",
+          "alternate_label": "Week 10",
+          "start": "2026-11-11T08:00Z",
+          "end": "2026-11-18T07:59Z"
+        },
+        {
+          "season_type": 2,
+          "season_type_label": "Regular Season",
+          "week": 11,
+          "label": "Week 11",
+          "alternate_label": "Week 11",
+          "start": "2026-11-18T08:00Z",
+          "end": "2026-11-25T07:59Z"
+        },
+        {
+          "season_type": 2,
+          "season_type_label": "Regular Season",
+          "week": 12,
+          "label": "Week 12",
+          "alternate_label": "Week 12",
+          "start": "2026-11-25T08:00Z",
+          "end": "2026-12-02T07:59Z"
+        },
+        {
+          "season_type": 2,
+          "season_type_label": "Regular Season",
+          "week": 13,
+          "label": "Week 13",
+          "alternate_label": "Week 13",
+          "start": "2026-12-02T08:00Z",
+          "end": "2026-12-09T07:59Z"
+        },
+        {
+          "season_type": 2,
+          "season_type_label": "Regular Season",
+          "week": 14,
+          "label": "Week 14",
+          "alternate_label": "Week 14",
+          "start": "2026-12-09T08:00Z",
+          "end": "2026-12-16T07:59Z"
+        },
+        {
+          "season_type": 2,
+          "season_type_label": "Regular Season",
+          "week": 15,
+          "label": "Week 15",
+          "alternate_label": "Week 15",
+          "start": "2026-12-16T08:00Z",
+          "end": "2026-12-23T07:59Z"
+        },
+        {
+          "season_type": 2,
+          "season_type_label": "Regular Season",
+          "week": 16,
+          "label": "Week 16",
+          "alternate_label": "Week 16",
+          "start": "2026-12-23T08:00Z",
+          "end": "2026-12-30T07:59Z"
+        },
+        {
+          "season_type": 2,
+          "season_type_label": "Regular Season",
+          "week": 17,
+          "label": "Week 17",
+          "alternate_label": "Week 17",
+          "start": "2026-12-30T08:00Z",
+          "end": "2027-01-06T07:59Z"
+        },
+        {
+          "season_type": 2,
+          "season_type_label": "Regular Season",
+          "week": 18,
+          "label": "Week 18",
+          "alternate_label": "Week 18",
+          "start": "2027-01-06T08:00Z",
+          "end": "2027-01-13T07:59Z"
+        },
+        {
+          "season_type": 3,
+          "season_type_label": "Postseason",
+          "week": 1,
+          "label": "Wild Card",
+          "alternate_label": "Wild Card",
+          "start": "2027-01-13T08:00Z",
+          "end": "2027-01-20T07:59Z"
+        },
+        {
+          "season_type": 3,
+          "season_type_label": "Postseason",
+          "week": 2,
+          "label": "Divisional Round",
+          "alternate_label": "Div Rd",
+          "start": "2027-01-20T08:00Z",
+          "end": "2027-01-27T07:59Z"
+        },
+        {
+          "season_type": 3,
+          "season_type_label": "Postseason",
+          "week": 3,
+          "label": "Conference Championship",
+          "alternate_label": "Conf Champ",
+          "start": "2027-01-27T08:00Z",
+          "end": "2027-02-03T07:59Z"
+        },
+        {
+          "season_type": 3,
+          "season_type_label": "Postseason",
+          "week": 4,
+          "label": "Pro Bowl",
+          "alternate_label": "Pro Bowl",
+          "start": "2027-02-03T08:00Z",
+          "end": "2027-02-10T07:59Z"
+        },
+        {
+          "season_type": 3,
+          "season_type_label": "Postseason",
+          "week": 5,
+          "label": "Super Bowl",
+          "alternate_label": "Super Bowl",
+          "start": "2027-02-10T08:00Z",
+          "end": "2027-02-16T07:59Z"
+        }
+      ],
+      "settings": {
+        "_comment": "Every knob the model uses. Edit this file, commit, and the next scheduled run recalculates everything. This is the web version of the workbook's Control Panel sheet.",
+        "league": "nfl",
+        "season": 2026,
+        "prior_season": 2025,
+        "currency": "CAD",
+        "currency_symbol": "C$",
+        "timezone": "America/Toronto",
+        "bankroll": {
+          "starting": 500,
+          "kelly_fraction": 0.25,
+          "max_stake_pct": 0.05,
+          "min_stake": 1,
+          "round_stake_to": 0.5,
+          "size_off": "settled",
+          "_size_off_note": "'settled' sizes off the bankroll implied by settled bets only, so a stake never depends on the outcome of the bet it is sizing. 'starting' always sizes off the starting bankroll, like the workbook did."
+        },
+        "tiers": {
+          "_note": "Tier input is compressed expected return per unit at the offered price, capped by no-vig model value, minus selection and confidence reserves. Probability edge is published separately. Version 2026-09-06-ev2; historical tiers stay frozen.",
+          "best_bet": 0.04,
+          "good": 0.028,
+          "lean": 0.015,
+          "_nfl_note": "Far lower than the college thresholds, because the NFL market is the sharpest in North American sport: 32 teams, enormous handle, every book pricing the same 16 games all week. Real NFL edges live between 1% and 4%. A model reporting a 12% edge on a Sunday side has found a bug, not an opportunity.",
+          "lock_rules": {
+            "_note": "Extra conditions a play must ALSO satisfy to be called BEST BET. The label is reserved for the rare spot where the model, the market and the data all point the same way -- everything else tops out at GOOD no matter how big the raw number looks.",
+            "min_confidence": 0.72,
+            "min_line_gap": 1,
+            "_min_line_gap_note": "Points of disagreement between the model's line and the market's. A big probability edge on a line the model actually agrees with is a pricing artefact, not a read.",
+            "max_line_gap": 6,
+            "_max_line_gap_note": "The other side of the same coin. If the model is seven points away from a market that prices this game for a living, the model is the one that is wrong.",
+            "min_price": -250,
+            "require_no_stale_odds": true,
+            "max_adverse_line_move": 1,
+            "_adverse_move_note": "Points the market may move AGAINST our side since we first saw the line before BEST BET is withdrawn. The market moving away from you after you form an opinion is the clearest signal available that the opinion is the stale one."
+          },
+          "_best_reachability_note": "4% clears the 5.5% compression ceiling minus the 1% selection reserve at mature confidence. The previous 4.5% threshold equalled the unattainable asymptote. Existing BEST data/price/movement locks also apply."
+        },
+        "model": {
+          "projection_blend": 0.55,
+          "_projection_blend_note": "How much of the model's DISAGREEMENT with the market line survives into the number it actually bets. 0.55 keeps just over half. The market spread is the single best public estimate of a game, so the model's job is to nudge it, not to replace it. This is where the humility belongs -- it is legible ('our line vs their line') in a way that blending raw probabilities never is.",
+          "max_spread_disagreement": 6,
+          "_max_disagreement_note": "Soft ceiling, in points, on how far the model's line may sit from the market's. Applied with a tanh squeeze rather than a hard clip, so a 3-point disagreement passes through nearly untouched while a 15-point one -- which is always a data problem, not an insight -- compresses to about 6.",
+          "edge_compression": 0.055,
+          "_edge_compression_note": "The fix for absurd edges. Raw edge is squeezed through max_edge * tanh(raw / max_edge), so 2% stays 1.9%, 4% becomes 3.5%, and a nonsense 20% lands at 5.4% instead of screaming BEST BET. Small edges pass through nearly unchanged; large ones asymptote. Every number shown on the site is the compressed one, and the raw figure is kept alongside it so you can see what was squeezed.",
+          "market_blend": 0.35,
+          "_market_blend_note": "A second, smaller dose of humility applied at the probability level, on top of the projection blend above. Kept low precisely because projection_blend already anchors the line to the market -- blending twice at full strength would leave the model with no opinion at all.",
+          "max_model_prob": 0.85,
+          "margin_sd": 13.2,
+          "_margin_sd_note": "Standard deviation of NFL final margins. The workbook used 13.5; the modern-era number is closer to 13.2 and it barely matters, but it is measurable so it should be measured.",
+          "total_sd": 10.2,
+          "use_key_numbers": true,
+          "ties_are_push": true,
+          "_ties_note": "NFL regular-season games can end tied (~0.2% of games) and a moneyline tie is graded as a PUSH, not a loss. The workbook priced ties as impossible and the college model splits them; here they are priced and graded as pushes.",
+          "home_field_fallback": 1.9,
+          "_hfa_note": "Modern NFL home-field advantage, in points. It has fallen a long way from the old 3-point rule of thumb; 2015-2024 sits near 1.7-2.2. The pipeline solves it from results and shrinks toward this number early in the year.",
+          "rest_day_weight": 0.12,
+          "_rest_note": "Points per day of rest advantage. Small in the NFL because almost every team is on the same weekly cycle -- it exists to price Thursday games, bye weeks and the London turnaround, not to reward a normal Sunday.",
+          "bye_week_bonus": 0.6,
+          "travel_weight_per_1000mi": 0.35,
+          "timezone_penalty": 0.4,
+          "_timezone_note": "Points deducted from a west-coast team playing a 1pm Eastern kickoff, the one travel effect with real evidence behind it.",
+          "divisional_total_adj": -0.8,
+          "_divisional_note": "Division games are played twice a year by teams that know each other cold, and they run measurably tighter and lower-scoring than the same matchup between strangers. Small, and applied only to the total.",
+          "per_team_home_field": true,
+          "_per_team_hfa_note": "Solve each stadium's own home-field value and shrink it hard toward the league number. Denver's altitude and Seattle's noise are real; most of the other 30 are noise, and the shrinkage is what tells them apart.",
+          "calibration": {
+            "enabled": true,
+            "min_samples": 400,
+            "_min_samples_note": "Graded calls required before the model is allowed to correct its own probabilities. High on purpose -- a recalibration fitted on forty results is fitted to noise, and is worse than no correction at all.",
+            "min_slope": 0.5,
+            "max_slope": 1.6,
+            "max_bias": 0.35,
+            "_clamp_note": "Safety rails on the Platt fit. A wild fit means something upstream is broken; the correct response is a nudge and a warning in the log, not letting one strange month invert the model."
+          },
+          "min_games_for_full_confidence": 4,
+          "early_season_shrink": 0.5,
+          "_early_season_shrink_note": "How hard a team's current-season rating is pulled back toward its preseason prior before it has min_games_for_full_confidence games played.",
+          "selection_haircut": 0.01,
+          "_selection_haircut_note": "Winner's-curse conservatism, subtracted from every estimated edge before tiering. You only bet where the model disagrees with the market, which is exactly where the model's own error is largest, so selected edges are overstated even when the model is calibrated across all games. Raise it to bet less and more selectively; re-measure it with `python -m pipeline.backtest` rather than trusting this number.",
+          "confidence_penalty_max": 0.018,
+          "_confidence_penalty_note": "Bounded expected-return reserve: (1-confidence) × 1.8%, plus the selection haircut. Confidence never multiplies the tier thresholds."
+        },
+        "ratings": {
+          "ridge_lambda": 14,
+          "mov_cap": 24,
+          "_mov_cap_note": "NFL blowouts are rarer and less informative than college ones; capping margin at 24 keeps a 45-7 Thursday nighter from dominating the fit.",
+          "recency_halflife_games": 8,
+          "_recency_note": "Half-life in team-games (x7 = days). 8 means a game from two months ago counts about half as much as this week's. Shorter than the college half-life because NFL rosters and form move faster.",
+          "prior_season_weight": 0.45,
+          "prior_regression": 0.55,
+          "_prior_regression_note": "Fraction of last season's solved rating retained as this season's preseason prior. ~0.55 matches the observed year-over-year correlation of NFL team strength.",
+          "use_espn_fpi": true,
+          "fpi_weight": 0.55,
+          "_fpi_weight_note": "Share of the independent preseason prior taken from current-season ESPN NFL FPI. FPI adds predictive EPA, QB/player and unit information; the remaining 45% keeps market win totals plus this model's prior results as a separate opinion.",
+          "use_market_win_totals": true,
+          "use_market_spread_ratings": true,
+          "market_spread_prior_weight": 0.35,
+          "_market_spread_prior_weight_note": "Maximum preseason weight on ratings solved from current point spreads. It fades to zero as results arrive and stays below 50% so the model cannot erase every edge by copying the same market it evaluates.",
+          "_market_spread_ratings_note": "Solve a power rating per team from the posted point spreads and use it as the early-season prior, fading it out as each team plays. In Week 2 the market's opinion -- which has already priced the draft, free agency and the quarterback's ankle, with real money behind it -- is worth more than the model's own one-game sample.",
+          "_win_totals_note": "Blend the preseason prior with the market's own 2026 win totals from config/win_totals.json. The market's preseason opinion is better than last season's results alone, which is exactly why the workbook seeded ratings from win totals in the first place."
+        },
+        "injuries": {
+          "enabled": true,
+          "_note": "Auto-adjustment from ESPN's injury feed, QB-weighted. Every point applied is shown on the game card and written into the JSON, so nothing moves invisibly.",
+          "status_weight": {
+            "out": 1,
+            "injured reserve": 1,
+            "suspension": 1,
+            "physically unable to perform": 1,
+            "non football injury": 1,
+            "doubtful": 0.65,
+            "questionable": 0.2,
+            "probable": 0,
+            "day-to-day": 0.1,
+            "active": 0
+          },
+          "position_points": {
+            "QB_starter": 4.5,
+            "QB_backup": 0.2,
+            "RB": 0.55,
+            "WR": 0.65,
+            "TE": 0.4,
+            "OL": 0.45,
+            "C": 0.5,
+            "T": 0.55,
+            "G": 0.4,
+            "DL": 0.5,
+            "DE": 0.55,
+            "DT": 0.45,
+            "LB": 0.35,
+            "CB": 0.5,
+            "S": 0.3,
+            "K": 0.35,
+            "P": 0.1,
+            "LS": 0.05,
+            "default": 0.25
+          },
+          "_position_points_note": "Points of team strength lost when that player is fully OUT. The starting-QB number is the only large one and it is deliberately conservative: market studies put a starting QB's value between 3 and 7 points depending on the backup, and this model has no way to know how good the backup is.",
+          "max_team_points": 7,
+          "_max_team_points_note": "Hard cap on how much one team's injury list can move the line. Without it, a long Week 14 report stacks a dozen small deductions into a fake double-digit swing.",
+          "total_points_per_offensive_point": 0.55,
+          "_total_note": "How much a team's offensive injury load pulls the projected combined score down.",
+          "starter_snap_rank": 1,
+          "depth_chart_enabled": true
+        },
+        "weather": {
+          "enabled": true,
+          "provider": "open-meteo",
+          "_provider_note": "Open-Meteo is keyless, free, and does not rate-limit a job that asks for 16 forecasts twice a day. No account, no secret, nothing to expire.",
+          "forecast_days": 16,
+          "wind_thresholds": [
+            [
+              12,
+              -0.8
+            ],
+            [
+              16,
+              -1.8
+            ],
+            [
+              20,
+              -3
+            ],
+            [
+              25,
+              -4.5
+            ]
+          ],
+          "_wind_note": "[mph, points off the projected total]. Wind is the only weather variable with a large, repeatable effect on NFL scoring -- it kills the deep passing game and the kicking game together. Rain and cold matter far less than television makes you believe.",
+          "precip_prob_threshold": 55,
+          "precip_total_adj": -1,
+          "snow_total_adj": -2,
+          "cold_temp_f": 20,
+          "cold_total_adj": -1.2,
+          "heat_temp_f": 92,
+          "heat_total_adj": -0.5,
+          "indoor_ignores_weather": true
+        },
+        "markets": {
+          "moneyline": true,
+          "spread": true,
+          "total": true
+        },
+        "filters": {
+          "_note": "Bets that fail these are still shown with the reason. No model pick is auto-logged: My Ledger contains only wagers the user explicitly adds in the browser.",
+          "min_price": -350,
+          "max_price": 550,
+          "skip_if_no_odds": true,
+          "max_bets_per_game": 1,
+          "_max_bets_per_game_note": "Correlation guard. A team's moneyline and its spread are close to the same bet, so taking both is one position at double the variance Kelly assumed.",
+          "max_plays_per_week": 6,
+          "_max_plays_per_week_note": "Hard cap on how many bets one NFL week can produce, best edges first. A 16-game slate with a 2.5% threshold will happily qualify twenty plays; that is a spray, not a staking plan.",
+          "bet_within_days": 8,
+          "_bet_within_days_note": "Games further out than this are priced and displayed but not staked. Seeing an edge three weeks early is useful; betting into a market that thin is not, and the number will move several times before kickoff. The card shows the date the play opens.",
+          "bet_preseason": false,
+          "_bet_preseason_note": "Preseason games are priced and displayed but never tiered as a play. Starter snap counts, not team strength, decide preseason games, and no rating model sees the coach's snap plan.",
+          "bet_postseason": true
+        },
+        "data": {
+          "odds_provider_priority": [
+            "DraftKings",
+            "ESPN BET",
+            "Caesars Sportsbook",
+            "William Hill (New Jersey)",
+            "consensus",
+            "numberfire",
+            "teamrankings"
+          ],
+          "full_season_odds_sweep": true,
+          "_sweep_note": "Re-fetch the whole remaining season every run, not just the next few weeks. Books post lines for all 18 regular-season weeks in August, so this is real data sitting there unused -- and sweeping it every run is what captures the opening number and every move since, for the whole season rather than the fortnight in front of us. Costs about nine HTTP requests.",
+          "outlook": true,
+          "_outlook_note": "Project every future game that has a posted line, however far out, and publish it as a look-ahead view. These are NOT tracked in the shadow book and NOT staked: a call frozen four months early would be graded against a line that moved twenty times, which would corrupt the accuracy record rather than extend it.",
+          "lookahead_days": 24,
+          "_lookahead_note": "How far ahead games are priced. Set wide on purpose: books post Week 1 lines in August, and a 14-day window in late August sees nothing but preseason -- an empty board that looks broken and is not. Pricing early also captures the opening number, which is where closing line value comes from.",
+          "lookback_days": 5,
+          "news_limit": 40,
+          "fetch_news": true,
+          "fetch_stats": true
+        }
+      },
+      "league_context": {
+        "ppg": 24.7,
+        "papg": 24.7,
+        "total": 49.4,
+        "n": 32
+      },
+      "counts": {
+        "board": 292,
+        "qualified": 19,
+        "actionable": 6,
+        "held": 13,
+        "tracked_calls": 492,
+        "upcoming_without_a_line": 0,
+        "upcoming": 49,
+        "all_preseason": false
+      },
+      "odds_health": {
+        "status": "ok",
+        "expected_games": 49,
+        "line_games": 49,
+        "priced_games": 49,
+        "moneyline_games": 49,
+        "spread_games": 48,
+        "total_games": 49,
+        "keyless": true,
+        "provider": "ESPN public feed"
+      },
+      "horizon_days": 24,
+      "weather_forecast_days": 16,
+      "bet_within_days": 8
+    },
+    "lastGoodAt": "2026-09-15T23:44:16.387Z"
   },
   "ncaaf": {
     "meta": {
@@ -14744,25 +14744,25 @@
         "odds_observed_at": "2026-09-15T22:28:15.129205+00:00"
       }
     ],
-    "lastGoodAt": "2026-09-15T23:19:19.643Z"
+    "lastGoodAt": "2026-09-15T23:44:16.387Z"
   },
   "mlb": {
     "meta": {
-      "generated_at": "2026-09-15T22:05:33+00:00",
+      "generated_at": "2026-09-15T23:38:13+00:00",
       "day_summary": {
         "2026-09-15": {
           "games": 15,
           "priced": 15,
           "plays": 6,
           "best": 3,
-          "staked": 12.5
+          "staked": 16
         },
         "2026-09-16": {
           "games": 15,
-          "priced": 12,
+          "priced": 13,
           "plays": 6,
           "best": 3,
-          "staked": 13
+          "staked": 12
         },
         "2026-09-17": {
           "games": 9,
@@ -14837,7 +14837,7 @@
       "latest": "2026-09-15",
       "built_for": "2026-09-15",
       "server_today_et": "2026-09-15",
-      "server_now_et": "2026-09-15T18:05:33-04:00",
+      "server_now_et": "2026-09-15T19:38:13-04:00",
       "bankroll": 250,
       "settings": {
         "kelly": 0.25,
@@ -14883,7 +14883,7 @@
       },
       "lookahead_days": 7,
       "calibration": {
-        "generated_at": "2026-09-15T22:05:33+00:00",
+        "generated_at": "2026-09-15T23:38:13+00:00",
         "n": 321,
         "applied": true,
         "total_adj": 0.443,
@@ -14897,24 +14897,24 @@
       }
     },
     "accuracy": {
-      "generated_at": "2026-09-15T22:05:33+00:00"
+      "generated_at": "2026-09-15T23:38:13+00:00"
     },
     "slate": {
-      "generated_at": "2026-09-15T22:04:25+00:00",
+      "generated_at": "2026-09-15T23:36:54+00:00",
       "games": [
         {
           "gamePk": 822925,
           "home": "TB",
           "away": "ATH",
           "start": "2026-09-15T22:40:00Z",
-          "status": "Pre-Game",
+          "status": "In Progress",
           "lineups_confirmed": true,
           "odds": {
-            "fetched_at": "2026-09-15T22:03:12.709829+00:00"
+            "fetched_at": "2026-09-15T23:35:40.638172+00:00"
           },
           "bets": [
             {
-              "tier": "GOOD",
+              "tier": "BEST BET",
               "stake": 3.5,
               "market": "RL",
               "label": "TB -1.5",
@@ -14922,22 +14922,9 @@
               "line": -1.5,
               "price": -105,
               "book": "DraftKings",
-              "edge_real": 0.0512,
-              "edge": 0.0544,
-              "p_final": 0.5593
-            },
-            {
-              "tier": "GOOD",
-              "stake": 0,
-              "market": "ML",
-              "label": "TB ML",
-              "selection": "TB",
-              "line": null,
-              "price": -233,
-              "book": "DraftKings",
-              "edge_real": 0.0409,
-              "edge": 0.0497,
-              "p_final": 0.7366
+              "edge_real": 0.0534,
+              "edge": 0.0505,
+              "p_final": 0.5713
             },
             {
               "tier": "GOOD",
@@ -14948,35 +14935,22 @@
               "line": 8,
               "price": -114,
               "book": "DraftKings",
-              "edge_real": 0.0347,
-              "edge": 0.0436,
-              "p_final": 0.5572
+              "edge_real": 0.0354,
+              "edge": 0.0437,
+              "p_final": 0.5581
             },
             {
-              "tier": "PASS",
+              "tier": "LEAN",
               "stake": 0,
-              "market": "TOTAL",
-              "label": "Under 8.0",
-              "selection": "Under",
-              "line": 8,
-              "price": -106,
+              "market": "ML",
+              "label": "TB ML",
+              "selection": "TB",
+              "line": null,
+              "price": -233,
               "book": "DraftKings",
-              "edge_real": -0.0448,
-              "edge": -0.0438,
-              "p_final": 0.4428
-            },
-            {
-              "tier": "PASS",
-              "stake": 0,
-              "market": "RL",
-              "label": "ATH +1.5",
-              "selection": "ATH",
-              "line": -1.5,
-              "price": -115,
-              "book": "DraftKings",
-              "edge_real": -0.0548,
-              "edge": -0.0543,
-              "p_final": 0.4407
+              "edge_real": 0.0506,
+              "edge": 0.019,
+              "p_final": 0.7608
             },
             {
               "tier": "PASS",
@@ -14988,8 +14962,34 @@
               "price": 189,
               "book": "DraftKings",
               "edge_real": -0.055,
-              "edge": -0.0548,
-              "p_final": 0.2634
+              "edge": -0.0432,
+              "p_final": 0.2392
+            },
+            {
+              "tier": "PASS",
+              "stake": 0,
+              "market": "TOTAL",
+              "label": "Under 8.0",
+              "selection": "Under",
+              "line": 8,
+              "price": -106,
+              "book": "DraftKings",
+              "edge_real": -0.0448,
+              "edge": -0.0439,
+              "p_final": 0.4419
+            },
+            {
+              "tier": "PASS",
+              "stake": 0,
+              "market": "RL",
+              "label": "ATH +1.5",
+              "selection": "ATH",
+              "line": -1.5,
+              "price": -115,
+              "book": "DraftKings",
+              "edge_real": -0.0549,
+              "edge": -0.0518,
+              "p_final": 0.4287
             }
           ]
         },
@@ -14998,24 +14998,24 @@
           "home": "PIT",
           "away": "MIL",
           "start": "2026-09-15T22:40:00Z",
-          "status": "Pre-Game",
+          "status": "In Progress",
           "lineups_confirmed": true,
           "odds": {
-            "fetched_at": "2026-09-15T22:03:12.709829+00:00"
+            "fetched_at": "2026-09-15T23:35:40.638172+00:00"
           },
           "bets": [
             {
               "tier": "GOOD",
-              "stake": 2,
+              "stake": 1.5,
               "market": "ML",
               "label": "PIT ML",
               "selection": "PIT",
               "line": null,
               "price": 177,
               "book": "DraftKings",
-              "edge_real": 0.0531,
-              "edge": 0.0549,
-              "p_final": 0.4012
+              "edge_real": 0.0469,
+              "edge": 0.055,
+              "p_final": 0.3862
             },
             {
               "tier": "BEST BET",
@@ -15026,48 +15026,35 @@
               "line": 1.5,
               "price": 104,
               "book": "DraftKings",
-              "edge_real": 0.051,
+              "edge_real": 0.0511,
               "edge": 0.0545,
-              "p_final": 0.5343
+              "p_final": 0.5346
             },
             {
-              "tier": "PASS",
+              "tier": "GOOD",
               "stake": 0,
               "market": "TOTAL",
-              "label": "Over 7.5",
+              "label": "Over 6.5",
               "selection": "Over",
-              "line": 7.5,
-              "price": -105,
-              "book": "DraftKings",
-              "edge_real": -0.0276,
-              "edge": 0.0146,
-              "p_final": 0.4958
+              "line": 6.5,
+              "price": -116,
+              "book": "DraftKings - Live Odds",
+              "edge_real": 0.0264,
+              "edge": 0.0438,
+              "p_final": 0.5533
             },
             {
               "tier": "PASS",
               "stake": 0,
               "market": "TOTAL",
-              "label": "Under 7.5",
+              "label": "Under 6.5",
               "selection": "Under",
-              "line": 7.5,
-              "price": -115,
-              "book": "DraftKings",
-              "edge_real": -0.0385,
-              "edge": -0.0139,
-              "p_final": 0.5042
-            },
-            {
-              "tier": "PASS",
-              "stake": 0,
-              "market": "ML",
-              "label": "MIL ML",
-              "selection": "MIL",
-              "line": null,
-              "price": -217,
-              "book": "DraftKings",
-              "edge_real": -0.0539,
-              "edge": -0.0522,
-              "p_final": 0.5988
+              "line": 6.5,
+              "price": -112,
+              "book": "DraftKings - Live Odds",
+              "edge_real": -0.0449,
+              "edge": -0.0439,
+              "p_final": 0.4467
             },
             {
               "tier": "PASS",
@@ -15080,7 +15067,20 @@
               "book": "DraftKings",
               "edge_real": -0.0547,
               "edge": -0.054,
-              "p_final": 0.4657
+              "p_final": 0.4654
+            },
+            {
+              "tier": "PASS",
+              "stake": 0,
+              "market": "ML",
+              "label": "MIL ML",
+              "selection": "MIL",
+              "line": null,
+              "price": -217,
+              "book": "DraftKings",
+              "edge_real": -0.0525,
+              "edge": -0.0541,
+              "p_final": 0.6138
             }
           ]
         },
@@ -15089,63 +15089,63 @@
           "home": "CLE",
           "away": "CWS",
           "start": "2026-09-15T22:40:00Z",
-          "status": "Pre-Game",
+          "status": "In Progress",
           "lineups_confirmed": true,
           "odds": {
-            "fetched_at": "2026-09-15T22:03:12.709829+00:00"
+            "fetched_at": "2026-09-15T23:35:40.638172+00:00"
           },
           "bets": [
             {
-              "tier": "BEST BET",
-              "stake": 2.5,
+              "tier": "PASS",
+              "stake": 0,
               "market": "ML",
               "label": "CWS ML",
               "selection": "CWS",
               "line": null,
-              "price": 133,
+              "price": 132,
               "book": "DraftKings",
-              "edge_real": 0.0522,
-              "edge": 0.0548,
-              "p_final": 0.4721
+              "edge_real": -0.0384,
+              "edge": 0.055,
+              "p_final": 0.4105
             },
             {
               "tier": "GOOD",
-              "stake": 0,
+              "stake": 4,
               "market": "RL",
-              "label": "CWS +1.5",
+              "label": "CWS +3.5",
               "selection": "CWS",
-              "line": -1.5,
-              "price": -163,
-              "book": "DraftKings",
-              "edge_real": 0.041,
-              "edge": 0.0511,
-              "p_final": 0.6526
+              "line": -3.5,
+              "price": -114,
+              "book": "DraftKings - Live Odds",
+              "edge_real": 0.055,
+              "edge": 0.055,
+              "p_final": 0.7105
             },
             {
               "tier": "LEAN",
               "stake": 0,
               "market": "TOTAL",
-              "label": "Under 9.0",
+              "label": "Under 8.5",
               "selection": "Under",
-              "line": 9,
-              "price": -118,
-              "book": "DraftKings",
-              "edge_real": 0.0157,
-              "edge": 0.0394,
-              "p_final": 0.5502
+              "line": 8.5,
+              "price": 109,
+              "book": "DraftKings - Live Odds",
+              "edge_real": 0.0183,
+              "edge": 0.0438,
+              "p_final": 0.4878
             },
             {
               "tier": "PASS",
               "stake": 0,
               "market": "TOTAL",
-              "label": "Over 9.0",
+              "label": "Over 8.5",
               "selection": "Over",
-              "line": 9,
-              "price": -102,
-              "book": "DraftKings",
-              "edge_real": -0.0443,
-              "edge": -0.0404,
-              "p_final": 0.4498
+              "line": 8.5,
+              "price": -141,
+              "book": "DraftKings - Live Odds",
+              "edge_real": -0.0446,
+              "edge": -0.0422,
+              "p_final": 0.5122
             },
             {
               "tier": "PASS",
@@ -15154,24 +15154,24 @@
               "label": "CLE ML",
               "selection": "CLE",
               "line": null,
-              "price": -161,
+              "price": -160,
               "book": "DraftKings",
-              "edge_real": -0.0544,
-              "edge": -0.0533,
-              "p_final": 0.5279
+              "edge_real": -0.0354,
+              "edge": -0.0549,
+              "p_final": 0.5895
             },
             {
               "tier": "PASS",
               "stake": 0,
               "market": "RL",
-              "label": "CLE -1.5",
+              "label": "CLE -3.5",
               "selection": "CLE",
-              "line": -1.5,
-              "price": 134,
-              "book": "DraftKings",
-              "edge_real": -0.0549,
-              "edge": -0.0542,
-              "p_final": 0.3474
+              "line": -3.5,
+              "price": -114,
+              "book": "DraftKings - Live Odds",
+              "edge_real": -0.055,
+              "edge": -0.055,
+              "p_final": 0.2895
             }
           ]
         },
@@ -15180,10 +15180,10 @@
           "home": "CIN",
           "away": "LAD",
           "start": "2026-09-15T22:40:00Z",
-          "status": "Pre-Game",
+          "status": "In Progress",
           "lineups_confirmed": true,
           "odds": {
-            "fetched_at": "2026-09-15T22:03:12.709829+00:00"
+            "fetched_at": "2026-09-15T23:35:40.638172+00:00"
           },
           "bets": [
             {
@@ -15195,9 +15195,9 @@
               "line": null,
               "price": 202,
               "book": "DraftKings",
-              "edge_real": -0.02,
-              "edge": 0.0459,
-              "p_final": 0.3242
+              "edge_real": -0.0546,
+              "edge": 0.055,
+              "p_final": 0.2793
             },
             {
               "tier": "GOOD",
@@ -15206,11 +15206,11 @@
               "label": "Over 8.5",
               "selection": "Over",
               "line": 8.5,
-              "price": -115,
+              "price": -109,
               "book": "DraftKings",
-              "edge_real": 0.0383,
+              "edge_real": 0.0423,
               "edge": 0.0442,
-              "p_final": 0.5652
+              "p_final": 0.5625
             },
             {
               "tier": "PASS",
@@ -15221,22 +15221,9 @@
               "line": 1.5,
               "price": 123,
               "book": "DraftKings",
-              "edge_real": -0.0161,
-              "edge": 0.0353,
-              "p_final": 0.441
-            },
-            {
-              "tier": "PASS",
-              "stake": 0,
-              "market": "ML",
-              "label": "LAD ML",
-              "selection": "LAD",
-              "line": null,
-              "price": -250,
-              "book": "DraftKings",
-              "edge_real": -0.0414,
-              "edge": -0.0265,
-              "p_final": 0.6758
+              "edge_real": -0.0142,
+              "edge": 0.0365,
+              "p_final": 0.4419
             },
             {
               "tier": "PASS",
@@ -15247,9 +15234,9 @@
               "line": 1.5,
               "price": -149,
               "book": "DraftKings",
-              "edge_real": -0.0458,
-              "edge": -0.0279,
-              "p_final": 0.559
+              "edge_real": -0.0463,
+              "edge": -0.029,
+              "p_final": 0.5581
             },
             {
               "tier": "PASS",
@@ -15258,11 +15245,24 @@
               "label": "Under 8.5",
               "selection": "Under",
               "line": 8.5,
-              "price": -105,
+              "price": -110,
               "book": "DraftKings",
               "edge_real": -0.0449,
               "edge": -0.0443,
-              "p_final": 0.4348
+              "p_final": 0.4375
+            },
+            {
+              "tier": "PASS",
+              "stake": 0,
+              "market": "ML",
+              "label": "LAD ML",
+              "selection": "LAD",
+              "line": null,
+              "price": -251,
+              "book": "DraftKings",
+              "edge_real": 0.0077,
+              "edge": -0.053,
+              "p_final": 0.7207
             }
           ]
         },
@@ -15271,37 +15271,24 @@
           "home": "WSH",
           "away": "PHI",
           "start": "2026-09-15T22:45:00Z",
-          "status": "Pre-Game",
+          "status": "In Progress",
           "lineups_confirmed": true,
           "odds": {
-            "fetched_at": "2026-09-15T22:03:12.709829+00:00"
+            "fetched_at": "2026-09-15T23:35:40.638172+00:00"
           },
           "bets": [
             {
               "tier": "GOOD",
-              "stake": 1.5,
+              "stake": 2,
               "market": "ML",
               "label": "WSH ML",
               "selection": "WSH",
               "line": null,
-              "price": 178,
+              "price": 181,
               "book": "DraftKings",
-              "edge_real": 0.0492,
-              "edge": 0.0547,
-              "p_final": 0.3882
-            },
-            {
-              "tier": "GOOD",
-              "stake": 0,
-              "market": "RL",
-              "label": "WSH +1.5",
-              "selection": "WSH",
-              "line": 1.5,
-              "price": 105,
-              "book": "DraftKings",
-              "edge_real": 0.0387,
-              "edge": 0.0523,
-              "p_final": 0.5113
+              "edge_real": 0.0517,
+              "edge": 0.0545,
+              "p_final": 0.39
             },
             {
               "tier": "GOOD",
@@ -15312,35 +15299,22 @@
               "line": 8,
               "price": -112,
               "book": "DraftKings",
-              "edge_real": 0.042,
-              "edge": 0.0446,
-              "p_final": 0.5684
+              "edge_real": 0.0444,
+              "edge": 0.0449,
+              "p_final": 0.5871
             },
             {
-              "tier": "PASS",
+              "tier": "GOOD",
               "stake": 0,
-              "market": "TOTAL",
-              "label": "Under 8.0",
-              "selection": "Under",
-              "line": 8,
-              "price": -107,
+              "market": "RL",
+              "label": "WSH +1.5",
+              "selection": "WSH",
+              "line": 1.5,
+              "price": 105,
               "book": "DraftKings",
-              "edge_real": -0.0449,
-              "edge": -0.0447,
-              "p_final": 0.4316
-            },
-            {
-              "tier": "PASS",
-              "stake": 0,
-              "market": "ML",
-              "label": "PHI ML",
-              "selection": "PHI",
-              "line": null,
-              "price": -218,
-              "book": "DraftKings",
-              "edge_real": -0.0528,
-              "edge": -0.0497,
-              "p_final": 0.6118
+              "edge_real": 0.0465,
+              "edge": 0.0417,
+              "p_final": 0.521
             },
             {
               "tier": "PASS",
@@ -15351,9 +15325,35 @@
               "line": 1.5,
               "price": -126,
               "book": "DraftKings",
-              "edge_real": -0.0538,
-              "edge": -0.0506,
-              "p_final": 0.4887
+              "edge_real": -0.0543,
+              "edge": -0.0412,
+              "p_final": 0.479
+            },
+            {
+              "tier": "PASS",
+              "stake": 0,
+              "market": "TOTAL",
+              "label": "Under 8.0",
+              "selection": "Under",
+              "line": 8,
+              "price": -107,
+              "book": "DraftKings",
+              "edge_real": -0.045,
+              "edge": -0.0449,
+              "p_final": 0.4129
+            },
+            {
+              "tier": "PASS",
+              "stake": 0,
+              "market": "ML",
+              "label": "PHI ML",
+              "selection": "PHI",
+              "line": null,
+              "price": -222,
+              "book": "DraftKings",
+              "edge_real": -0.0534,
+              "edge": -0.0484,
+              "p_final": 0.61
             }
           ]
         },
@@ -15362,37 +15362,37 @@
           "home": "TOR",
           "away": "DET",
           "start": "2026-09-15T23:07:00Z",
-          "status": "Pre-Game",
+          "status": "In Progress",
           "lineups_confirmed": true,
           "odds": {
-            "fetched_at": "2026-09-15T22:03:12.709829+00:00"
+            "fetched_at": "2026-09-15T23:35:40.638172+00:00"
           },
           "bets": [
             {
-              "tier": "LEAN",
+              "tier": "PASS",
               "stake": 0,
               "market": "ML",
               "label": "DET ML",
               "selection": "DET",
               "line": null,
-              "price": 123,
+              "price": 115,
               "book": "DraftKings",
-              "edge_real": 0.0175,
-              "edge": 0.049,
-              "p_final": 0.4566
+              "edge_real": -0.0098,
+              "edge": 0.0482,
+              "p_final": 0.4605
             },
             {
-              "tier": "LEAN",
+              "tier": "PASS",
               "stake": 0,
               "market": "TOTAL",
-              "label": "Over 8.5",
+              "label": "Over 8.0",
               "selection": "Over",
-              "line": 8.5,
-              "price": -101,
+              "line": 8,
+              "price": -118,
               "book": "DraftKings",
-              "edge_real": 0.0156,
-              "edge": 0.0394,
-              "p_final": 0.5106
+              "edge_real": 0.0038,
+              "edge": 0.0354,
+              "p_final": 0.5433
             },
             {
               "tier": "PASS",
@@ -15401,11 +15401,11 @@
               "label": "DET +1.5",
               "selection": "DET",
               "line": -1.5,
-              "price": -176,
+              "price": -181,
               "book": "DraftKings",
-              "edge_real": -0.0087,
-              "edge": 0.0225,
-              "p_final": 0.6321
+              "edge_real": -0.0056,
+              "edge": 0.0173,
+              "p_final": 0.6405
             },
             {
               "tier": "PASS",
@@ -15414,24 +15414,24 @@
               "label": "TOR -1.5",
               "selection": "TOR",
               "line": -1.5,
-              "price": 145,
+              "price": 149,
               "book": "DraftKings",
-              "edge_real": -0.052,
-              "edge": -0.0332,
-              "p_final": 0.3679
+              "edge_real": -0.0526,
+              "edge": -0.0276,
+              "p_final": 0.3595
             },
             {
               "tier": "PASS",
               "stake": 0,
               "market": "TOTAL",
-              "label": "Under 8.5",
+              "label": "Under 8.0",
               "selection": "Under",
-              "line": 8.5,
-              "price": -117,
+              "line": 8,
+              "price": -102,
               "book": "DraftKings",
-              "edge_real": -0.0435,
-              "edge": -0.0383,
-              "p_final": 0.4894
+              "edge_real": -0.0437,
+              "edge": -0.0367,
+              "p_final": 0.4567
             },
             {
               "tier": "PASS",
@@ -15440,11 +15440,11 @@
               "label": "TOR ML",
               "selection": "TOR",
               "line": null,
-              "price": -149,
+              "price": -138,
               "book": "DraftKings",
-              "edge_real": -0.0512,
-              "edge": -0.043,
-              "p_final": 0.5434
+              "edge_real": -0.0469,
+              "edge": -0.0423,
+              "p_final": 0.5395
             }
           ]
         },
@@ -15453,25 +15453,12 @@
           "home": "NYM",
           "away": "BAL",
           "start": "2026-09-15T23:10:00Z",
-          "status": "Pre-Game",
+          "status": "In Progress",
           "lineups_confirmed": true,
           "odds": {
-            "fetched_at": "2026-09-15T22:03:12.709829+00:00"
+            "fetched_at": "2026-09-15T23:35:40.638172+00:00"
           },
           "bets": [
-            {
-              "tier": "LEAN",
-              "stake": 0,
-              "market": "ML",
-              "label": "BAL ML",
-              "selection": "BAL",
-              "line": null,
-              "price": 112,
-              "book": "DraftKings",
-              "edge_real": 0.0197,
-              "edge": 0.049,
-              "p_final": 0.4814
-            },
             {
               "tier": "GOOD",
               "stake": 0,
@@ -15481,35 +15468,61 @@
               "line": 8,
               "price": -115,
               "book": "DraftKings",
-              "edge_real": 0.0285,
-              "edge": 0.0423,
-              "p_final": 0.5529
+              "edge_real": 0.0289,
+              "edge": 0.0424,
+              "p_final": 0.5532
             },
             {
               "tier": "PASS",
               "stake": 0,
               "market": "RL",
-              "label": "BAL +1.5",
-              "selection": "BAL",
-              "line": -1.5,
-              "price": -193,
-              "book": "DraftKings",
-              "edge_real": 0.0002,
-              "edge": 0.0285,
-              "p_final": 0.6588
-            },
-            {
-              "tier": "PASS",
-              "stake": 0,
-              "market": "RL",
-              "label": "NYM -1.5",
+              "label": "NYM +1.5",
               "selection": "NYM",
-              "line": -1.5,
-              "price": 158,
+              "line": 1.5,
+              "price": -165,
+              "book": "DraftKings - Live Odds",
+              "edge_real": -0.0254,
+              "edge": 0.0201,
+              "p_final": 0.6056
+            },
+            {
+              "tier": "PASS",
+              "stake": 0,
+              "market": "ML",
+              "label": "BAL ML",
+              "selection": "BAL",
+              "line": null,
+              "price": 113,
               "book": "DraftKings",
-              "edge_real": -0.0536,
-              "edge": -0.0422,
-              "p_final": 0.3412
+              "edge_real": 0.0465,
+              "edge": 0.0108,
+              "p_final": 0.5014
+            },
+            {
+              "tier": "PASS",
+              "stake": 0,
+              "market": "ML",
+              "label": "NYM ML",
+              "selection": "NYM",
+              "line": null,
+              "price": -136,
+              "book": "DraftKings",
+              "edge_real": -0.0542,
+              "edge": -0.0106,
+              "p_final": 0.4986
+            },
+            {
+              "tier": "PASS",
+              "stake": 0,
+              "market": "RL",
+              "label": "BAL -1.5",
+              "selection": "BAL",
+              "line": 1.5,
+              "price": 126,
+              "book": "DraftKings - Live Odds",
+              "edge_real": -0.0529,
+              "edge": -0.0279,
+              "p_final": 0.3944
             },
             {
               "tier": "PASS",
@@ -15521,21 +15534,8 @@
               "price": -104,
               "book": "DraftKings",
               "edge_real": -0.0446,
-              "edge": -0.0427,
-              "p_final": 0.4471
-            },
-            {
-              "tier": "PASS",
-              "stake": 0,
-              "market": "ML",
-              "label": "NYM ML",
-              "selection": "NYM",
-              "line": null,
-              "price": -136,
-              "book": "DraftKings",
-              "edge_real": -0.0522,
-              "edge": -0.0449,
-              "p_final": 0.5186
+              "edge": -0.0428,
+              "p_final": 0.4468
             }
           ]
         },
@@ -15544,10 +15544,10 @@
           "home": "MIN",
           "away": "NYY",
           "start": "2026-09-15T23:40:00Z",
-          "status": "Pre-Game",
+          "status": "Warmup",
           "lineups_confirmed": true,
           "odds": {
-            "fetched_at": "2026-09-15T22:03:12.709829+00:00"
+            "fetched_at": "2026-09-15T23:35:40.638172+00:00"
           },
           "bets": [
             {
@@ -15559,9 +15559,9 @@
               "line": 7.5,
               "price": -110,
               "book": "DraftKings",
-              "edge_real": 0.0229,
-              "edge": 0.0414,
-              "p_final": 0.537
+              "edge_real": 0.0248,
+              "edge": 0.0418,
+              "p_final": 0.5384
             },
             {
               "tier": "PASS",
@@ -15572,9 +15572,9 @@
               "line": 1.5,
               "price": -120,
               "book": "DraftKings",
-              "edge_real": -0.0238,
-              "edge": 0.0155,
-              "p_final": 0.5316
+              "edge_real": -0.0273,
+              "edge": 0.0111,
+              "p_final": 0.5291
             },
             {
               "tier": "PASS",
@@ -15585,9 +15585,9 @@
               "line": null,
               "price": 142,
               "book": "DraftKings",
-              "edge_real": -0.0411,
-              "edge": 0.0083,
-              "p_final": 0.3912
+              "edge_real": -0.0407,
+              "edge": 0.0094,
+              "p_final": 0.3917
             },
             {
               "tier": "PASS",
@@ -15598,9 +15598,9 @@
               "line": null,
               "price": -172,
               "book": "DraftKings",
-              "edge_real": -0.0325,
-              "edge": -0.0053,
-              "p_final": 0.6088
+              "edge_real": -0.0329,
+              "edge": -0.006,
+              "p_final": 0.6083
             },
             {
               "tier": "PASS",
@@ -15611,9 +15611,9 @@
               "line": 1.5,
               "price": 100,
               "book": "DraftKings",
-              "edge_real": -0.0449,
-              "edge": -0.0169,
-              "p_final": 0.4684
+              "edge_real": -0.0432,
+              "edge": -0.0121,
+              "p_final": 0.4709
             },
             {
               "tier": "PASS",
@@ -15624,9 +15624,9 @@
               "line": 7.5,
               "price": -109,
               "book": "DraftKings",
-              "edge_real": -0.0444,
-              "edge": -0.0415,
-              "p_final": 0.463
+              "edge_real": -0.0445,
+              "edge": -0.0419,
+              "p_final": 0.4616
             }
           ]
         },
@@ -15635,10 +15635,10 @@
           "home": "CHC",
           "away": "ATL",
           "start": "2026-09-15T23:40:00Z",
-          "status": "Pre-Game",
+          "status": "Warmup",
           "lineups_confirmed": true,
           "odds": {
-            "fetched_at": "2026-09-15T22:03:12.709829+00:00"
+            "fetched_at": "2026-09-15T23:35:40.638172+00:00"
           },
           "bets": [
             {
@@ -15648,14 +15648,14 @@
               "label": "ATL ML",
               "selection": "ATL",
               "line": null,
-              "price": 119,
+              "price": 123,
               "book": "DraftKings",
-              "edge_real": -0.0039,
-              "edge": 0.0413,
-              "p_final": 0.4548
+              "edge_real": -0.0026,
+              "edge": 0.0426,
+              "p_final": 0.4473
             },
             {
-              "tier": "LEAN",
+              "tier": "PASS",
               "stake": 0,
               "market": "TOTAL",
               "label": "Over 8.5",
@@ -15663,9 +15663,9 @@
               "line": 8.5,
               "price": -109,
               "book": "DraftKings",
-              "edge_real": 0.013,
-              "edge": 0.0396,
-              "p_final": 0.5285
+              "edge_real": 0.0086,
+              "edge": 0.0384,
+              "p_final": 0.5261
             },
             {
               "tier": "PASS",
@@ -15674,11 +15674,11 @@
               "label": "ATL +1.5",
               "selection": "ATL",
               "line": -1.5,
-              "price": -173,
+              "price": -172,
               "book": "DraftKings",
-              "edge_real": -0.0158,
-              "edge": 0.0168,
-              "p_final": 0.6234
+              "edge_real": -0.0163,
+              "edge": 0.0154,
+              "p_final": 0.6217
             },
             {
               "tier": "PASS",
@@ -15689,9 +15689,9 @@
               "line": -1.5,
               "price": 142,
               "book": "DraftKings",
-              "edge_real": -0.0508,
-              "edge": -0.0254,
-              "p_final": 0.3766
+              "edge_real": -0.0501,
+              "edge": -0.0234,
+              "p_final": 0.3783
             },
             {
               "tier": "PASS",
@@ -15700,11 +15700,11 @@
               "label": "CHC ML",
               "selection": "CHC",
               "line": null,
-              "price": -144,
+              "price": -149,
               "book": "DraftKings",
               "edge_real": -0.0485,
-              "edge": -0.0346,
-              "p_final": 0.5452
+              "edge": -0.0351,
+              "p_final": 0.5527
             },
             {
               "tier": "PASS",
@@ -15715,9 +15715,9 @@
               "line": 8.5,
               "price": -111,
               "book": "DraftKings",
-              "edge_real": -0.0441,
-              "edge": -0.0395,
-              "p_final": 0.4715
+              "edge_real": -0.0439,
+              "edge": -0.0383,
+              "p_final": 0.4739
             }
           ]
         },
@@ -15726,25 +15726,12 @@
           "home": "STL",
           "away": "SF",
           "start": "2026-09-15T23:45:00Z",
-          "status": "Pre-Game",
+          "status": "Warmup",
           "lineups_confirmed": true,
           "odds": {
-            "fetched_at": "2026-09-15T22:03:12.709829+00:00"
+            "fetched_at": "2026-09-15T23:35:40.638172+00:00"
           },
           "bets": [
-            {
-              "tier": "GOOD",
-              "stake": 0,
-              "market": "TOTAL",
-              "label": "Over 8.0",
-              "selection": "Over",
-              "line": 8,
-              "price": -110,
-              "book": "DraftKings",
-              "edge_real": 0.0381,
-              "edge": 0.0442,
-              "p_final": 0.5532
-            },
             {
               "tier": "PASS",
               "stake": 0,
@@ -15754,9 +15741,22 @@
               "line": null,
               "price": 148,
               "book": "DraftKings",
-              "edge_real": -0.0107,
-              "edge": 0.0426,
-              "p_final": 0.3988
+              "edge_real": -0.0036,
+              "edge": 0.0453,
+              "p_final": 0.4018
+            },
+            {
+              "tier": "GOOD",
+              "stake": 0,
+              "market": "TOTAL",
+              "label": "Over 8.0",
+              "selection": "Over",
+              "line": 8,
+              "price": -110,
+              "book": "DraftKings",
+              "edge_real": 0.0289,
+              "edge": 0.0429,
+              "p_final": 0.5418
             },
             {
               "tier": "PASS",
@@ -15767,9 +15767,9 @@
               "line": -1.5,
               "price": -144,
               "book": "DraftKings",
-              "edge_real": -0.0155,
-              "edge": 0.0193,
-              "p_final": 0.5808
+              "edge_real": -0.0159,
+              "edge": 0.0189,
+              "p_final": 0.5805
             },
             {
               "tier": "PASS",
@@ -15780,9 +15780,9 @@
               "line": -1.5,
               "price": 120,
               "book": "DraftKings",
-              "edge_real": -0.0488,
-              "edge": -0.0248,
-              "p_final": 0.4192
+              "edge_real": -0.0487,
+              "edge": -0.0242,
+              "p_final": 0.4195
             },
             {
               "tier": "PASS",
@@ -15793,9 +15793,9 @@
               "line": null,
               "price": -180,
               "book": "DraftKings",
-              "edge_real": -0.0455,
-              "edge": -0.0305,
-              "p_final": 0.6012
+              "edge_real": -0.0468,
+              "edge": -0.0336,
+              "p_final": 0.5982
             },
             {
               "tier": "PASS",
@@ -15806,9 +15806,9 @@
               "line": 8,
               "price": -110,
               "book": "DraftKings",
-              "edge_real": -0.0449,
-              "edge": -0.0442,
-              "p_final": 0.4468
+              "edge_real": -0.0447,
+              "edge": -0.0429,
+              "p_final": 0.4582
             }
           ]
         },
@@ -15820,7 +15820,7 @@
           "status": "Pre-Game",
           "lineups_confirmed": true,
           "odds": {
-            "fetched_at": "2026-09-15T22:03:12.709829+00:00"
+            "fetched_at": "2026-09-15T23:35:40.638172+00:00"
           },
           "bets": [
             {
@@ -15858,9 +15858,9 @@
               "line": 7.5,
               "price": -119,
               "book": "DraftKings",
-              "edge_real": -0.0077,
-              "edge": 0.0293,
-              "p_final": 0.5392
+              "edge_real": -0.0087,
+              "edge": 0.0301,
+              "p_final": 0.5386
             },
             {
               "tier": "PASS",
@@ -15869,11 +15869,11 @@
               "label": "Under 7.5",
               "selection": "Under",
               "line": 7.5,
-              "price": -101,
+              "price": -102,
               "book": "DraftKings",
-              "edge_real": -0.0428,
-              "edge": -0.031,
-              "p_final": 0.4608
+              "edge_real": -0.0431,
+              "edge": -0.0317,
+              "p_final": 0.4614
             },
             {
               "tier": "PASS",
@@ -15911,21 +15911,21 @@
           "status": "Pre-Game",
           "lineups_confirmed": true,
           "odds": {
-            "fetched_at": "2026-09-15T22:03:12.709829+00:00"
+            "fetched_at": "2026-09-15T23:35:40.638172+00:00"
           },
           "bets": [
             {
               "tier": "GOOD",
-              "stake": 0,
+              "stake": 3,
               "market": "TOTAL",
               "label": "Over 8.0",
               "selection": "Over",
               "line": 8,
               "price": -105,
               "book": "DraftKings",
-              "edge_real": 0.0442,
-              "edge": 0.0449,
-              "p_final": 0.5659
+              "edge_real": 0.0446,
+              "edge": 0.045,
+              "p_final": 0.5752
             },
             {
               "tier": "PASS",
@@ -15936,9 +15936,9 @@
               "line": null,
               "price": 139,
               "book": "DraftKings",
-              "edge_real": -0.0183,
-              "edge": 0.036,
-              "p_final": 0.4104
+              "edge_real": -0.0231,
+              "edge": 0.0324,
+              "p_final": 0.4081
             },
             {
               "tier": "PASS",
@@ -15949,9 +15949,9 @@
               "line": -1.5,
               "price": 134,
               "book": "DraftKings",
-              "edge_real": -0.0423,
-              "edge": 0.0026,
-              "p_final": 0.4034
+              "edge_real": -0.0375,
+              "edge": 0.0131,
+              "p_final": 0.4078
             },
             {
               "tier": "PASS",
@@ -15962,9 +15962,9 @@
               "line": -1.5,
               "price": -162,
               "book": "DraftKings",
-              "edge_real": -0.031,
-              "edge": -0.0017,
-              "p_final": 0.5966
+              "edge_real": -0.0355,
+              "edge": -0.0089,
+              "p_final": 0.5922
             },
             {
               "tier": "PASS",
@@ -15975,9 +15975,9 @@
               "line": null,
               "price": -168,
               "book": "DraftKings",
-              "edge_real": -0.0437,
-              "edge": -0.0258,
-              "p_final": 0.5896
+              "edge_real": -0.0422,
+              "edge": -0.0227,
+              "p_final": 0.5919
             },
             {
               "tier": "PASS",
@@ -15989,8 +15989,8 @@
               "price": -115,
               "book": "DraftKings",
               "edge_real": -0.045,
-              "edge": -0.0449,
-              "p_final": 0.4341
+              "edge": -0.045,
+              "p_final": 0.4248
             }
           ]
         },
@@ -16000,62 +16000,49 @@
           "away": "SD",
           "start": "2026-09-16T00:40:00Z",
           "status": "Pre-Game",
-          "lineups_confirmed": false,
+          "lineups_confirmed": true,
           "odds": {
-            "fetched_at": "2026-09-15T22:03:12.709829+00:00"
+            "fetched_at": "2026-09-15T23:35:40.638172+00:00"
           },
           "bets": [
             {
-              "tier": "GOOD",
-              "stake": 1,
+              "tier": "PASS",
+              "stake": 0,
               "market": "ML",
               "label": "COL ML",
               "selection": "COL",
               "line": null,
-              "price": 166,
+              "price": 164,
               "book": "DraftKings",
-              "edge_real": 0.0299,
-              "edge": 0.053,
-              "p_final": 0.3885
-            },
-            {
-              "tier": "GOOD",
-              "stake": 0,
-              "market": "RL",
-              "label": "COL +1.5",
-              "selection": "COL",
-              "line": 1.5,
-              "price": 107,
-              "book": "DraftKings",
-              "edge_real": 0.0297,
-              "edge": 0.0506,
-              "p_final": 0.4991
-            },
-            {
-              "tier": "GOOD",
-              "stake": 0,
-              "market": "TOTAL",
-              "label": "Under 11.0",
-              "selection": "Under",
-              "line": 11,
-              "price": -107,
-              "book": "DraftKings",
-              "edge_real": 0.029,
-              "edge": 0.0427,
-              "p_final": 0.5347
+              "edge_real": -0.0347,
+              "edge": 0.0271,
+              "p_final": 0.3633
             },
             {
               "tier": "PASS",
               "stake": 0,
               "market": "TOTAL",
-              "label": "Over 11.0",
-              "selection": "Over",
+              "label": "Under 11.0",
+              "selection": "Under",
               "line": 11,
-              "price": -112,
+              "price": -104,
               "book": "DraftKings",
-              "edge_real": -0.0446,
-              "edge": -0.0425,
-              "p_final": 0.4653
+              "edge_real": -0.0183,
+              "edge": 0.0252,
+              "p_final": 0.4999
+            },
+            {
+              "tier": "PASS",
+              "stake": 0,
+              "market": "RL",
+              "label": "COL +1.5",
+              "selection": "COL",
+              "line": 1.5,
+              "price": 108,
+              "book": "DraftKings",
+              "edge_real": -0.0233,
+              "edge": 0.0244,
+              "p_final": 0.4688
             },
             {
               "tier": "PASS",
@@ -16064,11 +16051,11 @@
               "label": "SD ML",
               "selection": "SD",
               "line": null,
-              "price": -202,
+              "price": -200,
               "book": "DraftKings",
-              "edge_real": -0.0504,
-              "edge": -0.0434,
-              "p_final": 0.6115
+              "edge_real": -0.0371,
+              "edge": -0.0158,
+              "p_final": 0.6367
             },
             {
               "tier": "PASS",
@@ -16077,11 +16064,24 @@
               "label": "SD -1.5",
               "selection": "SD",
               "line": 1.5,
-              "price": -129,
+              "price": -130,
               "book": "DraftKings",
-              "edge_real": -0.0531,
-              "edge": -0.0481,
-              "p_final": 0.5009
+              "edge_real": -0.0439,
+              "edge": -0.0209,
+              "p_final": 0.5312
+            },
+            {
+              "tier": "PASS",
+              "stake": 0,
+              "market": "TOTAL",
+              "label": "Over 11.0",
+              "selection": "Over",
+              "line": 11,
+              "price": -116,
+              "book": "DraftKings",
+              "edge_real": -0.041,
+              "edge": -0.0241,
+              "p_final": 0.5001
             }
           ]
         },
@@ -16091,23 +16091,36 @@
           "away": "SEA",
           "start": "2026-09-16T01:38:00Z",
           "status": "Pre-Game",
-          "lineups_confirmed": false,
+          "lineups_confirmed": true,
           "odds": {
-            "fetched_at": "2026-09-15T22:03:12.709829+00:00"
+            "fetched_at": "2026-09-15T23:35:40.638172+00:00"
           },
           "bets": [
             {
               "tier": "LEAN",
               "stake": 0,
+              "market": "TOTAL",
+              "label": "Over 8.0",
+              "selection": "Over",
+              "line": 8,
+              "price": -108,
+              "book": "DraftKings",
+              "edge_real": 0.014,
+              "edge": 0.0399,
+              "p_final": 0.5267
+            },
+            {
+              "tier": "PASS",
+              "stake": 0,
               "market": "ML",
               "label": "LAA ML",
               "selection": "LAA",
               "line": null,
-              "price": 144,
+              "price": 140,
               "book": "DraftKings",
-              "edge_real": 0.0218,
-              "edge": 0.0509,
-              "p_final": 0.4193
+              "edge_real": -0.0157,
+              "edge": 0.0376,
+              "p_final": 0.4099
             },
             {
               "tier": "PASS",
@@ -16116,50 +16129,11 @@
               "label": "LAA +1.5",
               "selection": "LAA",
               "line": 1.5,
-              "price": -120,
+              "price": -123,
               "book": "DraftKings",
-              "edge_real": 0.0095,
-              "edge": 0.0419,
-              "p_final": 0.5507
-            },
-            {
-              "tier": "PASS",
-              "stake": 0,
-              "market": "TOTAL",
-              "label": "Over 8.0",
-              "selection": "Over",
-              "line": 8,
-              "price": -115,
-              "book": "DraftKings",
-              "edge_real": -0.0278,
-              "edge": 0.0113,
-              "p_final": 0.5175
-            },
-            {
-              "tier": "PASS",
-              "stake": 0,
-              "market": "TOTAL",
-              "label": "Under 8.0",
-              "selection": "Under",
-              "line": 8,
-              "price": -105,
-              "book": "DraftKings",
-              "edge_real": -0.0387,
-              "edge": -0.0118,
-              "p_final": 0.4825
-            },
-            {
-              "tier": "PASS",
-              "stake": 0,
-              "market": "ML",
-              "label": "SEA ML",
-              "selection": "SEA",
-              "line": null,
-              "price": -174,
-              "book": "DraftKings",
-              "edge_real": -0.0503,
-              "edge": -0.0423,
-              "p_final": 0.5807
+              "edge_real": -0.0214,
+              "edge": 0.0185,
+              "p_final": 0.5391
             },
             {
               "tier": "PASS",
@@ -16168,11 +16142,37 @@
               "label": "SEA -1.5",
               "selection": "SEA",
               "line": 1.5,
-              "price": -101,
+              "price": 102,
               "book": "DraftKings",
-              "edge_real": -0.0527,
-              "edge": -0.0439,
-              "p_final": 0.4493
+              "edge_real": -0.0467,
+              "edge": -0.0206,
+              "p_final": 0.4609
+            },
+            {
+              "tier": "PASS",
+              "stake": 0,
+              "market": "ML",
+              "label": "SEA ML",
+              "selection": "SEA",
+              "line": null,
+              "price": -169,
+              "book": "DraftKings",
+              "edge_real": -0.0441,
+              "edge": -0.0271,
+              "p_final": 0.5901
+            },
+            {
+              "tier": "PASS",
+              "stake": 0,
+              "market": "TOTAL",
+              "label": "Under 8.0",
+              "selection": "Under",
+              "line": 8,
+              "price": -112,
+              "book": "DraftKings",
+              "edge_real": -0.0441,
+              "edge": -0.0397,
+              "p_final": 0.4733
             }
           ]
         },
@@ -16181,10 +16181,10 @@
           "home": "AZ",
           "away": "MIA",
           "start": "2026-09-16T01:40:00Z",
-          "status": "Scheduled",
+          "status": "Pre-Game",
           "lineups_confirmed": false,
           "odds": {
-            "fetched_at": "2026-09-15T22:03:12.709829+00:00"
+            "fetched_at": "2026-09-15T23:35:40.638172+00:00"
           },
           "bets": [
             {
@@ -16196,48 +16196,9 @@
               "line": null,
               "price": 124,
               "book": "DraftKings",
-              "edge_real": -0.0254,
-              "edge": 0.0274,
-              "p_final": 0.4341
-            },
-            {
-              "tier": "PASS",
-              "stake": 0,
-              "market": "TOTAL",
-              "label": "Under 8.5",
-              "selection": "Under",
-              "line": 8.5,
-              "price": -105,
-              "book": "DraftKings",
-              "edge_real": -0.029,
-              "edge": 0.0123,
-              "p_final": 0.4946
-            },
-            {
-              "tier": "PASS",
-              "stake": 0,
-              "market": "RL",
-              "label": "MIA +1.5",
-              "selection": "MIA",
-              "line": -1.5,
-              "price": -168,
-              "book": "DraftKings",
-              "edge_real": -0.0196,
-              "edge": 0.0121,
-              "p_final": 0.614
-            },
-            {
-              "tier": "PASS",
-              "stake": 0,
-              "market": "TOTAL",
-              "label": "Over 8.5",
-              "selection": "Over",
-              "line": 8.5,
-              "price": -115,
-              "book": "DraftKings",
-              "edge_real": -0.0378,
-              "edge": -0.0118,
-              "p_final": 0.5054
+              "edge_real": -0.0358,
+              "edge": 0.0136,
+              "p_final": 0.4273
             },
             {
               "tier": "PASS",
@@ -16248,9 +16209,48 @@
               "line": -1.5,
               "price": 139,
               "book": "DraftKings",
-              "edge_real": -0.0488,
-              "edge": -0.0183,
-              "p_final": 0.386
+              "edge_real": -0.0415,
+              "edge": 0.006,
+              "p_final": 0.3958
+            },
+            {
+              "tier": "PASS",
+              "stake": 0,
+              "market": "TOTAL",
+              "label": "Under 8.5",
+              "selection": "Under",
+              "line": 8.5,
+              "price": -105,
+              "book": "DraftKings",
+              "edge_real": -0.0336,
+              "edge": 0.0032,
+              "p_final": 0.4899
+            },
+            {
+              "tier": "PASS",
+              "stake": 0,
+              "market": "TOTAL",
+              "label": "Over 8.5",
+              "selection": "Over",
+              "line": 8.5,
+              "price": -115,
+              "book": "DraftKings",
+              "edge_real": -0.0348,
+              "edge": -0.003,
+              "p_final": 0.5101
+            },
+            {
+              "tier": "PASS",
+              "stake": 0,
+              "market": "RL",
+              "label": "MIA +1.5",
+              "selection": "MIA",
+              "line": -1.5,
+              "price": -168,
+              "book": "DraftKings",
+              "edge_real": -0.0317,
+              "edge": -0.0039,
+              "p_final": 0.6042
             },
             {
               "tier": "PASS",
@@ -16261,14 +16261,14 @@
               "line": null,
               "price": -150,
               "book": "DraftKings",
-              "edge_real": -0.0427,
-              "edge": -0.0208,
-              "p_final": 0.5659
+              "edge_real": -0.0374,
+              "edge": -0.01,
+              "p_final": 0.5727
             }
           ]
         }
       ]
     },
-    "lastGoodAt": "2026-09-15T23:19:19.643Z"
+    "lastGoodAt": "2026-09-15T23:44:16.387Z"
   }
 }
