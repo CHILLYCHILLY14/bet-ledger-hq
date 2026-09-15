@@ -36,7 +36,7 @@ try{
     await frame.locator("#date").dispatchEvent("change");
     await frame.getByRole("heading",{name:"DEN ML",exact:true}).first().waitFor();
     await frame.getByRole("button",{name:/Make daily ticket/i}).click();
-    await frame.getByRole("heading",{name:"KEVBOT BETS Daily Top 10"}).waitFor();
+    await frame.getByRole("heading",{name:"KEVBOT BETS Daily Top Picks"}).waitFor();
     assert.ok((await frame.locator("#ticket-preview").getAttribute("src")).startsWith("blob:"));
     if(width===393)await page.screenshot({path:"test-results/ticket-preview-393.png",fullPage:true});
     await frame.getByRole("button",{name:"Close image preview"}).click();
