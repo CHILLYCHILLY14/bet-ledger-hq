@@ -1,54 +1,54 @@
 {
-  "checked_at": "2026-09-15T21:42:14.910Z",
+  "checked_at": "2026-09-15T22:20:22.300Z",
   "feeds": {
-    "nfl": {
-      "status": "recent",
-      "failed_fields": [],
-      "published_at": "2026-09-15T20:29:02+00:00",
-      "last_good_at": "2026-09-15T21:42:14.910Z",
-      "warnings": []
-    },
     "ladder": {
       "status": "recent",
       "failed_fields": [],
-      "published_at": "2026-09-15T21:13:31.795611+00:00",
-      "last_good_at": "2026-09-15T21:42:14.910Z",
+      "published_at": "2026-09-15T22:13:37.642415+00:00",
+      "last_good_at": "2026-09-15T22:20:22.300Z",
+      "warnings": []
+    },
+    "mlb": {
+      "status": "recent",
+      "failed_fields": [],
+      "published_at": "2026-09-15T22:05:33+00:00",
+      "last_good_at": "2026-09-15T22:20:22.300Z",
       "warnings": []
     },
     "wnba": {
       "status": "review",
       "failed_fields": [],
       "published_at": "2026-09-15T21:37:16+00:00",
-      "last_good_at": "2026-09-15T21:42:14.910Z",
+      "last_good_at": "2026-09-15T22:20:22.300Z",
       "warnings": [
         "Some games have no usable prices; those games cannot qualify."
       ]
     },
-    "mlb": {
+    "nfl": {
       "status": "recent",
       "failed_fields": [],
-      "published_at": "2026-09-15T20:40:47+00:00",
-      "last_good_at": "2026-09-15T21:42:14.910Z",
+      "published_at": "2026-09-15T20:29:02+00:00",
+      "last_good_at": "2026-09-15T22:20:22.300Z",
       "warnings": []
-    },
-    "ncaaf": {
-      "status": "review",
-      "failed_fields": [],
-      "published_at": "2026-09-15T20:28:28+00:00",
-      "last_good_at": "2026-09-15T21:42:14.910Z",
-      "warnings": [
-        "Availability reports missing or incomplete; verify team news.",
-        "No multi-book comparison in this refresh."
-      ]
     },
     "props": {
       "status": "review",
       "failed_fields": [],
       "published_at": "2026-09-15T20:10:44.940041+00:00",
-      "last_good_at": "2026-09-15T21:42:14.910Z",
+      "last_good_at": "2026-09-15T22:20:22.300Z",
       "warnings": [
         "One or more source requests failed.",
         "No verified prop prices; projections are not wagers."
+      ]
+    },
+    "ncaaf": {
+      "status": "review",
+      "failed_fields": [],
+      "published_at": "2026-09-15T20:28:28+00:00",
+      "last_good_at": "2026-09-15T22:20:22.300Z",
+      "warnings": [
+        "Availability reports missing or incomplete; verify team news.",
+        "No multi-book comparison in this refresh."
       ]
     }
   },

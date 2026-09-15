@@ -39,9 +39,9 @@
       "closing": {
         "line": -1.5,
         "price": 153,
-        "observed_at": "2026-09-15T20:39:28.767006+00:00",
+        "observed_at": "2026-09-15T22:03:12.709829+00:00",
         "book": "DraftKings",
-        "minutes_before_start": 206,
+        "minutes_before_start": 122,
         "line_advantage": 0,
         "price_advantage": 0
       }
@@ -83,12 +83,12 @@
       "history": [],
       "closing": {
         "line": -1.5,
-        "price": -103,
-        "observed_at": "2026-09-15T20:39:28.767006+00:00",
+        "price": -105,
+        "observed_at": "2026-09-15T22:03:12.709829+00:00",
         "book": "DraftKings",
-        "minutes_before_start": 121,
+        "minutes_before_start": 37,
         "line_advantage": 0,
-        "price_advantage": 0
+        "price_advantage": 0.004805959389643122
       }
     },
     "mlb|824384|2026-09-15T22:40:00Z|ML||away|line=": {
@@ -128,12 +128,12 @@
       "history": [],
       "closing": {
         "line": null,
-        "price": 129,
-        "observed_at": "2026-09-15T20:39:28.767006+00:00",
+        "price": 133,
+        "observed_at": "2026-09-15T22:03:12.709829+00:00",
         "book": "DraftKings",
-        "minutes_before_start": 121,
+        "minutes_before_start": 37,
         "line_advantage": null,
-        "price_advantage": 0
+        "price_advantage": -0.007496673351200411
       }
     },
     "mlb|823333|2026-09-15T22:40:00Z|ML||home|line=": {
@@ -174,9 +174,9 @@
       "closing": {
         "line": null,
         "price": 177,
-        "observed_at": "2026-09-15T20:39:28.767006+00:00",
+        "observed_at": "2026-09-15T22:03:12.709829+00:00",
         "book": "DraftKings",
-        "minutes_before_start": 121,
+        "minutes_before_start": 37,
         "line_advantage": null,
         "price_advantage": 0
       }
@@ -220,12 +220,12 @@
       "history": [],
       "closing": {
         "line": null,
-        "price": 177,
-        "observed_at": "2026-09-15T20:39:28.767006+00:00",
+        "price": 178,
+        "observed_at": "2026-09-15T22:03:12.709829+00:00",
         "book": "DraftKings",
-        "minutes_before_start": 126,
+        "minutes_before_start": 42,
         "line_advantage": null,
-        "price_advantage": 0
+        "price_advantage": -0.0012986001090824484
       }
     },
     "mlb|823980|2026-09-16T01:38:00Z|ML||home|line=": {
@@ -268,9 +268,9 @@
       "closing": {
         "line": null,
         "price": 144,
-        "observed_at": "2026-09-15T20:39:28.767006+00:00",
+        "observed_at": "2026-09-15T22:03:12.709829+00:00",
         "book": "DraftKings",
-        "minutes_before_start": 299,
+        "minutes_before_start": 215,
         "line_advantage": null,
         "price_advantage": 0
       }
@@ -972,7 +972,54 @@
         "status": "Pending"
       },
       "history": []
+    },
+    "mlb|824307|2026-09-16T00:40:00Z|ML||home|line=": {
+      "pick": {
+        "key": "mlb",
+        "app": "mlb-edge",
+        "sport": "MLB",
+        "event": "SD @ COL",
+        "eventId": "824307",
+        "player": "",
+        "playerId": "",
+        "side": "home",
+        "home": "COL",
+        "away": "SD",
+        "version": "unversioned",
+        "start": "2026-09-16T00:40:00Z",
+        "when": 1789519200000,
+        "day": "2026-09-15",
+        "pick": "COL ML",
+        "market": "ML",
+        "line": null,
+        "sourceLine": null,
+        "price": 166,
+        "book": "DraftKings",
+        "tier": "GOOD",
+        "score": 0.0299,
+        "quote": "2026-09-15T22:03:12.709829+00:00",
+        "review": [
+          "Projected batting orders; lineups not confirmed."
+        ],
+        "probability": 0.3885,
+        "source": "MLB"
+      },
+      "first_ticket": "997b53afa12900ff",
+      "published_at": "2026-09-15T22:20:22.300Z",
+      "result": {
+        "status": "Pending"
+      },
+      "history": [],
+      "closing": {
+        "line": null,
+        "price": 166,
+        "observed_at": "2026-09-15T22:03:12.709829+00:00",
+        "book": "DraftKings",
+        "minutes_before_start": 157,
+        "line_advantage": null,
+        "price_advantage": 0
+      }
     }
   },
-  "checked_at": "2026-09-15T21:42:14.910Z"
+  "checked_at": "2026-09-15T22:20:22.300Z"
 }
