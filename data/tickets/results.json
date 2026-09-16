@@ -44,7 +44,8 @@
         "minutes_before_start": 29,
         "line_advantage": 0,
         "price_advantage": 0
-      }
+      },
+      "checked_at": "2026-09-16T00:27:04.997Z"
     },
     "mlb|822925|2026-09-15T22:40:00Z|RL||home|line=-1.5": {
       "pick": {
@@ -90,7 +91,7 @@
         "line_advantage": 0,
         "price_advantage": 0.004805959389643122
       },
-      "checked_at": "2026-09-15T23:44:16.387Z"
+      "checked_at": "2026-09-16T00:27:04.997Z"
     },
     "mlb|824384|2026-09-15T22:40:00Z|ML||away|line=": {
       "pick": {
@@ -136,7 +137,7 @@
         "line_advantage": null,
         "price_advantage": -0.007496673351200411
       },
-      "checked_at": "2026-09-15T23:44:16.387Z"
+      "checked_at": "2026-09-16T00:27:04.997Z"
     },
     "mlb|823333|2026-09-15T22:40:00Z|ML||home|line=": {
       "pick": {
@@ -182,7 +183,7 @@
         "line_advantage": null,
         "price_advantage": 0
       },
-      "checked_at": "2026-09-15T23:44:16.387Z"
+      "checked_at": "2026-09-16T00:27:04.997Z"
     },
     "mlb|822683|2026-09-15T22:45:00Z|ML||home|line=": {
       "pick": {
@@ -230,7 +231,7 @@
         "line_advantage": null,
         "price_advantage": -0.0012986001090824484
       },
-      "checked_at": "2026-09-15T23:44:16.387Z"
+      "checked_at": "2026-09-16T00:27:04.997Z"
     },
     "mlb|823980|2026-09-16T01:38:00Z|ML||home|line=": {
       "pick": {
@@ -1114,8 +1115,9 @@
         "minutes_before_start": 34,
         "line_advantage": 0,
         "price_advantage": 0
-      }
+      },
+      "checked_at": "2026-09-16T00:27:04.997Z"
     }
   },
-  "checked_at": "2026-09-15T23:44:16.387Z"
+  "checked_at": "2026-09-16T00:27:04.997Z"
 }
