@@ -45,7 +45,7 @@
         "line_advantage": 0,
         "price_advantage": 0
       },
-      "checked_at": "2026-09-16T00:27:04.997Z"
+      "checked_at": "2026-09-16T00:50:21.925Z"
     },
     "mlb|822925|2026-09-15T22:40:00Z|RL||home|line=-1.5": {
       "pick": {
@@ -91,7 +91,7 @@
         "line_advantage": 0,
         "price_advantage": 0.004805959389643122
       },
-      "checked_at": "2026-09-16T00:27:04.997Z"
+      "checked_at": "2026-09-16T00:50:21.925Z"
     },
     "mlb|824384|2026-09-15T22:40:00Z|ML||away|line=": {
       "pick": {
@@ -137,7 +137,7 @@
         "line_advantage": null,
         "price_advantage": -0.007496673351200411
       },
-      "checked_at": "2026-09-16T00:27:04.997Z"
+      "checked_at": "2026-09-16T00:50:21.925Z"
     },
     "mlb|823333|2026-09-15T22:40:00Z|ML||home|line=": {
       "pick": {
@@ -183,7 +183,7 @@
         "line_advantage": null,
         "price_advantage": 0
       },
-      "checked_at": "2026-09-16T00:27:04.997Z"
+      "checked_at": "2026-09-16T00:50:21.925Z"
     },
     "mlb|822683|2026-09-15T22:45:00Z|ML||home|line=": {
       "pick": {
@@ -231,7 +231,7 @@
         "line_advantage": null,
         "price_advantage": -0.0012986001090824484
       },
-      "checked_at": "2026-09-16T00:27:04.997Z"
+      "checked_at": "2026-09-16T00:50:21.925Z"
     },
     "mlb|823980|2026-09-16T01:38:00Z|ML||home|line=": {
       "pick": {
@@ -1023,7 +1023,8 @@
         "minutes_before_start": 64,
         "line_advantage": null,
         "price_advantage": 0.002848029163818655
-      }
+      },
+      "checked_at": "2026-09-16T00:50:21.925Z"
     },
     "ncaaf|401858451|2026-09-19T16:00Z|ATS||away|line=23.5": {
       "pick": {
@@ -1116,8 +1117,149 @@
         "line_advantage": 0,
         "price_advantage": 0
       },
-      "checked_at": "2026-09-16T00:27:04.997Z"
+      "checked_at": "2026-09-16T00:50:21.925Z"
+    },
+    "ncaaf|401866423|2026-09-19T23:00Z|TOTAL||over|line=49.5": {
+      "pick": {
+        "key": "ncaaf",
+        "app": "ncaaf-lab",
+        "sport": "NCAAF",
+        "event": "OHIO @ USA",
+        "eventId": "401866423",
+        "player": "",
+        "playerId": "",
+        "side": "over",
+        "home": "",
+        "away": "",
+        "version": "unversioned",
+        "start": "2026-09-19T23:00Z",
+        "when": 1789858800000,
+        "day": "2026-09-19",
+        "pick": "Over 49.5",
+        "market": "TOTAL",
+        "line": 49.5,
+        "sourceLine": 49.5,
+        "price": -110,
+        "book": "Draft Kings",
+        "tier": "LEAN",
+        "score": 0.060027435563768654,
+        "quote": "2026-09-16T00:35:56.987187+00:00",
+        "review": [
+          "Availability reports not confirmed."
+        ],
+        "probability": 0.5832337084361514,
+        "source": "NCAAF"
+      },
+      "first_ticket": "393680d202d2203e",
+      "published_at": "2026-09-16T00:50:21.925Z",
+      "result": {
+        "status": "Pending"
+      },
+      "history": [],
+      "closing": {
+        "line": 49.5,
+        "price": -110,
+        "observed_at": "2026-09-16T00:35:56.987187+00:00",
+        "book": "Draft Kings",
+        "minutes_before_start": 5664,
+        "line_advantage": 0,
+        "price_advantage": 0
+      }
+    },
+    "ncaaf|401858469|2026-09-26T23:30Z|ML||home|line=": {
+      "pick": {
+        "key": "ncaaf",
+        "app": "ncaaf-lab",
+        "sport": "NCAAF",
+        "event": "ORE @ USC",
+        "eventId": "401858469",
+        "player": "",
+        "playerId": "",
+        "side": "home",
+        "home": "",
+        "away": "",
+        "version": "unversioned",
+        "start": "2026-09-26T23:30Z",
+        "when": 1790465400000,
+        "day": "2026-09-26",
+        "pick": "USC ML",
+        "market": "ML",
+        "line": null,
+        "sourceLine": null,
+        "price": 195,
+        "book": "Draft Kings",
+        "tier": "LEAN",
+        "score": 0.0687406596878757,
+        "quote": "2026-09-16T00:35:52.603192+00:00",
+        "review": [
+          "Availability reports not confirmed."
+        ],
+        "probability": 0.39092356063539596,
+        "source": "NCAAF"
+      },
+      "first_ticket": "23b0e4f2124dfe5c",
+      "published_at": "2026-09-16T00:50:21.925Z",
+      "result": {
+        "status": "Pending"
+      },
+      "history": [],
+      "closing": {
+        "line": null,
+        "price": 195,
+        "observed_at": "2026-09-16T00:35:52.603192+00:00",
+        "book": "Draft Kings",
+        "minutes_before_start": 15774,
+        "line_advantage": null,
+        "price_advantage": 0
+      }
+    },
+    "ncaaf|401856704|2026-09-26T16:00Z|ML||home|line=": {
+      "pick": {
+        "key": "ncaaf",
+        "app": "ncaaf-lab",
+        "sport": "NCAAF",
+        "event": "TEX @ TENN",
+        "eventId": "401856704",
+        "player": "",
+        "playerId": "",
+        "side": "home",
+        "home": "",
+        "away": "",
+        "version": "unversioned",
+        "start": "2026-09-26T16:00Z",
+        "when": 1790438400000,
+        "day": "2026-09-26",
+        "pick": "TENN ML",
+        "market": "ML",
+        "line": null,
+        "sourceLine": null,
+        "price": 220,
+        "book": "Draft Kings",
+        "tier": "LEAN",
+        "score": 0.06266627813503121,
+        "quote": "2026-09-16T00:35:52.602191+00:00",
+        "review": [
+          "Availability reports not confirmed."
+        ],
+        "probability": 0.3508557484852928,
+        "source": "NCAAF"
+      },
+      "first_ticket": "23b0e4f2124dfe5c",
+      "published_at": "2026-09-16T00:50:21.925Z",
+      "result": {
+        "status": "Pending"
+      },
+      "history": [],
+      "closing": {
+        "line": null,
+        "price": 220,
+        "observed_at": "2026-09-16T00:35:52.602191+00:00",
+        "book": "Draft Kings",
+        "minutes_before_start": 15324,
+        "line_advantage": null,
+        "price_advantage": 0
+      }
     }
   },
-  "checked_at": "2026-09-16T00:27:04.997Z"
+  "checked_at": "2026-09-16T00:50:21.925Z"
 }
