@@ -45,7 +45,7 @@
         "line_advantage": 0,
         "price_advantage": 0
       },
-      "checked_at": "2026-09-16T00:50:21.925Z"
+      "checked_at": "2026-09-16T01:20:03.706Z"
     },
     "mlb|822925|2026-09-15T22:40:00Z|RL||home|line=-1.5": {
       "pick": {
@@ -79,9 +79,19 @@
       "first_ticket": "43932cccb3d30ec3",
       "published_at": "2026-09-15T21:31:56.061Z",
       "result": {
-        "status": "Pending"
+        "status": "Loss",
+        "verified_at": "2026-09-16T01:20:03.706Z",
+        "source": "https://statsapi.mlb.com/api/v1.1/game/822925/feed/live",
+        "score": "1–2"
       },
-      "history": [],
+      "history": [
+        {
+          "at": "2026-09-16T01:20:03.706Z",
+          "from": "Pending",
+          "to": "Loss",
+          "source": "https://statsapi.mlb.com/api/v1.1/game/822925/feed/live"
+        }
+      ],
       "closing": {
         "line": -1.5,
         "price": -105,
@@ -91,7 +101,7 @@
         "line_advantage": 0,
         "price_advantage": 0.004805959389643122
       },
-      "checked_at": "2026-09-16T00:50:21.925Z"
+      "checked_at": "2026-09-16T01:20:03.706Z"
     },
     "mlb|824384|2026-09-15T22:40:00Z|ML||away|line=": {
       "pick": {
@@ -137,7 +147,7 @@
         "line_advantage": null,
         "price_advantage": -0.007496673351200411
       },
-      "checked_at": "2026-09-16T00:50:21.925Z"
+      "checked_at": "2026-09-16T01:20:03.706Z"
     },
     "mlb|823333|2026-09-15T22:40:00Z|ML||home|line=": {
       "pick": {
@@ -183,7 +193,7 @@
         "line_advantage": null,
         "price_advantage": 0
       },
-      "checked_at": "2026-09-16T00:50:21.925Z"
+      "checked_at": "2026-09-16T01:20:03.706Z"
     },
     "mlb|822683|2026-09-15T22:45:00Z|ML||home|line=": {
       "pick": {
@@ -219,9 +229,19 @@
       "first_ticket": "43932cccb3d30ec3",
       "published_at": "2026-09-15T21:31:56.061Z",
       "result": {
-        "status": "Pending"
+        "status": "Win",
+        "verified_at": "2026-09-16T01:20:03.706Z",
+        "source": "https://statsapi.mlb.com/api/v1.1/game/822683/feed/live",
+        "score": "3–6"
       },
-      "history": [],
+      "history": [
+        {
+          "at": "2026-09-16T01:20:03.706Z",
+          "from": "Pending",
+          "to": "Win",
+          "source": "https://statsapi.mlb.com/api/v1.1/game/822683/feed/live"
+        }
+      ],
       "closing": {
         "line": null,
         "price": 178,
@@ -231,7 +251,7 @@
         "line_advantage": null,
         "price_advantage": -0.0012986001090824484
       },
-      "checked_at": "2026-09-16T00:50:21.925Z"
+      "checked_at": "2026-09-16T01:20:03.706Z"
     },
     "mlb|823980|2026-09-16T01:38:00Z|ML||home|line=": {
       "pick": {
@@ -1024,7 +1044,7 @@
         "line_advantage": null,
         "price_advantage": 0.002848029163818655
       },
-      "checked_at": "2026-09-16T00:50:21.925Z"
+      "checked_at": "2026-09-16T01:20:03.706Z"
     },
     "ncaaf|401858451|2026-09-19T16:00Z|ATS||away|line=23.5": {
       "pick": {
@@ -1117,7 +1137,7 @@
         "line_advantage": 0,
         "price_advantage": 0
       },
-      "checked_at": "2026-09-16T00:50:21.925Z"
+      "checked_at": "2026-09-16T01:20:03.706Z"
     },
     "ncaaf|401866423|2026-09-19T23:00Z|TOTAL||over|line=49.5": {
       "pick": {
@@ -1261,5 +1281,5 @@
       }
     }
   },
-  "checked_at": "2026-09-16T00:50:21.925Z"
+  "checked_at": "2026-09-16T01:20:03.706Z"
 }
